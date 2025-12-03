@@ -1,184 +1,461 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>YH Homepage</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="fontawesome-free-6.4.0-web\css\all.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('resource/img/sidebar.jpg');
-  min-height: 100%;
-}
-.w3-content{max-width: 100% !important}
-</style>
-
-</head>
-
-<body>
-
-
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small w3-animate-opacity" style="width:24%">
-  <div class="bgimg"></div>
-</nav>
-
-
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="research.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Research</a>
-    <a href="portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <!-- <a href="news.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">News Archive</a>-->
-  </div>
-</nav>
-
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:25%">
-
-  <!-- Menu icon to open sidebar -->
-    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:108px 16px 12px;" id="home">
-    <h3 class="w3-jumbo" style="font-size: 42px!important;"><b>Yumeng Hou</b></h1>
-    <h6 style="margin: 24px">Computational Archives x Digital Embodiment</h6>
-    <img src="resource/img/banner.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:75%;margin:auto;">
-    <img src="resource/img/banner.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <p><i class="fa fa-landmark fa-fw w3-middle">&nbsp;</i><b> Assistant Professor @ National University of Singapore </b><a href="https://discovery.nus.edu.sg/29493-yumeng-hou/about" target="_blank" class="w3-text-bold"><b>[NUS Profile]</b></a></p>
-       <!--<p><i class="fa fa-landmark fa-fw w3-middle">&nbsp;</i>Assistant Professor @ National University of Singapore.-->
-  </header>
-
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-24" id="about" style=" margin-left: 20px; margin-right: 20px;">
-    <h3>About Me</h3>
-    <hr class="w3-opacity">
-
-    <p> I am currently an Assistant Professor at the <a href="https://fass.nus.edu.sg/elts/" target="_blank">Department of English, Linguistics and Theatre Studies</a>, National University of Singapore (NUS), and a researcher at the <a href="https://cssh.nus.edu.sg/" target="_blank">NUS Centre for Computational Social Science and Humanities</a>.</p>
-
-    <p>I research computational archiving and living archives, working at the intersection of computation, visualisation, digital curation, and cultural big data. Through both experimental and applied research, I investigate how digital and data-science methods can enhance the representation, transmission, and transformation of intangible cultural heritage, particularly through somatic and performative experiences. My curatorial practice mobilises art-tech and augmented interfaces to disrupt and extend the fourth wall, moving fluidly between spaces of exhibiting, playing, and performing.</p>
-
-    <p>My work is shaped by an interdisciplinary journey that spans the humanities, computer science, and industry practice. I obtained my PhD in Digital Humanities from the Laboratory for Experimental Museology at EPFL (Switzerland). I hold an MSc in Computer Science, a BEng in Digital Media Technology, and professional experience in the cloud computing sector. Before joining NUS, I was a Research-track Assistant Professor at the School of Creative Media, City University of Hong Kong, through the Global Research Assistant Professors Scheme.</p>
-
-
-    <!-- 
-    <p>Yumeng Hou [yjuːˈmʊŋ] [hoʊ] is an Assistant Professor of Computational Archiving and Living Archives at the <a href="https://fass.nus.edu.sg/elts/" target="_blank">Department of English, Linguistics and Theatre Studies</a>, National University of Singapore (NUS). She is also a researcher at the <a href="https://cssh.nus.edu.sg/" target="_blank">NUS Centre for Computational Social Science and Humanities</a></p>. 
-    <p>Yumeng's research explores the intersection of computation, visualisation, interaction, digital curation, and cultural archives. Through experimental and applied research, she investigates how digital and data-science methods can enhance the representation, transmission, and transformation of intangible cultural experiences, particularly in somatic and performative practices. She also curates art-tech augmented embodied narratives for museum exhibitions. Her work has been published in leading journals and conference proceedings in digital humanities, heritage studies, and computational sciences, including ACM JOCCH, DSH, JDOC, JOHD, DHQ, IEEE VIS, CG&A, ADHO DH Conference(s), as well as in scholarly books.</p>
-Journal on Computing and Cultural Heritage, Digital Scholarship in the Humanities, Journal of Documentation, Journal of Open Humanities Data, Digital Humanities Quarterly, IEEE VIS, IEEE Computer Graphics and Applications, and ADHO Digital Humanities Conference(s), as well as in scholarly books. 
-    
-    <p>Yumeng earned her PhD in Digital Humanities and Computational Museology from EPFL’s Laboratory for Experimental Museology (Switzerland). She holds an MSc in Computer Science from EPFL and a BEng in Digital Media Technology from Zhejiang University (China). Before joining NUS, she was a Research-track Assistant Professor at the School of Creative Media, City University of Hong Kong. Beyond academia, she has worked as Cloud Product Manager, Digital Strategist, and Creative Technologist.</p>-->
- <!--
-      <button class="w3-button w3-light-grey w3-padding-medium w3-margin-top w3-margin-bottom">
-        <a href="resource/YH_cv-edu-24.pdf" target="_blank" style="text-decoration:none">
-          <i class="fa fa-download w3-margin-right"></i>CV-academia&nbsp&nbsp</a></button>
-      <button class="w3-button w3-light-grey w3-padding-medium w3-margin-top w3-margin-bottom">
-        <a href="resource/YH_cv-in-24.pdf" target="_blank" style="text-decoration:none">
-          <i class="fa fa-download w3-margin-right"></i>CV-industry&nbsp&nbsp</a></button>
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-  <!-- End About Section -->
-  </div>
+<html>
+	<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section id="about" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h2>Yumeng Hou</h2>
+							<p><b>Assistant Professor @ National University of Singapore | <a href="https://discovery.nus.edu.sg/29493-yumeng-hou/about" target="_blank" class="w3-text-bold">[NUS Profile]</a></b></p>
+							<!-- <p>I am an Assistant Professor at the National University of Singapore (NUS), in the <a href="https://fass.nus.edu.sg/elts/" target="_blank">Department of English, Linguistics and Theatre Studies</a> and the <a href="https://cssh.nus.edu.sg/" target="_blank">Centre for Computational Social Science and Humanities</a>.</p>-->
+
+							<p>I research computational archiving and living archives, working at the intersection of computation, visualisation, digital curation, and cultural big data. Through both experimental and applied research, I investigate how digital and data-science methods can enhance the representation, transmission, and transformation of intangible cultural heritage, particularly through somatic and performative experience. My curatorial practice mobilises art-tech augmented interfaces to extend the fourth wall, moving fluidly across spaces of exhibiting, playing, and performing.</p>
+							
+							<p>My work is shaped by an interdisciplinary trajectory. I received my PhD in Digital Humanities and Computational Museology from EPFL, Switzerland. I hold an MSc in Computer Science (EPFL), a BEng in Digital Media Technology (ZJU), and professional experience in the cloud computing industry. Before joining NUS, I was a Global Research Assistant Professor at the School of Creative Media, City University of Hong Kong.</p>
+
+							<b><a href="#bulletin" class="smooth-scroll-middle">Bulletin</a> | <a href="#research" class="smooth-scroll-middle">Research</a> | <a href="#teaching" class="smooth-scroll-middle">Teaching</a> | <a href="#creativity" class="smooth-scroll-middle">Creativity</a></b>
+						</div>
+						<div class="image">
+							<img src="images/bannerh.jpg" alt="" />
+						</div>
+
+					</section>
+
+				<section id="bulletin" class="wrapper style1 align-center">
+						<div class="inner">
+							<h3>News & Updates</h3>
+							<ul class="actions stacked">
+								<li><i class="fa fa-bullhorn"></i> Following a successful run from May 9 to September 28, 2025, my co-curated exhibition <a href="https://www.cityu.edu.hk/en/bg/exhibitions/central-africa-art/home" target="_blank">Central African Art – Invocation of an Unseen World</a> concluded at the Indra and Harry Banga Gallery, Hong Kong.</li>
+								<li><i class="fa fa-bullhorn"></i> [11/12/2025] Presenting a short paper as poster at CHR2025 (Luxembourg), titled “Toward Tracing Knowledge Flows in Martial Arts: Biographical Data and Interpersonal Contacts”.</li>
+								<li><i class="fa fa-bullhorn"></i> [15/10/2025] Guest speaker | World Conference on China Studies, Shanghai.</li>
+								<li><i class="fa fa-bullhorn"></i> [27/02/2025] Plenary Speaker | National Institutes for the Humanities (NIHU) International Symposium, Tokyo, Japan.</li>
+
+							</ul>
+							<p></p>
+
+							
+							<b><a href="#research" class="smooth-scroll-middle">Research</a> | <a href="#teaching" class="smooth-scroll-middle">Teaching</a> | <a href="#creativity" class="smooth-scroll-middle">Creativity</a> </b>
+						</div>
+					</section>
 
 
-  <!-- News Section -->
+					<section id="research" class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Research</h2>
+							<h4>Research Projects</h4> <!-- Ongoing -->
+						</div>
 
-  <div class="w3-content w3-justify w3-text-grey w3-padding-24" id="news" style=" margin-left: 20px; margin-right: 20px;">
-    <!--<h3>Past Events</h3>-->
-    
-    <h3>News & Updates</h3>
-    <hr class="w3-opacity">
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/gallery/fulls/masters.png" class="image">
+										<img src="images/gallery/thumbs/masters.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Computational Embodied Archives (2025–2029)</h3>
+										<p>Current debates on the documentation, transmission, and transformation of intangible heritage highlight the complexities of engaging with embodied traditions. This project seeks to navigate these challenges by leveraging computational analysis and algorithmic curation.</p></p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/remapping.png" class="image">
+										<img src="images/gallery/thumbs/remapping.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Remapping martial arts history with multimodal AI (2025–2028)</h3>
+										<p>This project seeks to enrich the intellectual and cultural history of Chinese martial arts through the development of a domain-specific compound AI system, along with curated datasets.</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/CAA.jpg" class="image">
+										<img src="images/gallery/thumbs/CAA.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Central African Art – Invocation of an Unseen World (2024–2025)</h6>
+										<p>A mixed-media journey immersed in Central African heritage, jointly curated by Hing Chao, Henry Lu, Amanda Wang Youlin, and Yumeng Hou (new media). Presented at the Indra and Harry Banga Gallery, May 9 - Sept 28, 2025.</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/hkmala22.png" class="image">
+										<img src="images/gallery/thumbs/hkmala22.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>HKMALA 2.0 (2025– )</h3>
+										<p>Extending beyond the original MoCap-centred HKMALA, this project employs a computational archiving approach to re-render the HKMALA data as algorithmic yet semantically rich data assets. It will produce embeddings and knowledge graphs accessible through agentic interfaces.</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/hkmala.png" class="image">
+										<img src="images/gallery/thumbs/hkmala.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>HKMALA: Hong Kong Martial Arts Living Archive (2012– )</h3>
+										<p>HKMALA represents the first comprehensive digital initiative to archive and annotate the living kung fu traditions using advanced motion-capture and audiovisual recording technologies.</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/maetp.jpg" class="image">
+										<img src="images/gallery/thumbs/maetp.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>MAETP (2022–2024)</h3>
+										<p>MAETP – Transforming Lingnan Martial Arts as a Movement and Performing Art through Digital Pedagogy, Interpretation and Performance.<br>The project pioneers a systematic movement programme recognising the deep links between Chinese martial arts and performing arts. </p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/icms.jpg" class="image">
+										<img src="images/gallery/thumbs/icms.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>EncodingActs (2020–2024)</h3>
+										<p>EncodingActs: Modeling, Representing and Transmitting Embodied Knowledge in Traditional Martial Arts investigates how computational methods can facilitate the transmission of multifaceted knowledge within intangible cultural heritage in the context of traditional martial arts.</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/crossings-f.png" class="image">
+										<img src="images/gallery/thumbs/crossings-f.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Computational Interoperability For Intangible and Tangible Cultural Heritage (2021–2022)</h3>
+										<p>CROSSINGS aims to develop an ontological model that integrates data on intangible heritage by combining aspects of haptics, pose, and motion with meaningful traits of traditions and folklore.</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/confu.png" class="image">
+										<img src="images/gallery/thumbs/confu.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Archery Rites: Remaking Confucian Rites (2021–2022)</h3>
+										<p>Ritual archery has a long and vital history in Chinese civilization. This chapter examines the current reenactment and digital reconstruction of the specific tradition of the Archery Rites embedded in the Confucian tradition, ritual practice and cosmology of li.</p>
+									</div>
+								</article>
+							</div>
 
-    <div class="w3-row-padding w3-margin" style="margin-left: -14px !important;">
-      <ul>
-        <li>
-          <p>[08/05/2025] Co-curated exhibition opens! <a href="https://www.cityu.edu.hk/media/news/2025/05/08/indra-and-harry-banga-gallery-presents-central-african-art-invocation-unseen-world-mixed-media-journey-immersed-central-african-heritage" target="_blank">Central African Art - Invocation of an Unseen World</a>. 9 May – 28 September 2025, Indra and Harry Banga Gallery, Hong Kong.</p> 
-        </li>
-        <li>
-          <p>[27/02/2025] Plenary Speaker at NIDH International Symposium Cultural Engagement Experience Redefined with Immersive Interactive Technologies, Tokyo, Japan.</p> 
-        </li>
-        <li>
-          <p>[01/12/2024] Plenary Speaker at DH Boundless Dialogue: Conversations on Intangible Cultural Heritage, Renmin University of China.</p> 
-        </li>
-        <li>
-          <p>[24/08/2024] Keynote speaker at the 5th International Martial Studies Conference.</p> 
-        </li>
-        <li>
-          <p>[26/07/2024] New paper <a href="https://www.digitalhumanities.org/dhq/vol/18/2/000722/000722.html" target="_blank"><b>"Augmenting access to embodied knowledge archives: a computational framework"</b></a> published in <i>Digital Humanities Quarterly</i>.</p> 
-        </li>
-        <li>
-          <p>[08/02/2024] New paper <a href="https://doi.org/10.1093/llc/fqae005" target="_blank"><b>"Ontology-based knowledge representation for traditional martial arts"</b></a> published in <i>Digital Scholarship in the Humanities</i>.</p> 
-        </li>
-        <li>
-          <p>[24/11/2023] New paper <a href="https://doi.org/10.5334/johd.136" target="_blank"><b>"Building a Knowledge Graph of Chinese Kung Fu Masters From Heterogeneous Bilingual Data"</b></a> published in <i>Journal of Open Humanities Data</i>.</p> 
-        </li>
-        <li>
-          <p>[09/08/2023] New paper <a href="https://dl.acm.org/doi/10.1145/3606702" target="_blank">"<b>The Facets of Intangible Heritage in Southern Chinese Martial Arts: Applying a Knowledge-driven Cultural Contact Detection Approach</b>"</a> published in <i>Journal on Computing and Cultural Heritage</i>.</p> 
-        </li>
-        <li>
-          <p>[13/07/2023] <b>Finalist for Best Paper Award at Digital Humanities 2023, Graz, Austria</b></p> 
-        </li>
-        <li>
-          <p>[08/05/2023] New paper <a href="https://doi.org/10.1108/JD-01-2022-0027" target="_blank">"<b>Unlocking a multimodal archive of Southern Chinese martial arts through embodied cues</b>"</a> published in <i>Journal of Documentation</i>.</p> 
-        </li>
-        <li>
-          <p>[30/11/2022] <a href="https://mp.weixin.qq.com/s/lmQeEBXNnC0Qz0Bj1d8LmQ" target="_blank"><b>Keynote speaker and panellists at 4th International Martial Studies Conference, Guangzhou CN</b></a></p> 
-        </li>
-        <li>
-          <p>[14/04/2022] <b>Selected as EPFL Doc.Mobility grant recipient</b></a></p> 
-        </li>
-        <li>
-          <p>[08/04/2022] <b>Guest Lecture for "Digital Art History: Current Trends and Experimental Applications", University of Basel.</b></p>
-        </li>
-        <li>
-          <p>[18/02/2022] New paper <a href="https://doi.org/10.1145/3494837" target="_blank">"<b>Digitizing Intangible Cultural Heritage Embodied: State of the Art</b>"</a> published in <i>Journal on Computing and Cultural Heritage</i>.</p> 
-        </li>
-        <li>
-          <p>[16/09/2021] <a href="https://new.dhcenter-unil-epfl.ch/en/2021/09/27/what-it-really-means-to-do-interdisciplinary-research/" target="_blank"><b>"What it really means to do interdisciplinary research?"</b></a></p> 
-        </li>
-      </ul>
-    </div>
+					</section>
 
 
-  </div>
-  
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h3>Selected Publications</h3>
+							<h5>This page may not be fully up to date. For complete records, please refer to <a href="https://scholar.google.com/citations?user=fuIS_rYAAAAJ" target="_blank" class="w3-text-bold">Google Scholar</a> | <a href="https://www.scopus.com/authid/detail.uri?authorId=57193744969" target="_blank" class="w3-text-bold">SCOPUS</a> | <a href="https://orcid.org/0000-0002-7908-0693" target="_blank" class="w3-text-bold">ORCID</a></h5>
+							<b>Refereed Journal Articles</b>
+						        <ul>
+						          <li><b>Hou, Y.</b>*, & Kenderdine S. (2024). “Ontology-based Knowledge Representation for Traditional Martial Arts”. <i>Digital Scholarship in the Humanities</i> 39(2), 575–592. <a href="https://doi.org/10.1093/llc/fqae005" target="_blank">https://doi.org/10.1093/llc/fqae005</a></li>
+						          <li><b>Hou, Y.</b>*, & Yuan L. (2023). “Building a knowledge graph of Chinese kung fu masters from heterogeneous bilingual data”. <i>Journal of Open Humanities Data</i>. <a href="https://doi.org/10.5334/johd.136" target="_blank">https://doi.org/10.5334/johd.136</a></li>
+						          <li><b>Hou, Y.</b>*, Seydou F.M., & Kenderdine S. (2023). "Unlocking a multimodal archive of Southern Chinese martial arts through embodied cues". <i>Journal of Documentation</i>. Vol.Ahead-of-print. <a href="https://doi.org/10.1108/JD-01-2022-0027" target="_blank">https://doi.org/10.1108/JD-01-2022-0027</a></li>
+						          <li><b>Hou, Y.</b>*, Kenderdine S., Adamou, A., Picca, D., & Egloff, M. (2022). "Digitizing Intangible Cultural Heritage Embodied: state of the art". <i>Journal on Computing and Cultural Heritage</i>. <a href="https://doi.org/10.1145/3494837" target="_blank">https://doi.org/10.1145/3494837</a></li>
+						          <li><b>Hou, Y.</b>* (2021). "Accessing, Representing, and Transmitting Cultural Heritage through Digital Archives: Challenges and Opportunities". <i>Digital Humanities Research</i>, 4(1), 77-91. <a href="http://dhr.ruc.edu.cn/CN/Y2021/V1/I4/77" target="_blank">http://dhr.ruc.edu.cn/CN/Y2021/V1/I4/77</a></li>
+						          <li>Alliata, G.*, <b>Hou, Y.</b>, & Kenderdine S. “Augmenting access to embodied knowledge archives: a computational framework”. <i>Digital Humanities Quarterly</i>. <a href="https://www.digitalhumanities.org/dhq/vol/18/2/000722/000722.html" target="_blank">dhq/vol/18/2/000722</a></li>
+						          <li>Adamou, A.*, Picca, D., <b>Hou, Y.</b>, & Granados-García, P. L. "The Facets of Intangible Heritage in Southern Chinese Martial Arts: Applying a Knowledge-Driven Cultural Contact Detection Approach". <i>Journal on Computing and Cultural Heritage</i>, 16 (3), Article 63. <a href="https://doi.org/10.1145/3606702" target="_blank">https://doi.org/10.1145/3606702</a></li>
+						          <li>Xia, J.<sup>#</sup>, <b>Hou, Y.<sup>#</sup></b>, Chen, Y. V., Qian, Z. C., Ebert, D. S., & Chen, W.* (2017). "Visualizing rank time series of Wikipedia top-viewed pages". <i>IEEE computer graphics and applications</i>, 37(2), 42-53.  <a href="https://doi.org/10.1109/MCG.2017.21" target="_blank">https://doi.org/10.1109/MCG.2017.21</a></li>
+						        </ul><br/>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge">
-      <a href="https://scholar.google.com/citations?user=fuIS_rYAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa fa-google w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/yumeng-hou-85053334" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-      <a href="https://twitter.com/yumeng_h" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-      <a href="https://github.com/renie26" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <p class="w3-medium" style="margin-bottom: 0;">© Yumeng Hou. All rights reserved.</p>
-  <!-- End footer -->
-  </footer>
-  
-<!-- END PAGE CONTENT -->
-</div>
+						        <b>Refereed Conference Proceedings</b>
+						        <ul>
+						          <li><b>Hou, Y.</b>* (2025). “Toward Tracing Knowledge Flows in Martial Arts: Biographical Data and Interpersonal Contacts”. In Anthology of Computers and the Humanities 3, pp.1468-1481. <a href="https://doi.org/10.63744/m8c605kSTaEM">[DOI]</a></li>
+						          <li><b>Hou, Y.</b>*, & Kenderdine S. (2022). Encoding the Whole-of-Environment Knowledge for Intangible Cultural Heritage: A Computational Experiment with the Hong Kong Martial Arts Living Archive. In (IN)TANGIBLE HERITAGE(S): Design, culture and technology – past, present, and future, AMPS Proceedings Series 29.1, pp.121-132. <a href="https://amps-research.com/wp-content/uploads/2023/04/Amps-Proceedings-Series_29.1.pdf" target="_blank">[PDF]</a></li>
+						          <li>Adamou, A.* , <b>Hou, Y.</b>*, Picca, D.*, Egloff, M., & Kenderdine S. (2021). Ontology-mediated cultural contact in Southern Chinese martial arts. In Proceedings of the International Joint Workshop on Semantic Web and Ontology Design for Cultural Heritage. <a href="https://swodch2021.inf.unibz.it/wp-content/uploads/2021/09/short2.pdf" target="_blank">[PDF]</a></li>
+						          <li>Xia, J., Chen, W.*, <b>Hou, Y.</b>, et al. (2016). Dimscanner: A relation-based visual exploration approach towards data dimension inspection. In 2016 IEEE Conference on Visual Analytics Science and Technology, pp. 81-90. <a href="https://doi.org/10.1109/VAST.2016.7883514" target="_blank">[DOI]</a></li>
+						        </ul><br/>
 
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
+						        <b>Contributions to Books</b>
+						        <ul>
+						          <li><b>Hou, Y.</b> (2025). "Encountering Central African Spirituality through Digital Liminality." <i>Central African Art – Invocation of an Unseen World</i> (ISBN: 978-962-442-476-8). City University of Hong Kong.</li>
+						          <li>Kenderdine, S., Hibberd, L., Shaw, J., Chang, T.-Z., & <b>Hou, Y.</b> (2023). "Archery Rites: Re-making Confucian Rites." <i>Chinese Archery Studies: Theoretical and Historical Approaches to a Martial Discipline</i>. Springer. <a href="https://doi.org/10.1007/978-981-16-8321-3_13" target="_blank">https://doi.org/10.1007/978-981-16-8321-3_13</a></li>
+						          <li><b>Hou, Y.</b> (2024). “Reliving martial arts classics in the digital era”. <i>讀書雜誌//Dushu Magazine</i>, issue 10. Joint Publishing (H.K.). [<a href="https://drive.google.com/file/d/1t8-aINGh3EBMEsLVzrGs_Utj9wvqWfjo/view?usp=sharing" target="_blank">preview</a>]</li>
+						        </ul><br/>
+						</div>
+						<div class="image">
+							<img src="images/spotlight02.jpg" alt="" />
+						</div>
+					</section>
 
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+				<!-- Four -->
+					<section id="teaching" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Teaching</h2>
+							<ul class="actions stacked">
+								<li><i class="fas fa-book-reader"></i> &nbsp;&nbsp; <a href="https://nusmods.com/courses/GEI1002/computers-and-the-humanities" target="_blank">GEI1002/GET1030 Computers and the Humanities</a></li>
+								<li><i class="fas fa-theater-masks"></i> &nbsp; <a href="https://nusmods.com/courses/TPS5243/data-analysis-and-visualization-for-theatre-research" target="_blank">TPS5243 Data Analysis and Visualization for Theatre Research</a></li>
+								<li><i class="fas fa-chalkboard"></i> &nbsp; BT1101HS Introduction to Business Analytics</li>
+								<li><i class="fas fa-graduation-cap"></i> &nbsp; PhD and Master’s Theses & Research Projects</li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight03.jpg" alt="" />
+						</div>
+					</section>
 
-</body>
+				<!-- Five -->
+
+
+					<section id="creativity" class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>(Digital) Creativity</h2>
+							<h4>Exhibitions & Installations</h4>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/gallery/fulls/nkisi.jpg" class="image">
+										<img src="images/gallery/thumbs/nkisi.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Power Figure</h6><p>3-channel 3D video installation with sound and floor projection</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/Dancing_Masks.png" class="image">
+										<img src="images/gallery/thumbs/Dancing_Masks.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Dancing Masks</h6><p>Full-body interactive installation with sound</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/warrior.jpg" class="image">
+										<img src="images/gallery/thumbs/warrior.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h6>A Warrior Play</h6><p>8K Full-body interactive theatre</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/weapons.jpg" class="image">
+										<img src="images/gallery/thumbs/weapons.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Weapons in Motion</h6><p>Interactive 3D animation system with RFID-triggered objects</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/OI_img1.jpg" class="image">
+										<img src="images/gallery/thumbs/OI_img3.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Natural Origins of The Internet </h6>
+   										<p>Dataviz and media art installation at the 2050 Museum of Inspiration, Hangzhou, China.</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/daning.png" class="image">
+										<img src="images/gallery/thumbs/daning.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>ImmerScience</h6>
+   										<p>An immersive, interactive learning space created for Daning International School</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/keqiao.jpg" class="image">
+										<img src="images/gallery/thumbs/keqiao.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Digital Poetry Road</h6>
+										<p>The Road of Tang Poetry: a digital experience at the Keqiao Culture Center.</p>
+									</div>
+								</article>
+							</div>
+
+						<div class="inner">
+							<h4>Designs & APPs</h4>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/gallery/fulls/uxc1.webp" class="image">
+										<img src="images/gallery/thumbs/uxc1.webp" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Mirror!</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/hibachi3.jpg" class="image">
+										<img src="images/gallery/thumbs/hibachi3.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Hibachi</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/aqua2.png" class="image">
+										<img src="images/gallery/thumbs/aqua2.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Aqua</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/spark.png" class="image">
+										<img src="images/gallery/thumbs/spark.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Spark</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/wikitop.png" class="image">
+										<img src="images/gallery/thumbs/wikitop.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>WikiTop Reader</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/NBA.png" class="image">
+										<img src="images/gallery/thumbs/NBA.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>NBA Analytics</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/dimsanner.png" class="image">
+										<img src="images/gallery/thumbs/dimsanner.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Dimsanner</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/emovdairy.png" class="image">
+										<img src="images/gallery/thumbs/emovdairy.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Emovdairy</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/mooc.png" class="image">
+										<img src="images/gallery/thumbs/mooc.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>MOOC Stream</h6>
+									</div>
+								</article>
+							</div>
+
+						<div class="inner">
+							<h4>Hobbies</h4>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/gallery/fulls/hibachi2_b.png" class="image">
+										<img src="images/gallery/thumbs/hibachi1.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Hibachi Lunchbox</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/samsung.png" class="image">
+										<img src="images/gallery/thumbs/samsung.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Rhino 3D – my first mobile phone</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/lamy.png" class="image">
+										<img src="images/gallery/thumbs/lamy.png" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Rhino 3D – my first Lamy</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/sounder.jpg" class="image">
+										<img src="images/gallery/thumbs/sounder.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h6>Rhino 3D</h6>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/photo1.jpg" class="image">
+										<img src="images/gallery/thumbs/photo1.jpg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/photo2.jpg" class="image">
+										<img src="images/gallery/thumbs/photo2.jpg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/photo3.jpg" class="image">
+										<img src="images/gallery/thumbs/photo3.jpg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/photo5.jpg" class="image">
+										<img src="images/gallery/thumbs/photo5.jpg" alt="" />
+									</a>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/photo6.jpg" class="image">
+										<img src="images/gallery/thumbs/photo6.jpg" alt="" />
+									</a>
+								</article>
+							</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<b><a href="#research" class="smooth-scroll-middle">Research</a> | <a href="#teaching" class="smooth-scroll-middle">Teaching</a> | <a href="#creativity" class="smooth-scroll-middle">Creativity</a> | <a href="#about" class="smooth-scroll-middle">Back to Top</a></b>
+						</div>
+							<ul class="icons">
+								<li><a href="https://scholar.google.com/citations?user=fuIS_rYAAAAJ&hl=en&oi=ao" target="_blank" class="icon brands style2 fa-google"><span class="label">Google Scholar</span></a></li>
+								<li><a href="https://www.linkedin.com/in/yumeng-hou-85053334" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/renie26" target="_blank" class="icon brands style2 fa-github"><span class="label">Instagram</span></a></li>
+							</ul>
+							<br>
+							<p>&copy; Yumeng Hou. All rights reserved.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
