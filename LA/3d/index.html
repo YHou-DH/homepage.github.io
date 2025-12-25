@@ -1,0 +1,44 @@
+
+<head>
+  <style> body { margin: 0; } </style>
+
+  <!--<script src="//unpkg.com/3d-force-graph"></script>-->
+  <script src="js/3d-force-graph.min.js"></script>
+  <script src="//unpkg.com/dat.gui"></script>
+  <script src="https://d3js.org/d3.v6.js"></script>
+
+  <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/three-spritetext"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class = "legend">
+    <button class="legendbtn">Legend</button>
+    <img class="legendimg" style ="width: 100%;" src = "video/legend.png" />
+  </div>
+  <div class = "info">
+    <img style ="width: 82%;" src = "video/info.png" />
+    <button class="infobtn"> Clear! Let's get started! </button>
+  </div>
+
+  <div class="colLeft">
+  	 <div class="title">
+        <h2 id="zh_name"></h2>
+        <h3 id="en_name"></h3>
+        <p id="nodetype"></p> 
+     </div>
+  	 <div class="vWindow">
+      <video id="myVideo" controls>
+        <source src="video/video_lowres.mp4" currentTime="" endTime="" type="video/mp4">
+     </div>
+     <script src="video/playVideoSegment.js" type="text/javascript"></script>
+  	 <div class="KG"></div>
+  </div>
+ 
+  <div class="mainview">
+  	<div id="3d-graph"></div>
+  </div>
+</body>
+<script type="text/javascript" src="js/3dvis.js"></script>

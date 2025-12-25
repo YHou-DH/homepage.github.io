@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load color palette -->
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+	</script>
+
+    <link rel="stylesheet" type="text/css" href="static/css/guide.css">
+    <!-- intro animation files -->
+</head>
+<body>
+
+    <!-- welcome msg -->
+    <div class="welcome">
+      <h3>Welcome to the testing! Please confirm that you have responded to the background questions before diving in.</h3>
+      <button class="welconfirm"><a href="{{ url_for('index') }}">Yes, I have finished the background questions.</a></button>
+    </div>
+
+</body>
+</html>
