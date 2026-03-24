@@ -1,0 +1,807 @@
+@prefix : <http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602> .
+
+<http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602> rdf:type owl:Ontology ;
+                                                                  rdfs:comment """An ontology for Rattan Weaving as Intangible Cultural Heritage,
+        aligned with CIDOC CRM and enriched with a SKOS thesaurus layer."""@en ;
+                                                                  rdfs:label "Rattan Weaving Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by
+<http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span
+<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location
+<http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item
+<http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at
+<http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#applies_technique
+:applies_technique rdf:type owl:ObjectProperty ;
+                   rdfs:domain :CraftingProcess ;
+                   rdfs:range :CraftingTechnique ;
+                   rdfs:label "applies technique"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#bears_motif
+:bears_motif rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item> ;
+             rdfs:domain :CraftedProduct ;
+             rdfs:range :VisualDesignMotif ;
+             rdfs:label "bears motif"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#executes
+:executes rdf:type owl:ObjectProperty ;
+          rdfs:domain :Craftsman ;
+          rdfs:range :CraftingProcess ;
+          rdfs:comment "A craftsman executes a crafting process. Conceptually the inverse of crm:P14_carried_out_by."@en ;
+          rdfs:label "executes"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#has_heritage_status
+:has_heritage_status rdf:type owl:ObjectProperty ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :CraftedProduct
+                                                 :CraftingTechnique
+                                                 :Craftsman
+                                               )
+                                 ] ;
+                     rdfs:range :HeritageStatus ;
+                     rdfs:comment "Links a craft practice, product, or practitioner to a formal heritage classification."@en ;
+                     rdfs:label "has heritage status"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#has_pattern
+:has_pattern rdf:type owl:ObjectProperty ;
+             rdfs:domain :CraftedProduct ;
+             rdfs:range :WeavingPattern ;
+             rdfs:label "has pattern"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#has_timespan
+:has_timespan rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :CraftedProduct
+                                          :CraftingProcess
+                                        )
+                          ] ;
+              rdfs:range :TemporalContext ;
+              rdfs:label "has time-span"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#located_at
+:located_at rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location> ;
+            rdfs:domain :CraftedProduct ;
+            rdfs:range :GeographicalContext ;
+            rdfs:label "located at"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#practiced_in
+:practiced_in rdf:type owl:ObjectProperty ;
+              rdfs:domain :CraftingTechnique ;
+              rdfs:range :GeographicalContext ;
+              rdfs:comment "Indicates the geographic region(s) where a technique is traditionally practiced."@en ;
+              rdfs:label "practiced in"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#produced_by
+:produced_by rdf:type owl:ObjectProperty ;
+             rdfs:domain :CraftedProduct ;
+             rdfs:range :Craftsman ;
+             rdfs:comment """Shortcut linking a product directly to its maker. Conceptually equivalent
+        to the path: [CraftedProduct] <- crm:P108_has_produced - [CraftingProcess E12]
+        - crm:P14_carried_out_by -> [Craftsman E21]."""@en ;
+             rdfs:label "produced by"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#produced_through
+:produced_through rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by> ;
+                  rdfs:domain :CraftedProduct ;
+                  rdfs:range :CraftingProcess ;
+                  rdfs:comment "Links a crafted product to the production process (E12) that created it, following crm:P108i_was_produced_by."@en ;
+                  rdfs:label "produced through"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#produces_pattern
+:produces_pattern rdf:type owl:ObjectProperty ;
+                  rdfs:domain :CraftingTechnique ;
+                  rdfs:range :WeavingPattern ;
+                  rdfs:label "produces pattern"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#requires_equipment
+:requires_equipment rdf:type owl:ObjectProperty ;
+                    rdfs:domain :CraftingTechnique ;
+                    rdfs:range :Equipment ;
+                    rdfs:label "requires equipment"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#requires_tool
+:requires_tool rdf:type owl:ObjectProperty ;
+               rdfs:domain :CraftingTechnique ;
+               rdfs:range :Tool ;
+               rdfs:label "requires tool"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#took_place_at
+:took_place_at rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> ;
+               rdfs:domain :CraftingProcess ;
+               rdfs:range :GeographicalContext ;
+               rdfs:label "took place at"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#transforms_material
+:transforms_material rdf:type owl:ObjectProperty ;
+                     rdfs:domain :CraftingProcess ;
+                     rdfs:range :Material ;
+                     rdfs:label "transforms material"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#transmitted_by
+:transmitted_by rdf:type owl:ObjectProperty ;
+                rdfs:domain :CraftingTechnique ;
+                rdfs:range :Craftsman ;
+                rdfs:comment "Indicates the practitioner responsible for transmitting knowledge of a technique."@en ;
+                rdfs:label "transmitted by"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#has_artist_name
+:has_artist_name rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Artwork ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The name of the craftsman or artist who created the artwork."@en ;
+                 rdfs:label "artist name"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Artist"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#has_heritage_label
+:has_heritage_label rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :HeritageStatus ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "A human-readable label describing the heritage designation (e.g. 'UNESCO 2021 inscription')."@en ;
+                    rdfs:label "heritage label"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#has_location_label
+:has_location_label rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Artwork ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "A textual description of where the artwork is held or displayed. Use rw:located_at for a structured link to a GeographicalContext instance."@en ;
+                    rdfs:label "location label"@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Location"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#has_name
+:has_name rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Artwork ;
+          rdfs:range xsd:string ;
+          rdfs:label "name"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Artwork Name"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#has_year
+:has_year rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Artwork ;
+          rdfs:range xsd:gYear ;
+          rdfs:label "year"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Year of Creation"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.cidoc-crm.org/cidoc-crm/E12_Production
+<http://www.cidoc-crm.org/cidoc-crm/E12_Production> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E21_Person
+<http://www.cidoc-crm.org/cidoc-crm/E21_Person> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object
+<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item
+<http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span
+<http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E53_Place
+<http://www.cidoc-crm.org/cidoc-crm/E53_Place> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E57_Material
+<http://www.cidoc-crm.org/cidoc-crm/E57_Material> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Armchair
+:Armchair rdf:type owl:Class ;
+          rdfs:subClassOf :Chair ;
+          rdfs:label "Armchair"@en ;
+          <http://www.w3.org/2004/02/skos/core#broader> :Chair ;
+          <http://www.w3.org/2004/02/skos/core#narrower> :HighArmchair ,
+                                                         :LowArmchair ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Armchair"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Artwork
+:Artwork rdf:type owl:Class ;
+         rdfs:subClassOf :CraftedProduct ;
+         rdfs:label "Artwork"@en ;
+         <http://www.w3.org/2004/02/skos/core#broader> :CraftedProduct ;
+         <http://www.w3.org/2004/02/skos/core#definition> "A rattan object produced primarily for artistic or aesthetic purposes."@en ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Artwork"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#BabyChair
+:BabyChair rdf:type owl:Class ;
+           rdfs:subClassOf :Chair ;
+           rdfs:label "Baby Chair"@en ;
+           <http://www.w3.org/2004/02/skos/core#broader> :Chair ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Baby Chair"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Bamboo
+:Bamboo rdf:type owl:Class ;
+        rdfs:subClassOf :Material ;
+        rdfs:label "Bamboo"@en ;
+        <http://www.w3.org/2004/02/skos/core#broader> :Material ;
+        <http://www.w3.org/2004/02/skos/core#definition> "A grass plant whose split canes are used alongside rattan in weaving."@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Bamboo"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Basket
+:Basket rdf:type owl:Class ;
+        rdfs:subClassOf :CraftedProduct ;
+        rdfs:label "Basket"@en ;
+        <http://www.w3.org/2004/02/skos/core#broader> :CraftedProduct ;
+        <http://www.w3.org/2004/02/skos/core#definition> "A woven container used for storage or carrying."@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Basket"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#BindingTechnique
+:BindingTechnique rdf:type owl:Class ;
+                  rdfs:subClassOf :StructuralTechnique ;
+                  rdfs:label "Binding Technique"@en ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :StructuralTechnique ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Binding Technique"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Chair
+:Chair rdf:type owl:Class ;
+       rdfs:subClassOf :Furniture ;
+       rdfs:label "Chair"@en ;
+       <http://www.w3.org/2004/02/skos/core#broader> :Furniture ;
+       <http://www.w3.org/2004/02/skos/core#narrower> :Armchair ,
+                                                      :BabyChair ,
+                                                      :DiningChair ,
+                                                      :PeacockChair ,
+                                                      :RockingChair ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Chair"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#CloseWeave
+:CloseWeave rdf:type owl:Class ;
+            rdfs:subClassOf :WeavingTechnique ;
+            rdfs:label "Close Weave"@en ;
+            <http://www.w3.org/2004/02/skos/core#altLabel> "Dense Weave"@en ;
+            <http://www.w3.org/2004/02/skos/core#broader> :WeavingTechnique ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A weaving technique producing a tight, solid surface with no gaps."@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Close Weave"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#ColorDyePattern
+:ColorDyePattern rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
+                 rdfs:label "Color Dye Pattern"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Color Dye Pattern"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Context
+:Context rdf:type owl:Class ;
+         rdfs:label "Context"@en ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Context"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#ContinuousBinding
+:ContinuousBinding rdf:type owl:Class ;
+                   rdfs:subClassOf :BindingTechnique ;
+                   rdfs:label "Continuous Binding"@en ;
+                   <http://www.w3.org/2004/02/skos/core#broader> :BindingTechnique ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Continuous Binding"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#CraftedProduct
+:CraftedProduct rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+                rdfs:label "Crafted Product"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Rattan Crafted Product"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#CraftingProcess
+:CraftingProcess rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E12_Production> ;
+                 rdfs:label "Crafting Process"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Crafting Process"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#CraftingTechnique
+:CraftingTechnique rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+                   rdfs:label "Crafting Technique"@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Crafting Technique"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Craftsman
+:Craftsman rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+           rdfs:label "Craftsman"@en ;
+           <http://www.w3.org/2004/02/skos/core#altLabel> "Artisan"@en ,
+                                                          "Craft Worker"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A person skilled in the practice of rattan weaving."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Craftsman"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#CrossBinding
+:CrossBinding rdf:type owl:Class ;
+              rdfs:subClassOf :BindingTechnique ;
+              rdfs:label "Cross Binding"@en ;
+              <http://www.w3.org/2004/02/skos/core#broader> :BindingTechnique ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Cross Binding"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#DiagonalBinding
+:DiagonalBinding rdf:type owl:Class ;
+                 rdfs:subClassOf :BindingTechnique ;
+                 rdfs:label "Diagonal Binding"@en ;
+                 <http://www.w3.org/2004/02/skos/core#broader> :BindingTechnique ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Diagonal Binding"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#DiningChair
+:DiningChair rdf:type owl:Class ;
+             rdfs:subClassOf :Chair ;
+             rdfs:label "Dining Chair"@en ;
+             <http://www.w3.org/2004/02/skos/core#broader> :Chair ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Dining Chair"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#DirectionalPattern
+:DirectionalPattern rdf:type owl:Class ;
+                    rdfs:subClassOf :WeavingPattern ;
+                    rdfs:label "Directional Pattern"@en ;
+                    <http://www.w3.org/2004/02/skos/core#broader> :WeavingPattern ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Directional Pattern"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Equipment
+:Equipment rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+           rdfs:label "Equipment"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Rattan Weaving Equipment"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#FinishingProcess
+:FinishingProcess rdf:type owl:Class ;
+                  rdfs:subClassOf :CraftingProcess ;
+                  rdfs:label "Finishing Process"@en ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :CraftingProcess ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "The final stage of production, including sanding, varnishing, or lacquering."@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Finishing"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#FishermanHatWeave
+:FishermanHatWeave rdf:type owl:Class ;
+                   rdfs:subClassOf :OpenWeave ;
+                   rdfs:label "Fisherman Hat Weave"@en ;
+                   <http://www.w3.org/2004/02/skos/core#broader> :OpenWeave ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Fisherman Hat Weave"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Furniture
+:Furniture rdf:type owl:Class ;
+           rdfs:subClassOf :CraftedProduct ;
+           rdfs:label "Furniture"@en ;
+           <http://www.w3.org/2004/02/skos/core#broader> :CraftedProduct ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Furniture"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#GeographicalContext
+:GeographicalContext rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ,
+                                     :Context ;
+                     rdfs:label "Geographical Context"@en ;
+                     <http://www.w3.org/2004/02/skos/core#altLabel> "Geographic Origin"@en ,
+                                                                    "Location"@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Place"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#GeometricGrid
+:GeometricGrid rdf:type owl:Class ;
+               rdfs:subClassOf :WeavingPattern ;
+               rdfs:label "Geometric Grid"@en ;
+               <http://www.w3.org/2004/02/skos/core#broader> :WeavingPattern ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Geometric Grid Pattern"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#HeatTreatment
+:HeatTreatment rdf:type owl:Class ;
+               rdfs:subClassOf :MaterialTreatmentTechnique ;
+               rdfs:label "Heat Treatment"@en ;
+               <http://www.w3.org/2004/02/skos/core#broader> :MaterialTreatmentTechnique ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Applying heat to rattan to make it pliable for bending and shaping."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Heat Treatment"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#HeritageStatus
+:HeritageStatus rdf:type owl:Class ;
+                rdfs:subClassOf :Context ;
+                rdfs:label "Heritage Status"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The formal recognition or classification of a craft practice as cultural heritage."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Heritage Status"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#HerringboneWeave
+:HerringboneWeave rdf:type owl:Class ;
+                  rdfs:subClassOf :StructuralTechnique ;
+                  rdfs:label "Herringbone Weave"@en ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Chevron Weave"@en ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :StructuralTechnique ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "A V-shaped woven pattern resembling the skeleton of a herring fish."@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Herringbone Weave"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#HexagonalWeave
+:HexagonalWeave rdf:type owl:Class ;
+                rdfs:subClassOf :StructuralTechnique ;
+                rdfs:label "Hexagonal Weave"@en ;
+                <http://www.w3.org/2004/02/skos/core#broader> :StructuralTechnique ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A structural technique producing a six-sided open mesh pattern."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Hexagonal Weave"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#HighArmchair
+:HighArmchair rdf:type owl:Class ;
+              rdfs:subClassOf :Armchair ;
+              rdfs:label "High Armchair"@en ;
+              <http://www.w3.org/2004/02/skos/core#broader> :Armchair ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "High Armchair"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#HomeDecor
+:HomeDecor rdf:type owl:Class ;
+           rdfs:subClassOf :CraftedProduct ;
+           rdfs:label "Home Decor"@en ;
+           <http://www.w3.org/2004/02/skos/core#broader> :CraftedProduct ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Home Decor"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#LowArmchair
+:LowArmchair rdf:type owl:Class ;
+             rdfs:subClassOf :Armchair ;
+             rdfs:label "Low Armchair"@en ;
+             <http://www.w3.org/2004/02/skos/core#broader> :Armchair ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Low Armchair"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E57_Material> ;
+          rdfs:label "Material"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Material"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#MaterialTreatmentProcess
+:MaterialTreatmentProcess rdf:type owl:Class ;
+                          rdfs:subClassOf :CraftingProcess ;
+                          rdfs:label "Material Treatment Process"@en ;
+                          <http://www.w3.org/2004/02/skos/core#broader> :CraftingProcess ;
+                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Material Treatment"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#MaterialTreatmentTechnique
+:MaterialTreatmentTechnique rdf:type owl:Class ;
+                            rdfs:subClassOf :CraftingTechnique ;
+                            rdfs:label "Material Treatment Technique"@en ;
+                            <http://www.w3.org/2004/02/skos/core#broader> :CraftingTechnique ;
+                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Material Treatment Technique"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#OpenBoxWeave
+:OpenBoxWeave rdf:type owl:Class ;
+              rdfs:subClassOf :OpenWeave ;
+              rdfs:label "Open Box Weave"@en ;
+              <http://www.w3.org/2004/02/skos/core#broader> :OpenWeave ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Box Weave"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#OpenWeave
+:OpenWeave rdf:type owl:Class ;
+           rdfs:subClassOf :WeavingTechnique ;
+           rdfs:label "Open Weave"@en ;
+           <http://www.w3.org/2004/02/skos/core#broader> :WeavingTechnique ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A weaving technique producing an open, lattice-like surface."@en ;
+           <http://www.w3.org/2004/02/skos/core#narrower> :FishermanHatWeave ,
+                                                          :OpenBoxWeave ,
+                                                          :RadioWeave ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Open Weave"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#PeacockChair
+:PeacockChair rdf:type owl:Class ;
+              rdfs:subClassOf :Chair ;
+              rdfs:label "Peacock Chair"@en ;
+              <http://www.w3.org/2004/02/skos/core#broader> :Chair ;
+              <http://www.w3.org/2004/02/skos/core#definition> "An iconic rattan chair with a large fan-shaped back."@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Peacock Chair"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#PlainWeave
+:PlainWeave rdf:type owl:Class ;
+            rdfs:subClassOf :WeavingTechnique ;
+            rdfs:label "Plain Weave"@en ;
+            <http://www.w3.org/2004/02/skos/core#broader> :WeavingTechnique ;
+            <http://www.w3.org/2004/02/skos/core#definition> "The simplest interlacing pattern, with weft passing alternately over and under warp."@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Plain Weave"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#PolygonalMesh
+:PolygonalMesh rdf:type owl:Class ;
+               rdfs:subClassOf :WeavingPattern ;
+               rdfs:label "Polygonal Mesh"@en ;
+               <http://www.w3.org/2004/02/skos/core#broader> :WeavingPattern ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Polygonal Mesh Pattern"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#RadioWeave
+:RadioWeave rdf:type owl:Class ;
+            rdfs:subClassOf :OpenWeave ;
+            rdfs:label "Radio Weave"@en ;
+            <http://www.w3.org/2004/02/skos/core#broader> :OpenWeave ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A weaving pattern in which strands radiate outward from a central point."@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Radio Weave"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Rattan
+:Rattan rdf:type owl:Class ;
+        rdfs:subClassOf :Material ;
+        rdfs:label "Rattan"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Rotan"@en ;
+        <http://www.w3.org/2004/02/skos/core#broader> :Material ;
+        <http://www.w3.org/2004/02/skos/core#definition> "A climbing palm whose stems are used as the primary raw material in rattan weaving."@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Rattan"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Reel
+:Reel rdf:type owl:Class ;
+      rdfs:subClassOf :Rattan ;
+      rdfs:label "Reel"@en ;
+      <http://www.w3.org/2004/02/skos/core#broader> :Rattan ;
+      <http://www.w3.org/2004/02/skos/core#definition> "A processed, coiled length of rattan cane ready for weaving."@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Rattan Reel"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#RockingChair
+:RockingChair rdf:type owl:Class ;
+              rdfs:subClassOf :Chair ;
+              rdfs:label "Rocking Chair"@en ;
+              <http://www.w3.org/2004/02/skos/core#broader> :Chair ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Rocking Chair"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Shelf
+:Shelf rdf:type owl:Class ;
+       rdfs:subClassOf :Furniture ;
+       rdfs:label "Shelf"@en ;
+       <http://www.w3.org/2004/02/skos/core#broader> :Furniture ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Shelf"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#SoakedTreatment
+:SoakedTreatment rdf:type owl:Class ;
+                 rdfs:subClassOf :MaterialTreatmentTechnique ;
+                 rdfs:label "Soaked Treatment"@en ;
+                 <http://www.w3.org/2004/02/skos/core#altLabel> "Water Soaking"@en ;
+                 <http://www.w3.org/2004/02/skos/core#broader> :MaterialTreatmentTechnique ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Immersing rattan in water to increase flexibility prior to weaving."@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Soaking"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#SoakingTrough
+:SoakingTrough rdf:type owl:Class ;
+               rdfs:subClassOf :Equipment ;
+               rdfs:label "Soaking Trough"@en ;
+               <http://www.w3.org/2004/02/skos/core#broader> :Equipment ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A container filled with water used to soak rattan for softening."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Soaking Trough"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Sofa
+:Sofa rdf:type owl:Class ;
+      rdfs:subClassOf :Furniture ;
+      rdfs:label "Sofa"@en ;
+      <http://www.w3.org/2004/02/skos/core#broader> :Furniture ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Sofa"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#SplitTreatment
+:SplitTreatment rdf:type owl:Class ;
+                rdfs:subClassOf :MaterialTreatmentTechnique ;
+                rdfs:label "Split Treatment"@en ;
+                <http://www.w3.org/2004/02/skos/core#broader> :MaterialTreatmentTechnique ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Splitting rattan canes lengthwise into strips for use in flat weaving."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Splitting"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#SteamingChamber
+:SteamingChamber rdf:type owl:Class ;
+                 rdfs:subClassOf :Equipment ;
+                 rdfs:label "Steaming Chamber"@en ;
+                 <http://www.w3.org/2004/02/skos/core#broader> :Equipment ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Steaming Chamber"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Stool
+:Stool rdf:type owl:Class ;
+       rdfs:subClassOf :Furniture ;
+       rdfs:label "Stool"@en ;
+       <http://www.w3.org/2004/02/skos/core#broader> :Furniture ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Stool"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#StructuralAssemblyProcess
+:StructuralAssemblyProcess rdf:type owl:Class ;
+                           rdfs:subClassOf :CraftingProcess ;
+                           rdfs:label "Structural Assembly Process"@en ;
+                           <http://www.w3.org/2004/02/skos/core#broader> :CraftingProcess ;
+                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Structural Assembly"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#StructuralTechnique
+:StructuralTechnique rdf:type owl:Class ;
+                     rdfs:subClassOf :CraftingTechnique ;
+                     rdfs:label "Structural Technique"@en ;
+                     <http://www.w3.org/2004/02/skos/core#broader> :CraftingTechnique ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Structural Technique"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#SurfaceTexture
+:SurfaceTexture rdf:type owl:Class ;
+                rdfs:subClassOf :WeavingPattern ;
+                rdfs:label "Surface Texture"@en ;
+                <http://www.w3.org/2004/02/skos/core#broader> :WeavingPattern ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Surface Texture Pattern"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#TBinding
+:TBinding rdf:type owl:Class ;
+          rdfs:subClassOf :BindingTechnique ;
+          rdfs:label "T-Binding"@en ;
+          <http://www.w3.org/2004/02/skos/core#broader> :BindingTechnique ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "T-Binding"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#TemporalContext
+:TemporalContext rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ,
+                                 :Context ;
+                 rdfs:label "Temporal Context"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Time Period"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#Tool
+:Tool rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+      rdfs:label "Tool"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Rattan Weaving Tool"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#VisualDesignMotif
+:VisualDesignMotif rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
+                   rdfs:label "Visual Design Motif"@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Motif"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#WeavingFrame
+:WeavingFrame rdf:type owl:Class ;
+              rdfs:subClassOf :Equipment ;
+              rdfs:label "Weaving Frame"@en ;
+              <http://www.w3.org/2004/02/skos/core#broader> :Equipment ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Weaving Frame"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#WeavingPattern
+:WeavingPattern rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+                rdfs:label "Weaving Pattern"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A repeating structural or visual arrangement produced by a weaving technique."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Weaving Pattern"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#WeavingProcess
+:WeavingProcess rdf:type owl:Class ;
+                rdfs:subClassOf :CraftingProcess ;
+                rdfs:label "Weaving Process"@en ;
+                <http://www.w3.org/2004/02/skos/core#broader> :CraftingProcess ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Weaving Process"@en .
+
+
+###  http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#WeavingTechnique
+:WeavingTechnique rdf:type owl:Class ;
+                  rdfs:subClassOf :CraftingTechnique ;
+                  rdfs:label "Weaving Technique"@en ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :CraftingTechnique ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Weaving Technique"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
