@@ -175,7 +175,6 @@ mao:grading_system rdf:type rdfs:Datatype ;
 mao:name_originalLang rdf:type rdfs:Datatype ;
                       rdfs:label "name_originalLang" .
 
-
 ###  http://EncodingActs.github.io/annotated/MAon/positioning
 mao:positioning rdf:type rdfs:Datatype ;
                 rdfs:label "positioning" .
@@ -329,7 +328,7 @@ mao:has_work rdf:type owl:ObjectProperty ;
 ###  http://EncodingActs.github.io/annotated/MAon/has_film_appearance
 mao:has_film_appearance rdf:type owl:ObjectProperty ;
                         rdfs:domain mao:class:MA_Master ;
-                        rdfs:range mao:film ;
+                        rdfs:range xsd:string ;
                         rdfs:label "has_film_appearance"@en ;
                         mao:ontoMA_name_zh "在影视作品出現"@zh-hk .
 
@@ -337,7 +336,7 @@ mao:has_film_appearance rdf:type owl:ObjectProperty ;
 ###  http://EncodingActs.github.io/annotated/MAon/has_photo
 mao:has_photo rdf:type owl:ObjectProperty ;
               rdfs:domain mao:class:MA_Master ;
-              rdfs:range mao:photo ;
+              rdfs:range xsd:string ;
               rdfs:label "has_photo"@en ;
               mao:ontoMA_name_zh "有照片"@zh-hk .
 
@@ -674,11 +673,11 @@ mao:has_death_year rdf:type owl:DatatypeProperty ;
                    mao:ontoMA_name_zh "卒年"@zh-hk .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_occupation
-mao:has_occupation rdf:type owl:DatatypeProperty ;
+###  http://EncodingActs.github.io/annotated/MAon/has_profession
+mao:has_profession rdf:type owl:DatatypeProperty ;
                    rdfs:domain mao:class:MA_Master ;
                    rdfs:range xsd:string ;
-                   rdfs:label "has_occupation"@en ;
+                   rdfs:label "has_profession"@en ;
                    mao:ontoMA_name_zh "职业"@zh-hk .
 
 
@@ -784,20 +783,6 @@ mao:class:E77-persistent_item rdf:type owl:Class ;
                               rdfs:label "E77.Persistent Item"@en ;
                               rdfs:seeAlso <https://www.cidoc-crm.org/Entity/e77-persistent-item/version-7.1> .
 
-
-###  http://EncodingActs.github.io/annotated/MAon/Film
-mao:class:film rdf:type owl:Class ;
-                        rdfs:label "Film"@en ;
-                        mao:ontoMA_name_zh "影视作品"@zh-hk .
-
-
-###  http://EncodingActs.github.io/annotated/MAon/Photo
-mao:class:photo rdf:type owl:Class ;
-              rdfs:label "Photo"@en ;
-              mao:ontoMA_name_zh "照片"@zh-hk .
-
-
-
 ###  http://EncodingActs.github.io/annotated/MAon/class:MA_Clan
 mao:class:MA_Clan rdf:type owl:Class ;
                        rdfs:subClassOf owl:Thing ;
@@ -824,15 +809,15 @@ mao:class:MA_Master rdf:type owl:Class ;
                                    ### 字、号
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty mao:has_courtesy_name ;
-                                     owl:someValuesFrom mao:Name
+                                     owl:someValuesFrom xsd:string
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty mao:has_pseudonym ;
-                                     owl:someValuesFrom mao:Name
+                                     owl:someValuesFrom xsd:string
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty mao:has_birthplace ;
-                                     owl:someValuesFrom mao:E53-place
+                                     owl:someValuesFrom mao:class:E53-place
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                       owl:onProperty mao:resides_in ;
@@ -840,12 +825,13 @@ mao:class:MA_Master rdf:type owl:Class ;
                                     ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty mao:has_ethnicity ;
-                                     owl:someValuesFrom mao:Ethnicity
+                                     owl:someValuesFrom xsd:string
                                    ] ,
 
                                    ### 性别
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty mao:has_gender 
+                                     owl:onProperty mao:has_gender ;
+                                     owl:someValuesFrom xsd:string
                                    ] ,
 
                                    ### 生卒年
@@ -892,10 +878,10 @@ mao:class:MA_Master rdf:type owl:Class ;
                                       owl:someValuesFrom mao:class:MA_institute
                                     ],
 
-                                   ### 职业（多个）
+                                   ### 职业
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty mao:has_occupation ;
-                                     owl:someValuesFrom mao:Occupation
+                                     owl:onProperty mao:has_profession ;
+                                     owl:someValuesFrom xsd:string
                                    ] ,
 
                                    ### 武艺特长
@@ -958,7 +944,8 @@ mao:class:MA_Master rdf:type owl:Class ;
 
                                     ### 生平经历
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty mao:has_life_experience 
+                                     owl:onProperty mao:has_life_experience ;
+                                     owl:someValuesFrom xsd:string
                                    ] ,
 
                                    ### 著作
@@ -970,13 +957,13 @@ mao:class:MA_Master rdf:type owl:Class ;
                                    ### 影视作品
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty mao:has_film_appearance ;
-                                     owl:someValuesFrom mao:film
+                                     owl:someValuesFrom xsd:string
                                    ] ,
 
                                    ### 照片
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty mao:has_photo ;
-                                     owl:someValuesFrom mao:Photo
+                                     owl:someValuesFrom xsd:string
                                    ] ;
                     :name_en "Martial Arts Masters"@en ;
                     mao:ontoMA_name_zh "師傅"@zh-hk ;
