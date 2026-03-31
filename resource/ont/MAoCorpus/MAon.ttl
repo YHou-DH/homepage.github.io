@@ -1306,7 +1306,7 @@ mao:class:bridge_tech rdf:type owl:Class ;
                       mao:ontoMA_name_zh "橋"@zh-hk ;
                       mao:ontoMA_otherName_en "Bridge hand" ;
                       rdfs:comment "The class Bridge represent the concept of “bridge” or referred to as “bridge hand(s)” in traditional Chinese martial arts. The concept is particularly articulated in the Hung Kuen system. The term bridge means the connection between yourself and your opponent. The skill of bridge relates to the ability to manipulate one's own body structure, to control the ranges, amongst others."@en ;
-                      rdfs:label "Bridge" .
+                      rdfs:label "Bridge_tech" .
 
 
 ###  http://EncodingActs.github.io/annotated/MAon/class:claw_tech
