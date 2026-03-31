@@ -247,14 +247,13 @@ mao:T_backfist_n_punch rdf:type owl:NamedIndividual ,
                        rdfs:label "T_backfist_n_punch" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/Uprightness
-mao:Uprightness rdf:type owl:NamedIndividual ,
+###  http://EncodingActs.github.io/annotated/MAon/uprightness
+mao:uprightness rdf:type owl:NamedIndividual ,
                          mao:class:honor_code ;
                 :name_en "Uprightness"@en ;
                 mao:is mao:honest_integrity ;
                 mao:ontoMA_name_zh "頂天立地"@zh ;
-                mao:ontoMA_otherName_zh "定乾坤"@zh ;
-                rdfs:label "Uprightness"@en .
+                rdfs:label "uprightness"@en .
 
 
 ###  http://EncodingActs.github.io/annotated/MAon/White_Crane_Kungfu
@@ -927,7 +926,7 @@ mao:cross_punch rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/crossing_bridge
 mao:crossing_bridge rdf:type owl:NamedIndividual ,
-                             mao:class:body_bridge ;
+                             mao:class:bridge_tech ;
                     :name_en "Crossing bridge"@en ;
                     :name_romanCAN "Cyun Kiu Sau"@en ;
                     :name_romanMAN "Chuan Qiao"@en ;
@@ -1079,7 +1078,7 @@ mao:db_hanging_hammer rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/db_inch_bridges
 mao:db_inch_bridges rdf:type owl:NamedIndividual ,
-                             mao:class:body_bridge ;
+                             mao:class:bridge_tech ;
                     :name_en "Double inch bridges"@en ;
                     :name_romanCAN "Soeng Cyun Kiu"@en ;
                     :name_romanMAN "Shuang Cun Qiao"@en ;
@@ -1257,7 +1256,7 @@ mao:divide_punch rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/dividing_bridge
 mao:dividing_bridge rdf:type owl:NamedIndividual ,
-                             mao:class:body_bridge ;
+                             mao:class:bridge_tech ;
                     :name_en "Dividing bridge"@en ;
                     :name_romanCAN "Fan Kiu"@en ;
                     :name_romanMAN "Fen Qiao"@en ;
@@ -1355,7 +1354,7 @@ mao:elbow_slap_fist rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/extending_hand
 mao:extending_hand rdf:type owl:NamedIndividual ,
-                            mao:class:body_bridge ;
+                            mao:class:bridge_tech ;
                    :name_en "Extending hand"@en ;
                    :name_romanCAN "Zin Sau"@en ;
                    :name_romanMAN "Zhan Shou"@en ;
@@ -1434,7 +1433,7 @@ mao:flat_palm rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/forcing_bridge
 mao:forcing_bridge rdf:type owl:NamedIndividual ,
-                            mao:class:body_bridge ;
+                            mao:class:bridge_tech ;
                    :name_en "Forcing bridge"@en ;
                    :name_romanCAN "Pik Kiu"@en ;
                    :name_romanMAN "Po Qiao"@en ;
@@ -1614,10 +1613,19 @@ mao:hanging_n_chop rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/hard_bridge
 mao:hard_bridge rdf:type owl:NamedIndividual ,
-                         mao:class:fighting_strategy ;
+                         mao:class:bridge_principle ;
                 :name_en "Hardness"@en ;
                 mao:ontoMA_name_zh "剛"@zh ;
                 rdfs:label "hard_bridge" .
+
+
+###  http://EncodingActs.github.io/annotated/MAon/heaven_n_earth_bridge
+mao:heaven_n_earth_bridge rdf:type owl:NamedIndividual ,
+                         mao:class:bridge_principle ;
+                :name_en "Heaven and Earth Bridge"@en ;
+                mao:ontoMA_name_zh "訂乾坤"@zh ;
+                mao:ontoMA_otherName_zh "定乾坤"@zh ;
+                rdfs:label "heaven_n_earth_bridge" .
 
 
 ###  http://EncodingActs.github.io/annotated/MAon/hold_stamp_palms
@@ -1764,7 +1772,7 @@ mao:inch_body rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/inch_bridge
 mao:inch_bridge rdf:type owl:NamedIndividual ,
-                         mao:class:fighting_strategy ;
+                         mao:class:bridge_principle ;
                 :name_en "Inch"@en ;
                 mao:ontoMA_name_zh "寸"@zh ;
                 mao:ontoMA_otherName_en "One-inch power"@en ;
@@ -1914,7 +1922,7 @@ mao:lifting_body rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/lifting_bridge
 mao:lifting_bridge rdf:type owl:NamedIndividual ,
-                            mao:class:fighting_strategy ;
+                            mao:class:bridge_principle ;
                    :name_en "Lifting"@en ;
                    mao:ontoMA_name_zh "提"@zh ;
                    rdfs:label "lift_bridge"@en .
@@ -2032,7 +2040,7 @@ mao:mirror_palm rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/move_bridge
 mao:move_bridge rdf:type owl:NamedIndividual ,
-                         mao:class:fighting_strategy ;
+                         mao:class:bridge_principle ;
                 :name_en "Moving"@en ;
                 mao:ontoMA_name_zh "運"@zh ;
                 mao:ontoMA_otherName_en "Redirecting"@en ;
@@ -2141,7 +2149,7 @@ mao:power_generation rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/pressure_bridge
 mao:pressure_bridge rdf:type owl:NamedIndividual ,
-                             mao:class:fighting_strategy ;
+                             mao:class:bridge_principle ;
                     :name_en "Pressure"@en ;
                     mao:ontoMA_name_zh "逼"@zh ;
                     mao:ontoMA_otherName_en "Pushing"@en ;
@@ -2332,7 +2340,7 @@ mao:seizing_palm rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/separating_bridge
 mao:separating_bridge rdf:type owl:NamedIndividual ,
-                               mao:class:fighting_strategy ;
+                               mao:class:bridge_principle ;
                       :name_en "Separating"@en ;
                       mao:ontoMA_name_zh "分"@zh ;
                       rdfs:label "separate_bridge"@en .
@@ -2516,7 +2524,7 @@ mao:slap_n_whip_fist rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/soft_bridge
 mao:soft_bridge rdf:type owl:NamedIndividual ,
-                         mao:class:fighting_strategy ;
+                         mao:class:bridge_principle ;
                 :name_en "Softness"@en ;
                 mao:ontoMA_name_zh "柔"@zh ;
                 rdfs:label "soft_bridge" .
@@ -2569,7 +2577,7 @@ mao:splitting_palm rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/stabilizing_bridge
 mao:stabilizing_bridge rdf:type owl:NamedIndividual ,
-                                mao:class:body_bridge ;
+                                mao:class:bridge_tech ;
                        :name_en "Stabilizing bridge"@en ;
                        :name_romanCAN "Ding Gam Kiu"@en ;
                        :name_romanMAN "Ding Jin Qiao"@en ;
@@ -2612,7 +2620,7 @@ mao:stance_turning rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/stay_bridge
 mao:stay_bridge rdf:type owl:NamedIndividual ,
-                         mao:class:fighting_strategy ;
+                         mao:class:bridge_principle ;
                 :name_en "Staying"@en ;
                 mao:ontoMA_name_zh "留"@zh ;
                 rdfs:label "stay_bridge" .
@@ -2620,7 +2628,7 @@ mao:stay_bridge rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/steady_bridge
 mao:steady_bridge rdf:type owl:NamedIndividual ,
-                           mao:class:fighting_strategy ;
+                           mao:class:bridge_principle ;
                   :name_en "Steadiness"@en ;
                   mao:ontoMA_name_zh "定"@zh ;
                   mao:ontoMA_otherName_en "Still"@en ;
@@ -2699,7 +2707,7 @@ mao:stiffness rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/straight_bridge
 mao:straight_bridge rdf:type owl:NamedIndividual ,
-                             mao:class:fighting_strategy ;
+                             mao:class:bridge_principle ;
                     :name_en "Straightness"@en ;
                     mao:ontoMA_name_zh "直"@zh ;
                     rdfs:label "straight_bridge" .
@@ -2749,7 +2757,7 @@ mao:straight_punch rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/subdue_bridge
 mao:subdue_bridge rdf:type owl:NamedIndividual ,
-                           mao:class:fighting_strategy ;
+                           mao:class:bridge_principle ;
                   :name_en "Subduing"@en ;
                   mao:ontoMA_name_zh "制"@zh ;
                   rdfs:label "subdue_bridge" .
@@ -4297,7 +4305,7 @@ mao:target_hand rdf:type owl:NamedIndividual ,
 
 ###  http://EncodingActs.github.io/annotated/MAon/three_extending_hand
 mao:three_extending_hand rdf:type owl:NamedIndividual ,
-                                  mao:class:body_bridge ;
+                                  mao:class:bridge_tech ;
                          :name_en "Thrice extending hands"@en ;
                          :name_romanCAN "Saam Zin Sau"@en ;
                          :name_romanMAN "San Zhan Shou"@en ;
@@ -4713,7 +4721,7 @@ mao:wiping_palm rdf:type owl:NamedIndividual ,
                                                                    mao:class:MA_principle ;
                                                           :name_en "Twelve Bridges of Hung Gar"@en ;
                                                           mao:belongs_to mao:Hung_Kuen ;
-                                                          mao:has_component mao:Uprightness ,
+                                                          mao:has_component mao:heaven_n_earth_bridge ,
                                                                             mao:hard_bridge ,
                                                                             mao:inch_bridge ,
                                                                             mao:lifting_bridge ,
