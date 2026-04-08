@@ -1,14 +1,14 @@
-@prefix : <http://EncodingActs.github.io/annotated/MAon#> .
+@prefix : <https://purl.org/maont/ontologyMAon#> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix mao: <http://EncodingActs.github.io/annotated/MAon/> .
+@prefix mao: <https://purl.org/maont/ontologyMAon/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://EncodingActs.github.io/annotated/MAon#> .
+@base <https://purl.org/maont/ontologyMAon#> .
 
-<http://EncodingActs.github.io/annotated/MAon> rdf:type owl:Ontology ;
+<https://purl.org/maont/ontologyMAon> rdf:type owl:Ontology ;
                                                 rdfs:comment "Integrated MAon ontology incorporating the HKMALA extension. Class URIs use a flat mao: namespace (no class: sub-prefix). Properties employsBodyPart and employsHands replace earlier hasBodyPart/hasHandUsage. April 2026 revision."@en ;
                                                 rdfs:label "MAon — Martial Arts Ontology (integrated with HKMALA extension, v2)"@en .
 
@@ -16,21 +16,21 @@
 #    Annotation properties
 #################################################################
 
-###  http://EncodingActs.github.io/annotated/MAon#name_en
+###  https://purl.org/maont/ontologyMAon#name_en
 :name_en rdf:type owl:AnnotationProperty ;
          rdfs:label "name_en"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon#name_romanCAN
+###  https://purl.org/maont/ontologyMAon#name_romanCAN
 :name_romanCAN rdf:type owl:AnnotationProperty ;
                rdfs:label "romanCAN"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon#name_romanMAN
+###  https://purl.org/maont/ontologyMAon#name_romanMAN
 :name_romanMAN rdf:type owl:AnnotationProperty .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_classificationRule
+###  https://purl.org/maont/ontologyMAon/has_classificationRule
 mao:has_classificationRule rdf:type owl:AnnotationProperty ;
                            rdfs:comment "Records the rationale or rule used to assign the TypeClass to an individual."@en ;
                            rdfs:label "has_classificationRule"@en ,
@@ -38,7 +38,7 @@ mao:has_classificationRule rdf:type owl:AnnotationProperty ;
                            rdfs:range xsd:string .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_description
+###  https://purl.org/maont/ontologyMAon/has_description
 mao:has_description rdf:type owl:AnnotationProperty ;
                     rdfs:comment "A human-readable description of the individual, intended as a more field-level annotation than rdfs:comment. Mirrors the 'description' column in the HKMALA schema."@en ;
                     rdfs:label "has_description"@en ,
@@ -47,7 +47,7 @@ mao:has_description rdf:type owl:AnnotationProperty ;
                     rdfs:range xsd:string .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_note
+###  https://purl.org/maont/ontologyMAon/has_note
 mao:has_note rdf:type owl:AnnotationProperty ;
              rdfs:comment "A free-text annotation note about an individual or class, e.g. editorial remarks, caveats, or comparison notes."@en ;
              rdfs:label "has_note"@en ,
@@ -55,7 +55,7 @@ mao:has_note rdf:type owl:AnnotationProperty ;
              rdfs:range xsd:string .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_resource
+###  https://purl.org/maont/ontologyMAon/has_resource
 mao:has_resource rdf:type owl:AnnotationProperty ;
                  rdfs:comment "A URL or file-path pointing to a media resource (video, image, book chapter) that demonstrates or documents the individual."@en ;
                  rdfs:label "has_resource"@en ,
@@ -63,17 +63,17 @@ mao:has_resource rdf:type owl:AnnotationProperty ;
                  rdfs:range xsd:string .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/ontoMA_name_zh
+###  https://purl.org/maont/ontologyMAon/ontoMA_name_zh
 mao:ontoMA_name_zh rdf:type owl:AnnotationProperty ;
                    rdfs:label "name_zh"@zh .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/ontoMA_otherName_en
+###  https://purl.org/maont/ontologyMAon/ontoMA_otherName_en
 mao:ontoMA_otherName_en rdf:type owl:AnnotationProperty ;
                         rdfs:label "otherName_en"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/ontoMA_otherName_zh
+###  https://purl.org/maont/ontologyMAon/ontoMA_otherName_zh
 mao:ontoMA_otherName_zh rdf:type owl:AnnotationProperty ;
                         rdfs:label "otherName_zh"@zh .
 
@@ -103,138 +103,138 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 #    Datatypes
 #################################################################
 
-###  http://EncodingActs.github.io/annotated/MAon/ArtName
+###  https://purl.org/maont/ontologyMAon/ArtName
 mao:ArtName rdf:type rdfs:Datatype ;
             rdfs:label "ArtName" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/CN_S_Name
+###  https://purl.org/maont/ontologyMAon/CN_S_Name
 mao:CN_S_Name rdf:type rdfs:Datatype ;
               rdfs:label "CN_S_Name" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/CN_T_name
+###  https://purl.org/maont/ontologyMAon/CN_T_name
 mao:CN_T_name rdf:type rdfs:Datatype ;
               rdfs:label "CN_T_name" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/EN_Name
+###  https://purl.org/maont/ontologyMAon/EN_Name
 mao:EN_Name rdf:type rdfs:Datatype ;
             rdfs:label "EN_Name" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/Image
+###  https://purl.org/maont/ontologyMAon/Image
 mao:Image rdf:type rdfs:Datatype ;
           rdfs:label "Image" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/ManualBook
+###  https://purl.org/maont/ontologyMAon/ManualBook
 mao:ManualBook rdf:type rdfs:Datatype ;
                rdfs:label "ManualBook" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MoCap
+###  https://purl.org/maont/ontologyMAon/MoCap
 mao:MoCap rdf:type rdfs:Datatype ;
           rdfs:label "MoCap" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/Texts
+###  https://purl.org/maont/ontologyMAon/Texts
 mao:Texts rdf:type rdfs:Datatype ;
           rdfs:label "Texts" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/Video
+###  https://purl.org/maont/ontologyMAon/Video
 mao:Video rdf:type rdfs:Datatype ;
           rdfs:label "Video" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/attack_control
+###  https://purl.org/maont/ontologyMAon/attack_control
 mao:attack_control rdf:type rdfs:Datatype .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/attack_n_defend
+###  https://purl.org/maont/ontologyMAon/attack_n_defend
 mao:attack_n_defend rdf:type rdfs:Datatype ;
                     rdfs:label "attack_n_defend" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/bladed_weapon
+###  https://purl.org/maont/ontologyMAon/bladed_weapon
 mao:bladed_weapon rdf:type rdfs:Datatype .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/body_manipulation
+###  https://purl.org/maont/ontologyMAon/body_manipulation
 mao:body_manipulation rdf:type rdfs:Datatype ;
                       rdfs:label "body_manipulation" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/body_movement
+###  https://purl.org/maont/ontologyMAon/body_movement
 mao:body_movement rdf:type rdfs:Datatype ;
                   rdfs:label "body_movement" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/body_positioning
+###  https://purl.org/maont/ontologyMAon/body_positioning
 mao:body_positioning rdf:type rdfs:Datatype ;
                      rdfs:label "body_positioning" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/body_posture
+###  https://purl.org/maont/ontologyMAon/body_posture
 mao:body_posture rdf:type rdfs:Datatype ;
                  rdfs:label "body_posture" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/distance_management
+###  https://purl.org/maont/ontologyMAon/distance_management
 mao:distance_management rdf:type rdfs:Datatype .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/distance_timing
+###  https://purl.org/maont/ontologyMAon/distance_timing
 mao:distance_timing rdf:type rdfs:Datatype ;
                     rdfs:label "distance_timing" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/empty_hand_set
+###  https://purl.org/maont/ontologyMAon/empty_hand_set
 mao:empty_hand_set rdf:type rdfs:Datatype ;
                    rdfs:label "empty_hand_set" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/grading_system
+###  https://purl.org/maont/ontologyMAon/grading_system
 mao:grading_system rdf:type rdfs:Datatype ;
                    rdfs:label "grading_system" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/name_originalLang
+###  https://purl.org/maont/ontologyMAon/name_originalLang
 mao:name_originalLang rdf:type rdfs:Datatype ;
                       rdfs:label "name_originalLang" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/positioning
+###  https://purl.org/maont/ontologyMAon/positioning
 mao:positioning rdf:type rdfs:Datatype ;
                 rdfs:label "positioning" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/ranking_system
+###  https://purl.org/maont/ontologyMAon/ranking_system
 mao:ranking_system rdf:type rdfs:Datatype ;
                    rdfs:label "ranking_system" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/reputation
+###  https://purl.org/maont/ontologyMAon/reputation
 mao:reputation rdf:type rdfs:Datatype ;
                rdfs:label "reputation" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/spaer_weapon
+###  https://purl.org/maont/ontologyMAon/spaer_weapon
 mao:spaer_weapon rdf:type rdfs:Datatype ;
                  rdfs:label "spaer_weapon" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/sparring_set
+###  https://purl.org/maont/ontologyMAon/sparring_set
 mao:sparring_set rdf:type rdfs:Datatype .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/staff_weapon
+###  https://purl.org/maont/ontologyMAon/staff_weapon
 mao:staff_weapon rdf:type rdfs:Datatype ;
                  rdfs:label "staff_weapon" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/weapon_set
+###  https://purl.org/maont/ontologyMAon/weapon_set
 mao:weapon_set rdf:type rdfs:Datatype .
 
 
@@ -246,7 +246,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://EncodingActs.github.io/annotated/MAon/adapts
+###  https://purl.org/maont/ontologyMAon/adapts
 mao:adapts rdf:type owl:ObjectProperty ;
            rdfs:domain mao:MA_Master ;
            rdfs:range mao:MA_style ,
@@ -259,7 +259,7 @@ mao:adapts rdf:type owl:ObjectProperty ;
            rdfs:label "adapts" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/adopts
+###  https://purl.org/maont/ontologyMAon/adopts
 mao:adopts rdf:type owl:ObjectProperty ;
            rdfs:domain mao:MA_institute ,
                        mao:MA_style ,
@@ -271,7 +271,7 @@ mao:adopts rdf:type owl:ObjectProperty ;
            rdfs:label "adopts" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/belongs_to
+###  https://purl.org/maont/ontologyMAon/belongs_to
 mao:belongs_to rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_style ,
                            mao:MA_system ;
@@ -279,7 +279,7 @@ mao:belongs_to rdf:type owl:ObjectProperty ;
                rdfs:label "belongs_to" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/creates
+###  https://purl.org/maont/ontologyMAon/creates
 mao:creates rdf:type owl:ObjectProperty ;
             rdfs:domain mao:MA_Master ;
             rdfs:range mao:MA_style ,
@@ -293,14 +293,14 @@ mao:creates rdf:type owl:ObjectProperty ;
             rdfs:label "creates" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/developed_from
+###  https://purl.org/maont/ontologyMAon/developed_from
 mao:developed_from rdf:type owl:ObjectProperty ;
                    rdfs:domain mao:MA_style ;
                    rdfs:range mao:MA_style ;
                    rdfs:label "developed_from"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/documents
+###  https://purl.org/maont/ontologyMAon/documents
 mao:documents rdf:type owl:ObjectProperty ;
               rdfs:domain mao:MA_Book ;
               rdfs:range mao:MA_Master ,
@@ -313,7 +313,7 @@ mao:documents rdf:type owl:ObjectProperty ;
               rdfs:label "documents" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/employs
+###  https://purl.org/maont/ontologyMAon/employs
 mao:employs rdf:type owl:ObjectProperty ;
             rdfs:domain mao:MA_technique ;
             rdfs:range mao:MA_technique ;
@@ -322,7 +322,7 @@ mao:employs rdf:type owl:ObjectProperty ;
             rdfs:label "employs" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/employsBodyshape
+###  https://purl.org/maont/ontologyMAon/employsBodyshape
 mao:employsBodyshape rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf mao:employs ;
                      rdfs:domain mao:MA_technique ;
@@ -332,7 +332,7 @@ mao:employsBodyshape rdf:type owl:ObjectProperty ;
                                 "運用身形"@zh-hk .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/employsGesture
+###  https://purl.org/maont/ontologyMAon/employsGesture
 mao:employsGesture rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf mao:employs ;
                    rdfs:domain mao:MA_technique ;
@@ -342,7 +342,7 @@ mao:employsGesture rdf:type owl:ObjectProperty ;
                               "運用手形"@zh-hk .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/employsStance
+###  https://purl.org/maont/ontologyMAon/employsStance
 mao:employsStance rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf mao:employs ;
                   rdfs:domain mao:MA_technique ;
@@ -352,7 +352,7 @@ mao:employsStance rdf:type owl:ObjectProperty ;
                              "運用步形"@zh-hk .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has
+###  https://purl.org/maont/ontologyMAon/has
 mao:has rdf:type owl:ObjectProperty ;
         rdfs:domain mao:MA_style ,
                     mao:MA_system ;
@@ -361,7 +361,7 @@ mao:has rdf:type owl:ObjectProperty ;
         rdfs:label "has" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/hasStyle
+###  https://purl.org/maont/ontologyMAon/hasStyle
 mao:hasStyle rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf mao:used_in ;
              rdfs:domain mao:MA_technique ;
@@ -371,14 +371,14 @@ mao:hasStyle rdf:type owl:ObjectProperty ;
                         "属于流派"@zh-hk .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_birthplace
+###  https://purl.org/maont/ontologyMAon/has_birthplace
 mao:has_birthplace rdf:type owl:ObjectProperty ;
                    rdfs:domain mao:MA_Master ;
                    rdfs:range mao:E53_place ;
                    rdfs:label "has_birthplace" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_component
+###  https://purl.org/maont/ontologyMAon/has_component
 mao:has_component rdf:type owl:ObjectProperty ;
                   rdfs:domain mao:MA_form ,
                               mao:MA_syllabus ;
@@ -388,12 +388,12 @@ mao:has_component rdf:type owl:ObjectProperty ;
                   rdfs:label "has_component" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_film_appearance
+###  https://purl.org/maont/ontologyMAon/has_film_appearance
 mao:has_film_appearance rdf:type owl:ObjectProperty ;
                         rdfs:domain mao:MA_Master .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_intent
+###  https://purl.org/maont/ontologyMAon/has_intent
 mao:has_intent rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_form ,
                            mao:MA_technique ;
@@ -403,7 +403,7 @@ mao:has_intent rdf:type owl:ObjectProperty ;
                rdfs:label "has_intent" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_origin_place
+###  https://purl.org/maont/ontologyMAon/has_origin_place
 mao:has_origin_place rdf:type owl:ObjectProperty ;
                      rdfs:domain mao:MA_style ,
                                  mao:MA_system ;
@@ -411,12 +411,12 @@ mao:has_origin_place rdf:type owl:ObjectProperty ;
                      rdfs:label "has_origin_place" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_photo
+###  https://purl.org/maont/ontologyMAon/has_photo
 mao:has_photo rdf:type owl:ObjectProperty ;
               rdfs:domain mao:MA_Master .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_principle
+###  https://purl.org/maont/ontologyMAon/has_principle
 mao:has_principle rdf:type owl:ObjectProperty ;
                   rdfs:domain mao:MA_style ,
                               mao:MA_system ;
@@ -425,7 +425,7 @@ mao:has_principle rdf:type owl:ObjectProperty ;
                   rdfs:label "has_principle" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_symbol
+###  https://purl.org/maont/ontologyMAon/has_symbol
 mao:has_symbol rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_style ,
                            mao:MA_system ;
@@ -434,7 +434,7 @@ mao:has_symbol rdf:type owl:ObjectProperty ;
                rdfs:label "has_symbol" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_work
+###  https://purl.org/maont/ontologyMAon/has_work
 mao:has_work rdf:type owl:ObjectProperty ;
              rdfs:domain mao:MA_Master ;
              rdfs:range mao:MA_Book ;
@@ -442,14 +442,14 @@ mao:has_work rdf:type owl:ObjectProperty ;
              rdfs:label "has_work"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/identified_by
+###  https://purl.org/maont/ontologyMAon/identified_by
 mao:identified_by rdf:type owl:ObjectProperty ;
                   rdfs:domain mao:E21_Person ;
                   rdfs:range mao:E41_appellation ;
                   rdfs:label "identified_by" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/imitates
+###  https://purl.org/maont/ontologyMAon/imitates
 mao:imitates rdf:type owl:ObjectProperty ;
              rdfs:range mao:symbolic_animal ;
              mao:ontoMA_name_zh "模仿"@zh-hk ;
@@ -457,7 +457,7 @@ mao:imitates rdf:type owl:ObjectProperty ;
              rdfs:label "imitates"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/in_form
+###  https://purl.org/maont/ontologyMAon/in_form
 mao:in_form rdf:type owl:ObjectProperty ;
             rdfs:domain mao:MA_form ;
             rdfs:range mao:Form_set ;
@@ -465,7 +465,7 @@ mao:in_form rdf:type owl:ObjectProperty ;
             rdfs:label "in_form" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/influences
+###  https://purl.org/maont/ontologyMAon/influences
 mao:influences rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain mao:MA_style ,
@@ -475,59 +475,59 @@ mao:influences rdf:type owl:ObjectProperty ;
                rdfs:label "influences" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/is
+###  https://purl.org/maont/ontologyMAon/is
 mao:is rdf:type owl:ObjectProperty ;
        rdfs:label "is" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/is_child_of
+###  https://purl.org/maont/ontologyMAon/is_child_of
 mao:is_child_of rdf:type owl:ObjectProperty ;
                 rdfs:label "is_child_of" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/is_master_of
+###  https://purl.org/maont/ontologyMAon/is_master_of
 mao:is_master_of rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:MA_Master ;
                  rdfs:range mao:MA_Master ;
                  rdfs:label "is_master_of" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/is_member_of
+###  https://purl.org/maont/ontologyMAon/is_member_of
 mao:is_member_of rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:MA_Master ;
                  rdfs:range mao:MA_Clan ;
                  rdfs:label "is_member_of" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/is_parent_of
+###  https://purl.org/maont/ontologyMAon/is_parent_of
 mao:is_parent_of rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:MA_Master ;
                  rdfs:range mao:MA_Master ;
                  rdfs:label "is_parent_of" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/is_student_of
+###  https://purl.org/maont/ontologyMAon/is_student_of
 mao:is_student_of rdf:type owl:ObjectProperty ;
                   rdfs:domain mao:MA_Master ;
                   rdfs:range mao:MA_Master ;
                   rdfs:label "is_student_of" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/lives_in_ts
+###  https://purl.org/maont/ontologyMAon/lives_in_ts
 mao:lives_in_ts rdf:type owl:ObjectProperty ;
                 rdfs:domain mao:MA_Master ;
                 rdfs:range mao:E52_timespan ;
                 rdfs:label "lives_in_ts" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/located_at
+###  https://purl.org/maont/ontologyMAon/located_at
 mao:located_at rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_institute ;
                rdfs:range mao:E53_place ;
                rdfs:label "located_at"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/practiced_in
+###  https://purl.org/maont/ontologyMAon/practiced_in
 mao:practiced_in rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:Form_set ;
                  rdfs:range mao:MA_style ;
@@ -536,7 +536,7 @@ mao:practiced_in rdf:type owl:ObjectProperty ;
                  rdfs:label "practiced_in" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/practices
+###  https://purl.org/maont/ontologyMAon/practices
 mao:practices rdf:type owl:ObjectProperty ;
               rdfs:domain mao:MA_Master ;
               rdfs:range mao:MA_style ,
@@ -546,7 +546,7 @@ mao:practices rdf:type owl:ObjectProperty ;
               rdfs:label "practices" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/represents
+###  https://purl.org/maont/ontologyMAon/represents
 mao:represents rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_form ;
                rdfs:range mao:MA_principle ;
@@ -556,14 +556,14 @@ The property represents in MAon shares a similar interpretation with the P138 re
                rdfs:label "represents" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/resides_in
+###  https://purl.org/maont/ontologyMAon/resides_in
 mao:resides_in rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_Master ;
                rdfs:range mao:E53_place ;
                rdfs:label "resides_in" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/similar_movement_to
+###  https://purl.org/maont/ontologyMAon/similar_movement_to
 mao:similar_movement_to rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf owl:topObjectProperty ;
                         rdf:type owl:FunctionalProperty ,
@@ -576,7 +576,7 @@ mao:similar_movement_to rdf:type owl:ObjectProperty ;
                         rdfs:label "similar_movement_to" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/similar_set_of
+###  https://purl.org/maont/ontologyMAon/similar_set_of
 mao:similar_set_of rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
                    rdf:type owl:SymmetricProperty ,
@@ -588,7 +588,7 @@ mao:similar_set_of rdf:type owl:ObjectProperty ;
                    rdfs:label "similar_set_to"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/similar_to
+###  https://purl.org/maont/ontologyMAon/similar_to
 mao:similar_to rdf:type owl:ObjectProperty ,
                         owl:SymmetricProperty ,
                         owl:TransitiveProperty ;
@@ -599,7 +599,7 @@ mao:similar_to rdf:type owl:ObjectProperty ,
                rdfs:label "similar_to" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/simulates
+###  https://purl.org/maont/ontologyMAon/simulates
 mao:simulates rdf:type owl:ObjectProperty ;
               rdfs:domain mao:training_tool ;
               rdfs:range mao:armament ;
@@ -608,7 +608,7 @@ mao:simulates rdf:type owl:ObjectProperty ;
               rdfs:label "simulates"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/taught_at
+###  https://purl.org/maont/ontologyMAon/taught_at
 mao:taught_at rdf:type owl:ObjectProperty ;
               rdfs:domain mao:MA_style ,
                           mao:MA_syllabus ,
@@ -617,7 +617,7 @@ mao:taught_at rdf:type owl:ObjectProperty ;
               rdfs:label "taught_at"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/teaches
+###  https://purl.org/maont/ontologyMAon/teaches
 mao:teaches rdf:type owl:ObjectProperty ;
             rdfs:domain mao:MA_Master ;
             rdfs:range mao:Form_set ,
@@ -626,14 +626,14 @@ mao:teaches rdf:type owl:ObjectProperty ;
             rdfs:label "teaches" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/teaches_at
+###  https://purl.org/maont/ontologyMAon/teaches_at
 mao:teaches_at rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_Master ;
                rdfs:range mao:MA_institute ;
                rdfs:label "teaches_at" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/trains
+###  https://purl.org/maont/ontologyMAon/trains
 mao:trains rdf:type owl:ObjectProperty ;
            rdfs:domain mao:training_method ;
            rdfs:range mao:MA_technique ;
@@ -642,12 +642,12 @@ mao:trains rdf:type owl:ObjectProperty ;
            rdfs:label "trains" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/type_of
+###  https://purl.org/maont/ontologyMAon/type_of
 mao:type_of rdf:type owl:ObjectProperty ;
             rdfs:label "type_of" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/used_in
+###  https://purl.org/maont/ontologyMAon/used_in
 mao:used_in rdf:type owl:ObjectProperty ;
             rdfs:domain mao:MA_technique ,
                         mao:armament ,
@@ -657,7 +657,7 @@ mao:used_in rdf:type owl:ObjectProperty ;
             rdfs:label "used_in" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/uses
+###  https://purl.org/maont/ontologyMAon/uses
 mao:uses rdf:type owl:ObjectProperty ;
          rdfs:label "uses" .
 
@@ -666,7 +666,7 @@ mao:uses rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://EncodingActs.github.io/annotated/MAon/appellation_type
+###  https://purl.org/maont/ontologyMAon/appellation_type
 mao:appellation_type rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf mao:dataProperties ;
                      rdfs:domain mao:E41_appellation ;
@@ -676,11 +676,11 @@ mao:appellation_type rdf:type owl:DatatypeProperty ;
                      rdfs:label "appellation_type" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/dataProperties
+###  https://purl.org/maont/ontologyMAon/dataProperties
 mao:dataProperties rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/employsBodyPart
+###  https://purl.org/maont/ontologyMAon/employsBodyPart
 mao:employsBodyPart rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf mao:dataProperties ;
                     rdfs:domain mao:MA_technique ;
@@ -690,7 +690,7 @@ mao:employsBodyPart rdf:type owl:DatatypeProperty ;
                                "涉及身体部位"@zh .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/employsHands
+###  https://purl.org/maont/ontologyMAon/employsHands
 mao:employsHands rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf mao:dataProperties ;
                  rdfs:domain mao:MA_technique ;
@@ -700,7 +700,7 @@ mao:employsHands rdf:type owl:DatatypeProperty ;
                             "手部使用方式"@zh .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_birth_year
+###  https://purl.org/maont/ontologyMAon/has_birth_year
 mao:has_birth_year rdf:type owl:DatatypeProperty ;
                    rdfs:domain mao:MA_Master ;
                    rdfs:range xsd:gYear ;
@@ -708,7 +708,7 @@ mao:has_birth_year rdf:type owl:DatatypeProperty ;
                    rdfs:label "has_birth_year"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_courtesy_name
+###  https://purl.org/maont/ontologyMAon/has_courtesy_name
 mao:has_courtesy_name rdf:type owl:DatatypeProperty ;
                       rdfs:domain mao:MA_Master ;
                       rdfs:range xsd:string ;
@@ -716,7 +716,7 @@ mao:has_courtesy_name rdf:type owl:DatatypeProperty ;
                       rdfs:label "has_courtesy_name"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_death_year
+###  https://purl.org/maont/ontologyMAon/has_death_year
 mao:has_death_year rdf:type owl:DatatypeProperty ;
                    rdfs:domain mao:MA_Master ;
                    rdfs:range xsd:gYear ;
@@ -724,7 +724,7 @@ mao:has_death_year rdf:type owl:DatatypeProperty ;
                    rdfs:label "has_death_year"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_ethnicity
+###  https://purl.org/maont/ontologyMAon/has_ethnicity
 mao:has_ethnicity rdf:type owl:DatatypeProperty ;
                   rdfs:domain mao:MA_Master ;
                   rdfs:range xsd:string ;
@@ -732,12 +732,12 @@ mao:has_ethnicity rdf:type owl:DatatypeProperty ;
                   rdfs:label "has_ethnicity"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_film_appearance
+###  https://purl.org/maont/ontologyMAon/has_film_appearance
 mao:has_film_appearance rdf:type owl:DatatypeProperty ;
                         rdfs:range xsd:string .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_gender
+###  https://purl.org/maont/ontologyMAon/has_gender
 mao:has_gender rdf:type owl:DatatypeProperty ;
                rdfs:domain mao:MA_Master ;
                rdfs:range xsd:string ;
@@ -745,7 +745,7 @@ mao:has_gender rdf:type owl:DatatypeProperty ;
                rdfs:label "has_gender"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_life_experience
+###  https://purl.org/maont/ontologyMAon/has_life_experience
 mao:has_life_experience rdf:type owl:DatatypeProperty ;
                         rdfs:domain mao:MA_Master ;
                         rdfs:range xsd:string ;
@@ -753,12 +753,12 @@ mao:has_life_experience rdf:type owl:DatatypeProperty ;
                         rdfs:label "has_life_experience"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_photo
+###  https://purl.org/maont/ontologyMAon/has_photo
 mao:has_photo rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:string .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_profession
+###  https://purl.org/maont/ontologyMAon/has_profession
 mao:has_profession rdf:type owl:DatatypeProperty ;
                    rdfs:domain mao:MA_Master ;
                    rdfs:range xsd:string ;
@@ -766,7 +766,7 @@ mao:has_profession rdf:type owl:DatatypeProperty ;
                    rdfs:label "has_profession"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/has_pseudonym
+###  https://purl.org/maont/ontologyMAon/has_pseudonym
 mao:has_pseudonym rdf:type owl:DatatypeProperty ;
                   rdfs:domain mao:MA_Master ;
                   rdfs:range xsd:string ;
@@ -774,14 +774,14 @@ mao:has_pseudonym rdf:type owl:DatatypeProperty ;
                   rdfs:label "has_pseudonym"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/timespan
+###  https://purl.org/maont/ontologyMAon/timespan
 mao:timespan rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf mao:dataProperties ;
              rdfs:domain mao:E52_timespan ;
              rdfs:label "timespan" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/weapon_type
+###  https://purl.org/maont/ontologyMAon/weapon_type
 mao:weapon_type rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf mao:dataProperties ;
                 rdfs:domain mao:armament ,
@@ -794,7 +794,7 @@ mao:weapon_type rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://EncodingActs.github.io/annotated/MAon/E21_Person
+###  https://purl.org/maont/ontologyMAon/E21_Person
 mao:E21_Person rdf:type owl:Class ;
                rdfs:subClassOf owl:Thing ,
                                [ rdf:type owl:Restriction ;
@@ -817,44 +817,44 @@ mao:E21_Person rdf:type owl:Class ;
                rdfs:seeAlso <https://www.cidoc-crm.org/entity/e21-person/version-7.1> .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/E22_man_made_obj
+###  https://purl.org/maont/ontologyMAon/E22_man_made_obj
 mao:E22_man_made_obj rdf:type owl:Class ;
                      rdfs:label "E22.Man-made Object"@en ;
                      rdfs:seeAlso <https://www.cidoc-crm.org/Entity/e22-man-made-object/version-7.1> .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/E31_document
+###  https://purl.org/maont/ontologyMAon/E31_document
 mao:E31_document rdf:type owl:Class ;
                  rdfs:subClassOf owl:Thing ;
                  rdfs:label "E31.Document"@en ;
                  rdfs:seeAlso <https://www.cidoc-crm.org/Entity/e31-document/version-7.1> .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/E41_appellation
+###  https://purl.org/maont/ontologyMAon/E41_appellation
 mao:E41_appellation rdf:type owl:Class ;
                     rdfs:label "E41.Appellation"@en ;
                     rdfs:seeAlso <https://www.cidoc-crm.org/Entity/e41-appellation/version-7.1> .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/E52_timespan
+###  https://purl.org/maont/ontologyMAon/E52_timespan
 mao:E52_timespan rdf:type owl:Class ;
                  rdfs:label "E52.Time-Span"@en ;
                  rdfs:seeAlso <https://www.cidoc-crm.org/Entity/e52-time-span/version-7.1> .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/E53_place
+###  https://purl.org/maont/ontologyMAon/E53_place
 mao:E53_place rdf:type owl:Class ;
               rdfs:label "E53.Place"@en ;
               rdfs:seeAlso <https://www.cidoc-crm.org/Entity/e53-place/version-7.1> .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/E77_persistent_item
+###  https://purl.org/maont/ontologyMAon/E77_persistent_item
 mao:E77_persistent_item rdf:type owl:Class ;
                         rdfs:label "E77.Persistent Item"@en ;
                         rdfs:seeAlso <https://www.cidoc-crm.org/Entity/e77-persistent-item/version-7.1> .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/Form_set
+###  https://purl.org/maont/ontologyMAon/Form_set
 mao:Form_set rdf:type owl:Class ;
              rdfs:subClassOf mao:training_method ,
                              [ rdf:type owl:Restriction ;
@@ -886,7 +886,7 @@ mao:Form_set rdf:type owl:Class ;
              rdfs:label "Form_set"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_Book
+###  https://purl.org/maont/ontologyMAon/MA_Book
 mao:MA_Book rdf:type owl:Class ;
             rdfs:subClassOf mao:E31_document ,
                             [ rdf:type owl:Restriction ;
@@ -923,7 +923,7 @@ mao:MA_Book rdf:type owl:Class ;
             rdfs:label "MA_Document"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_Clan
+###  https://purl.org/maont/ontologyMAon/MA_Clan
 mao:MA_Clan rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             :name_en "Martial Arts Clan"@en ;
@@ -933,7 +933,7 @@ mao:MA_Clan rdf:type owl:Class ;
             rdfs:label "MA_Clan"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_Master
+###  https://purl.org/maont/ontologyMAon/MA_Master
 mao:MA_Master rdf:type owl:Class ;
               rdfs:subClassOf mao:E21_Person ,
                               owl:Thing ,
@@ -1086,7 +1086,7 @@ mao:MA_Master rdf:type owl:Class ;
               rdfs:label "MA_Master"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_Organization
+###  https://purl.org/maont/ontologyMAon/MA_Organization
 mao:MA_Organization rdf:type owl:Class ;
                     rdfs:subClassOf owl:Thing ;
                     :name_en "Martial Arts Organization"@en ;
@@ -1094,7 +1094,7 @@ mao:MA_Organization rdf:type owl:Class ;
                     rdfs:label "MA_Organization"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_form
+###  https://purl.org/maont/ontologyMAon/MA_form
 mao:MA_form rdf:type owl:Class ;
             rdfs:subClassOf mao:training_method ,
                             [ rdf:type owl:Restriction ;
@@ -1130,7 +1130,7 @@ mao:MA_form rdf:type owl:Class ;
             rdfs:label "Form_movement"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_institute
+###  https://purl.org/maont/ontologyMAon/MA_institute
 mao:MA_institute rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty mao:adopts ;
@@ -1158,7 +1158,7 @@ mao:MA_institute rdf:type owl:Class ;
                  rdfs:label "MA_institute" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_principle
+###  https://purl.org/maont/ontologyMAon/MA_principle
 mao:MA_principle rdf:type owl:Class ;
                  rdfs:subClassOf owl:Thing ;
                  :name_en "Principle (martial arts)"@en ;
@@ -1167,7 +1167,7 @@ mao:MA_principle rdf:type owl:Class ;
                  rdfs:label "MA_principle" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_style
+###  https://purl.org/maont/ontologyMAon/MA_style
 mao:MA_style rdf:type owl:Class ;
              rdfs:subClassOf owl:Thing ,
                              [ rdf:type owl:Restriction ;
@@ -1213,7 +1213,7 @@ mao:MA_style rdf:type owl:Class ;
              rdfs:label "MA_Style"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_syllabus
+###  https://purl.org/maont/ontologyMAon/MA_syllabus
 mao:MA_syllabus rdf:type owl:Class ;
                 :name_en "Syllabus (martial arts)"@en ;
                 mao:ontoMA_name_zh "武術教學大綱"@zh-hk ;
@@ -1221,7 +1221,7 @@ mao:MA_syllabus rdf:type owl:Class ;
                 rdfs:label "MA_syllabus" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_system
+###  https://purl.org/maont/ontologyMAon/MA_system
 mao:MA_system rdf:type owl:Class ;
               rdfs:subClassOf owl:Thing ,
                               [ rdf:type owl:Restriction ;
@@ -1270,7 +1270,7 @@ mao:MA_system rdf:type owl:Class ;
               rdfs:label "MA_System" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_tactic
+###  https://purl.org/maont/ontologyMAon/MA_tactic
 mao:MA_tactic rdf:type owl:Class ;
               :name_en "Tactic"@en ;
               mao:ontoMA_name_zh "戰術"@zh-hk ;
@@ -1278,7 +1278,7 @@ mao:MA_tactic rdf:type owl:Class ;
               rdfs:label "MA_tactic" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/MA_technique
+###  https://purl.org/maont/ontologyMAon/MA_technique
 mao:MA_technique rdf:type owl:Class ;
                  rdfs:subClassOf owl:Thing ,
                                  [ rdf:type owl:Restriction ;
@@ -1323,7 +1323,7 @@ mao:MA_technique rdf:type owl:Class ;
                  rdfs:label "MA_Technique" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/armament
+###  https://purl.org/maont/ontologyMAon/armament
 mao:armament rdf:type owl:Class ;
              rdfs:subClassOf mao:E22_man_made_obj ,
                              [ rdf:type owl:Restriction ;
@@ -1338,7 +1338,7 @@ mao:armament rdf:type owl:Class ;
              rdfs:label "Weaponry"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/body_cntr_mnpl
+###  https://purl.org/maont/ontologyMAon/body_cntr_mnpl
 mao:body_cntr_mnpl rdf:type owl:Class ;
                    rdfs:subClassOf mao:MA_principle ,
                                    [ rdf:type owl:Restriction ;
@@ -1348,7 +1348,7 @@ mao:body_cntr_mnpl rdf:type owl:Class ;
                    rdfs:label "Body_control"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/body_shape
+###  https://purl.org/maont/ontologyMAon/body_shape
 mao:body_shape rdf:type owl:Class ;
                rdfs:subClassOf mao:bodywork ,
                                [ rdf:type owl:Restriction ;
@@ -1361,7 +1361,7 @@ mao:body_shape rdf:type owl:Class ;
                rdfs:label "Body_shape"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/bodywork
+###  https://purl.org/maont/ontologyMAon/bodywork
 mao:bodywork rdf:type owl:Class ;
              rdfs:subClassOf mao:MA_technique ,
                              [ rdf:type owl:Restriction ;
@@ -1374,7 +1374,7 @@ mao:bodywork rdf:type owl:Class ;
              rdfs:label "Bodywork" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/breath_cntr_mnpl
+###  https://purl.org/maont/ontologyMAon/breath_cntr_mnpl
 mao:breath_cntr_mnpl rdf:type owl:Class ;
                      rdfs:subClassOf mao:MA_principle ,
                                      [ rdf:type owl:Restriction ;
@@ -1384,7 +1384,7 @@ mao:breath_cntr_mnpl rdf:type owl:Class ;
                      rdfs:label "Breath_control"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/breathing_tech
+###  https://purl.org/maont/ontologyMAon/breathing_tech
 mao:breathing_tech rdf:type owl:Class ;
                    rdfs:subClassOf mao:MA_technique ,
                                    [ rdf:type owl:Restriction ;
@@ -1397,7 +1397,7 @@ mao:breathing_tech rdf:type owl:Class ;
                    rdfs:label "Breathing_tech" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/bridge_principle
+###  https://purl.org/maont/ontologyMAon/bridge_principle
 mao:bridge_principle rdf:type owl:Class ;
                      rdfs:subClassOf mao:MA_principle ,
                                      [ rdf:type owl:Restriction ;
@@ -1407,7 +1407,7 @@ mao:bridge_principle rdf:type owl:Class ;
                      rdfs:label "Bridge_principle"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/bridge_tech
+###  https://purl.org/maont/ontologyMAon/bridge_tech
 mao:bridge_tech rdf:type owl:Class ;
                 rdfs:subClassOf mao:MA_technique ,
                                 [ rdf:type owl:Restriction ;
@@ -1421,7 +1421,7 @@ mao:bridge_tech rdf:type owl:Class ;
                 rdfs:label "Bridge_tech" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/claw_tech
+###  https://purl.org/maont/ontologyMAon/claw_tech
 mao:claw_tech rdf:type owl:Class ;
               rdfs:subClassOf mao:handwork ,
                               [ rdf:type owl:Restriction ;
@@ -1438,7 +1438,7 @@ mao:claw_tech rdf:type owl:Class ;
               rdfs:label "Claw_tech" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/combo_tech
+###  https://purl.org/maont/ontologyMAon/combo_tech
 mao:combo_tech rdf:type owl:Class ;
                rdfs:subClassOf mao:MA_technique ,
                                [ rdf:type owl:Restriction ;
@@ -1456,7 +1456,7 @@ mao:combo_tech rdf:type owl:Class ;
                rdfs:label "Combo_tech" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/elbow_tech
+###  https://purl.org/maont/ontologyMAon/elbow_tech
 mao:elbow_tech rdf:type owl:Class ;
                rdfs:subClassOf mao:handwork ,
                                [ rdf:type owl:Restriction ;
@@ -1472,7 +1472,7 @@ mao:elbow_tech rdf:type owl:Class ;
                rdfs:label "Elbow_tech" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/eye_tech
+###  https://purl.org/maont/ontologyMAon/eye_tech
 mao:eye_tech rdf:type owl:Class ;
              rdfs:subClassOf mao:bodywork ,
                              [ rdf:type owl:Restriction ;
@@ -1485,7 +1485,7 @@ mao:eye_tech rdf:type owl:Class ;
              rdfs:label "Eye_tech"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/finger_tech
+###  https://purl.org/maont/ontologyMAon/finger_tech
 mao:finger_tech rdf:type owl:Class ;
                 rdfs:subClassOf mao:handwork ,
                                 [ rdf:type owl:Restriction ;
@@ -1502,7 +1502,7 @@ mao:finger_tech rdf:type owl:Class ;
                 rdfs:label "Finger_tech"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/fist_tech
+###  https://purl.org/maont/ontologyMAon/fist_tech
 mao:fist_tech rdf:type owl:Class ;
               rdfs:subClassOf mao:handwork ,
                               [ rdf:type owl:Restriction ;
@@ -1519,7 +1519,7 @@ mao:fist_tech rdf:type owl:Class ;
               rdfs:label "Fist_tech"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/footwork
+###  https://purl.org/maont/ontologyMAon/footwork
 mao:footwork rdf:type owl:Class ;
              rdfs:subClassOf mao:MA_technique ,
                              [ rdf:type owl:Restriction ;
@@ -1533,7 +1533,7 @@ mao:footwork rdf:type owl:Class ;
              rdfs:label "Footwork" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/gesture
+###  https://purl.org/maont/ontologyMAon/gesture
 mao:gesture rdf:type owl:Class ;
             rdfs:subClassOf mao:handwork ,
                             [ rdf:type owl:Restriction ;
@@ -1549,7 +1549,7 @@ mao:gesture rdf:type owl:Class ;
             rdfs:label "Gesture"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/handwork
+###  https://purl.org/maont/ontologyMAon/handwork
 mao:handwork rdf:type owl:Class ;
              rdfs:subClassOf mao:MA_technique ,
                              [ rdf:type owl:Restriction ;
@@ -1562,7 +1562,7 @@ mao:handwork rdf:type owl:Class ;
              rdfs:label "Handwork" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/honor_code
+###  https://purl.org/maont/ontologyMAon/honor_code
 mao:honor_code rdf:type owl:Class ;
                rdfs:subClassOf mao:MA_principle ,
                                [ rdf:type owl:Restriction ;
@@ -1572,7 +1572,7 @@ mao:honor_code rdf:type owl:Class ;
                rdfs:label "Honor_code"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/intent_clarity
+###  https://purl.org/maont/ontologyMAon/intent_clarity
 mao:intent_clarity rdf:type owl:Class ;
                    rdfs:subClassOf mao:MA_principle ,
                                    [ rdf:type owl:Restriction ;
@@ -1582,7 +1582,7 @@ mao:intent_clarity rdf:type owl:Class ;
                    rdfs:label "Fighting_strategy"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/jumping_tech
+###  https://purl.org/maont/ontologyMAon/jumping_tech
 mao:jumping_tech rdf:type owl:Class ;
                  rdfs:subClassOf mao:leg_tech ,
                                  [ rdf:type owl:Restriction ;
@@ -1595,7 +1595,7 @@ mao:jumping_tech rdf:type owl:Class ;
                  rdfs:label "Jumping_tech"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/kicking_tech
+###  https://purl.org/maont/ontologyMAon/kicking_tech
 mao:kicking_tech rdf:type owl:Class ;
                  rdfs:subClassOf mao:leg_tech ,
                                  [ rdf:type owl:Restriction ;
@@ -1608,7 +1608,7 @@ mao:kicking_tech rdf:type owl:Class ;
                  rdfs:label "Kicking_tech"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/leg_tech
+###  https://purl.org/maont/ontologyMAon/leg_tech
 mao:leg_tech rdf:type owl:Class ;
              rdfs:subClassOf mao:footwork ,
                              [ rdf:type owl:Restriction ;
@@ -1621,7 +1621,7 @@ mao:leg_tech rdf:type owl:Class ;
              rdfs:label "Leg_tech"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/leg_training
+###  https://purl.org/maont/ontologyMAon/leg_training
 mao:leg_training rdf:type owl:Class ;
                  rdfs:subClassOf mao:physical_training ,
                                  [ rdf:type owl:Restriction ;
@@ -1634,7 +1634,7 @@ mao:leg_training rdf:type owl:Class ;
                  rdfs:label "Leg_training"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/palm_tech
+###  https://purl.org/maont/ontologyMAon/palm_tech
 mao:palm_tech rdf:type owl:Class ;
               rdfs:subClassOf mao:handwork ,
                               [ rdf:type owl:Restriction ;
@@ -1652,7 +1652,7 @@ mao:palm_tech rdf:type owl:Class ;
               rdfs:label "Palm_tech" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/physical_training
+###  https://purl.org/maont/ontologyMAon/physical_training
 mao:physical_training rdf:type owl:Class ;
                       rdfs:subClassOf mao:training_method ,
                                       [ rdf:type owl:Restriction ;
@@ -1666,7 +1666,7 @@ mao:physical_training rdf:type owl:Class ;
                       rdfs:label "Physical_training"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/prep_pose
+###  https://purl.org/maont/ontologyMAon/prep_pose
 mao:prep_pose rdf:type owl:Class ;
               rdfs:subClassOf mao:MA_technique ,
                               [ rdf:type owl:Restriction ;
@@ -1679,7 +1679,7 @@ mao:prep_pose rdf:type owl:Class ;
               rdfs:label "Prep_pose"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/shoulder_arm_training
+###  https://purl.org/maont/ontologyMAon/shoulder_arm_training
 mao:shoulder_arm_training rdf:type owl:Class ;
                           rdfs:subClassOf mao:physical_training ,
                                           [ rdf:type owl:Restriction ;
@@ -1693,7 +1693,7 @@ mao:shoulder_arm_training rdf:type owl:Class ;
                           rdfs:label "Shoulder_arm_training"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/spar_training
+###  https://purl.org/maont/ontologyMAon/spar_training
 mao:spar_training rdf:type owl:Class ;
                   rdfs:subClassOf mao:training_method ,
                                   [ rdf:type owl:Restriction ;
@@ -1707,7 +1707,7 @@ mao:spar_training rdf:type owl:Class ;
                   rdfs:label "Sparring"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/stance
+###  https://purl.org/maont/ontologyMAon/stance
 mao:stance rdf:type owl:Class ;
            rdfs:subClassOf mao:footwork ,
                            [ rdf:type owl:Restriction ;
@@ -1722,7 +1722,7 @@ mao:stance rdf:type owl:Class ;
            rdfs:label "Stance" .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/sweeping_tech
+###  https://purl.org/maont/ontologyMAon/sweeping_tech
 mao:sweeping_tech rdf:type owl:Class ;
                   rdfs:subClassOf mao:leg_tech ,
                                   [ rdf:type owl:Restriction ;
@@ -1735,7 +1735,7 @@ mao:sweeping_tech rdf:type owl:Class ;
                   rdfs:label "Sweeping_tech"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/symbolic_animal
+###  https://purl.org/maont/ontologyMAon/symbolic_animal
 mao:symbolic_animal rdf:type owl:Class ;
                     rdfs:subClassOf mao:E77_persistent_item ,
                                     [ rdf:type owl:Restriction ;
@@ -1748,7 +1748,7 @@ mao:symbolic_animal rdf:type owl:Class ;
                     rdfs:label "Symbolic_animal"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/training_method
+###  https://purl.org/maont/ontologyMAon/training_method
 mao:training_method rdf:type owl:Class ;
                     rdfs:subClassOf owl:Thing ,
                                     [ rdf:type owl:Restriction ;
@@ -1769,7 +1769,7 @@ mao:training_method rdf:type owl:Class ;
                     rdfs:label "Training_method"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/training_tool
+###  https://purl.org/maont/ontologyMAon/training_tool
 mao:training_tool rdf:type owl:Class ;
                   rdfs:subClassOf mao:E22_man_made_obj ,
                                   [ rdf:type owl:Restriction ;
@@ -1786,7 +1786,7 @@ mao:training_tool rdf:type owl:Class ;
                   rdfs:label "Training_tool"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/waist_training
+###  https://purl.org/maont/ontologyMAon/waist_training
 mao:waist_training rdf:type owl:Class ;
                    rdfs:subClassOf mao:physical_training ,
                                    [ rdf:type owl:Restriction ;
@@ -1799,7 +1799,7 @@ mao:waist_training rdf:type owl:Class ;
                    rdfs:label "Waist_training"@en .
 
 
-###  http://EncodingActs.github.io/annotated/MAon/weapon_tech
+###  https://purl.org/maont/ontologyMAon/weapon_tech
 mao:weapon_tech rdf:type owl:Class ;
                 rdfs:subClassOf mao:MA_technique ,
                                 [ rdf:type owl:Restriction ;
