@@ -16,17 +16,17 @@
 #    Annotation properties
 #################################################################
 
-###  https://purl.org/maont/ontology#name_en
+###  https://purl.org/maont/ontology/name_en
 :name_en rdf:type owl:AnnotationProperty ;
          rdfs:label "name_en"@en .
 
 
-###  https://purl.org/maont/ontology#name_romanCAN
+###  https://purl.org/maont/ontology/name_romanCAN
 :name_romanCAN rdf:type owl:AnnotationProperty ;
                rdfs:label "romanCAN"@en .
 
 
-###  https://purl.org/maont/ontology#name_romanMAN
+###  https://purl.org/maont/ontology/name_romanMAN
 :name_romanMAN rdf:type owl:AnnotationProperty .
 
 
