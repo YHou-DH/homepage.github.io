@@ -9,8 +9,8 @@
 @base <https://purl.org/maont/ontology#> .
 
 <https://purl.org/maont/ontology/> rdf:type owl:Ontology ;
-                                    rdfs:comment "Integrated MAon ontology incorporating the HKMALA extension. Class URIs use a flat mao: namespace (no class: sub-prefix). Properties employsBodyPart and employsHands replace earlier hasBodyPart/hasHandUsage. April 2026 revision."@en ;
-                                    rdfs:label "MAon — Martial Arts Ontology (integrated with HKMALA extension, v2)"@en .
+                                    rdfs:comment "An extension of the MAon ontology (v1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
+                                    rdfs:label "MAon — Martial Arts Ontology v1.4"@en .
 
 #################################################################
 #    Annotation properties
