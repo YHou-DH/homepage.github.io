@@ -1414,6 +1414,12 @@ mao:MA_technique rdf:type owl:Class ;
                  mao:ontoMA_name_zh "技術"@zh-hk .
 
 
+###  https://purl.org/maont/ontology/Philosophical_concepts
+mao:Philosophical_concepts rdf:type owl:Class ;
+                           rdfs:subClassOf mao:MA_principle ;
+                           rdfs:label "Philosophical_concepts"@en .
+
+
 ###  https://purl.org/maont/ontology/armament
 mao:armament rdf:type owl:Class ;
              rdfs:subClassOf mao:E22_man_made_obj ,
@@ -1630,7 +1636,7 @@ mao:footwork rdf:type owl:Class ;
 ###  https://purl.org/maont/ontology/footwork_principle
 mao:footwork_principle rdf:type owl:Class ;
                        rdfs:subClassOf mao:MA_principle ;
-                       rdfs:label "footwork_principle"@en ;
+                       rdfs:label "Footwork_principle"@en ;
                        mao:ontoMA_name_zh "腳法原則"@zh-hk .
 
 
@@ -1666,7 +1672,7 @@ mao:handwork rdf:type owl:Class ;
 ###  https://purl.org/maont/ontology/handwork_principle
 mao:handwork_principle rdf:type owl:Class ;
                        rdfs:subClassOf mao:MA_principle ;
-                       rdfs:label "handwork_principle"@en ;
+                       rdfs:label "Handwork_principle"@en ;
                        mao:ontoMA_name_zh "手法原則"@zh-hk .
 
 
