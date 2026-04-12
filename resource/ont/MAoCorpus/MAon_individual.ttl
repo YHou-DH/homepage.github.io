@@ -240,7 +240,9 @@ mao:T_backfist_n_punch rdf:type owl:NamedIndividual ,
 
 
 ###  https://purl.org/maont/ontology/Uprightness
-mao:Uprightness rdf:type owl:NamedIndividual .
+mao:Uprightness rdf:type owl:NamedIndividual ,
+                         mao:honor_code ;
+                rdfs:label "Uprightness"@en .
 
 
 ###  https://purl.org/maont/ontology/White_Crane_Kungfu
@@ -261,7 +263,8 @@ mao:White_Crane_Kungfu rdf:type owl:NamedIndividual ,
 
 
 ###  https://purl.org/maont/ontology/Yin_Yang
-mao:Yin_Yang rdf:type owl:NamedIndividual ;
+mao:Yin_Yang rdf:type owl:NamedIndividual ,
+                      mao:Philosophical_concepts ;
              rdfs:label "Yin_Yang" ;
              :name_en "Yin and Yang"@en ;
              mao:ontoMA_name_zh "陰陽"@zh .
@@ -4576,7 +4579,7 @@ mao:wiping_palm rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/12_bridges
 <https://purl.org/maont/ontology/12_bridges> rdf:type owl:NamedIndividual ,
-                                                      mao:MA_principle ;
+                                                      mao:bridge_principle ;
                                              mao:belongs_to mao:Hung_Kuen ;
                                              mao:has_component mao:hard_bridge ,
                                                                mao:heaven_n_earth_bridge ,
