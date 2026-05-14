@@ -426,11 +426,6 @@ mao:arm_lock_sweep rdf:type owl:NamedIndividual ,
                    mao:name_zh "撥手掃脚"@zh .
 
 
-###  https://purl.org/maont/ontology/attack_control
-mao:attack_control rdf:type owl:NamedIndividual ,
-                            mao:MA_tactic .
-
-
 ###  https://purl.org/maont/ontology/attack_int
 mao:attack_int rdf:type owl:NamedIndividual ,
                         mao:MA_tactic ;
@@ -2889,7 +2884,7 @@ mao:taming_tiger_14 rdf:type owl:NamedIndividual ,
                                       mao:horse_stance ,
                                       mao:throwing_elbow ,
                                       mao:two_dragons_outof_sea ;
-                    mao:has_intent mao:attack_control ;
+                    mao:has_intent mao:attack_while_defend ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:lifting_bridge ,
                                    mao:move_bridge ,
@@ -3255,7 +3250,7 @@ mao:taming_tiger_37 rdf:type owl:NamedIndividual ,
                                       mao:grappling_claw ,
                                       mao:lock_n_drag_hand ,
                                       mao:turning ;
-                    mao:has_intent mao:attack_control ;
+                    mao:has_intent mao:attack_while_defend ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:move_bridge ,
                                    mao:stay_bridge ;
@@ -3283,7 +3278,7 @@ mao:taming_tiger_39 rdf:type owl:NamedIndividual ,
                                       mao:lock_n_drag_hand ,
                                       mao:lower_gravity_centere ,
                                       mao:twisting_stance ;
-                    mao:has_intent mao:attack_control ;
+                    mao:has_intent mao:attack_while_defend ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:move_bridge ,
                                    mao:stay_bridge ;
@@ -3410,7 +3405,7 @@ mao:taming_tiger_46 rdf:type owl:NamedIndividual ,
                                       mao:grappling_claw ,
                                       mao:horse_to_bow_stance ,
                                       mao:throwing_elbow ;
-                    mao:has_intent mao:attack_control ,
+                    mao:has_intent mao:attack_while_defend ,
                                    mao:attack_subduing ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:hard_bridge ,
@@ -3505,7 +3500,7 @@ mao:taming_tiger_52 rdf:type owl:NamedIndividual ,
                                       mao:f_elbow_n_sna_hand ,
                                       mao:grappling_claw ,
                                       mao:horse_to_bow_stance ;
-                    mao:has_intent mao:attack_control ,
+                    mao:has_intent mao:attack_while_defend ,
                                    mao:reconciliation_block ,
                                    mao:reconciliation_redirection ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3538,7 +3533,7 @@ mao:taming_tiger_54 rdf:type owl:NamedIndividual ,
                                       mao:crossing_bridge ,
                                       mao:hook_sweep ,
                                       mao:up_forcing_palm ;
-                    mao:has_intent mao:attack_control ,
+                    mao:has_intent mao:attack_while_defend ,
                                    mao:reconciliation_redirection ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:lifting_bridge ,
@@ -3889,7 +3884,7 @@ mao:taming_tiger_75 rdf:type owl:NamedIndividual ,
                                       mao:horse_to_bow_stance ,
                                       mao:palm_strike ,
                                       mao:tiger_tail_kick ;
-                    mao:has_intent mao:attack_control ,
+                    mao:has_intent mao:attack_while_defend ,
                                    mao:attack_int ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:hard_bridge ,
@@ -4065,7 +4060,7 @@ mao:taming_tiger_84 rdf:type owl:NamedIndividual ,
                                       mao:grappling_claw ,
                                       mao:hook_sweep ,
                                       mao:joint_lock ;
-                    mao:has_intent mao:attack_control ,
+                    mao:has_intent mao:attack_while_defend ,
                                    mao:attack_subduing ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:lifting_bridge ,
@@ -4127,7 +4122,7 @@ mao:taming_tiger_87 rdf:type owl:NamedIndividual ,
                                       mao:horse_to_bow_stance ,
                                       mao:lower_gravity_centere ,
                                       mao:tangling_palms ;
-                    mao:has_intent mao:attack_control ,
+                    mao:has_intent mao:attack_while_defend ,
                                    mao:attack_subduing ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:hard_bridge ,
