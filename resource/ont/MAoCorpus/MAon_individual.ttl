@@ -114,27 +114,27 @@ mao:Video rdf:type owl:Class .
 
 
 ###  https://purl.org/maont/ontology/attack_n_defend
-mao:attack_n_defend rdf:type owl:Class .
+# mao:attack_n_defend is a NamedIndividual of mao:MA_tactic (defined in MAon.ttl)
 
 
 ###  https://purl.org/maont/ontology/body_manipulation
-mao:body_manipulation rdf:type owl:Class .
+# mao:body_manipulation is a NamedIndividual of mao:MA_tactic (defined in MAon.ttl)
 
 
 ###  https://purl.org/maont/ontology/body_movement
-mao:body_movement rdf:type owl:Class .
+# mao:body_movement is a NamedIndividual of mao:MA_tactic (defined in MAon.ttl)
 
 
 ###  https://purl.org/maont/ontology/body_positioning
-mao:body_positioning rdf:type owl:Class .
+# mao:body_positioning is a NamedIndividual of mao:MA_tactic (defined in MAon.ttl)
 
 
 ###  https://purl.org/maont/ontology/body_posture
-mao:body_posture rdf:type owl:Class .
+# mao:body_posture is a NamedIndividual of mao:MA_tactic (defined in MAon.ttl)
 
 
 ###  https://purl.org/maont/ontology/distance_timing
-mao:distance_timing rdf:type owl:Class .
+# mao:distance_timing is a NamedIndividual of mao:MA_tactic (defined in MAon.ttl)
 
 
 #################################################################
