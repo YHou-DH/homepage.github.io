@@ -165,75 +165,12 @@ mao:Video rdf:type owl:Class ;
           rdfs:label "Video"@en .
 
 
-###  https://purl.org/maont/ontology/attack_control
-mao:attack_control rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Controlling the opponent"@en ;
-               mao:name_en "Controlling the opponent"@en ;
-               mao:name_zh "擒拿控制"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/attack_n_defend
-mao:attack_n_defend rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Attacking and defending"@en ;
-               mao:name_en "Attacking and defending"@en ;
-               mao:name_zh "攻防兼備"@zh-hk .
-
-
 ###  https://purl.org/maont/ontology/bladed_weapon
 mao:bladed_weapon rdf:type owl:Class ;
                rdfs:subClassOf mao:armament ;
                rdfs:comment "A bladed weapon such as a sword, knife, or sabre."@en ;
                rdfs:label "Bladed_weapon"@en .
 
-
-###  https://purl.org/maont/ontology/body_manipulation
-mao:body_manipulation rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Body manipulation"@en ;
-               mao:name_en "Body manipulation"@en ;
-               mao:name_zh "控制對手身體"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/body_movement
-mao:body_movement rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Body movement evasion"@en ;
-               mao:name_en "Body movement evasion"@en ;
-               mao:name_zh "移動閃避"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/body_positioning
-mao:body_positioning rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Body positioning"@en ;
-               mao:name_en "Body positioning"@en ;
-               mao:name_zh "身體定位"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/body_posture
-mao:body_posture rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Body posture"@en ;
-               mao:name_en "Body posture"@en ;
-               mao:name_zh "身體姿勢"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/distance_management
-mao:distance_management rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Distance management"@en ;
-               mao:name_en "Distance management"@en ;
-               mao:name_zh "距離管理"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/distance_timing
-mao:distance_timing rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Distance and timing"@en ;
-               mao:name_en "Distance and timing"@en ;
-               mao:name_zh "距離與時機"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/empty_hand_set
@@ -254,14 +191,6 @@ mao:grading_system rdf:type owl:Class ;
 mao:name_originalLang rdf:type rdfs:Datatype ;
                       rdfs:comment "The original-language name form of an appellation."@en ;
                       rdfs:label "name_originalLang"@en .
-
-
-###  https://purl.org/maont/ontology/positioning
-mao:positioning rdf:type owl:NamedIndividual ,
-               mao:MA_tactic ;
-               rdfs:label "Positioning"@en ;
-               mao:name_en "Positioning"@en ;
-               mao:name_zh "定位"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/ranking_system
