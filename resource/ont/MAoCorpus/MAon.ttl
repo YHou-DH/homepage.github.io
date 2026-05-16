@@ -794,7 +794,6 @@ mao:E22_man_made_obj rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/E31_document
 mao:E31_document rdf:type owl:Class ;
-                 rdfs:subClassOf mao:E73.Information_Object ;
                  rdfs:label "E31.Document"@en ;
                  rdfs:seeAlso <https://cidoc-crm.org/html/cidoc_crm_v7.1.3.html#E31> .
 
@@ -980,7 +979,7 @@ mao:MA_Book rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_Clan
 mao:MA_Clan rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing ;
+            rdfs:subClassOf mao:E74.Group ;
             rdfs:comment "A martial arts clan is a patrilineal or discipleship lineage group founded around a specific master or family. Clans typically share training norms and honour codes and may maintain their own transmission records. Examples: Lam Family Hung Kuen, Hung Sing Choy Lay Fut."@en ;
             rdfs:label "MA_Clan"@en ;
             mao:name_en "Martial Arts Clan"@en ;
@@ -990,8 +989,7 @@ mao:MA_Clan rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_Master
 mao:MA_Master rdf:type owl:Class ;
-              rdfs:subClassOf owl:Thing ,
-                              mao:E21_Person ,
+              rdfs:subClassOf mao:E21_Person ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:adapts ;
                                 owl:someValuesFrom mao:MA_style
@@ -1141,7 +1139,7 @@ mao:MA_Master rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_Organization
 mao:MA_Organization rdf:type owl:Class ;
-                    rdfs:subClassOf owl:Thing ;
+                    rdfs:subClassOf mao:E74.Group ;
                     rdfs:comment "Any collective social agent involved in the administration, promotion, research, or governance of martial arts, for example national associations, competitive federations, and academic research bodies. Distinguished from MA_Institute, which is a dedicated teaching and transmission institution."@en ;
                     rdfs:label "MA_Organization"@en ;
                     mao:name_en "Martial Arts Organization"@en ;
@@ -1179,7 +1177,7 @@ mao:MA_institute rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_principle
 mao:MA_principle rdf:type owl:Class ;
-                 rdfs:subClassOf owl:Thing ;
+                 rdfs:subClassOf mao:E73.Information_Object ;
                  rdfs:comment "MA_principle pertains to the guiding principles that underlie the movement rationale of specific techniques or a style in general, typically varying among different martial arts styles and systems."@en ;
                  rdfs:label "MA_Principle" ;
                  mao:name_en "Principle (martial arts)"@en ;
@@ -1253,6 +1251,7 @@ mao:MA_style rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_syllabus
 mao:MA_syllabus rdf:type owl:Class ;
+                rdfs:subClassOf mao:E73.Information_Object ;
                 rdfs:comment "A formalised curriculum specifying which forms, techniques, and grading requirements constitute a complete course of study within a martial arts system or institute. Not all traditional systems have a standardised syllabus."@en ;
                 rdfs:label "MA_Syllabus" ;
                 mao:name_en "Syllabus (martial arts)"@en ;
@@ -1316,6 +1315,7 @@ mao:MA_system rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_tactic
 mao:MA_tactic rdf:type owl:Class ;
+              rdfs:subClassOf mao:E73.Information_Object ;
               rdfs:comment "A tactical intent or combat application goal, describing what the practitioner is trying to achieve with a technique or movement. Examples: attacking while blocking (連消帶打), closing the distance (逼近), controlling the opponent (擒拿控制). Distinguished from MA_principle, which is a guiding movement philosophy rather than a combat objective."@en ;
               rdfs:label "MA_Tactic" ;
               mao:name_en "Tactic"@en ;
@@ -1823,13 +1823,6 @@ mao:ranking_system rdf:type owl:Class ;
                    rdfs:label "Ranking_system"@en .
 
 
-###  https://purl.org/maont/ontology/reputation
-mao:reputation rdf:type owl:Class ;
-               rdfs:subClassOf owl:Thing ;
-               rdfs:comment "The reputation or standing of a martial arts master or style."@en ;
-               rdfs:label "Reputation"@en .
-
-
 ###  https://purl.org/maont/ontology/shoulder_arm_training
 mao:shoulder_arm_training rdf:type owl:Class ;
                           rdfs:subClassOf mao:physical_training ,
@@ -1922,7 +1915,7 @@ mao:symbolic_animal rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/training_method
 mao:training_method rdf:type owl:Class ;
-                    rdfs:subClassOf owl:Thing ,
+                    rdfs:subClassOf mao:E73.Information_Object ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty mao:trains ;
                                       owl:someValuesFrom mao:MA_technique
