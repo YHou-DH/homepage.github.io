@@ -895,8 +895,7 @@ mao:Form_move rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/Form_set
 mao:Form_set rdf:type owl:Class ;
-             rdfs:subClassOf mao:E73.Information_Object ,
-                             mao:training_method ,
+             rdfs:subClassOf mao:training_method ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty mao:belongs_to ;
                                owl:someValuesFrom mao:MA_system
