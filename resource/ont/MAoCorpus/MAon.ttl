@@ -1852,7 +1852,7 @@ mao:spar_training rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/sparring_set
 mao:sparring_set rdf:type owl:Class ;
-                 rdfs:subClassOf mao:spar_training ;
+                 rdfs:subClassOf mao:Form_set ;
                  rdfs:comment "A choreographed two-person sparring form set."@en ;
                  rdfs:label "Sparring_set"@en .
 
