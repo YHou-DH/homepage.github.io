@@ -169,10 +169,6 @@ mao:ManualBook rdf:type owl:Class .
 mao:Philosophical_concepts rdf:type owl:Class .
 
 
-###  https://purl.org/maont/ontology/Video
-mao:Video rdf:type owl:Class .
-
-
 ###  https://purl.org/maont/ontology/bodywork
 mao:bodywork rdf:type owl:Class .
 
@@ -277,13 +273,13 @@ mao:Dan_Tien_focus rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/GungGee_video_OscarLam
 mao:GungGee_video_OscarLam rdf:type owl:NamedIndividual ,
-                                    mao:Video ;
+                                    mao:Video_item ;
                            rdfs:label "GungGee_video_OscarLam" .
 
 
 ###  https://purl.org/maont/ontology/Gung_Gee_Fook_Fu_Kuen
 mao:Gung_Gee_Fook_Fu_Kuen rdf:type owl:NamedIndividual ,
-                                   mao:Form_set ;
+                                   mao:empty_hand_set ;
                           mao:belongs_to mao:Hung_Kuen ;
                           mao:practiced_in mao:Lam_Family_Hung_Kuen ;
                           rdfs:label "Gung_Gee_Fook_Fu_Kuen"@en ;
@@ -2315,8 +2311,8 @@ mao:san_chin_stance rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/san_zhan
 mao:san_zhan rdf:type owl:NamedIndividual ,
-                      mao:Form_set ;
-             rdfs:label "san_zhan" .
+                      mao:empty_hand_set ;
+             rdfs:label "San_zhan" .
 
 
 ###  https://purl.org/maont/ontology/seizing_palm
@@ -3405,8 +3401,8 @@ mao:taming_tiger_46 rdf:type owl:NamedIndividual ,
                                       mao:grappling_claw ,
                                       mao:horse_to_bow_stance ,
                                       mao:throwing_elbow ;
-                    mao:has_intent mao:attack_while_defend ,
-                                   mao:attack_subduing ;
+                    mao:has_intent mao:attack_subduing ,
+                                   mao:attack_while_defend ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:hard_bridge ,
                                    mao:stay_bridge ,
@@ -3884,8 +3880,8 @@ mao:taming_tiger_75 rdf:type owl:NamedIndividual ,
                                       mao:horse_to_bow_stance ,
                                       mao:palm_strike ,
                                       mao:tiger_tail_kick ;
-                    mao:has_intent mao:attack_while_defend ,
-                                   mao:attack_int ;
+                    mao:has_intent mao:attack_int ,
+                                   mao:attack_while_defend ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:hard_bridge ,
                                    mao:straight_bridge ;
@@ -4060,8 +4056,8 @@ mao:taming_tiger_84 rdf:type owl:NamedIndividual ,
                                       mao:grappling_claw ,
                                       mao:hook_sweep ,
                                       mao:joint_lock ;
-                    mao:has_intent mao:attack_while_defend ,
-                                   mao:attack_subduing ;
+                    mao:has_intent mao:attack_subduing ,
+                                   mao:attack_while_defend ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:lifting_bridge ,
                                    mao:move_bridge ,
@@ -4122,8 +4118,8 @@ mao:taming_tiger_87 rdf:type owl:NamedIndividual ,
                                       mao:horse_to_bow_stance ,
                                       mao:lower_gravity_centere ,
                                       mao:tangling_palms ;
-                    mao:has_intent mao:attack_while_defend ,
-                                   mao:attack_subduing ;
+                    mao:has_intent mao:attack_subduing ,
+                                   mao:attack_while_defend ;
                     mao:is_form_in mao:Gung_Gee_Fook_Fu_Kuen ;
                     mao:represents mao:hard_bridge ,
                                    mao:move_bridge ,
