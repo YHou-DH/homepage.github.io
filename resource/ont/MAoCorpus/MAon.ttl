@@ -100,26 +100,26 @@ mao:name_romanMAN rdf:type owl:AnnotationProperty ;
 
 ###  https://purl.org/maont/ontology/name_zh
 mao:name_zh rdf:type owl:AnnotationProperty ;
-                   rdfs:label "name_zh"@en ;
-                   mao:name_zh "中文名稱"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/otherName_en
-mao:otherName_en rdf:type owl:AnnotationProperty ;
-                        rdfs:label "otherName_en"@en ;
-                        mao:name_zh "英文別稱"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/otherName_zh
-mao:otherName_zh rdf:type owl:AnnotationProperty ;
-                        rdfs:label "otherName_zh"@en ;
-                        mao:name_zh "中文別稱"@zh-hk .
+            rdfs:label "name_zh"@en ;
+            mao:name_zh "中文名稱"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/origin_story
 mao:origin_story rdf:type owl:AnnotationProperty ;
                  rdfs:label "origin_story"@en ;
                  mao:name_zh "源流"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/otherName_en
+mao:otherName_en rdf:type owl:AnnotationProperty ;
+                 rdfs:label "otherName_en"@en ;
+                 mao:name_zh "英文別稱"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/otherName_zh
+mao:otherName_zh rdf:type owl:AnnotationProperty ;
+                 rdfs:label "otherName_zh"@en ;
+                 mao:name_zh "中文別稱"@zh-hk .
 
 
 #################################################################
@@ -130,109 +130,10 @@ mao:origin_story rdf:type owl:AnnotationProperty ;
 xsd:gYear rdf:type rdfs:Datatype .
 
 
-###  https://purl.org/maont/ontology/Image
-mao:Image rdf:type owl:Class ;
-               rdfs:subClassOf mao:Digital_document ;
-               rdfs:comment "A photographic or graphic image document related to martial arts."@en ;
-               rdfs:label "Image"@en .
-
-
-###  https://purl.org/maont/ontology/ManualBook
-mao:ManualBook rdf:type owl:Class ;
-               rdfs:subClassOf mao:MA_Book ;
-               rdfs:comment "A printed or manuscript martial arts manual or book."@en ;
-               rdfs:label "ManualBook"@en .
-
-
-###  https://purl.org/maont/ontology/MoCap
-mao:MoCap rdf:type owl:Class ;
-               rdfs:subClassOf mao:Digital_document ;
-               rdfs:comment "A motion-capture recording of martial arts movement."@en ;
-               rdfs:label "MoCap"@en .
-
-
-###  https://purl.org/maont/ontology/Texts
-mao:Texts rdf:type owl:Class ;
-               rdfs:subClassOf mao:E31_document ;
-               rdfs:comment "A textual document or written source related to martial arts."@en ;
-               rdfs:label "Texts"@en .
-
-
-###  https://purl.org/maont/ontology/Video
-mao:Video rdf:type owl:Class ;
-          rdfs:subClassOf mao:Digital_document ;
-          rdfs:comment "A video recording documenting martial arts content."@en ;
-          rdfs:label "Video"@en .
-
-
-###  https://purl.org/maont/ontology/bladed_weapon
-mao:bladed_weapon rdf:type owl:Class ;
-               rdfs:subClassOf mao:armament ;
-               rdfs:comment "A bladed weapon such as a sword, knife, or sabre."@en ;
-               rdfs:label "Bladed_weapon"@en .
-
-
-
-###  https://purl.org/maont/ontology/empty_hand_set
-mao:empty_hand_set rdf:type owl:Class ;
-               rdfs:subClassOf mao:Form_set ;
-               rdfs:comment "A form set practised without weapons (bare-hand form)."@en ;
-               rdfs:label "Empty_hand_set"@en .
-
-
-###  https://purl.org/maont/ontology/grading_system
-mao:grading_system rdf:type owl:Class ;
-               rdfs:subClassOf mao:MA_syllabus ;
-               rdfs:comment "A structured grading or rank-assessment system within a martial arts syllabus."@en ;
-               rdfs:label "Grading_system"@en .
-
-
 ###  https://purl.org/maont/ontology/name_originalLang
 mao:name_originalLang rdf:type rdfs:Datatype ;
                       rdfs:comment "The original-language name form of an appellation."@en ;
                       rdfs:label "name_originalLang"@en .
-
-
-###  https://purl.org/maont/ontology/ranking_system
-mao:ranking_system rdf:type owl:Class ;
-               rdfs:subClassOf mao:MA_syllabus ;
-               rdfs:comment "A system of ranks or levels used to denote martial arts proficiency."@en ;
-               rdfs:label "Ranking_system"@en .
-
-
-###  https://purl.org/maont/ontology/reputation
-mao:reputation rdf:type owl:Class ;
-               rdfs:subClassOf owl:Thing ;
-               rdfs:comment "The reputation or standing of a martial arts master or style."@en ;
-               rdfs:label "Reputation"@en .
-
-
-###  https://purl.org/maont/ontology/spear_weapon
-mao:spear_weapon rdf:type owl:Class ;
-               rdfs:subClassOf mao:armament ;
-               rdfs:comment "A spear-type polearm weapon."@en ;
-               rdfs:label "Spear_weapon"@en .
-
-
-###  https://purl.org/maont/ontology/sparring_set
-mao:sparring_set rdf:type owl:Class ;
-               rdfs:subClassOf mao:spar_training ;
-               rdfs:comment "A choreographed two-person sparring form set."@en ;
-               rdfs:label "Sparring_set"@en .
-
-
-###  https://purl.org/maont/ontology/staff_weapon
-mao:staff_weapon rdf:type owl:Class ;
-               rdfs:subClassOf mao:armament ;
-               rdfs:comment "A staff-type polearm weapon."@en ;
-               rdfs:label "Staff_weapon"@en .
-
-
-###  https://purl.org/maont/ontology/weapon_set
-mao:weapon_set rdf:type owl:Class ;
-               rdfs:subClassOf mao:Form_set ;
-               rdfs:comment "A form set practised with weapons."@en ;
-               rdfs:label "Weapon_set"@en .
 
 
 #################################################################
@@ -314,7 +215,7 @@ mao:employs rdf:type owl:ObjectProperty ,
             rdfs:range mao:MA_technique ;
             rdfs:label "employs" ;
             mao:name_zh "Instances of Techniques, particularly Combo_tech, acquire the identity of a combo technique with a collective impact of its technical components. To capture these characteristics, we use the employs property to indicate that a more complex instance of Technique is fulfilled by employing another or several other basic ones."@en ,
-                               "運用"@zh-hk .
+                        "運用"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/employsBodyshape
@@ -488,6 +389,13 @@ mao:imitates rdf:type owl:ObjectProperty ;
              mao:name_zh "模仿"@zh-hk .
 
 
+###  https://purl.org/maont/ontology/in_collection
+mao:in_collection rdf:type owl:ObjectProperty ;
+                  rdfs:domain mao:E31_document ;
+                  rdfs:range mao:E78.Collection ;
+                  rdfs:label "in_collection"@en .
+
+
 ###  https://purl.org/maont/ontology/in_form
 mao:in_form rdf:type owl:ObjectProperty ;
             rdfs:domain mao:Form_move ;
@@ -558,6 +466,15 @@ mao:located_at rdf:type owl:ObjectProperty ;
                rdfs:label "located_at"@en .
 
 
+###  https://purl.org/maont/ontology/participated_in
+mao:participated_in rdf:type owl:ObjectProperty ;
+                    rdfs:domain mao:E21_Person ,
+                                mao:E74.Group ;
+                    rdfs:range mao:E5.Event ;
+                    rdfs:label "participated_in"@en ;
+                    rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in"@en .
+
+
 ###  https://purl.org/maont/ontology/practiced_in
 mao:practiced_in rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:Form_set ;
@@ -575,6 +492,15 @@ mao:practices rdf:type owl:ObjectProperty ;
               rdfs:comment "The practices property signifies that a Master is known to practise a certain style or system."@en ;
               rdfs:label "practices" ;
               mao:name_zh "習練"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/present_at
+mao:present_at rdf:type owl:ObjectProperty ;
+               rdfs:domain mao:E22_man_made_obj ,
+                           mao:E73.Information_Object ;
+               rdfs:range mao:E5.Event ;
+               rdfs:label "present_at"@en ;
+               rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at"@en .
 
 
 ###  https://purl.org/maont/ontology/represents
@@ -604,7 +530,7 @@ mao:similar_movement_to rdf:type owl:ObjectProperty ;
                         rdfs:range mao:Form_move ;
                         rdfs:label "similar_movement_to" ;
                         mao:name_zh "The similar_movement_to property represents a conceptual similarity between instances of Form."@en ,
-                                           "相似動作"@zh-hk .
+                                    "相似動作"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/similar_set_of
@@ -868,7 +794,7 @@ mao:E22_man_made_obj rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/E31_document
 mao:E31_document rdf:type owl:Class ;
-                 rdfs:subClassOf owl:Thing ;
+                 rdfs:subClassOf mao:E73.Information_Object ;
                  rdfs:label "E31.Document"@en ;
                  rdfs:seeAlso <https://cidoc-crm.org/html/cidoc_crm_v7.1.3.html#E31> .
 
@@ -877,6 +803,13 @@ mao:E31_document rdf:type owl:Class ;
 mao:E41_appellation rdf:type owl:Class ;
                     rdfs:label "E41.Appellation"@en ;
                     rdfs:seeAlso <https://cidoc-crm.org/html/cidoc_crm_v7.1.3.html#E41> .
+
+
+###  https://purl.org/maont/ontology/E5.Event
+mao:E5.Event rdf:type owl:Class ;
+             rdfs:comment "This class comprises distinct, delimited and coherent processes and interactions of a material nature, in cultural, social or physical systems. Typical examples are meetings, births, deaths, actions of decision taking, making or inventing things, but also more complex and extended ones such as conferences, elections, building of a castle, or battles."@en ;
+             rdfs:label "E5.Event"@en ;
+             rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/E5_Event"@en .
 
 
 ###  https://purl.org/maont/ontology/E52_timespan
@@ -898,10 +831,31 @@ mao:E73.Information_Object rdf:type owl:Class ;
                            rdfs:seeAlso <https://cidoc-crm.org/html/cidoc_crm_v7.1.3.html#E73> .
 
 
+###  https://purl.org/maont/ontology/E74.Group
+mao:E74.Group rdf:type owl:Class ;
+              rdfs:comment """This class comprises any gatherings or organizations of human individuals or groups that act collectively or in a similar way due to any form of unifying relationship. In the wider sense this class also comprises official positions which used to be regarded in certain contexts as one actor, independent of the current holder of the office, such as the president of a country. In such cases, it may happen that the group never had more than one member. A joint pseudonym (i.e. a name that seems indicative of an individual but that is actually used as a persona by two or more people) is a particular case of E74 Group.
+A gathering of people becomes an instance of E74 Group when it exhibits organizational characteristics usually typified by a set of ideas or beliefs held in common, or actions performed together. These might be communication, creating some common artifact, a common purpose such as study, worship, business, sports, etc. Nationality can be modelled as membership in an instance of E74 Group. Married couples and other concepts of family are regarded as particular examples of E74 Group."""@en ;
+              rdfs:label "E74.Group"@en ;
+              rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/E74_Group"@en .
+
+
 ###  https://purl.org/maont/ontology/E77_persistent_item
 mao:E77_persistent_item rdf:type owl:Class ;
                         rdfs:label "E77.Persistent Item"@en ;
                         rdfs:seeAlso <https://cidoc-crm.org/html/cidoc_crm_v7.1.3.html#E77> .
+
+
+###  https://purl.org/maont/ontology/E78.Collection
+mao:E78.Collection rdf:type owl:Class ;
+                   rdfs:comment "This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan. Typical instances of curated holdings are museum collections, archives, library holdings and digital libraries."@en ;
+                   rdfs:label "E78.Collection"@en ;
+                   rdfs:seeAlso "https://cidoc-crm.org/html/cidoc_crm_v7.1.3.html#E78"@en .
+
+
+###  https://purl.org/maont/ontology/Exhibition
+mao:Exhibition rdf:type owl:Class ;
+               rdfs:subClassOf mao:E5.Event ;
+               rdfs:label "Exhibition"@en .
 
 
 ###  https://purl.org/maont/ontology/Form_move
@@ -936,7 +890,7 @@ mao:Form_move rdf:type owl:Class ;
               mao:name_en "Shi"@en ;
               mao:name_zh "招式"@zh-hk ;
               mao:otherName_en "Form movement"@en ,
-                                      "zhaoshi"@en ;
+                               "zhaoshi"@en ;
               mao:otherName_zh "式"@zh-hk .
 
 
@@ -977,8 +931,14 @@ mao:Form_set rdf:type owl:Class ;
              mao:name_en "Form set"@en ;
              mao:name_zh "套路"@zh-hk ;
              mao:otherName_en "Taolu"@en ,
-                                     "kata"@en ;
+                              "kata"@en ;
              mao:otherName_zh "拳套"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/Interactive_system
+mao:Interactive_system rdf:type owl:Class ;
+                       rdfs:subClassOf mao:E22_man_made_obj ;
+                       rdfs:label "Interactive_system"@en .
 
 
 ###  https://purl.org/maont/ontology/MA_Book
@@ -1175,7 +1135,7 @@ mao:MA_Master rdf:type owl:Class ;
               mao:name_en "Martial Arts Masters"@en ;
               mao:name_zh "師傅"@zh-hk ;
               mao:otherName_en "Martial Artist"@en ,
-                                      "Sifu"@en ;
+                               "Sifu"@en ;
               mao:otherName_zh "武術家"@zh-hk .
 
 
@@ -1407,10 +1367,57 @@ mao:MA_technique rdf:type owl:Class ;
                  mao:name_zh "技術"@zh-hk .
 
 
+###  https://purl.org/maont/ontology/ManualBook
+mao:ManualBook rdf:type owl:Class ;
+               rdfs:subClassOf mao:MA_Book ;
+               rdfs:comment "A printed or manuscript martial arts manual or book."@en ;
+               rdfs:label "ManualBook"@en .
+
+
+###  https://purl.org/maont/ontology/MoCap_item
+mao:MoCap_item rdf:type owl:Class ;
+               rdfs:subClassOf mao:Digital_document ;
+               rdfs:comment "A motion-capture recording of martial arts movement."@en ;
+               rdfs:label "MoCap_item"@en .
+
+
+###  https://purl.org/maont/ontology/Movie
+mao:Movie rdf:type owl:Class ;
+          rdfs:subClassOf mao:E73.Information_Object ;
+          rdfs:label "Movie"@en .
+
+
 ###  https://purl.org/maont/ontology/Philosophical_concepts
 mao:Philosophical_concepts rdf:type owl:Class ;
                            rdfs:subClassOf mao:MA_principle ;
                            rdfs:label "Philosophical_concepts"@en .
+
+
+###  https://purl.org/maont/ontology/Textual_item
+mao:Textual_item rdf:type owl:Class ;
+                 rdfs:subClassOf mao:Digital_document ;
+                 rdfs:comment "A textual document or written source related to martial arts."@en ;
+                 rdfs:label "Textual_item"@en .
+
+
+###  https://purl.org/maont/ontology/Traditional_event
+mao:Traditional_event rdf:type owl:Class ;
+                      rdfs:subClassOf mao:E5.Event ;
+                      rdfs:label "Traditional_event"@en .
+
+
+###  https://purl.org/maont/ontology/Video_item
+mao:Video_item rdf:type owl:Class ;
+               rdfs:subClassOf mao:Digital_document ;
+               rdfs:comment "A video recording documenting martial arts content."@en ;
+               rdfs:label "Video_item"@en .
+
+
+###  https://purl.org/maont/ontology/Visual_item
+mao:Visual_item rdf:type owl:Class ;
+                rdfs:subClassOf mao:Digital_document ;
+                rdfs:comment "A photographic or graphic image document related to martial arts."@en ;
+                rdfs:label "Visual_item"@en .
 
 
 ###  https://purl.org/maont/ontology/armament
@@ -1426,6 +1433,13 @@ mao:armament rdf:type owl:Class ;
              mao:name_zh "兵器"@zh-hk ;
              mao:otherName_en "Armament"@en ;
              mao:otherName_zh "軍備"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/bladed_weapon
+mao:bladed_weapon rdf:type owl:Class ;
+                  rdfs:subClassOf mao:armament ;
+                  rdfs:comment "A bladed weapon such as a sword, knife, or sabre."@en ;
+                  rdfs:label "Bladed_weapon"@en .
 
 
 ###  https://purl.org/maont/ontology/body_shape
@@ -1486,7 +1500,7 @@ mao:breathing_tech rdf:type owl:Class ;
                    rdfs:label "Breathing_tech" ;
                    mao:name_en "Breathing Technique"@en ;
                    mao:name_zh "breathing_tetch is the class for breathing techniques, a fundamental aspect of martial arts, as well as physical training and life in general. Proper breathing can enhance physical performance, force generation, and mindfulness."@en ,
-                                      "呼吸法"@zh-hk .
+                               "呼吸法"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/bridge_principle
@@ -1563,6 +1577,13 @@ mao:elbow_tech rdf:type owl:Class ;
                mao:name_romanMAN "Zhou Fa"@en ;
                mao:name_zh "踭法"@zh-hk ;
                mao:otherName_zh "肘法"@zh-cn .
+
+
+###  https://purl.org/maont/ontology/empty_hand_set
+mao:empty_hand_set rdf:type owl:Class ;
+                   rdfs:subClassOf mao:Form_set ;
+                   rdfs:comment "A form set practised without weapons (bare-hand form)."@en ;
+                   rdfs:label "Empty_hand_set"@en .
 
 
 ###  https://purl.org/maont/ontology/eye_tech
@@ -1647,6 +1668,13 @@ mao:gesture rdf:type owl:Class ;
             mao:name_romanMAN "Shou Xing"@en ;
             mao:name_zh "手形"@zh ;
             mao:otherName_en "Hand shape"@en .
+
+
+###  https://purl.org/maont/ontology/grading_system
+mao:grading_system rdf:type owl:Class ;
+                   rdfs:subClassOf mao:MA_syllabus ;
+                   rdfs:comment "A structured grading or rank-assessment system within a martial arts syllabus."@en ;
+                   rdfs:label "Grading_system"@en .
 
 
 ###  https://purl.org/maont/ontology/handwork
@@ -1788,6 +1816,20 @@ mao:prep_pose rdf:type owl:Class ;
               mao:name_zh "預備勢"@zh-hk .
 
 
+###  https://purl.org/maont/ontology/ranking_system
+mao:ranking_system rdf:type owl:Class ;
+                   rdfs:subClassOf mao:MA_syllabus ;
+                   rdfs:comment "A system of ranks or levels used to denote martial arts proficiency."@en ;
+                   rdfs:label "Ranking_system"@en .
+
+
+###  https://purl.org/maont/ontology/reputation
+mao:reputation rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
+               rdfs:comment "The reputation or standing of a martial arts master or style."@en ;
+               rdfs:label "Reputation"@en .
+
+
 ###  https://purl.org/maont/ontology/shoulder_arm_training
 mao:shoulder_arm_training rdf:type owl:Class ;
                           rdfs:subClassOf mao:physical_training ,
@@ -1814,6 +1856,27 @@ mao:spar_training rdf:type owl:Class ;
                   mao:name_en "Sparring"@en ;
                   mao:name_zh "對練"@zh-hk ;
                   mao:otherName_zh "對拆"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/sparring_set
+mao:sparring_set rdf:type owl:Class ;
+                 rdfs:subClassOf mao:spar_training ;
+                 rdfs:comment "A choreographed two-person sparring form set."@en ;
+                 rdfs:label "Sparring_set"@en .
+
+
+###  https://purl.org/maont/ontology/spear_weapon
+mao:spear_weapon rdf:type owl:Class ;
+                 rdfs:subClassOf mao:armament ;
+                 rdfs:comment "A spear-type polearm weapon."@en ;
+                 rdfs:label "Spear_weapon"@en .
+
+
+###  https://purl.org/maont/ontology/staff_weapon
+mao:staff_weapon rdf:type owl:Class ;
+                 rdfs:subClassOf mao:armament ;
+                 rdfs:comment "A staff-type polearm weapon."@en ;
+                 rdfs:label "Staff_weapon"@en .
 
 
 ###  https://purl.org/maont/ontology/stance
@@ -1906,6 +1969,13 @@ mao:waist_training rdf:type owl:Class ;
                    rdfs:label "Waist_training"@en ;
                    mao:name_en "Waist training"@en ;
                    mao:name_zh "腰部訓練"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/weapon_set
+mao:weapon_set rdf:type owl:Class ;
+               rdfs:subClassOf mao:Form_set ;
+               rdfs:comment "A form set practised with weapons."@en ;
+               rdfs:label "Weapon_set"@en .
 
 
 ###  https://purl.org/maont/ontology/weapon_tech
