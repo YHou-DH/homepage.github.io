@@ -1264,7 +1264,6 @@ mao:dbsquare_hammer rdf:type owl:NamedIndividual ,
                              mao:fist_tech ;
                     mao:employs mao:forefist ;
                     mao:used_in mao:Hung_Kuen ;
-                    FistTechnique BelongsToStyle: Hung_Kuen" ;
                     rdfs:label "verticalfist_hammer"@en ;
                     mao:name_en "日-character hammer fist"@en ;
                     mao:name_romanCAN "Jat Zi Ceoi"@en ;
