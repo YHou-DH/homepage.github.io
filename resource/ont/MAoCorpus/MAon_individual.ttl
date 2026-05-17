@@ -283,7 +283,7 @@ mao:Gung_Gee_Fook_Fu_Kuen rdf:type owl:NamedIndividual ,
                                    mao:empty_hand_set ;
                           mao:belongs_to mao:Hung_Kuen ;
                           mao:practiced_in mao:Lam_Family_Hung_Kuen ;
-                          rdfs:comment "[Style_HG_42] 在工字伏虎拳和虎鶩雙形拳的第一段中都有出現。" ;
+                          rdfs:comment "在工字伏虎拳和虎鶩雙形拳的第一段中都有出現。" ;
                           rdfs:label "Gung_Gee_Fook_Fu_Kuen"@en ;
                           mao:name_en "Gung Gee Fook Fu Kuen"@en ;
                           mao:name_zh "工字伏虎拳"@zh ;
@@ -622,8 +622,7 @@ mao:bow_stance rdf:type owl:NamedIndividual ,
                mao:name_romanMAN "Zi Wu Ma"@en ;
                mao:name_zh "子午馬"@zh ;
                mao:otherName_en "Forward stance"@en ,
-                                "Gung Bou"@en ,
-                                "Style Hg 44"@en ;
+                                "Gung Bou"@en ;
                mao:otherName_zh "弓步"@zh .
 
 
@@ -906,8 +905,7 @@ mao:cr_whip_punch rdf:type owl:NamedIndividual ,
                   mao:name_en "Crane-style uppercut"@en ;
                   mao:name_romanCAN "Bin Ceoi"@en ;
                   mao:name_romanMAN "Bian Chui"@en ;
-                  mao:name_zh "鞭搥"@zh ;
-                  mao:otherName_en "Style Hg 19"@en .
+                  mao:name_zh "鞭搥"@zh .
 
 
 ###  https://purl.org/maont/ontology/crane_beak
@@ -1233,8 +1231,7 @@ mao:db_thrust_palm rdf:type owl:NamedIndividual ,
                    mao:name_en "Double-palm thrust"@en ;
                    mao:name_romanCAN "Soeng Caap Sau"@en ;
                    mao:name_romanMAN "Shuang Cha Shou"@en ;
-                   mao:name_zh "雙插手"@zh ;
-                   mao:otherName_en "Style Hg 8"@en .
+                   mao:name_zh "雙插手"@zh .
 
 
 ###  https://purl.org/maont/ontology/db_uw_forcing_palms
@@ -1267,7 +1264,7 @@ mao:dbsquare_hammer rdf:type owl:NamedIndividual ,
                              mao:fist_tech ;
                     mao:employs mao:forefist ;
                     mao:used_in mao:Hung_Kuen ;
-                    rdfs:comment "[Style_HG_2] Individual: Style_HG_2 Chinese label (name_zh): 日子搥 Cantonese label: jat zi ceoi Type / Class: FistTechnique BelongsToStyle: Hung_Kuen" ;
+                    FistTechnique BelongsToStyle: Hung_Kuen" ;
                     rdfs:label "verticalfist_hammer"@en ;
                     mao:name_en "日-character hammer fist"@en ;
                     mao:name_romanCAN "Jat Zi Ceoi"@en ;
@@ -1357,7 +1354,6 @@ mao:double_claws rdf:type owl:NamedIndividual ,
                           mao:claw_tech ;
                  mao:employs mao:tiger_claw ;
                  mao:used_in mao:Hung_Kuen ;
-                 rdfs:comment "[Style_HG_6] Individual: Style_HG_6, Chinese label (name_zh): 雙爪手, Cantonese label: soeng zaau sau" ;
                  rdfs:label "double_claws" ;
                  mao:name_en "Double claws"@en ;
                  mao:name_romanCAN "Soeng Zaau Sau"@en ;
@@ -1370,13 +1366,11 @@ mao:double_claws rdf:type owl:NamedIndividual ,
 mao:dragging_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
-                  rdfs:comment "[Style_WhiteCrane_10] 拖手" ;
                   rdfs:label "dragging_palm" ;
                   mao:name_en "Dragging palm"@en ;
                   mao:name_romanCAN "To Sau"@en ;
                   mao:name_romanMAN "Tuo Shou"@en ;
-                  mao:name_zh "拖手"@zh ;
-                  mao:otherName_en "Style Whitecrave 10"@en .
+                  mao:name_zh "拖手"@zh .
 
 
 ###  https://purl.org/maont/ontology/dragon
@@ -1471,7 +1465,6 @@ mao:facing_sun_palm rdf:type owl:NamedIndividual ,
 mao:finger_hand rdf:type owl:NamedIndividual ,
                          mao:gesture ;
                 mao:used_in mao:Hung_Kuen ;
-                rdfs:comment "[Style_HG_36] 指手" ;
                 rdfs:label "finger_hand" ;
                 mao:name_en "Finger hand"@en ;
                 mao:name_romanCAN "Zi Sau"@en ;
@@ -1530,7 +1523,6 @@ mao:forcing_elbow rdf:type owl:NamedIndividual ,
                   mao:name_romanCAN "Bik Zaang"@en ;
                   mao:name_romanMAN "Bi Zhou"@en ;
                   mao:name_zh "逼踭"@zh ;
-                  mao:otherName_en "Style Hg 40"@en ;
                   mao:otherName_zh "迫踭"@zh .
 
 
@@ -1555,7 +1547,6 @@ mao:forefist rdf:type owl:NamedIndividual ,
              mao:used_in mao:Choy_Li_Fut ,
                          mao:Hung_Kuen ,
                          mao:White_Crane_Kungfu ;
-             rdfs:comment "[Style_HG_18] 边搥 employs 平拳 as part of its technique." ;
              rdfs:label "forefist"@en ;
              mao:name_en "Forefist"@en ;
              mao:name_romanCAN "Ping Kyun"@en ;
@@ -1676,8 +1667,7 @@ mao:hanging_hammer rdf:type owl:NamedIndividual ,
                    mao:name_romanCAN "Gwaa Ceoi"@en ;
                    mao:name_romanMAN "Gua Chui"@en ;
                    mao:name_zh "掛搥"@zh ;
-                   mao:otherName_en "Hanging back fist"@en ,
-                                    "Style Hg 16"@en .
+                   mao:otherName_en "Hanging back fist"@en .
 
 
 ###  https://purl.org/maont/ontology/hanging_n_chop
@@ -1827,7 +1817,6 @@ mao:horse_stance rdf:type owl:NamedIndividual ,
                  mao:name_romanCAN "Sei Ping Maa"@en ;
                  mao:name_romanMAN "Si Ping Ma"@en ;
                  mao:name_zh "四平馬"@zh ;
-                 mao:otherName_en "Style Hg 43"@en ;
                  mao:otherName_zh "四平大馬"@zh .
 
 
@@ -1843,8 +1832,7 @@ mao:horse_to_bow_stance rdf:type owl:NamedIndividual ,
                         rdfs:comment "由四平馬轉子午馬時，後腳腳跟往前腳方向推動，同時腰部與之協調，把重心由原來的中點往前移" ;
                         rdfs:label "horse_to_bow_stance" ;
                         mao:name_en "Turning from horse stance to bow stance"@en ;
-                        mao:name_zh "四平馬轉子午馬"@zh ;
-                        mao:otherName_en "Style Hg 53"@en .
+                        mao:name_zh "四平馬轉子午馬"@zh .
 
 
 ###  https://purl.org/maont/ontology/inch_body
@@ -2150,7 +2138,6 @@ mao:out_horse_stance rdf:type owl:NamedIndividual ,
                      mao:name_romanCAN "Baat Zi Sei Ping Maa"@en ;
                      mao:name_romanMAN "Wai Ba Si Ping Ma"@en ;
                      mao:name_zh "外八字四平馬"@zh ;
-                     mao:otherName_en "Style Clf 39"@en ;
                      mao:otherName_zh "外八字馬"@zh .
 
 
@@ -2260,7 +2247,6 @@ mao:qian_char_hand rdf:type owl:NamedIndividual ,
                    mao:name_romanMAN "Qian Zi Shou"@en ;
                    mao:name_zh "千字手"@zh ;
                    mao:otherName_en "Pek Zoeng"@en ,
-                                    "Style Hg 23"@en ,
                                     "Throwing knife hand chop"@en ;
                    mao:otherName_zh "劈掌"@zh .
 
@@ -2333,7 +2319,6 @@ mao:rocket_hammer rdf:type owl:NamedIndividual ,
 mao:rolling_elbow rdf:type owl:NamedIndividual ,
                            mao:elbow_tech ;
                   mao:used_in mao:Hung_Kuen ;
-                  rdfs:comment "[Style_HG_41] Type: ElbowTechnique; Chinese label: 碌踭" ;
                   rdfs:label "rolling_elbow" ;
                   mao:name_en "Rolling elbow strike"@en ;
                   mao:name_romanCAN "Luk Zaang"@en ;
@@ -2485,8 +2470,7 @@ mao:side_punch rdf:type owl:NamedIndividual ,
                mao:name_romanCAN "Bin Ceoi"@en ;
                mao:name_romanMAN "Bian Chui"@en ;
                mao:name_zh "邊搥"@zh ;
-               mao:otherName_en "Side back fist"@en ,
-                                "Style Hg 18"@en ;
+               mao:otherName_en "Side back fist"@en ;
                mao:otherName_zh "分搥"@zh .
 
 
@@ -2789,7 +2773,6 @@ mao:straight_punch rdf:type owl:NamedIndividual ,
                    mao:used_in mao:Choy_Li_Fut ,
                                mao:Hung_Kuen ,
                                mao:White_Crane_Kungfu ;
-                   rdfs:comment "[Style_HG_3] Individual: Style_HG_3...Resource: 团队空间/HKMALA/Hung Kuen/Day 1/C0018" ;
                    rdfs:label "straight_punch" ;
                    mao:name_en "Straight punch"@en ;
                    mao:name_romanCAN "Ping Ceoi"@en ;
@@ -2819,7 +2802,6 @@ mao:subduing_palm rdf:type owl:NamedIndividual ,
                   mao:name_romanCAN "Zai Sau"@en ;
                   mao:name_romanMAN "Zhi Shou"@en ;
                   mao:name_zh "制手"@zh ;
-                  mao:otherName_en "Style Hg 29"@en ;
                   mao:otherName_zh "伏手"@zh .
 
 
@@ -4341,8 +4323,7 @@ mao:target_hand rdf:type owl:NamedIndividual ,
                 mao:name_romanMAN "Biao Shou"@en ;
                 mao:name_zh "標手"@zh ;
                 mao:otherName_en "Horizontal fingertip thrust"@en ,
-                                 "Horizontal knife hand strike"@en ,
-                                 "Style Hg 31"@en ;
+                                 "Horizontal knife hand strike"@en ;
                 mao:otherName_zh "標指"@zh .
 
 
@@ -4357,7 +4338,6 @@ mao:three_extending_hand rdf:type owl:NamedIndividual ,
                          mao:name_romanCAN "Saam Zin Sau"@en ;
                          mao:name_romanMAN "San Zhan Shou"@en ;
                          mao:name_zh "三展手"@zh ;
-                         mao:otherName_en "Style Hg 37"@en ;
                          mao:otherName_zh "三度株桥"@zh ,
                                           "連環三展"@zh .
 
