@@ -257,7 +257,8 @@ mao:Choy_Li_Fut rdf:type owl:NamedIndividual ,
                 rdfs:label "Choy_Li_Fut" ;
                 rdfs:wikiURL "https://en.wikipedia.org/wiki/Choy_Li_Fut" ;
                 mao:name_en "Choy Li Fut" ;
-                mao:name_zh "蔡李佛" .
+                mao:name_zh "蔡李佛" ;
+                mao:otherName_en "Choy Lei Fat"@en .
 
 
 ###  https://purl.org/maont/ontology/Dan_Tien_focus
@@ -282,10 +283,12 @@ mao:Gung_Gee_Fook_Fu_Kuen rdf:type owl:NamedIndividual ,
                                    mao:empty_hand_set ;
                           mao:belongs_to mao:Hung_Kuen ;
                           mao:practiced_in mao:Lam_Family_Hung_Kuen ;
+                          rdfs:comment "[Style_HG_42] 在工字伏虎拳和虎鶩雙形拳的第一段中都有出現。" ;
                           rdfs:label "Gung_Gee_Fook_Fu_Kuen"@en ;
                           mao:name_en "Gung Gee Fook Fu Kuen"@en ;
                           mao:name_zh "工字伏虎拳"@zh ;
-                          mao:otherName_en "Taming the Tiger in I-Pattern"@en .
+                          mao:otherName_en "Taming the Tiger in I-Pattern"@en ,
+                                           "gung_chi_fok_hei_chuen"@en .
 
 
 ###  https://purl.org/maont/ontology/Hung_Kuen
@@ -377,7 +380,8 @@ mao:White_Crane_Kungfu rdf:type owl:NamedIndividual ,
                        rdfs:label "White_Crane_Kungfu"@en ;
                        rdfs:wikiURL "https://en.wikipedia.org/wiki/Fujian_White_Crane" ;
                        mao:name_en "White Crane Kungfu" ;
-                       mao:name_zh "白鶴拳" .
+                       mao:name_zh "白鶴拳" ;
+                       mao:otherName_en "White Crane Boxing"@en .
 
 
 ###  https://purl.org/maont/ontology/Yin_Yang
@@ -452,12 +456,14 @@ mao:back_thrust_punch rdf:type owl:NamedIndividual ,
                       mao:employs mao:spiral_arm ,
                                   mao:thrust_punch ;
                       mao:used_in mao:Choy_Li_Fut ;
+                      rdfs:comment "手指弯曲紧扣，由下至上抛出去" ;
                       rdfs:label "spiral_thrust_punch"@en ;
                       mao:name_en "Spiral thrust punch"@en ;
                       mao:name_romanCAN "Ce Ngaan Ceoi"@en ;
                       mao:name_romanMAN "Che Yan Chui"@en ;
                       mao:name_zh "扯眼捶"@zh ;
-                      mao:otherName_en "Thrust punch in the eye"@en .
+                      mao:otherName_en "Chet Yen Choy"@en ,
+                                       "Thrust punch in the eye"@en .
 
 
 ###  https://purl.org/maont/ontology/backfist
@@ -558,11 +564,13 @@ mao:blocking_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:employs mao:tiger_claw ;
                   mao:used_in mao:Hung_Kuen ;
+                  rdfs:comment "白鶴拳的膀手是如鶴翅一樣擋開攻勢。做這個手法時，前腳保持不動，後腳則要跟著身體轉動，帶動前手拋上，彈開對方的攻擊。" ;
                   rdfs:label "blocking_palm" ;
                   mao:name_en "Lower forearm block"@en ;
                   mao:name_romanCAN "Bong Sau"@en ;
                   mao:name_romanMAN "Bang Shou"@en ;
-                  mao:name_zh "膀手"@zh .
+                  mao:name_zh "膀手"@zh ;
+                  mao:otherName_en "Bong Sau"@en .
 
 
 ###  https://purl.org/maont/ontology/blocking_palms
@@ -607,13 +615,15 @@ mao:bow_stance rdf:type owl:NamedIndividual ,
                         mao:stance ;
                mao:used_in mao:Choy_Li_Fut ,
                            mao:Hung_Kuen ;
+               rdfs:comment "其核心用途為進攻。在側身四平馬的基礎上，轉動盆骨和後腳，成子午馬，方便進攻時發力。做這個馬步時要避免前後兩腳踩在同一條直線上，這不但會影響盆骨的扭動，還會令人容易失去平衡。" ;
                rdfs:label "bow_stance" ;
                mao:name_en "Bow stance"@en ;
                mao:name_romanCAN "Zi Ng Maa"@en ;
                mao:name_romanMAN "Zi Wu Ma"@en ;
                mao:name_zh "子午馬"@zh ;
                mao:otherName_en "Forward stance"@en ,
-                                "Gung Bou"@en ;
+                                "Gung Bou"@en ,
+                                "Style Hg 44"@en ;
                mao:otherName_zh "弓步"@zh .
 
 
@@ -718,11 +728,13 @@ mao:butterfly_palm rdf:type owl:NamedIndividual ,
                    mao:used_in mao:Choy_Li_Fut ,
                                mao:Hung_Kuen ,
                                mao:White_Crane_Kungfu ;
+                   rdfs:comment "蝴蝶掌的理念是利用靈活的偏身步法避開對方的進攻，再用蝶掌給予還擊" ;
                    rdfs:label "butterfly_palm" ;
                    mao:name_en "Butterfly palms"@en ;
                    mao:name_romanCAN "Wu Dip Zoeng"@en ;
                    mao:name_romanMAN "Hu Die Zhang"@en ;
-                   mao:name_zh "蝴蝶掌"@zh .
+                   mao:name_zh "蝴蝶掌"@zh ;
+                   mao:otherName_en "Butterfly Palm"@en .
 
 
 ###  https://purl.org/maont/ontology/bw_unicorn_stance
@@ -743,12 +755,14 @@ mao:cat_stance rdf:type owl:NamedIndividual ,
                mao:used_in mao:Choy_Li_Fut ,
                            mao:Hung_Kuen ,
                            mao:White_Crane_Kungfu ;
+               rdfs:comment "主要用途為避開對方正面攻擊，退後半步再進行反擊。重心在後腿，前腳向前輕輕地吊着，臀部腹部丹田往後收縮，而肩膀相應而自然地往前靠。前腿不能偏左或偏右，而是正前方，以便避開對方後馬上進行反擊" ;
                rdfs:label "cat_stance" ;
                mao:name_en "Cat stance"@en ;
                mao:name_romanCAN "Diu Maa"@en ;
                mao:name_romanMAN "Diao Ma"@en ;
                mao:name_zh "吊馬"@zh ;
-               mao:otherName_en "Hanging stance"@en ;
+               mao:otherName_en "Diu Maa"@en ,
+                                "Hanging stance"@en ;
                mao:otherName_zh "吊脚"@zh ,
                                 "虛步"@zh .
 
@@ -887,11 +901,13 @@ mao:cr_whip_punch rdf:type owl:NamedIndividual ,
                            mao:fist_tech ;
                   mao:similar_to mao:sky_hammer ;
                   mao:used_in mao:White_Crane_Kungfu ;
+                  rdfs:comment "前手立拳向外打，攻击对方面部，后手于胸前作防御之势" ;
                   rdfs:label "cr_whip_punch" ;
                   mao:name_en "Crane-style uppercut"@en ;
                   mao:name_romanCAN "Bin Ceoi"@en ;
                   mao:name_romanMAN "Bian Chui"@en ;
-                  mao:name_zh "鞭搥"@zh .
+                  mao:name_zh "鞭搥"@zh ;
+                  mao:otherName_en "Style Hg 19"@en .
 
 
 ###  https://purl.org/maont/ontology/crane_beak
@@ -988,12 +1004,14 @@ mao:crossing_bridge rdf:type owl:NamedIndividual ,
                              mao:bridge_tech ;
                     mao:used_in mao:Choy_Li_Fut ,
                                 mao:Hung_Kuen ;
+                    rdfs:comment "穿橋是洪拳最基本的擋格動作。面對迎面而來的直線攻擊時，手腕通過中線，從下而上劃半圓，以前臂阻擋攻擊。做的時候沉踭對膊，有助發力。" ;
                     rdfs:label "crossing_bridge" ;
                     mao:name_en "Crossing bridge"@en ;
                     mao:name_romanCAN "Cyun Kiu Sau"@en ;
                     mao:name_romanMAN "Chuan Qiao"@en ;
                     mao:name_zh "穿橋"@zh ;
-                    mao:otherName_en "Crossing bridge-hand"@en ;
+                    mao:otherName_en "Chuan Qiao"@en ,
+                                     "Crossing bridge-hand"@en ;
                     mao:otherName_zh "穿手"@zh ,
                                      "穿橋手"@zh .
 
@@ -1026,11 +1044,13 @@ mao:curving_palm rdf:type owl:NamedIndividual ,
                  mao:employs mao:crossing_bridge ,
                              mao:tiger_claw ;
                  mao:used_in mao:Hung_Kuen ;
+                 rdfs:comment "割手是洪拳中的一個擋格動作，可用於消除對腹部的正面攻擊。你可以將手腕帶過中線，從上而下劃半圓，將攻擊割開。" ;
                  rdfs:label "curving_palm" ;
-                 mao:name_en "Curving palm"@en ;
+                 mao:name_en "Cutting hand"@en ;
                  mao:name_romanCAN "Got Sau"@en ;
                  mao:name_romanMAN "Ge Shou"@en ;
-                 mao:name_zh "割手"@zh .
+                 mao:name_zh "割手"@zh ;
+                 mao:otherName_en "Curving palm"@en .
 
 
 ###  https://purl.org/maont/ontology/cut_n_block_palm
@@ -1076,12 +1096,14 @@ mao:db_bow_palm rdf:type owl:NamedIndividual ,
                 mao:employs mao:flat_palm ,
                             mao:willow_leaf_palm ;
                 mao:used_in mao:Hung_Kuen ;
+                rdfs:comment "以手刀為攻擊點，由腰部直線切向對方喉嚨或肋骨，後手形成虎爪護頭" ;
                 rdfs:label "db_bow_palm" ;
                 mao:name_en "Double bow hands"@en ;
                 mao:name_romanCAN "Soeng Gung Sau"@en ;
                 mao:name_romanMAN "Shuang Gong Shou"@en ;
                 mao:name_zh "雙弓手"@zh ;
-                mao:otherName_en "Double reverse knife hand strike"@en ;
+                mao:otherName_en "Double Bow Hand"@en ,
+                                 "Double reverse knife hand strike"@en ;
                 mao:otherName_zh "雙弓千字"@zh .
 
 
@@ -1206,11 +1228,13 @@ mao:db_thrust_palm rdf:type owl:NamedIndividual ,
                    mao:employs mao:reverse_palm ;
                    mao:used_in mao:Hung_Kuen ,
                                mao:White_Crane_Kungfu ;
+                   rdfs:comment "雙插手以指尖攻擊對方下顎，在插動的同時用雙手畫弧形，身體配合開合之勢，把整體的勁道灌輸指尖" ;
                    rdfs:label "db_thrust_palm" ;
                    mao:name_en "Double-palm thrust"@en ;
                    mao:name_romanCAN "Soeng Caap Sau"@en ;
                    mao:name_romanMAN "Shuang Cha Shou"@en ;
-                   mao:name_zh "雙插手"@zh .
+                   mao:name_zh "雙插手"@zh ;
+                   mao:otherName_en "Style Hg 8"@en .
 
 
 ###  https://purl.org/maont/ontology/db_uw_forcing_palms
@@ -1243,12 +1267,14 @@ mao:dbsquare_hammer rdf:type owl:NamedIndividual ,
                              mao:fist_tech ;
                     mao:employs mao:forefist ;
                     mao:used_in mao:Hung_Kuen ;
+                    rdfs:comment "[Style_HG_2] Individual: Style_HG_2 Chinese label (name_zh): 日子搥 Cantonese label: jat zi ceoi Type / Class: FistTechnique BelongsToStyle: Hung_Kuen" ;
                     rdfs:label "verticalfist_hammer"@en ;
                     mao:name_en "日-character hammer fist"@en ;
                     mao:name_romanCAN "Jat Zi Ceoi"@en ;
                     mao:name_romanMAN "Ri Zi Chui"@en ;
                     mao:name_zh "日子搥"@zh ;
-                    mao:otherName_en "Vertical fist punch"@en .
+                    mao:otherName_en "Day One Fist"@en ,
+                                     "Vertical fist punch"@en .
 
 
 ###  https://purl.org/maont/ontology/defense_block
@@ -1291,12 +1317,14 @@ mao:divide_punch rdf:type owl:NamedIndividual ,
                           mao:fist_tech ;
                  mao:employs mao:side_punch ;
                  mao:used_in mao:Hung_Kuen ;
+                 rdfs:comment "左右分搥，即用双拳拳背向外左右打出" ;
                  rdfs:label "divide_punch" ;
                  mao:name_en "Divide punch"@en ;
                  mao:name_romanCAN "Fan Gam Ceoi"@en ;
                  mao:name_romanMAN "Fen Jin Chui"@en ;
                  mao:name_zh "分金搥"@zh ;
-                 mao:otherName_en "Double back fist"@en ;
+                 mao:otherName_en "Double back fist"@en ,
+                                  "Fan Gam Ceoi"@en ;
                  mao:otherName_zh "雙分搥"@zh ,
                                   "雙邊搥"@zh .
 
@@ -1329,22 +1357,26 @@ mao:double_claws rdf:type owl:NamedIndividual ,
                           mao:claw_tech ;
                  mao:employs mao:tiger_claw ;
                  mao:used_in mao:Hung_Kuen ;
+                 rdfs:comment "[Style_HG_6] Individual: Style_HG_6, Chinese label (name_zh): 雙爪手, Cantonese label: soeng zaau sau" ;
                  rdfs:label "double_claws" ;
                  mao:name_en "Double claws"@en ;
                  mao:name_romanCAN "Soeng Zaau Sau"@en ;
                  mao:name_romanMAN "Shuang Zhao Shou"@en ;
-                 mao:name_zh "雙爪手"@zh .
+                 mao:name_zh "雙爪手"@zh ;
+                 mao:otherName_en "Double Claw Hand"@en .
 
 
 ###  https://purl.org/maont/ontology/dragging_palm
 mao:dragging_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
+                  rdfs:comment "[Style_WhiteCrane_10] 拖手" ;
                   rdfs:label "dragging_palm" ;
                   mao:name_en "Dragging palm"@en ;
                   mao:name_romanCAN "To Sau"@en ;
                   mao:name_romanMAN "Tuo Shou"@en ;
-                  mao:name_zh "拖手"@zh .
+                  mao:name_zh "拖手"@zh ;
+                  mao:otherName_en "Style Whitecrave 10"@en .
 
 
 ###  https://purl.org/maont/ontology/dragon
@@ -1439,11 +1471,13 @@ mao:facing_sun_palm rdf:type owl:NamedIndividual ,
 mao:finger_hand rdf:type owl:NamedIndividual ,
                          mao:gesture ;
                 mao:used_in mao:Hung_Kuen ;
+                rdfs:comment "[Style_HG_36] 指手" ;
                 rdfs:label "finger_hand" ;
                 mao:name_en "Finger hand"@en ;
                 mao:name_romanCAN "Zi Sau"@en ;
                 mao:name_romanMAN "Zhi Shou"@en ;
                 mao:name_zh "指手"@zh ;
+                mao:otherName_en "Zhi Shou"@en ;
                 mao:otherName_zh "一指撐天"@zh ,
                                  "指定中原手"@zh .
 
@@ -1490,11 +1524,13 @@ mao:forcing_bridge rdf:type owl:NamedIndividual ,
 mao:forcing_elbow rdf:type owl:NamedIndividual ,
                            mao:elbow_tech ;
                   mao:used_in mao:Hung_Kuen ;
+                  rdfs:comment "逼踭有攻擊和防守的作用。假設對方直線攻擊胸口時，可以用逼踭防守。如果配合「擸手」使用的話，就變成一個擒拿動作：一手捉緊對方手腕，然後另一隻手用逼踭壓迫對方手踭對上位置。" ;
                   rdfs:label "forcing_elbow" ;
                   mao:name_en "Forcing elbow strike"@en ;
                   mao:name_romanCAN "Bik Zaang"@en ;
                   mao:name_romanMAN "Bi Zhou"@en ;
                   mao:name_zh "逼踭"@zh ;
+                  mao:otherName_en "Style Hg 40"@en ;
                   mao:otherName_zh "迫踭"@zh .
 
 
@@ -1519,11 +1555,13 @@ mao:forefist rdf:type owl:NamedIndividual ,
              mao:used_in mao:Choy_Li_Fut ,
                          mao:Hung_Kuen ,
                          mao:White_Crane_Kungfu ;
+             rdfs:comment "[Style_HG_18] 边搥 employs 平拳 as part of its technique." ;
              rdfs:label "forefist"@en ;
              mao:name_en "Forefist"@en ;
              mao:name_romanCAN "Ping Kyun"@en ;
              mao:name_romanMAN "Ping Quan"@en ;
-             mao:name_zh "平拳"@zh .
+             mao:name_zh "平拳"@zh ;
+             mao:otherName_en "Straight Fist Strike"@en .
 
 
 ###  https://purl.org/maont/ontology/front_block_hands
@@ -1545,12 +1583,14 @@ mao:front_kick rdf:type owl:NamedIndividual ,
                         mao:leg_tech ;
                mao:used_in mao:Hung_Kuen ,
                            mao:White_Crane_Kungfu ;
+               rdfs:comment "撩陰腿是洪拳的直線攻擊的腳法。首先前腳要轉為外八字。之後起腳時轉動腰胯帶動後腳提膝，然後踢腳。踢的時候，腳盡量不要高過腰部。" ;
                rdfs:label "lifting_kick"@en ;
                mao:name_en "Groin stop kick"@en ;
                mao:name_romanCAN "Liu Jan Teoi"@en ;
                mao:name_romanMAN "Liao Yin Tui"@en ;
                mao:name_zh "撩陰腿"@en ;
-               mao:otherName_en "Lifting kick"@en ,
+               mao:otherName_en "Liao Yin Tui"@en ,
+                                "Lifting kick"@en ,
                                 "Lower abdomen kick"@en ;
                mao:otherName_zh "撩腳"@zh ,
                                 "撩陰腳"@zh .
@@ -1562,11 +1602,13 @@ mao:fw_face_body rdf:type owl:NamedIndividual ,
                  mao:used_in mao:Choy_Li_Fut ,
                              mao:Hung_Kuen ,
                              mao:White_Crane_Kungfu ;
+                 rdfs:comment "正面防敌和攻击称之入正门 (或称踏洪门)" ;
                  rdfs:label "fw_face_body" ;
                  mao:name_en "Forward-facing body"@en ;
                  mao:name_romanCAN "Zing San"@en ;
                  mao:name_romanMAN "Zheng Shen"@en ;
-                 mao:name_zh "正身"@zh .
+                 mao:name_zh "正身"@zh ;
+                 mao:otherName_en "Front Body Position"@en .
 
 
 ###  https://purl.org/maont/ontology/grappling_claw
@@ -1574,11 +1616,13 @@ mao:grappling_claw rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:tiger_claw ;
                    mao:used_in mao:Hung_Kuen ;
+                   rdfs:comment "用虎爪鎖住對方橋手穴道，同時往敵方死門展開攻勢" ;
                    rdfs:label "arm_drag_claw"@en ;
                    mao:name_en "Arm-drag claw"@en ;
                    mao:name_romanCAN "Laap Sau"@en ;
                    mao:name_romanMAN "La Shou"@en ;
-                   mao:name_zh "擸手"@zh .
+                   mao:name_zh "擸手"@zh ;
+                   mao:otherName_en "claw_hand"@en .
 
 
 ###  https://purl.org/maont/ontology/grappling_palm
@@ -1626,12 +1670,14 @@ mao:hanging_hammer rdf:type owl:NamedIndividual ,
                                mao:bullhorn_fist ;
                    mao:used_in mao:Choy_Li_Fut ,
                                mao:Hung_Kuen ;
+                   rdfs:comment "掛捶是手踭向下，手背向前打出。這個手法可用於攻擊或防守：攻擊時，側身做掛捶，用手背擊打對方面部或鼻樑；防守時，對方在前方攻擊你的頭部時，手向前掛出以保護頭部。" ;
                    rdfs:label "hanging_hammer" ;
                    mao:name_en "Hanging hammer fist"@en ;
                    mao:name_romanCAN "Gwaa Ceoi"@en ;
                    mao:name_romanMAN "Gua Chui"@en ;
                    mao:name_zh "掛搥"@zh ;
-                   mao:otherName_en "Hanging back fist"@en .
+                   mao:otherName_en "Hanging back fist"@en ,
+                                    "Style Hg 16"@en .
 
 
 ###  https://purl.org/maont/ontology/hanging_n_chop
@@ -1723,11 +1769,14 @@ mao:hook_punch rdf:type owl:NamedIndividual ,
                mao:employs mao:bullhorn_fist ;
                mao:used_in mao:Choy_Li_Fut ,
                            mao:Hung_Kuen ;
+               rdfs:comment "捎捶是攻击面积大，力度最强的手法。捎捶时容易露出破绽，若被对方迫步进马，便难以回手，所以捎捶时常以盘桥或其他手法结合，把对方的攻击范围控制，然后才施展捎捶由上 而下向对方的太阳穴或颈部击去。身体稍微向前倾，压腰时手拉高，手从上而下扫打，打向对方的颈部。步骤：压腰出手 ➡ 手臂和手腕向下扭 ➡ 从上方扫打下去" ;
                rdfs:label "hook_punch" ;
                mao:name_en "Hook punch"@en ;
                mao:name_romanCAN "Saau Ceoi"@en ;
                mao:name_romanMAN "Shao Chui"@en ;
                mao:name_zh "捎搥"@zh ;
+               mao:otherName_en "Saau Cei"@en ,
+                                "Sweeping strike"@en ;
                mao:otherName_zh "牛角搥"@zh .
 
 
@@ -1772,11 +1821,13 @@ mao:horse_stance rdf:type owl:NamedIndividual ,
                           mao:stance ;
                  mao:similar_to mao:out_horse_stance ;
                  mao:used_in mao:Hung_Kuen ;
+                 rdfs:comment "四平馬可以分為三個方向：正面、左面和右面。做正面四平馬時，雙腳腳掌成水平線；面向左右做四平馬時，前腳腳尖和後腳腳踭應在同一條線上。" ;
                  rdfs:label "fw_horse_stance"@en ;
                  mao:name_en "Forward horse stance"@en ;
                  mao:name_romanCAN "Sei Ping Maa"@en ;
                  mao:name_romanMAN "Si Ping Ma"@en ;
                  mao:name_zh "四平馬"@zh ;
+                 mao:otherName_en "Style Hg 43"@en ;
                  mao:otherName_zh "四平大馬"@zh .
 
 
@@ -1789,9 +1840,11 @@ mao:horse_to_bow_stance rdf:type owl:NamedIndividual ,
                         mao:has_intent mao:power_generation ;
                         mao:used_in mao:Choy_Li_Fut ,
                                     mao:Hung_Kuen ;
+                        rdfs:comment "由四平馬轉子午馬時，後腳腳跟往前腳方向推動，同時腰部與之協調，把重心由原來的中點往前移" ;
                         rdfs:label "horse_to_bow_stance" ;
                         mao:name_en "Turning from horse stance to bow stance"@en ;
-                        mao:name_zh "四平馬轉子午馬"@zh .
+                        mao:name_zh "四平馬轉子午馬"@zh ;
+                        mao:otherName_en "Style Hg 53"@en .
 
 
 ###  https://purl.org/maont/ontology/inch_body
@@ -1897,6 +1950,7 @@ mao:leg_sweep rdf:type owl:NamedIndividual ,
                        mao:leg_tech ;
               mao:used_in mao:Choy_Li_Fut ,
                           mao:Hung_Kuen ;
+              rdfs:comment "扫堂腿分三个步骤：1. 坐低四平马，个身向后拧(扭）；2. 踏步扫出；3. 转身。攻擊敵人下盤乃至其失去平衡。" ;
               rdfs:description "Sweeping directions: inward and outword"@en ;
               rdfs:label "leg_sweep" ;
               rdfs:seeAlso <https://en.wikipedia.org/wiki/Sweep_(martial_arts)> ;
@@ -1904,7 +1958,8 @@ mao:leg_sweep rdf:type owl:NamedIndividual ,
               mao:name_romanCAN "Sou Tong Teoi"@en ;
               mao:name_romanMAN "Sao Tang Tui"@en ;
               mao:name_zh "掃堂腿"@zh ;
-              mao:otherName_en "掃脚"@zh .
+              mao:otherName_en "Sweeping Technique"@en ,
+                               "掃脚"@zh .
 
 
 ###  https://purl.org/maont/ontology/leopard
@@ -2089,11 +2144,13 @@ mao:out_horse_stance rdf:type owl:NamedIndividual ,
                               mao:stance ;
                      mao:similar_to mao:horse_stance ;
                      mao:used_in mao:Choy_Li_Fut ;
+                     rdfs:comment "站姿呈外八字，脚趾向斜，转化成一个马步叫四平马" ;
                      rdfs:label "out_horse_stance" ;
                      mao:name_en "Outward Horse Stance"@en ;
                      mao:name_romanCAN "Baat Zi Sei Ping Maa"@en ;
                      mao:name_romanMAN "Wai Ba Si Ping Ma"@en ;
                      mao:name_zh "外八字四平馬"@zh ;
+                     mao:otherName_en "Style Clf 39"@en ;
                      mao:otherName_zh "外八字馬"@zh .
 
 
@@ -2116,12 +2173,14 @@ mao:palm_strike rdf:type owl:NamedIndividual ,
                 mao:used_in mao:Choy_Li_Fut ,
                             mao:Hung_Kuen ,
                             mao:White_Crane_Kungfu ;
+                rdfs:comment "撐掌分為直撐掌和橫撐掌兩種。前者是直線攻擊對方的心口或鼻樑，後者則以頸部或肋骨為攻擊目標。撐掌時要注意拇指扣緊，手腕向後拗，盡量將手掌部分突出，以此作攻擊。" ;
                 rdfs:label "palm_strike" ;
                 mao:name_en "Buddha palm strike"@en ;
                 mao:name_romanCAN "Caang Zoeng"@en ;
                 mao:name_romanMAN "Cheng Zhang"@en ;
                 mao:name_zh "撐掌"@zh ;
-                mao:otherName_en "Facing-the-sun palm strike"@en ,
+                mao:otherName_en "Chong Zhang"@en ,
+                                 "Facing-the-sun palm strike"@en ,
                                  "Upright palm strike"@en .
 
 
@@ -2194,12 +2253,14 @@ mao:qian_char_hand rdf:type owl:NamedIndividual ,
                    mao:employs mao:willow_leaf_palm ;
                    mao:used_in mao:Choy_Li_Fut ,
                                mao:Hung_Kuen ;
+                   rdfs:comment "以手刀由上往下劈向對方，具體應用時可用拳頭" ;
                    rdfs:label "qian_char_hand" ;
                    mao:name_en "千-character hand"@en ;
                    mao:name_romanCAN "Cin Zi Sau"@en ;
                    mao:name_romanMAN "Qian Zi Shou"@en ;
                    mao:name_zh "千字手"@zh ;
                    mao:otherName_en "Pek Zoeng"@en ,
+                                    "Style Hg 23"@en ,
                                     "Throwing knife hand chop"@en ;
                    mao:otherName_zh "劈掌"@zh .
 
@@ -2272,11 +2333,13 @@ mao:rocket_hammer rdf:type owl:NamedIndividual ,
 mao:rolling_elbow rdf:type owl:NamedIndividual ,
                            mao:elbow_tech ;
                   mao:used_in mao:Hung_Kuen ;
+                  rdfs:comment "[Style_HG_41] Type: ElbowTechnique; Chinese label: 碌踭" ;
                   rdfs:label "rolling_elbow" ;
                   mao:name_en "Rolling elbow strike"@en ;
                   mao:name_romanCAN "Luk Zaang"@en ;
                   mao:name_romanMAN "Lu Zhou"@en ;
-                  mao:name_zh "碌踭"@zh .
+                  mao:name_zh "碌踭"@zh ;
+                  mao:otherName_en "Luk Zang"@en .
 
 
 ###  https://purl.org/maont/ontology/rubbing_hand
@@ -2319,12 +2382,14 @@ mao:san_zhan rdf:type owl:NamedIndividual ,
 mao:seizing_palm rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:used_in mao:White_Crane_Kungfu ;
+                 rdfs:comment "防守手法" ;
                  rdfs:label "seizing_palm" ;
                  mao:name_en "Seizing palm"@en ;
                  mao:name_romanCAN "Kam Sau"@en ;
                  mao:name_romanMAN "Qin Shou"@en ;
                  mao:name_zh "擒手"@zh ;
-                 mao:otherName_en "Chin-Na palm"@en .
+                 mao:otherName_en "Chin-Na palm"@en ,
+                                  "Kam Sau"@en .
 
 
 ###  https://purl.org/maont/ontology/separating_bridge
@@ -2371,12 +2436,15 @@ mao:side_elbow rdf:type owl:NamedIndividual ,
                         mao:elbow_tech ;
                mao:used_in mao:Hung_Kuen ,
                            mao:White_Crane_Kungfu ;
+               rdfs:comment """頂踭是一個手踭向橫頂的攻擊手法，有兩種應用方式。第一個是攻擊對方正面，手踭攻擊對方心口；第二個是攻擊對方側面，手踭橫頂攻擊對方肋骨位置
+做的時候要先放鬆身體，直到接觸目標時才收緊肌肉。循弧形軌道移動身體重心，將手收至胸前停下，並以手踭作攻擊。"""@zh-hk ;
                rdfs:label "side_elbow" ;
                mao:name_en "Side elbow strike"@en ;
                mao:name_romanCAN "Ding Zaang"@en ;
                mao:name_romanMAN "Ding Zhou"@en ;
                mao:name_zh "頂踭"@zh ;
-               mao:otherName_en "橫踭"@zh .
+               mao:otherName_en "橫踭"@zh ;
+               mao:otherName_zh "橫頂踭"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/side_hanging_fist
@@ -2411,12 +2479,14 @@ mao:side_punch rdf:type owl:NamedIndividual ,
                mao:employs mao:backfist ,
                            mao:bullhorn_fist ;
                mao:used_in mao:Hung_Kuen ;
+               rdfs:comment "前手平拳向外打，后手握拳与腰侧" ;
                rdfs:label "side_hammer_fist"@en ;
                mao:name_en "Side hammer fist"@en ;
                mao:name_romanCAN "Bin Ceoi"@en ;
                mao:name_romanMAN "Bian Chui"@en ;
                mao:name_zh "邊搥"@zh ;
-               mao:otherName_en "Side back fist"@en ;
+               mao:otherName_en "Side back fist"@en ,
+                                "Style Hg 18"@en ;
                mao:otherName_zh "分搥"@zh .
 
 
@@ -2544,12 +2614,14 @@ mao:splitting_palm rdf:type owl:NamedIndividual ,
                    mao:employs mao:tiger_claw ;
                    mao:used_in mao:Hung_Kuen ,
                                mao:White_Crane_Kungfu ;
+                   rdfs:comment "永春白鶴拳的挑手要求手踭向下沉形成擋格，然後做攻擊。利用坐胯和收緊臀部肌肉發力，透過轉動前臂挑開對方，最後將手伸出以標指攻擊。" ;
                    rdfs:label "splitting_palm" ;
                    mao:name_en "Splitting palm"@en ;
                    mao:name_romanCAN "Tiu Sau"@en ;
                    mao:name_romanMAN "Tiao Shou"@en ;
                    mao:name_zh "挑手"@zh ;
-                   mao:otherName_en "Reverse knife hand block"@en .
+                   mao:otherName_en "Reverse knife hand block"@en ,
+                                    "bridge_hand"@en .
 
 
 ###  https://purl.org/maont/ontology/stabilizing_bridge
@@ -2602,10 +2674,12 @@ mao:stay_bridge rdf:type owl:NamedIndividual ,
 ###  https://purl.org/maont/ontology/steady_bridge
 mao:steady_bridge rdf:type owl:NamedIndividual ,
                            mao:bridge_principle ;
+                  rdfs:comment "身体保持中正不偏，重心稳固，是阴阳转换的根基" ;
                   rdfs:label "steady_bridge" ;
                   mao:name_en "Steadiness"@en ;
                   mao:name_zh "定"@zh ;
-                  mao:otherName_en "Still"@en .
+                  mao:otherName_en "Stable"@en ,
+                                   "Still"@en .
 
 
 ###  https://purl.org/maont/ontology/stepping
@@ -2715,12 +2789,14 @@ mao:straight_punch rdf:type owl:NamedIndividual ,
                    mao:used_in mao:Choy_Li_Fut ,
                                mao:Hung_Kuen ,
                                mao:White_Crane_Kungfu ;
+                   rdfs:comment "[Style_HG_3] Individual: Style_HG_3...Resource: 团队空间/HKMALA/Hung Kuen/Day 1/C0018" ;
                    rdfs:label "straight_punch" ;
                    mao:name_en "Straight punch"@en ;
                    mao:name_romanCAN "Ping Ceoi"@en ;
                    mao:name_romanMAN "Ping Chui"@en ;
                    mao:name_zh "平搥"@zh ;
-                   mao:otherName_en "Reverse punch"@en ;
+                   mao:otherName_en "Ping Ceoi"@en ,
+                                    "Reverse punch"@en ;
                    mao:otherName_zh "直拳"@zh .
 
 
@@ -2737,11 +2813,13 @@ mao:subduing_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:employs mao:tiger_claw ;
                   mao:used_in mao:Hung_Kuen ;
+                  rdfs:comment "從胸側往丹田前下插，同時轉動橋手，意在用橋手外側消除對方攻勢" ;
                   rdfs:label "subduing_palm" ;
                   mao:name_en "Subduing palm"@en ;
                   mao:name_romanCAN "Zai Sau"@en ;
                   mao:name_romanMAN "Zhi Shou"@en ;
                   mao:name_zh "制手"@zh ;
+                  mao:otherName_en "Style Hg 29"@en ;
                   mao:otherName_zh "伏手"@zh .
 
 
@@ -2762,11 +2840,13 @@ mao:sweep_stance rdf:type owl:NamedIndividual ,
                           mao:stance ;
                  mao:used_in mao:Choy_Li_Fut ,
                              mao:Hung_Kuen ;
+                 rdfs:comment "掃馬為使用掃腳後的自然姿勢。後腿曲扭靠身，而前腿往前伸延，雙腳腳跟平地。其姿勢可高可低，似乎之前掃腳之勢，但實戰中很少用低掃。戰略上也可用連環掃馬，以奇招取勝。" ;
                  rdfs:label "sweep_stance" ;
                  mao:name_en "Sweeping stance"@en ;
                  mao:name_romanCAN "Sou Maa"@en ;
                  mao:name_romanMAN "Sao Ma"@en ;
                  mao:name_zh "掃馬"@zh ;
+                 mao:otherName_en "Sao Maa"@en ;
                  mao:otherName_zh "僕步"@zh .
 
 
@@ -4254,13 +4334,15 @@ mao:target_hand rdf:type owl:NamedIndividual ,
                 mao:used_in mao:Choy_Li_Fut ,
                             mao:Hung_Kuen ,
                             mao:White_Crane_Kungfu ;
+                rdfs:comment "其原理和射箭一样：如果把手臂视为一支箭，前臂和后臂是箭杆的前后段，由手腕到肩膀形成一条直线，而手掌则是箭头，由前四根手指到手腕形成一个三角形的鏃。身体主干则是一张弓，由腰至肩形成弓两端的主要支点。由腰部带动发力通过背部肩膀到手臂最后达到指尖，以此来攻击对方的喉咙或双眼。" ;
                 rdfs:label "target_hand" ;
                 mao:name_en "Target hand"@en ;
                 mao:name_romanCAN "Biu Sau"@en ;
                 mao:name_romanMAN "Biao Shou"@en ;
                 mao:name_zh "標手"@zh ;
                 mao:otherName_en "Horizontal fingertip thrust"@en ,
-                                 "Horizontal knife hand strike"@en ;
+                                 "Horizontal knife hand strike"@en ,
+                                 "Style Hg 31"@en ;
                 mao:otherName_zh "標指"@zh .
 
 
@@ -4269,11 +4351,13 @@ mao:three_extending_hand rdf:type owl:NamedIndividual ,
                                   mao:bridge_tech ;
                          mao:employs mao:extending_hand ;
                          mao:used_in mao:Hung_Kuen ;
+                         rdfs:comment "是洪拳的橋手之一，这个动作用于锻炼前臂和肩膀肌肉，吸气拉，呼气推" ;
                          rdfs:label "three_extending_hand" ;
                          mao:name_en "Thrice extending hands"@en ;
                          mao:name_romanCAN "Saam Zin Sau"@en ;
                          mao:name_romanMAN "San Zhan Shou"@en ;
                          mao:name_zh "三展手"@zh ;
+                         mao:otherName_en "Style Hg 37"@en ;
                          mao:otherName_zh "三度株桥"@zh ,
                                           "連環三展"@zh .
 
@@ -4282,6 +4366,7 @@ mao:three_extending_hand rdf:type owl:NamedIndividual ,
 mao:throwing_elbow rdf:type owl:NamedIndividual ,
                             mao:elbow_tech ;
                    mao:used_in mao:Hung_Kuen ;
+                   rdfs:comment "由下至上用手肘攻擊對方"@zh-hk ;
                    rdfs:label "throwing_elbow" ;
                    mao:name_en "Throwing elbow strike"@en ;
                    mao:name_romanCAN "Paau Zaang"@en ;
@@ -4297,6 +4382,7 @@ mao:throwing_hammer rdf:type owl:NamedIndividual ,
                                 mao:bullhorn_fist ;
                     mao:used_in mao:Choy_Li_Fut ,
                                 mao:Hung_Kuen ;
+                    rdfs:comment "從下而上或者从上而下拋出去攻擊對方"@zh-hk ;
                     rdfs:label "throwing_hammer" ;
                     mao:name_en "Throwing hammer fist"@en ;
                     mao:name_romanCAN "Paau Ceoi"@en ;
@@ -4308,11 +4394,13 @@ mao:throwing_hammer rdf:type owl:NamedIndividual ,
 mao:throwing_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
+                  rdfs:comment "摔手分單摔手和橫摔手。做單摔手時要放鬆肩膊，利用身體重心轉移幫助發力。例如做右摔手時，應先將身體偏向左邊，繼而偏向右將重心移回中線，同時將手用力摔出去。做這個動作的時候可以想像成要將手上沾著的水甩走。橫摔手的動作形態像白鶴展翅。雙手打開時十指張開，注意手臂不要拉至膊頭後。手摔向兩旁時，鬆胯令身體向下沉。" ;
                   rdfs:label "throwing_palm" ;
                   mao:name_en "Throwing palm"@en ;
                   mao:name_romanCAN "Seot Sau"@en ;
                   mao:name_romanMAN "Shuai Shou"@en ;
-                  mao:name_zh "摔手"@zh .
+                  mao:name_zh "摔手"@zh ;
+                  mao:otherName_en "Wrist Flicking Hand"@en .
 
 
 ###  https://purl.org/maont/ontology/thrust_punch
@@ -4320,6 +4408,7 @@ mao:thrust_punch rdf:type owl:NamedIndividual ,
                           mao:fist_tech ;
                  mao:employs mao:fore_knuckle_fist ;
                  mao:used_in mao:Choy_Li_Fut ;
+                 rdfs:comment "插捶是以直线向前方或斜下方刺去，握法是“姜子捶”。插捶分为阴阳两种，如直线发力插出称为阳捶，桥手扭曲旋转插 出称为阴捶。在实战中，阴阳循环形成不同角度攻击敌人上下不同部位。" ;
                  rdfs:label "thrust_punch" ;
                  mao:name_en "Thrust punch"@en ;
                  mao:name_romanCAN "Caap Ceoi"@en ;
@@ -4334,11 +4423,13 @@ mao:thrusting_palm rdf:type owl:NamedIndividual ,
                    mao:used_in mao:Choy_Li_Fut ,
                                mao:Hung_Kuen ,
                                mao:White_Crane_Kungfu ;
+                   rdfs:comment "即以指尖插擊對方的太陽穴。以腰轉動帶動上肢，以弧形進攻。後手要完全放鬆並自然隨腰後。在攻擊瞬間脊柱要微曲，以加強攻擊力。" ;
                    rdfs:label "thrusting_palm" ;
                    mao:name_en "Palm thrust"@en ;
                    mao:name_romanCAN "Caap Zoeng"@en ;
                    mao:name_romanMAN "Cha Zhang"@en ;
                    mao:name_zh "插掌"@zh ;
+                   mao:otherName_en "palm_thrust"@en ;
                    mao:otherName_zh "扱手"@zh .
 
 
@@ -4355,6 +4446,8 @@ mao:tiger_claw rdf:type owl:NamedIndividual ,
                mao:used_in mao:Choy_Li_Fut ,
                            mao:Hung_Kuen ,
                            mao:White_Crane_Kungfu ;
+               rdfs:comment """其做法有三种：①五指用力分展，第一二指节微屈，爪背屈紧，掌心成“凸”型。②拇指弯屈并紧扣于虎口处，其余四指并拢或微分卷屈
+第一二指关节，微屈腕关节。③五指分开，各指关节微屈，爪背微屈，掌心成“凹”型。""" ;
                rdfs:label "tiger_claw" ;
                mao:name_en "Tiger claw"@en ;
                mao:name_romanCAN "Fu Zaau"@en ;
@@ -4367,6 +4460,7 @@ mao:tiger_tail_kick rdf:type owl:NamedIndividual ,
                              mao:leg_tech ;
                     mao:used_in mao:Hung_Kuen ,
                                 mao:White_Crane_Kungfu ;
+                    rdfs:comment "虎尾腳是洪拳腳法之一，旨在攻擊對方腰部以下的位置。熟練動作後，前腳轉為外八字即可直接轉動腰胯踢腳。" ;
                     rdfs:label "tiger_tail_kick" ;
                     mao:name_en "Tiger tail kick"@en ;
                     mao:name_romanCAN "Fu Mei Goek"@en ;
@@ -4425,11 +4519,13 @@ mao:turning_palm rdf:type owl:NamedIndividual ,
                              mao:tiger_claw ;
                  mao:used_in mao:Hung_Kuen ,
                              mao:White_Crane_Kungfu ;
+                 rdfs:comment "可用於防禦敵方進攻，或脫開被捆鎖之橋手。核心概念是通過轉動改變力的方向和著力點" ;
                  rdfs:label "turning_palm" ;
                  mao:name_en "Turning palm"@en ;
                  mao:name_romanCAN "Hyun Sau"@en ;
                  mao:name_romanMAN "Quan Shou"@en ;
-                 mao:name_zh "圈手"@zh .
+                 mao:name_zh "圈手"@zh ;
+                 mao:otherName_en "hyun_sau"@en .
 
 
 ###  https://purl.org/maont/ontology/turning_stance
@@ -4519,11 +4615,13 @@ mao:unicorn_steps rdf:type owl:NamedIndividual ,
                            mao:stance ;
                   mao:employs mao:stepping ;
                   mao:used_in mao:Hung_Kuen ;
+                  rdfs:comment "其核心概念为走偏步扭马避开迎面攻势，再顺速走向对方空门借势还击。常与蝴蝶掌配合使用" ;
                   rdfs:label "unicorn_steps" ;
                   mao:name_en "Unicorn steps"@en ;
                   mao:name_romanCAN "Kei Leon Bou"@en ;
                   mao:name_romanMAN "Qi Lin Bu"@en ;
                   mao:name_zh "麒麟步"@zh ;
+                  mao:otherName_en "Qilin Step"@en ;
                   mao:otherName_zh "歇步"@zh .
 
 
@@ -4618,12 +4716,14 @@ mao:whipping_palm rdf:type owl:NamedIndividual ,
                   mao:employs mao:tiger_claw ;
                   mao:used_in mao:Choy_Li_Fut ,
                               mao:Hung_Kuen ;
+                  rdfs:comment "是由上往下的防禦動作，以直線封鎖敵方對心窩，腹部的攻勢。也通過擰轉強化橋手的抗擊力，常配合馬步，利用身體下壓之勢消除敵方攻勢" ;
                   rdfs:label "dw_whipping_palm"@en ;
                   mao:name_en "Downward whipping palm"@en ;
                   mao:name_romanCAN "Kam Sau"@en ;
                   mao:name_romanMAN "Kan Shou"@en ;
                   mao:name_zh "冚手"@zh ;
-                  mao:otherName_en "Downward palm block"@en .
+                  mao:otherName_en "Downward palm block"@en ,
+                                   "Kan Sau"@en .
 
 
 ###  https://purl.org/maont/ontology/whipping_punch
