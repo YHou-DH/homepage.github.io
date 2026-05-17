@@ -47,10 +47,10 @@ mao:characteristics_zh rdf:type owl:AnnotationProperty ;
                        rdfs:subPropertyOf mao:characteristics .
 
 
-###  https://purl.org/maont/ontology/has_classificationRule
-mao:has_classificationRule rdf:type owl:AnnotationProperty ;
+###  https://purl.org/maont/ontology/classificationRule
+mao:classificationRule rdf:type owl:AnnotationProperty ;
                            rdfs:comment "Records the rationale or rule used to assign the TypeClass to an individual."@en ;
-                           rdfs:label "has_classificationRule"@en ;
+                           rdfs:label "classificationRule"@en ;
                            mao:name_zh "分類規則"@zh-hk ;
                            rdfs:range xsd:string .
 
@@ -64,10 +64,10 @@ mao:has_description rdf:type owl:AnnotationProperty ;
                     rdfs:range xsd:string .
 
 
-###  https://purl.org/maont/ontology/has_note
-mao:has_note rdf:type owl:AnnotationProperty ;
+###  https://purl.org/maont/ontology/archivist_note
+mao:archivist_note rdf:type owl:AnnotationProperty ;
              rdfs:comment "A free-text annotation note about an individual or class, e.g. editorial remarks, caveats, or comparison notes."@en ;
-             rdfs:label "has_note"@en ;
+             rdfs:label "archivist_note"@en ;
              mao:name_zh "備註"@zh-hk ;
              rdfs:range xsd:string .
 
@@ -272,7 +272,7 @@ mao:has rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/maont/ontology/hasStyle
 mao:hasStyle rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf mao:used_in ;
+             rdfs:subPropertyOf mao:has ;
              rdfs:domain mao:MA_technique ;
              rdfs:range mao:MA_style ;
              rdfs:comment "Indicates that a technique instance belongs to or is characteristic of a specific martial arts style. Declared as a subproperty of mao:used_in, which has the same domain/range but broader coverage."@en ;
@@ -1392,6 +1392,13 @@ mao:Philosophical_concepts rdf:type owl:Class ;
                            rdfs:label "Philosophical_concepts"@en .
 
 
+###  https://purl.org/maont/ontology/Preparation_pose
+mao:Preparation_pose rdf:type owl:Class ;
+                     rdfs:subClassOf mao:MA_technique ;
+                     rdfs:label "Preparation_pose"@en ;
+                     mao:name_zh "預備勢"@zh-hk .
+
+
 ###  https://purl.org/maont/ontology/Textual_item
 mao:Textual_item rdf:type owl:Class ;
                  rdfs:subClassOf mao:Digital_document ;
@@ -1587,7 +1594,7 @@ mao:empty_hand_set rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/eye_tech
 mao:eye_tech rdf:type owl:Class ;
-             rdfs:subClassOf mao:bodywork ,
+             rdfs:subClassOf mao:MA_technique ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty mao:type_of ;
                                owl:someValuesFrom mao:bodywork
