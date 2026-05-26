@@ -26,7 +26,7 @@ body {
   padding-bottom: 10px;
   margin-bottom: 16px;
 }
-#header h1 { font-size: 22px; font-weight: bold; } /*margin: 0 0 2px; */
+#header h1 { font-size: 26px; font-weight: bold; } /*margin: 0 0 2px; */
 #header .ont-iri { font-family: monospace; font-size: 12px; color: #444; }
 #header .ont-meta { font-size: 14px; margin-top: 9px; color: #333; }
 #header .ont-meta span { margin-right: 20px; }
@@ -36,7 +36,7 @@ body {
   border: 1px solid #aaa;
   background: #f9f9f9;
   padding: 10px 14px;
-  margin-bottom: 20px;
+  margin-bottom: 20px;  margin-top: 20px;
   font-size: 14px;
 }
 #abstract h4 { margin: 0 0 5px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
@@ -169,11 +169,19 @@ a { color: #0000cc; }
 <div id="header">
   <h1>The <b>M</b>artial <b>A</b>rt Ontology (MAon) </h1>
   <div class="ont-iri"><dt>IRI: https://purl.org/maont/ontology/</dt></div>
-  <div class="ont-meta">
-    <dt>
-      <span><b>Current version:</b> 1.2.1</span>
-      <!-- <span><b>PI:</b> Yumeng HOU (<a href="https://orcid.org/0000-0002-7908-0693" target="_blank">ORCID</a>)</span> -->
-    </dt>
+  <div id="abstract">
+  <h4>Introduction</h4>
+  <p><b>MAon</b> conceptualizes martial arts as a form of embodied knowledge and an instance of Intangible Cultural Heritage (ICH).<br/>
+  <b>MAon v1.2.1</b> expands this initial framework, moving beyond the technical documentation of Southern folkloric styles to incorporate generalizable entities that describe Northern and Southern Chinese martial arts. It incorporates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983).<br/>
+  <b>MAon v1.1.x</b>, focused extensively on technical characteristics and their underlying philosophical aspects, primarily based on the Hong Kong Martial Arts Living Archive. It also established mappings to CIDOC-CRM classes to represent sociocultural dimensions within a formalized semantic framework for heritage documentation. <br/></p>
+</div>
+<div class="ont-meta">
+    <dt><span><b>Current version:</b> 1.2.1</span></dt>
+    <dt><span><b>Development History & Credits:</b></dt>
+      <dd><b>Updates in v1.2.1:</b> An extension of the MAon ontology v1.1.x, incorporating traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983).<br/>
+        - &nbsp <b>Contributors: Luyi CHEN</b> (<a href="https://orcid.org/0009-0002-4630-7457" target="_blank">ORCID</a>) & Yumeng HOU (<a href="https://orcid.org/0000-0002-7908-0693" target="_blank">ORCID</a>)</dd>
+      <dd><b>Updates in v1.2.1:</b> Refined terminology for improved conceptual accuracy. Specifically, <code>Form</code> has been renamed to <code>Form_movement</code>, with its associated object properties updated to <code>in_form</code> (previously <code>is_form_in</code>) and <code>similar_movement_to</code> (previously <code>similar_form_to</code>). <code>Armament</code> has been renamed to <code>Weaponry</code> to better align with the conventions of Asian martial arts studies, and <code>MA_Clan</code> has been introduced to better portray lineage and masters' networks.<br/>
+       - &nbsp <b>Contributor: Yumeng HOU</b></dd>
     <dt><span><b>Ontology resources:</b></dt>
       <dd><a href="https://yumenghou.com/resource/ont/MAoCorpus/MAon.ttl"><b>MAon.ttl (v1.2.1)</b></a>: The core schema (classes and properties). Import this into an ontology editor (e.g., Protégé) to apply the structural framework for martial arts.</dd>
       <dd><a href="https://yumenghou.com/resource/ont/MAoCorpus/MAon_individual.ttl"><b>MAon Individuals</b></a>: Annotated instances of core individuals and vocabularies, such as key technical concepts, weapons, and objects.</dd>
@@ -184,12 +192,7 @@ a { color: #0000cc; }
   </div>
 </div>
 
-<div id="abstract">
-  <h4>Project Description</h4>
-  <p><b>MAon</b> conceptualizes martial arts as a form of embodied knowledge and an instance of Intangible Cultural Heritage (ICH).<br/>
-  <b>MAon v1.2.1</b> expands this initial framework, moving beyond the technical documentation of Southern folkloric styles to incorporate generalizable entities that describe Northern and Southern Chinese martial arts. It incorporates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983).<br/>
-  <b>MAon v1.1.x</b>, focused extensively on technical characteristics and their underlying philosophical aspects, primarily based on the Hong Kong Martial Arts Living Archive. It also established mappings to CIDOC-CRM classes to represent sociocultural dimensions within a formalized semantic framework for heritage documentation. <br/></p>
-</div>
+
 
 <div id="toc">
   <div id="toc-title">Table of Contents</div>
