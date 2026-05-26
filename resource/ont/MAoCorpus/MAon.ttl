@@ -214,8 +214,8 @@ mao:employs rdf:type owl:ObjectProperty ,
             rdfs:domain mao:MA_technique ;
             rdfs:range mao:MA_technique ;
             rdfs:label "employs" ;
-            mao:name_zh "Instances of Techniques, particularly Combo_tech, acquire the identity of a combo technique with a collective impact of its technical components. To capture these characteristics, we use the employs property to indicate that a more complex instance of Technique is fulfilled by employing another or several other basic ones."@en ,
-                        "運用"@zh-hk .
+            rdfs:comment "Instances of Techniques, particularly Combo_tech, acquire the identity of a combo technique with a collective impact of its technical components. To capture these characteristics, we use the employs property to indicate that a more complex instance of Technique is fulfilled by employing another or several other basic ones."@en ;
+            mao:name_zh "運用"@zh-hk.
 
 
 ###  https://purl.org/maont/ontology/employsBodyshape
@@ -224,8 +224,8 @@ mao:employsBodyshape rdf:type owl:ObjectProperty ;
                      rdfs:domain mao:MA_technique ;
                      rdfs:range mao:body_shape ;
                      rdfs:comment "Specifies the overall body configuration (身型) employed during a technique. Subproperty of mao:employs."@en ;
-                     rdfs:label "employsBodyshape"@en ,
-                                "運用身形"@zh-hk .
+                     rdfs:label "employsBodyshape"@en ;
+                     mao:name_zh "運用身形"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/employsGesture
@@ -234,8 +234,8 @@ mao:employsGesture rdf:type owl:ObjectProperty ;
                    rdfs:domain mao:MA_technique ;
                    rdfs:range mao:gesture ;
                    rdfs:comment "Specifies the hand shape (手型) employed by a technique. Subproperty of mao:employs, narrowing the range to mao:gesture."@en ;
-                   rdfs:label "employsGesture"@en ,
-                              "運用手形"@zh-hk .
+                   rdfs:label "employsGesture"@en ;
+                   mao:name_zh "運用手形"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/employsStance
@@ -244,8 +244,8 @@ mao:employsStance rdf:type owl:ObjectProperty ;
                   rdfs:domain mao:MA_technique ;
                   rdfs:range mao:stance ;
                   rdfs:comment "Specifies the stance (步形) employed during a technique. Subproperty of mao:employs."@en ;
-                  rdfs:label "employsStance"@en ,
-                             "運用步形"@zh-hk .
+                  rdfs:label "employsStance"@en ;
+                  mao:name_zh "運用步形"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/features_in
@@ -276,8 +276,8 @@ mao:hasStyle rdf:type owl:ObjectProperty ;
              rdfs:domain mao:MA_technique ;
              rdfs:range mao:MA_style ;
              rdfs:comment "Indicates that a technique instance belongs to or is characteristic of a specific martial arts style. Declared as a subproperty of mao:used_in, which has the same domain/range but broader coverage."@en ;
-             rdfs:label "hasStyle"@en ,
-                        "属于流派"@zh-hk .
+             rdfs:label "hasStyle"@en ;
+             mao:name_zh "属于流派"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/has_birthplace
