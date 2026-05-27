@@ -26,7 +26,7 @@ rdfs:wikiURL rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2002/07/owl#sameAs
 owl:sameAs rdf:type owl:AnnotationProperty ;
-           rdfs:label "owl:sameAs" .
+           rdfs:label "owl:sameAs"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#altLabel
@@ -149,7 +149,7 @@ mao:adapts rdf:type owl:ObjectProperty ;
                       mao:training_method ,
                       mao:training_tool ;
            rdfs:comment "The adapts property refers to the relation that a Master adapts certain (existing) techniques, training methods like forms and form sets, weapons, training tools, or even a style or system."@en ;
-           rdfs:label "adapts" ;
+           rdfs:label "adapts"@en ;
            mao:name_zh "修改"@zh-hk .
 
 
@@ -161,7 +161,7 @@ mao:adopts rdf:type owl:ObjectProperty ;
                        mao:MA_system ;
            rdfs:range mao:training_method ;
            rdfs:comment "The property adopts is essentially the verb adopt, signifying that a martial arts system or style adopts a training method, or a transmission institute or syllabus adopts a training method."@en ;
-           rdfs:label "adopts" ;
+           rdfs:label "adopts"@en ;
            mao:name_zh "采用"@zh-hk .
 
 
@@ -171,7 +171,7 @@ mao:belongs_to rdf:type owl:ObjectProperty ,
                rdfs:domain mao:MA_style ,
                            mao:MA_system ;
                rdfs:range mao:MA_system ;
-               rdfs:label "belongs_to" .
+               rdfs:label "belongs_to"@en .
 
 
 ###  https://purl.org/maont/ontology/creates
@@ -183,7 +183,7 @@ mao:creates rdf:type owl:ObjectProperty ;
                        mao:training_method ,
                        mao:training_tool ;
             rdfs:comment "The creates property refers to the relation that a Master creates certain (new) techniques, training methods like forms and form sets, weapons, training tools, or even a style or system."@en ;
-            rdfs:label "creates" ;
+            rdfs:label "creates"@en ;
             mao:name_zh "創造"@zh-hk ;
             mao:otherName_zh "創建"@zh-hk .
 
@@ -204,7 +204,7 @@ mao:documents rdf:type owl:ObjectProperty ;
                          mao:MA_system ,
                          mao:MA_technique ,
                          mao:training_method ;
-              rdfs:label "documents" ;
+              rdfs:label "documents"@en ;
               mao:name_zh "記錄"@zh-hk .
 
 
@@ -213,7 +213,7 @@ mao:employs rdf:type owl:ObjectProperty ,
                      owl:TransitiveProperty ;
             rdfs:domain mao:MA_technique ;
             rdfs:range mao:MA_technique ;
-            rdfs:label "employs" ;
+            rdfs:label "employs"@en ;
             rdfs:comment "Instances of Techniques, particularly Combo_tech, acquire the identity of a combo technique with a collective impact of its technical components. To capture these characteristics, we use the employs property to indicate that a more complex instance of Technique is fulfilled by employing another or several other basic ones."@en ;
             mao:name_zh "運用"@zh-hk.
 
@@ -267,7 +267,7 @@ mao:has rdf:type owl:ObjectProperty ;
                     mao:MA_system ;
         rdfs:range mao:MA_style ,
                    mao:MA_syllabus ;
-        rdfs:label "has" .
+        rdfs:label "has"@en .
 
 
 ###  https://purl.org/maont/ontology/hasStyle
@@ -285,7 +285,7 @@ mao:has_birthplace rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf mao:has ;
                    rdfs:domain mao:MA_Master ;
                    rdfs:range mao:E53_place ;
-                   rdfs:label "has_birthplace" .
+                   rdfs:label "has_birthplace"@en .
 
 
 ###  https://purl.org/maont/ontology/has_component
@@ -295,7 +295,7 @@ mao:has_component rdf:type owl:ObjectProperty ;
                               mao:MA_syllabus ;
                   rdfs:range mao:MA_technique ;
                   rdfs:comment "A form, whether static or dynamic, is a choreographed pattern of movement comprising a unitary sequence of basic techniques. Hence, the conventional interpretation is that a form has several technical components while simultaneously serving as a training tool for those techniques and the qualities relevant to fulfilling them. The property has component is used; it is designed to inherit the CIDOC-CRM declaration of P148 has component and to indicate the relationship between a form and the technique(s) trained within."@en ;
-                  rdfs:label "has_component" ;
+                  rdfs:label "has_component"@en ;
                   mao:name_zh "包含"@zh-hk .
 
 
@@ -324,7 +324,7 @@ mao:has_intent rdf:type owl:ObjectProperty ;
                            mao:MA_technique ;
                rdfs:range mao:MA_tactic ;
                rdfs:comment "The class MA_Tactic addresses the former case, in combination with the property has intent to describe an instance of Form or Technique that embodies the intent to achieve specific tactics, such as attacking, defending, deflecting, controlling distance, or complex maneuvers."@en ;
-               rdfs:label "has_intent" ;
+               rdfs:label "has_intent"@en ;
                mao:name_zh "意圖"@zh-hk .
 
 
@@ -334,7 +334,7 @@ mao:has_origin_place rdf:type owl:ObjectProperty ;
                      rdfs:domain mao:MA_style ,
                                  mao:MA_system ;
                      rdfs:range mao:E53_place ;
-                     rdfs:label "has_origin_place" .
+                     rdfs:label "has_origin_place"@en .
 
 
 ###  https://purl.org/maont/ontology/has_principle
@@ -343,7 +343,7 @@ mao:has_principle rdf:type owl:ObjectProperty ;
                   rdfs:domain mao:MA_style ,
                               mao:MA_system ;
                   rdfs:range mao:MA_principle ;
-                  rdfs:label "has_principle" ;
+                  rdfs:label "has_principle"@en ;
                   mao:name_zh "有原則"@zh-hk .
 
 
@@ -361,7 +361,7 @@ mao:has_symbol rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_style ,
                            mao:MA_system ;
                rdfs:range mao:symbolic_animal ;
-               rdfs:label "has_symbol" ;
+               rdfs:label "has_symbol"@en ;
                mao:name_zh "有象徵"@zh-hk .
 
 
@@ -378,7 +378,7 @@ mao:has_work rdf:type owl:ObjectProperty ;
 mao:identified_by rdf:type owl:ObjectProperty ;
                   rdfs:domain mao:E21_Person ;
                   rdfs:range mao:E41_appellation ;
-                  rdfs:label "identified_by" .
+                  rdfs:label "identified_by"@en .
 
 
 ###  https://purl.org/maont/ontology/imitates
@@ -400,7 +400,7 @@ mao:in_collection rdf:type owl:ObjectProperty ;
 mao:in_form rdf:type owl:ObjectProperty ;
             rdfs:domain mao:Form_move ;
             rdfs:range mao:Form_set ;
-            rdfs:label "in_form" ;
+            rdfs:label "in_form"@en ;
             mao:name_zh "在套路中"@zh-hk .
 
 
@@ -411,52 +411,52 @@ mao:influences rdf:type owl:ObjectProperty ;
                            mao:MA_system ;
                rdfs:range mao:MA_style ,
                           mao:MA_system ;
-               rdfs:label "influences" .
+               rdfs:label "influences"@en .
 
 
 ###  https://purl.org/maont/ontology/is
 mao:is rdf:type owl:ObjectProperty ;
-       rdfs:label "is" .
+       rdfs:label "is"@en .
 
 
 ###  https://purl.org/maont/ontology/is_child_of
 mao:is_child_of rdf:type owl:ObjectProperty ;
-                rdfs:label "is_child_of" .
+                rdfs:label "is_child_of"@en .
 
 
 ###  https://purl.org/maont/ontology/is_master_of
 mao:is_master_of rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:MA_Master ;
                  rdfs:range mao:MA_Master ;
-                 rdfs:label "is_master_of" .
+                 rdfs:label "is_master_of"@en .
 
 
 ###  https://purl.org/maont/ontology/is_member_of
 mao:is_member_of rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:MA_Master ;
                  rdfs:range mao:MA_Clan ;
-                 rdfs:label "is_member_of" .
+                 rdfs:label "is_member_of"@en .
 
 
 ###  https://purl.org/maont/ontology/is_parent_of
 mao:is_parent_of rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:MA_Master ;
                  rdfs:range mao:MA_Master ;
-                 rdfs:label "is_parent_of" .
+                 rdfs:label "is_parent_of"@en .
 
 
 ###  https://purl.org/maont/ontology/is_student_of
 mao:is_student_of rdf:type owl:ObjectProperty ;
                   rdfs:domain mao:MA_Master ;
                   rdfs:range mao:MA_Master ;
-                  rdfs:label "is_student_of" .
+                  rdfs:label "is_student_of"@en .
 
 
 ###  https://purl.org/maont/ontology/lives_in_ts
 mao:lives_in_ts rdf:type owl:ObjectProperty ;
                 rdfs:domain mao:MA_Master ;
                 rdfs:range mao:E52_timespan ;
-                rdfs:label "lives_in_ts" .
+                rdfs:label "lives_in_ts"@en .
 
 
 ###  https://purl.org/maont/ontology/located_at
@@ -480,7 +480,7 @@ mao:practiced_in rdf:type owl:ObjectProperty ;
                  rdfs:domain mao:Form_set ;
                  rdfs:range mao:MA_style ;
                  rdfs:comment "The practiced_in property signifies that an instance of Form_set is practised in a specific style."@en ;
-                 rdfs:label "trained_in_style" ;
+                 rdfs:label "trained_in_style"@en ;
                  mao:name_zh "習練于"@zh-hk .
 
 
@@ -490,7 +490,7 @@ mao:practices rdf:type owl:ObjectProperty ;
               rdfs:range mao:MA_style ,
                          mao:MA_system ;
               rdfs:comment "The practices property signifies that a Master is known to practise a certain style or system."@en ;
-              rdfs:label "practices" ;
+              rdfs:label "practices"@en ;
               mao:name_zh "習練"@zh-hk .
 
 
@@ -509,7 +509,7 @@ mao:represents rdf:type owl:ObjectProperty ;
                rdfs:range mao:MA_principle ;
                rdfs:comment """The execution of a form, occasionally a technique alone, represents certain tactical intents or guiding principles underlying the movement rationale of a martial arts style. The property represents is used to connect an instance of Form to one of MA_principle, indicating that the technical movements follow a specific guiding principle or a combination of several.
 The property represents in MAon shares a similar interpretation with the P138 represents declared in CIDOC-CRM. However, their domains differ, as observed thus far. The represents here establishes connections between two E89 Propositional Objects, typically linking one E89 Propositional Object with an E28 Conceptual Object."""@en ;
-               rdfs:label "represents" ;
+               rdfs:label "represents"@en ;
                mao:name_zh "體現"@zh-hk .
 
 
@@ -517,7 +517,7 @@ The property represents in MAon shares a similar interpretation with the P138 re
 mao:resides_in rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_Master ;
                rdfs:range mao:E53_place ;
-               rdfs:label "resides_in" .
+               rdfs:label "resides_in"@en .
 
 
 ###  https://purl.org/maont/ontology/similar_movement_to
@@ -528,9 +528,9 @@ mao:similar_movement_to rdf:type owl:ObjectProperty ;
                                  owl:TransitiveProperty ;
                         rdfs:domain mao:Form_move ;
                         rdfs:range mao:Form_move ;
-                        rdfs:label "similar_movement_to" ;
-                        mao:name_zh "The similar_movement_to property represents a conceptual similarity between instances of Form."@en ,
-                                    "相似動作"@zh-hk .
+                        rdfs:label "similar_movement_to"@en ;
+                        mao:name_zh "相似動作"@zh-hk ;
+                        rdfs:comment "The similar_movement_to property represents a conceptual similarity between instances of Form."@en ,
 
 
 ###  https://purl.org/maont/ontology/similar_set_of
@@ -552,7 +552,7 @@ mao:similar_to rdf:type owl:ObjectProperty ,
                rdfs:domain mao:MA_technique ;
                rdfs:range mao:MA_technique ;
                rdfs:comment "The similar_to property represents a conceptual similarity between instances of Technique."@en ;
-               rdfs:label "similar_to" ;
+               rdfs:label "similar_to"@en ;
                mao:name_zh "相似"@zh-hk .
 
 
@@ -580,14 +580,14 @@ mao:teaches rdf:type owl:ObjectProperty ;
             rdfs:range mao:Form_set ,
                        mao:MA_style ,
                        mao:MA_system ;
-            rdfs:label "teaches" .
+            rdfs:label "teaches"@en .
 
 
 ###  https://purl.org/maont/ontology/teaches_at
 mao:teaches_at rdf:type owl:ObjectProperty ;
                rdfs:domain mao:MA_Master ;
                rdfs:range mao:MA_institute ;
-               rdfs:label "teaches_at" .
+               rdfs:label "teaches_at"@en .
 
 
 ###  https://purl.org/maont/ontology/trains
@@ -595,7 +595,7 @@ mao:trains rdf:type owl:ObjectProperty ;
            rdfs:domain mao:training_method ;
            rdfs:range mao:MA_technique ;
            rdfs:comment "The trains property is established to connect an instance of Training_method to one or more of Technique if the former contributes to the development of the latter."@en ;
-           rdfs:label "trains_tech" ;
+           rdfs:label "trains_tech"@en ;
            mao:name_zh "訓練"@zh-hk .
 
 
@@ -610,7 +610,7 @@ mao:transmitted_in_place rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/maont/ontology/type_of
 mao:type_of rdf:type owl:ObjectProperty ;
-            rdfs:label "type_of" .
+            rdfs:label "type_of"@en .
 
 
 ###  https://purl.org/maont/ontology/used_in
@@ -620,12 +620,12 @@ mao:used_in rdf:type owl:ObjectProperty ;
                         mao:training_tool ;
             rdfs:range mao:MA_style ,
                        mao:MA_system ;
-            rdfs:label "used_in" .
+            rdfs:label "used_in"@en .
 
 
 ###  https://purl.org/maont/ontology/uses
 mao:uses rdf:type owl:ObjectProperty ;
-         rdfs:label "uses" .
+         rdfs:label "uses"@en .
 
 
 #################################################################
@@ -637,7 +637,7 @@ mao:appellation_type rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf mao:dataProperties ;
                      rdfs:domain mao:E41_appellation ;
                      rdfs:range mao:name_originalLang ;
-                     rdfs:label "appellation_type" .
+                     rdfs:label "appellation_type"@en .
 
 
 ###  https://purl.org/maont/ontology/dataProperties
@@ -651,7 +651,7 @@ mao:employsBodyPart rdf:type owl:DatatypeProperty ;
                     rdfs:range xsd:string ;
                     rdfs:comment "Indicates the primary anatomical region involved in executing a technique. Controlled values (managed as SKOS concepts in MAon_cv.ttl): 上肢 | 下肢 | 躯干 | 复合/未定"@en ;
                     rdfs:label "employsBodyPart"@en ,
-                               "涉及身体部位"@zh .
+                               "涉及身体部位"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/employsHands
@@ -661,7 +661,7 @@ mao:employsHands rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:string ;
                  rdfs:comment "Indicates single/dual hand usage in a technique. Controlled values (managed as SKOS concepts in MAon_cv.ttl): 单手 | 双手 | 双手交替 | 单手或双手. Not applicable to lower-limb-only techniques."@en ;
                  rdfs:label "employsHands"@en ,
-                            "手部使用方式"@zh .
+                            "手部使用方式"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/has_birth_year
@@ -740,7 +740,7 @@ mao:has_pseudonym rdf:type owl:DatatypeProperty ;
 mao:timespan rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf mao:dataProperties ;
              rdfs:domain mao:E52_timespan ;
-             rdfs:label "timespan" .
+             rdfs:label "timespan"@en .
 
 
 ###  https://purl.org/maont/ontology/weapon_type
@@ -749,7 +749,7 @@ mao:weapon_type rdf:type owl:DatatypeProperty ;
                 rdfs:domain mao:armament ,
                             mao:training_tool ;
                 rdfs:range xsd:string ;
-                mao:name_zh "武器類型"@zh .
+                mao:name_zh "武器類型"@zh-hk .
 
 
 #################################################################
@@ -1169,7 +1169,7 @@ mao:MA_institute rdf:type owl:Class ;
                                    owl:someValuesFrom mao:MA_system
                                  ] ;
                  rdfs:comment "MA_Institute represents social agents specifically involved in the activities of training, transmission, and assessment of martial arts, e.g. a school, clan, sect, or athletic association. Instances of this class typically have a physical location, represented by the property located at to relate to a place, accordingly subsuming the CIDOC-CRM assertions about E53 Place and P156 occupies."@en ;
-                 rdfs:label "MA_Institute" ;
+                 rdfs:label "MA_Institute"@en ;
                  mao:name_en "Martial Arts Institute"@en ;
                  mao:name_zh "武術機構"@zh-hk .
 
@@ -1178,7 +1178,7 @@ mao:MA_institute rdf:type owl:Class ;
 mao:MA_principle rdf:type owl:Class ;
                  rdfs:subClassOf mao:E73.Information_Object ;
                  rdfs:comment "MA_principle pertains to the guiding principles that underlie the movement rationale of specific techniques or a style in general, typically varying among different martial arts styles and systems."@en ;
-                 rdfs:label "MA_Principle" ;
+                 rdfs:label "MA_Principle"@en ;
                  mao:name_en "Principle (martial arts)"@en ;
                  mao:name_zh "理法"@zh-hk ;
                  mao:otherName_zh "拳理"@zh-hk .
@@ -1252,7 +1252,7 @@ mao:MA_style rdf:type owl:Class ;
 mao:MA_syllabus rdf:type owl:Class ;
                 rdfs:subClassOf mao:E73.Information_Object ;
                 rdfs:comment "A formalised curriculum specifying which forms, techniques, and grading requirements constitute a complete course of study within a martial arts system or institute. Not all traditional systems have a standardised syllabus."@en ;
-                rdfs:label "MA_Syllabus" ;
+                rdfs:label "MA_Syllabus"@en ;
                 mao:name_en "Syllabus (martial arts)"@en ;
                 mao:name_zh "武術教學大綱"@zh-hk .
 
@@ -1305,7 +1305,7 @@ mao:MA_system rdf:type owl:Class ;
                                 owl:someValuesFrom mao:E53_place
                               ] ;
               rdfs:comment "The class MA_system represents an upper-level systemic grouping of different martial arts styles. A system is a whole tradition or art, not a single lineage. Concrete examples: Hung Kuen (洪拳), Choy Li Fut (蔡李佛), White Crane Kung Fu (白鶴拳), Southern Chinese Martial Arts (南拳), Chinese Martial Arts. Styles within a system typically share a consistent methodological framework and principles. DISAMBIGUATION: MA_system > MA_style > MA_Master. A person is never an MA_system. A named branch or family lineage is MA_style, not MA_system."@en ;
-              rdfs:label "MA_System" ;
+              rdfs:label "MA_System"@en ;
               mao:characteristics "system_characteristics"@en ;
               mao:characteristics_zh "system_characteristics_zh"@zh-hk ;
               mao:name_en "Martial Arts System"@en ;
@@ -1316,7 +1316,7 @@ mao:MA_system rdf:type owl:Class ;
 mao:MA_tactic rdf:type owl:Class ;
               rdfs:subClassOf mao:E73.Information_Object ;
               rdfs:comment "A tactical intent or combat application goal, describing what the practitioner is trying to achieve with a technique or movement. Examples: attacking while blocking (連消帶打), closing the distance (逼近), controlling the opponent (擒拿控制). Distinguished from MA_principle, which is a guiding movement philosophy rather than a combat objective."@en ;
-              rdfs:label "MA_Tactic" ;
+              rdfs:label "MA_Tactic"@en ;
               mao:name_en "Tactic"@en ;
               mao:name_zh "戰術"@zh-hk .
 
@@ -1361,8 +1361,8 @@ mao:MA_technique rdf:type owl:Class ;
                                    owl:someValuesFrom mao:MA_system
                                  ] ;
                  rdfs:comment "The class Technique is designed to function as a connector between different modules, establishing connections between general kinetic elements, technical interpretations, stylistic expressions, and methods of training, application, teaching, and documentation. This class expands four major categorical subclasses: Handwork, Footwork, Bodywork, and Bridge, each aiming o provide an embodied understanding of the techniques' structure. Accordingly, most instances of Technique are subsumed under one of the three principal categories given which anatomical part is substantially involved."@en ;
-                 rdfs:label "MA_Technique" ;
-                 mao:name_en "Martial Arts Technique" ;
+                 rdfs:label "MA_Technique"@en ;
+                 mao:name_en "Martial Arts Technique"@en ;
                  mao:name_zh "技術"@zh-hk .
 
 
@@ -1458,7 +1458,7 @@ mao:body_shape rdf:type owl:Class ;
                rdfs:comment "Body shape (身型) denotes a static or quasi-static overall configuration of the body used in attack, defence or transitional positioning — e.g. frontal body (正身), side body (侧身). Distinguished from bodywork (身法), which refers to dynamic body movement methods."@en ;
                rdfs:label "Body_shape"@en ;
                mao:name_en "Body shape"@en ;
-               mao:name_zh "身型"@zh .
+               mao:name_zh "身型"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/bodywork
@@ -1469,7 +1469,7 @@ mao:bodywork rdf:type owl:Class ;
                                owl:someValuesFrom mao:MA_technique
                              ] ;
              rdfs:comment "Bodywork signifies the nimble application of the body and accentuates a coherent yet flexible use of the waist and upper-body muscles."@en ;
-             rdfs:label "Bodywork" ;
+             rdfs:label "Bodywork"@en ;
              mao:name_en "Bodywork"@en ;
              mao:name_zh "身法"@zh-hk .
 
@@ -1503,10 +1503,10 @@ mao:breathing_tech rdf:type owl:Class ;
                                      owl:onProperty mao:type_of ;
                                      owl:someValuesFrom mao:MA_technique
                                    ] ;
-                   rdfs:label "Breathing_tech" ;
+                   rdfs:label "Breathing_tech"@en ;
                    mao:name_en "Breathing Technique"@en ;
-                   mao:name_zh "breathing_tetch is the class for breathing techniques, a fundamental aspect of martial arts, as well as physical training and life in general. Proper breathing can enhance physical performance, force generation, and mindfulness."@en ,
-                               "呼吸法"@zh-hk .
+                   mao:name_zh "呼吸法"@zh-hk ;
+                   rdfs:comment "breathing_tetch is the class for breathing techniques, a fundamental aspect of martial arts, as well as physical training and life in general. Proper breathing can enhance physical performance, force generation, and mindfulness."@en .
 
 
 ###  https://purl.org/maont/ontology/bridge_principle
@@ -1516,8 +1516,8 @@ mao:bridge_principle rdf:type owl:Class ;
                                        owl:onProperty mao:type_of ;
                                        owl:someValuesFrom mao:MA_principle
                                      ] ;
-                     rdfs:label "Bridge_principle"@en ,
-                                "橋法"@zh-hk .
+                     rdfs:label "Bridge_principle"@en ;
+                     mao:name_zh "橋法"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/bridge_tech
@@ -1528,10 +1528,10 @@ mao:bridge_tech rdf:type owl:Class ;
                                   owl:someValuesFrom mao:MA_technique
                                 ] ;
                 rdfs:comment "The class Bridge represent the concept of “bridge” or referred to as “bridge hand(s)” in traditional Chinese martial arts. The concept is particularly articulated in the Hung Kuen system. The term bridge means the connection between yourself and your opponent. The skill of bridge relates to the ability to manipulate one's own body structure, to control the ranges, amongst others."@en ;
-                rdfs:label "Bridge_tech" ;
+                rdfs:label "Bridge_tech"@en ;
                 mao:name_en "Bridge"@en ;
                 mao:name_zh "橋法"@zh-hk ;
-                mao:otherName_en "Bridge hand" .
+                mao:otherName_en "Bridge hand"@en .
 
 
 ###  https://purl.org/maont/ontology/claw_tech
@@ -1546,7 +1546,7 @@ mao:claw_tech rdf:type owl:Class ;
                                 owl:someValuesFrom mao:handwork
                               ] ;
               rdfs:comment "Claw techniques denote the techniques that use the hand in the shape simulating an animal's claw (such as tiger, crane, etc), and are considered fierce and effective techniques that can result in serious damage."@en ;
-              rdfs:label "Claw_tech" ;
+              rdfs:label "Claw_tech"@en ;
               mao:name_en "Claw technique"@en ;
               mao:name_zh "爪法"@zh-hk .
 
@@ -1563,7 +1563,7 @@ mao:combo_tech rdf:type owl:Class ;
                                  owl:someValuesFrom mao:MA_technique
                                ] ;
                rdfs:comment "The class Combo_tech denotes a  technique combination, often addressed as combo tech, that is a combination of multiple others, typically involving movements in different body segments. Instances of such techniques acquire the identity of a combo technique with a collective impact of its technical components. To capture these characteristics, the employs property is used to indicate that a more complex instance of Technique is fulfilled by employing another or several other basic ones."@en ;
-               rdfs:label "Combo_tech" ;
+               rdfs:label "Combo_tech"@en ;
                mao:name_en "Technique Combination"@en ;
                mao:name_zh "技術組合"@zh-hk ;
                mao:otherName_en "Combo Tech"@en .
@@ -1577,7 +1577,7 @@ mao:elbow_tech rdf:type owl:Class ;
                                  owl:someValuesFrom mao:handwork
                                ] ;
                rdfs:comment "Elbow techniques denote the techniques that use the elbow joint, usually in tandem with coherent moves in the forearm."@en ;
-               rdfs:label "Elbow_tech" ;
+               rdfs:label "Elbow_tech"@en ;
                mao:name_en "Elbow technique"@en ;
                mao:name_romanCAN "Zaang Faat"@en ;
                mao:name_romanMAN "Zhou Fa"@en ;
@@ -1602,7 +1602,7 @@ mao:eye_tech rdf:type owl:Class ;
              rdfs:comment "Eye technique (眼法) refers to the discipline of eye-gaze direction and focus during combat or form execution, considered an integral part of coordinated body expression in many Chinese martial arts styles."@en ;
              rdfs:label "Eye_tech"@en ;
              mao:name_en "Eye technique"@en ;
-             mao:name_zh "眼法"@zh .
+             mao:name_zh "眼法"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/finger_tech
@@ -1635,7 +1635,7 @@ mao:fist_tech rdf:type owl:Class ;
                               ] ;
               rdfs:comment "Fist techniques denote the techniques that use the hand in the fist shape, namely, with the fingers bent towards the palm. Fists are not necessarily held tightly, depending on which fist type is employed."@en ;
               rdfs:label "Fist_tech"@en ;
-              mao:name_en "Fist technique" ;
+              mao:name_en "Fist technique"@en ;
               mao:name_zh "拳法"@zh-hk .
 
 
@@ -1647,7 +1647,7 @@ mao:footwork rdf:type owl:Class ;
                                owl:someValuesFrom mao:MA_technique
                              ] ;
              rdfs:comment "Footwork is the umbrella term for techniques of the feet and legs in martial arts. It includes subclasses of static Stance or dynamic Leg_Tech."@en ;
-             rdfs:label "Footwork" ;
+             rdfs:label "Footwork"@en ;
              mao:name_en "Footwork"@en ;
              mao:name_zh "脚法"@zh-hk ;
              mao:otherName_zh "步法"@zh-hk .
@@ -1672,7 +1672,7 @@ mao:gesture rdf:type owl:Class ;
             mao:name_en "Gesture"@en ;
             mao:name_romanCAN "Sau Jing"@en ;
             mao:name_romanMAN "Shou Xing"@en ;
-            mao:name_zh "手形"@zh ;
+            mao:name_zh "手形"@zh-hk ;
             mao:otherName_en "Hand shape"@en .
 
 
@@ -1691,8 +1691,8 @@ mao:handwork rdf:type owl:Class ;
                                owl:someValuesFrom mao:MA_technique
                              ] ;
              rdfs:comment "Handwork is the umbrella term for techniques of the hands and forearms in martial arts. It  encompass specific types of Palm_Tech, Fist_Tech, Claw_Tech, Elbow_Tech, and Gesture."@en ;
-             rdfs:label "Handwork" ;
-             mao:name_en "Handwork" ;
+             rdfs:label "Handwork"@en ;
+             mao:name_en "Handwork"@en ;
              mao:name_zh "手法"@zh-hk .
 
 
@@ -1748,7 +1748,7 @@ mao:kicking_tech rdf:type owl:Class ;
                  rdfs:comment "Kicking techniques are a sub-type of leg technique in which the foot or lower leg strikes outward toward a target."@en ;
                  rdfs:label "Kicking_tech"@en ;
                  mao:name_en "Kicking technique"@en ;
-                 mao:name_zh "踢腿"@zh .
+                 mao:name_zh "踢腿"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/leg_tech
@@ -1789,7 +1789,7 @@ mao:palm_tech rdf:type owl:Class ;
                                 owl:someValuesFrom mao:handwork
                               ] ;
               rdfs:comment "Palm techniques, or open-hand strikes include various techniques used in martial arts to attack or defend without curling the hand into a fist."@en ;
-              rdfs:label "Palm_tech" ;
+              rdfs:label "Palm_tech"@en ;
               mao:name_en "Palm technique"@en ;
               mao:name_zh "掌法"@zh-hk ;
               mao:otherName_en "Open-hand strike"@en .
@@ -1886,11 +1886,11 @@ mao:stance rdf:type owl:Class ;
                              owl:someValuesFrom mao:footwork
                            ] ;
            rdfs:comment "In martial arts, stances are the distribution, foot orientation and body positions (particularly the legs and torso) adopted when attacking, defending, advancing, or retreating."@en ;
-           rdfs:label "Stance" ;
+           rdfs:label "Stance"@en ;
            mao:name_en "Stance"@en ;
            mao:name_romanCAN "Maa Bou"@en ;
            mao:name_romanMAN "Ma bu"@en ;
-           mao:name_zh "馬步"@zh .
+           mao:name_zh "馬步"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/sweeping_tech
