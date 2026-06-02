@@ -9,8 +9,8 @@
 @base <https://purl.org/maont/ontology/> .
 
 <https://purl.org/maont/ontology/> rdf:type owl:Ontology ;
-                                    rdfs:comment "An extension of the MAon ontology (v1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
-                                    rdfs:label "MAon — Martial Arts Ontology v1.4"@en .
+                                    rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
+                                    rdfs:label "MAon — Martial Arts Ontology v1.2"@en .
 
 #################################################################
 #    Annotation properties
