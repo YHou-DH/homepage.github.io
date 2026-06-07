@@ -530,7 +530,7 @@ mao:similar_movement_to rdf:type owl:ObjectProperty ;
                         rdfs:range mao:Form_move ;
                         rdfs:label "similar_movement_to"@en ;
                         mao:name_zh "相似動作"@zh-hk ;
-                        rdfs:comment "The similar_movement_to property represents a conceptual similarity between instances of Form."@en ,
+                        rdfs:comment "The similar_movement_to property represents a conceptual similarity between instances of Form."@en .
 
 
 ###  https://purl.org/maont/ontology/similar_set_of
