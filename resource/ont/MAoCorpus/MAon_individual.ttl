@@ -169,6 +169,10 @@ mao:ManualBook rdf:type owl:Class .
 mao:Philosophical_concepts rdf:type owl:Class .
 
 
+###  https://purl.org/maont/ontology/Video_item
+mao:Video_item rdf:type owl:Class .
+
+
 ###  https://purl.org/maont/ontology/bodywork
 mao:bodywork rdf:type owl:Class .
 
@@ -199,6 +203,10 @@ mao:combo_tech rdf:type owl:Class .
 
 ###  https://purl.org/maont/ontology/elbow_tech
 mao:elbow_tech rdf:type owl:Class .
+
+
+###  https://purl.org/maont/ontology/empty_hand_set
+mao:empty_hand_set rdf:type owl:Class .
 
 
 ###  https://purl.org/maont/ontology/fist_tech
@@ -257,7 +265,7 @@ mao:Choy_Li_Fut rdf:type owl:NamedIndividual ,
                 rdfs:label "Choy_Li_Fut"@en ;
                 rdfs:wikiURL "https://en.wikipedia.org/wiki/Choy_Li_Fut" ;
                 mao:name_en "Choy Li Fut"@en ;
-                mao:name_zh "蔡李佛" ;
+                mao:name_zh "蔡李佛"@zh-hk ;
                 mao:otherName_en "Choy Lei Fat"@en .
 
 
@@ -320,7 +328,7 @@ mao:Lam_Family_Hung_Kuen rdf:type owl:NamedIndividual ,
                          mao:belongs_to mao:Hung_Kuen ;
                          rdfs:label "Lam_Family_Hung_Kuen"@en ;
                          mao:name_en "Lam Family Hung Kuen"@en ;
-                         mao:name_zh "林家洪拳" .
+                         mao:name_zh "林家洪拳"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/Lam_Sai_Wing
@@ -380,7 +388,7 @@ mao:White_Crane_Kungfu rdf:type owl:NamedIndividual ,
                        rdfs:label "White_Crane_Kungfu"@en ;
                        rdfs:wikiURL "https://en.wikipedia.org/wiki/Fujian_White_Crane" ;
                        mao:name_en "White Crane Kungfu"@en ;
-                       mao:name_zh "白鶴拳" ;
+                       mao:name_zh "白鶴拳"@zh-hk ;
                        mao:otherName_en "White Crane Boxing"@en .
 
 
@@ -398,7 +406,7 @@ mao:Yongchun_White_Crane rdf:type owl:NamedIndividual ,
                          mao:belongs_to mao:White_Crane_Kungfu ;
                          rdfs:label "Yongchun_White_Crane"@en ;
                          mao:name_en "Yongchun_White_Crane"@en ;
-                         mao:name_zh "永春白鹤拳" ;
+                         mao:name_zh "永春白鹤拳"@zh-hk ;
                          mao:otherName_en "Fujian White Crane"@en .
 
 
@@ -512,7 +520,7 @@ mao:blacktiger_punch rdf:type owl:NamedIndividual ,
                               mao:combo_tech ;
                      mao:employs mao:dbsquare_hammer ,
                                  mao:stepping ,
-                                 mao:switch-hitting ;
+                                 mao:switch_hitting ;
                      rdfs:label "blacktiger_punch"@en ;
                      mao:name_en "The black-tiger punch combinition"@en ;
                      mao:name_romanCAN "Hak Fu Ceoi"@en ;
@@ -648,7 +656,7 @@ mao:breathing_out rdf:type owl:NamedIndividual ,
                            mao:breathing_tech ;
                   rdfs:label "breathing_out"@en ;
                   mao:name_en "Breathing out"@en ;
-                  mao:name_zh "吐"@en ;
+                  mao:name_zh "吐"@zh-hk ;
                   mao:otherName_zh "呼氣"@zh-hk .
 
 
@@ -1152,7 +1160,7 @@ mao:db_hanging_hammer rdf:type owl:NamedIndividual ,
                       rdfs:label "db_hanging_hammer"@en ;
                       mao:name_en "Double hanging hammer fist"@en ;
                       mao:name_zh "雙掛搥"@zh-hk ;
-                      mao:otherName_en  "Double hanging back fist"@en .
+                      mao:otherName_en "Double hanging back fist"@en .
 
 
 ###  https://purl.org/maont/ontology/db_inch_bridges
@@ -1578,7 +1586,7 @@ mao:front_kick rdf:type owl:NamedIndividual ,
                mao:name_en "Groin stop kick"@en ;
                mao:name_romanCAN "Liu Jan Teoi"@en ;
                mao:name_romanMAN "Liao Yin Tui"@en ;
-               mao:name_zh "撩陰腿"@en ;
+               mao:name_zh "撩陰腿"@zh-hk ;
                mao:otherName_en "Liao Yin Tui"@en ,
                                 "Lifting kick"@en ,
                                 "Lower abdomen kick"@en ;
@@ -2427,7 +2435,7 @@ mao:side_elbow rdf:type owl:NamedIndividual ,
                mao:name_romanCAN "Ding Zaang"@en ;
                mao:name_romanMAN "Ding Zhou"@en ;
                mao:name_zh "頂踭"@zh-hk ;
-               mao:otherName_en "橫踭"@zh-hk ;
+               mao:otherName_zh "橫踭"@zh-hk ;
                mao:otherName_zh "橫頂踭"@zh-hk .
 
 
@@ -2853,8 +2861,8 @@ mao:swing_palm rdf:type owl:NamedIndividual ,
                mao:name_zh "搖手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/switch-hitting
-mao:switch-hitting rdf:type owl:NamedIndividual ,
+###  https://purl.org/maont/ontology/switch_hitting
+mao:switch_hitting rdf:type owl:NamedIndividual ,
                             mao:bodywork ;
                    mao:used_in mao:Choy_Li_Fut ,
                                mao:Hung_Kuen ,
@@ -4782,13 +4790,6 @@ mao:wiping_palm rdf:type owl:NamedIndividual ,
                                                            mao:E53_place ;
                                                   rdfs:label "YongChun_(place)"@en ;
                                                   mao:name_en "Yong Chun"@en .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-mao:intent_clarity rdfs:label "intent_clarity"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
