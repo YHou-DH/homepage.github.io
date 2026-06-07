@@ -8,13 +8,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://purl.org/hkmala/ontology/maon-daext> .
+@base <https://purl.org/hkmala/ontology/maon-daext#> .
 
 <https://purl.org/hkmala/ontology/maon-daext> rdf:type owl:Ontology ;
-                                          owl:imports <https://purl.org/maont/ontology> ;
-                                          dcterms:description "A provisional digital archive extension of MAon for modelling HKMALA archive-level entities, digital documents, moving-image resources, motion-capture-derived outputs, textual records, installations, exhibitions, agents, and file-level relations for Linked Art alignment."@en ;
-                                          rdfs:comment "This extension imports MAon and adds a file/archive layer for HKMALA."@en ;
-                                          rdfs:label "MAon Digital Archive Extension for HKMALA"@en .
+                                               owl:imports <https://purl.org/maont/ontology> ;
+                                               dcterms:description "A provisional digital archive extension of MAon for modelling HKMALA archive-level entities, digital documents, moving-image resources, motion-capture-derived outputs, textual records, installations, exhibitions, agents, and file-level relations for Linked Art alignment."@en ;
+                                               rdfs:comment "This extension imports MAon and adds a file/archive layer for HKMALA."@en ;
+                                               rdfs:label "MAon Digital Archive Extension for HKMALA"@en .
 
 #################################################################
 #    Annotation properties
@@ -179,6 +179,14 @@ hda:hasProcessingStage rdf:type owl:ObjectProperty ;
                        rdfs:label "has processing stage"@en .
 
 
+###  https://purl.org/hkmala/ontology/maon-daext#hasVenuePlace
+hda:hasVenuePlace rdf:type owl:ObjectProperty ;
+                  rdfs:domain hda:Exhibition ;
+                  rdfs:range mao:E53_place ;
+                  rdfs:comment "Connects an exhibition record to a place individual used as its venue for Linked Art alignment."@en ;
+                  rdfs:label "has venue place"@en .
+
+
 ###  https://purl.org/hkmala/ontology/maon-daext#memberOfArchive
 hda:memberOfArchive rdf:type owl:ObjectProperty ;
                     rdfs:domain hda:Archive_component ;
@@ -239,14 +247,6 @@ hda:usesSystemOrTechnology rdf:type owl:ObjectProperty ;
                            rdfs:range skos:Concept ;
                            rdfs:comment "Special system or technology used by the installation, such as ReActor, Linear Navigator, Object Navigator, Five Perspective, 0.5Cave, iDOME, Kinect, or AR."@en ;
                            rdfs:label "uses system or technology"@en .
-
-
-###  https://purl.org/hkmala/ontology/maon-daext#hasVenuePlace
-hda:hasVenuePlace rdf:type owl:ObjectProperty ;
-                  rdfs:domain hda:Exhibition ;
-                  rdfs:range mao:E53_place ;
-                  rdfs:comment "Connects an exhibition record to a place individual used as its venue for Linked Art alignment."@en ;
-                  rdfs:label "has venue place"@en .
 
 
 #################################################################
@@ -512,7 +512,7 @@ hda:Instructional_video rdf:type owl:Class ;
 hda:Interactive_system rdf:type owl:Class ;
                        rdfs:subClassOf hda:Archive_component ;
                        rdfs:comment "Installation artwork or digital media installation related to HKMALA materials."@en ;
-                       rdfs:label "Interactive system / New media installation"@en .
+                       rdfs:label "New media installation"@en .
 
 
 ###  https://purl.org/hkmala/ontology/maon-daext#MA_demonstration
@@ -561,7 +561,7 @@ hda:Portrait rdf:type owl:Class ;
 hda:Programme rdf:type owl:Class ;
               rdfs:subClassOf hda:Archive_component ;
               rdfs:comment "A programme, training initiative, or educational project associated with HKMALA archival resources."@en ;
-              rdfs:label "programme"@en .
+              rdfs:label "Programme"@en .
 
 
 ###  https://purl.org/hkmala/ontology/maon-daext#Reenactment
@@ -634,7 +634,12 @@ hda:Volumetric_video rdf:type owl:Class ;
                      rdfs:label "Volumetric video"@en .
 
 
+###  https://purl.org/maont/ontology/MA_Style
+mao:MA_Style rdf:type owl:Class .
 
+
+###  https://purl.org/maont/ontology/MA_Technique
+mao:MA_Technique rdf:type owl:Class .
 
 
 #################################################################
