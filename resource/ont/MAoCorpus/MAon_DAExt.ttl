@@ -17,6 +17,10 @@
                                                rdfs:label "MAon Digital Archive Extension for HKMALA"@en .
 
 #################################################################
+# MAon-DAExt author: [Luyi Chen](https://orcid.org/0009-0002-4630-7457) 
+# with the advisory of [Yumeng Hou](https://orcid.org/0000-0002-7908-0693) & [Xiaoyu Zhang](https://orcid.org/0000-0002-8057-3997)
+
+#################################################################
 #    Annotation properties
 #################################################################
 
