@@ -130,7 +130,7 @@ if(!window.MAON_DATA){console.error("maon_widget.js: load maon_data.js before ma
   const _RAW=window.MAON_DATA;
 const TABLES={individuals:_RAW.individuals,classes:_RAW.classes,object_properties:_RAW.object_properties,annotation_properties:[],relations:_RAW.relations};
 function init(){
-  const byId={};(TABLES.individuals||[]).forEach(r=>{byId[r.id]=r;});const pairs=[];(TABLES.relations||[]).forEach(r=>{if(r.predicate==='spars_against'&&r.subject&&r.subject.startsWith('gffk_dc_A_')){const a=byId[r.subject]||{};const b=byId[r.object]||{};pairs.push({a_id:r.subject,a_name_en:a.name_en||null,a_name_zh:a.name_zh||null,a_has_component:a.has_component||null,b_id:r.object,b_name_en:b.name_en||null,b_name_zh:b.name_zh||null});}});pairs.sort((x,y)=>x.a_id.localeCompare(y.a_id,undefined,{numeric:true}));TABLES.deui_chaak_pairs=pairs;
+  const byId={};(TABLES.individuals||[]).forEach(r=>{byId[r.id]=r;});const pairs=[];function parseComps(v){return Array.isArray(v)?v:(v&&v!=='[]'?JSON.parse(v):[]);}(TABLES.relations||[]).forEach(r=>{if(r.predicate==='spars_against'&&r.subject&&r.subject.startsWith('gffk_dc_A_')){const a=byId[r.subject]||{};const b=byId[r.object]||{};const aComps=parseComps(a.has_component);const bComps=parseComps(b.has_component);const pairId=aComps.find(c=>typeof c==='string'&&c.startsWith('gffk_dc_pair_'));const pair=byId[pairId]||{};const aTechs=aComps.filter(c=>!c.startsWith('gffk_dc_pair_'));const bTechs=bComps.filter(c=>!c.startsWith('gffk_dc_pair_'));pairs.push({a_id:r.subject,b_id:r.object,pair_id:pairId||null,pair_name_en:pair.name_en||null,pair_name_zh:pair.name_zh||null,pair_name_romanCAN:pair.name_romanCAN||null,a_techniques:aTechs,b_techniques:bTechs});}});pairs.sort((x,y)=>x.a_id.localeCompare(y.a_id,undefined,{numeric:true}));TABLES.deui_chaak_pairs=pairs;
   document.getElementById('maon-stat-ind').textContent='individuals: '+TABLES.individuals.length;
   document.getElementById('maon-stat-cls').textContent='classes: '+TABLES.classes.length;
   document.getElementById('maon-stat-prop').textContent='properties: '+TABLES.object_properties.length;
@@ -172,8 +172,8 @@ const TEMPLATES={
   "Graph (relations)": [
     ["Similar-to pairs",             "SELECT subject, object\nFROM relations\nWHERE predicate = 'similar_to'\nORDER BY subject;"],
     ["Employs graph",                "SELECT subject, object\nFROM relations\nWHERE predicate = 'employs'\nORDER BY subject\nLIMIT 40;"],
-    ["Deui Chaak — exchange pairs",  "SELECT a_id, a_name_en, a_name_zh, b_id, b_name_en, b_name_zh\nFROM deui_chaak_pairs\nORDER BY a_id;"],
-    ["Deui Chaak — moves & components", "SELECT id, name_en, name_zh, has_component\nFROM individuals\nWHERE id LIKE 'gffk_dc_%'\n  AND primary_class = 'Form_move'\nORDER BY id;"]
+    ["Deui Chaak — exchange pairs",  "SELECT a_id, b_id, pair_name_en, pair_name_zh, pair_name_romanCAN\nFROM deui_chaak_pairs\nORDER BY a_id;"],
+    ["Deui Chaak — technique pairs",  "SELECT pair_name_en, pair_name_zh, a_techniques, b_techniques\nFROM deui_chaak_pairs\nORDER BY a_id;"]
   ]};
 function buildTemplates(){
   const c=document.getElementById('maon-templates-inner');

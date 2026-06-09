@@ -4801,7 +4801,7 @@ mao:arm_twist rdf:type owl:NamedIndividual ,
     rdfs:label "arm_twist"@en ;
     mao:name_en "Arm twist"@en ;
     mao:name_romanCAN "Nau Kei Sau"@en ;
-    mao:name_zh "扭手"@zh-hk .
+    mao:name_zh "扭其手"@zh-hk .
 
 ###  https://purl.org/maont/ontology/twist_stance_kick
 mao:twist_stance_kick rdf:type owl:NamedIndividual ,
@@ -4861,9 +4861,462 @@ mao:gffk_dc_seqB rdf:type owl:NamedIndividual ,
     mao:name_zh "黑方序列"@zh-hk .
 
 #################################################################
+#    Paired movement combo_tech individuals
+#    One per pair — carries the shared name of the paired movement.
+#    Both Form_move instances (A and B) reference this via has_component.
+#################################################################
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_01
+mao:gffk_dc_pair_01 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Side_palm_and_cutting_hand"@en ;
+    mao:name_en "Side palm and cutting hand"@en ;
+    mao:name_zh "側掌割手"@zh-hk ;
+    mao:name_romanCAN "Zak Zoeng Got Sau"@en ;
+    mao:archivist_note "Source manual p.169"^^xsd:string ;
+    mao:has_resource "P1-00:01:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_02
+mao:gffk_dc_pair_02 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Side_palm_and_arm_drag_claw"@en ;
+    mao:name_en "Side palm and arm-drag claw"@en ;
+    mao:name_zh "側掌擸手"@zh-hk ;
+    mao:name_romanCAN "Zak Zoeng Laap Sau"@en ;
+    mao:archivist_note "Source manual p.169"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_03
+mao:gffk_dc_pair_03 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Advance_with_straight_punch"@en ;
+    mao:name_en "Advance with straight punch"@en ;
+    mao:name_zh "進馬平搥"@zh-hk ;
+    mao:name_romanCAN "Zeon Maa Ping Ceoi"@en ;
+    mao:archivist_note "Source manual p.170"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_04
+mao:gffk_dc_pair_04 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Hanging_fist_twist_stance_and_side_elbow"@en ;
+    mao:name_en "Hanging fist, twist stance and side elbow"@en ;
+    mao:name_zh "掛搥-扭馬頂踭"@zh-hk ;
+    mao:name_romanCAN "Gwaa Ceoi Nau Maa Ding Zaang"@en ;
+    mao:archivist_note "Source manual p.170"^^xsd:string ;
+    mao:has_resource "P1-00:03:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_05
+mao:gffk_dc_pair_05 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Horse_stance_vertical_fist_punch"@en ;
+    mao:name_en "Horse stance vertical fist punch"@en ;
+    mao:name_zh "四平日字搥"@zh-hk ;
+    mao:name_romanCAN "Sei Ping Jat Zi Ceoi"@en ;
+    mao:archivist_note "Source manual p.171"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_06
+mao:gffk_dc_pair_06 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Bullhorn_hammer_fist"@en ;
+    mao:name_en "Bullhorn hammer fist"@en ;
+    mao:name_zh "牛角搥"@zh-hk ;
+    mao:name_romanCAN "Ngau Gok Ceoi"@en ;
+    mao:archivist_note "Source manual p.171"^^xsd:string ;
+    mao:has_resource "P1-00:05:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_07
+mao:gffk_dc_pair_07 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Double_bow_hands"@en ;
+    mao:name_en "Double bow hands"@en ;
+    mao:name_zh "雙弓手"@zh-hk ;
+    mao:name_romanCAN "Soeng Gung Sau"@en ;
+    mao:archivist_note "Source manual p.172"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_08
+mao:gffk_dc_pair_08 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Double_hanging_hammer_fists"@en ;
+    mao:name_en "Double hanging hammer fists"@en ;
+    mao:name_zh "雙掛搥"@zh-hk ;
+    mao:name_romanCAN "Soeng Gwaa Ceoi"@en ;
+    mao:archivist_note "Source manual p.172"^^xsd:string ;
+    mao:has_resource "P1-00:08:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_09
+mao:gffk_dc_pair_09 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Grab_and_break_guard"@en ;
+    mao:name_en "Grab and break guard"@en ;
+    mao:name_zh "獵手破排"@zh-hk ;
+    mao:name_romanCAN "Laap Sau Po Paai"@en ;
+    mao:archivist_note "Source manual p.173"^^xsd:string ;
+    mao:has_resource "P1-00:09:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_10
+mao:gffk_dc_pair_10 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Advance_with_straight_punch"@en ;
+    mao:name_en "Advance with straight punch"@en ;
+    mao:name_zh "進馬平搥"@zh-hk ;
+    mao:name_romanCAN "Zeon Maa Ping Ceoi"@en  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_11
+mao:gffk_dc_pair_11 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Leg_block_and_groin_kick"@en ;
+    mao:name_en "Leg block and groin kick"@en ;
+    mao:name_zh "消腳撩陰"@zh-hk ;
+    mao:name_romanCAN "Siu Goek Liu Jam"@en ;
+    mao:archivist_note "Source manual p.174"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_12
+mao:gffk_dc_pair_12 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Horse_stance_vertical_fist_punch"@en ;
+    mao:name_en "Horse stance vertical fist punch"@en ;
+    mao:name_zh "四平日字搥"@zh-hk ;
+    mao:name_romanCAN "Sei Ping Jat Zi Ceoi"@en  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_13
+mao:gffk_dc_pair_13 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Bullhorn_hammer_fist"@en ;
+    mao:name_en "Bullhorn hammer fist"@en ;
+    mao:name_zh "牛角搥"@zh-hk ;
+    mao:name_romanCAN "Ngau Gok Ceoi"@en ;
+    mao:archivist_note "Source manual p.175"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_14
+mao:gffk_dc_pair_14 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Double_bow_hands"@en ;
+    mao:name_en "Double bow hands"@en ;
+    mao:name_zh "雙弓手"@zh-hk ;
+    mao:name_romanCAN "Soeng Gung Sau"@en  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_15
+mao:gffk_dc_pair_15 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Double_hanging_hammer_fists"@en ;
+    mao:name_en "Double hanging hammer fists"@en ;
+    mao:name_zh "雙掛搥"@zh-hk ;
+    mao:name_romanCAN "Soeng Gwaa Ceoi"@en ;
+    mao:archivist_note "Source manual p.176"^^xsd:string ;
+    mao:has_resource "P1-00:12:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_16
+mao:gffk_dc_pair_16 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Grab_and_break_guard"@en ;
+    mao:name_en "Grab and break guard"@en ;
+    mao:name_zh "獵手破排"@zh-hk ;
+    mao:name_romanCAN "Laap Sau Po Paai"@en  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_17
+mao:gffk_dc_pair_17 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Advance_with_straight_punch"@en ;
+    mao:name_en "Advance with straight punch"@en ;
+    mao:name_zh "進馬平搥"@zh-hk ;
+    mao:name_romanCAN "Zeon Maa Ping Ceoi"@en ;
+    mao:archivist_note "Source manual p.177"^^xsd:string ;
+    mao:has_resource "P1-00:13:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_18
+mao:gffk_dc_pair_18 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Bullhorn_hammer_fist"@en ;
+    mao:name_en "Bullhorn hammer fist"@en ;
+    mao:name_zh "牛角搥"@zh-hk ;
+    mao:name_romanCAN "Ngau Gok Ceoi"@en  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_19
+mao:gffk_dc_pair_19 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Leg_block_and_groin_kick"@en ;
+    mao:name_en "Leg block and groin kick"@en ;
+    mao:name_zh "消腳撩陰"@zh-hk ;
+    mao:name_romanCAN "Siu Goek Liu Jam"@en ;
+    mao:archivist_note "Source manual p.178"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_20
+mao:gffk_dc_pair_20 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Vertical_fist_punch_advance"@en ;
+    mao:name_en "Vertical fist punch advance"@en ;
+    mao:name_zh "日字搥"@zh-hk ;
+    mao:name_romanCAN "Jat Zi Ceoi"@en ;
+    mao:archivist_note "Source manual p.178"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_21
+mao:gffk_dc_pair_21 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Bullhorn_hammer_fist"@en ;
+    mao:name_en "Bullhorn hammer fist"@en ;
+    mao:name_zh "牛角搥"@zh-hk ;
+    mao:name_romanCAN "Ngau Gok Ceoi"@en ;
+    mao:archivist_note "Source manual p.179"^^xsd:string ;
+    mao:has_resource "P1-00:24:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_22
+mao:gffk_dc_pair_22 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Tiger_tail_kick"@en ;
+    mao:name_en "Tiger tail kick"@en ;
+    mao:name_zh "虎尾腳"@zh-hk ;
+    mao:name_romanCAN "Fu Mei Goek"@en ;
+    mao:archivist_note "Source manual p.180"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_23
+mao:gffk_dc_pair_23 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Vertical_fist_punch"@en ;
+    mao:name_en "Vertical fist punch"@en ;
+    mao:name_zh "日字搥"@zh-hk ;
+    mao:name_romanCAN "Jat Zi Ceoi"@en ;
+    mao:archivist_note "Source manual p.181"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_24
+mao:gffk_dc_pair_24 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Bullhorn_hammer_fist"@en ;
+    mao:name_en "Bullhorn hammer fist"@en ;
+    mao:name_zh "牛角搥"@zh-hk ;
+    mao:name_romanCAN "Ngau Gok Ceoi"@en ;
+    mao:archivist_note "Source manual p.181"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_25
+mao:gffk_dc_pair_25 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Tiger_tail_kick"@en ;
+    mao:name_en "Tiger tail kick"@en ;
+    mao:name_zh "虎尾腳"@zh-hk ;
+    mao:name_romanCAN "Fu Mei Goek"@en ;
+    mao:archivist_note "Source manual p.182"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_26
+mao:gffk_dc_pair_26 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Rocket_hammer_fist_combination"@en ;
+    mao:name_en "Rocket hammer fist combination"@en ;
+    mao:name_zh "拉馬火箭搥"@zh-hk ;
+    mao:name_romanCAN "Laai Maa Fo Zin Ceoi"@en ;
+    mao:archivist_note "Source manual p.184"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_27
+mao:gffk_dc_pair_27 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Grab_and_force_elbow"@en ;
+    mao:name_en "Grab and force elbow"@en ;
+    mao:name_zh "擸手迫踭"@zh-hk ;
+    mao:name_romanCAN "Laap Sau Bik Zaang"@en  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_28
+mao:gffk_dc_pair_28 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Advance_punch_and_cutting_hand"@en ;
+    mao:name_en "Advance punch and cutting hand"@en ;
+    mao:name_zh "進馬平搥-切手"@zh-hk ;
+    mao:name_romanCAN "Zeon Maa Ping Ceoi Cit Sau"@en  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_29
+mao:gffk_dc_pair_29 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Advance_with_straight_punch"@en ;
+    mao:name_en "Advance with straight punch"@en ;
+    mao:name_zh "進馬平搥"@zh-hk ;
+    mao:name_romanCAN "Zeon Maa Ping Ceoi"@en .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_30
+mao:gffk_dc_pair_30 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Cutting_hand"@en ;
+    mao:name_en "Cutting hand"@en ;
+    mao:name_zh "切手"@zh-hk ;
+    mao:name_romanCAN "Cit Sau"@en ;
+    mao:archivist_note "Source manual p.185"^^xsd:string ;
+    mao:has_resource "P2-00:03:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_31
+mao:gffk_dc_pair_31 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Drop_stance_bullhorn_fist"@en ;
+    mao:name_en "Drop stance bullhorn fist"@en ;
+    mao:name_zh "落馬牛角搥"@zh-hk ;
+    mao:name_romanCAN "Lok Maa Ngau Gok Ceoi"@en ;
+    mao:archivist_note "Source manual p.186"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_32
+mao:gffk_dc_pair_32 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Advance_double_hanging_hammer_fists"@en ;
+    mao:name_en "Advance double hanging hammer fists"@en ;
+    mao:name_zh "上馬雙掛搥"@zh-hk ;
+    mao:name_romanCAN "Soeng Maa Soeng Gwaa Ceoi"@en ;
+    mao:has_resource "P2-00:09:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_33
+mao:gffk_dc_pair_33 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Groin_lifting_kick"@en ;
+    mao:name_en "Groin lifting kick"@en ;
+    mao:name_zh "撩陰腿"@zh-hk ;
+    mao:name_romanCAN "Liu Jam Teoi"@en .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_34
+mao:gffk_dc_pair_34 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Turn_stance_and_uppercut"@en ;
+    mao:name_en "Turn stance and uppercut"@en ;
+    mao:name_zh "轉馬衝搥"@zh-hk ;
+    mao:name_romanCAN "Zyun Maa Cung Ceoi"@en ;
+    mao:archivist_note "Source manual p.187"^^xsd:string ;
+    mao:has_resource "P2-00:07:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_35
+mao:gffk_dc_pair_35 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Vertical_fist_punch"@en ;
+    mao:name_en "Vertical fist punch"@en ;
+    mao:name_zh "日字搥"@zh-hk ;
+    mao:name_romanCAN "Jat Zi Ceoi"@en ;
+    mao:archivist_note "Source manual p.188"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_36
+mao:gffk_dc_pair_36 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Twist_stance_diagonal_kick"@en ;
+    mao:name_en "Twist stance diagonal kick"@en ;
+    mao:name_zh "扭馬劈腳"@zh-hk ;
+    mao:name_romanCAN "Nau Maa Pek Goek"@en ;
+    mao:archivist_note "Source manual p.188"^^xsd:string ;
+    mao:has_resource "P2-00:05:00"  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_37
+mao:gffk_dc_pair_37 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "High_and_low_uppercut"@en ;
+    mao:name_en "High and low uppercut"@en ;
+    mao:name_zh "上下沖搥"@zh-hk ;
+    mao:name_romanCAN "Soeng Haa Cung Ceoi"@en ;
+    mao:archivist_note "Source manual p.189"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_38
+mao:gffk_dc_pair_38 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Pull_and_straight_punch"@en ;
+    mao:name_en "Pull and straight punch"@en ;
+    mao:name_zh "一抽一搥"@zh-hk ;
+    mao:name_romanCAN "Jat Cau Jat Ceoi"@en ;
+    mao:archivist_note "Source manual p.190"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_39
+mao:gffk_dc_pair_39 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Hook_sweep_and_block"@en ;
+    mao:name_en "Hook sweep and block"@en ;
+    mao:name_zh "抅彈腳法"@zh-hk ;
+    mao:name_romanCAN "Gau Taan Teoi Faat"@en ;
+    mao:archivist_note "Source manual p.190"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_40
+mao:gffk_dc_pair_40 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Advance_with_thrust_punch"@en ;
+    mao:name_en "Advance with thrust punch"@en ;
+    mao:name_zh "上馬插搥"@zh-hk ;
+    mao:name_romanCAN "Soeng Maa Caap Ceoi"@en ;
+    mao:archivist_note "Source manual p.191"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_41
+mao:gffk_dc_pair_41 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Splitting_palm"@en ;
+    mao:name_en "Splitting palm"@en ;
+    mao:name_zh "挑手"@zh-hk ;
+    mao:name_romanCAN "Tiu Sau"@en ;
+    mao:archivist_note "Source manual p.191"^^xsd:string  .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_42
+mao:gffk_dc_pair_42 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Double_hanging_hammer_fists"@en ;
+    mao:name_en "Double hanging hammer fists"@en ;
+    mao:name_zh "雙掛搥"@zh-hk ;
+    mao:name_romanCAN "Soeng Gwaa Ceoi"@en .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_43
+mao:gffk_dc_pair_43 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Right_slapping_palm"@en ;
+    mao:name_en "Right slapping palm"@en ;
+    mao:name_zh "右拍手"@zh-hk ;
+    mao:name_romanCAN "Jau Paak Sau"@en .
+
+###  https://purl.org/maont/ontology/gffk_dc_pair_44
+mao:gffk_dc_pair_44 rdf:type owl:NamedIndividual ,
+           mao:combo_tech ;
+    mao:used_in mao:Lam_Family_Hung_Kuen ;
+    rdfs:label "Tiger_tail_kick"@en ;
+    mao:name_en "Tiger tail kick"@en ;
+    mao:name_zh "虎尾腳"@zh-hk ;
+    mao:name_romanCAN "Fu Mei Goek"@en ;
+    mao:archivist_note "Source manual p.193"^^xsd:string  .
+
+#################################################################
 #    Form_move instances
 #    mao:gffk_dc_A_{N:02d}  White figure (Side A)
 #    mao:gffk_dc_B_{N:02d}  Black figure (Side B)
+#
+#    has_component:
+#      - mao:gffk_dc_pair_{N:02d}  (shared named pair — carries the name)
+#      - side-specific technique individuals
+#
+#    No name_en / name_zh on Form_move — name lives on the combo_tech.
+#    rdfs:label is a positional slug only.
 #################################################################
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_01
@@ -4871,1120 +5324,943 @@ mao:gffk_dc_A_01 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_01 ;
+    mao:has_component mao:gffk_dc_pair_01 ;
     mao:has_component mao:palm_strike ;
-    mao:archivist_note "Source manual p.169"^^xsd:string ;
-    mao:has_resource "P1-00:01:00" ;
-    rdfs:label "Side_palm_and_cutting_hand_A_01"@en ;
-    mao:name_en "Side palm and cutting hand"@en ;
-    mao:name_zh "側掌割手"@zh-hk .
+    rdfs:label "Side_palm_and_cutting_hand_A_01"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_01
 mao:gffk_dc_B_01 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_01 ;
+    mao:has_component mao:gffk_dc_pair_01 ;
     mao:has_component mao:curving_palm ;
     mao:has_component mao:horse_stance ;
-    mao:archivist_note "Source manual p.169"^^xsd:string ;
-    mao:has_resource "P1-00:01:00" ;
-    rdfs:label "Side_palm_and_cutting_hand_B_01"@en ;
-    mao:name_en "Side palm and cutting hand"@en ;
-    mao:name_zh "側掌割手"@zh-hk .
+    rdfs:label "Side_palm_and_cutting_hand_B_01"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_02
 mao:gffk_dc_A_02 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_02 ;
+    mao:has_component mao:gffk_dc_pair_02 ;
     mao:has_component mao:curving_palm ;
     mao:has_component mao:horse_stance ;
-    mao:archivist_note "Source manual p.169"^^xsd:string ;
-    rdfs:label "Side_palm_and_arm_drag_claw_A_02"@en ;
-    mao:name_en "Side palm and arm-drag claw"@en ;
-    mao:name_zh "側掌擸手"@zh-hk .
+    rdfs:label "Side_palm_and_arm_drag_claw_A_02"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_02
 mao:gffk_dc_B_02 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_02 ;
+    mao:has_component mao:gffk_dc_pair_02 ;
     mao:has_component mao:blocking_palm ;
     mao:has_component mao:grappling_claw ;
-    mao:archivist_note "Source manual p.169"^^xsd:string ;
-    rdfs:label "Side_palm_and_arm_drag_claw_B_02"@en ;
-    mao:name_en "Side palm and arm-drag claw"@en ;
-    mao:name_zh "側掌擸手"@zh-hk .
+    rdfs:label "Side_palm_and_arm_drag_claw_B_02"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_03
 mao:gffk_dc_A_03 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_03 ;
+    mao:has_component mao:gffk_dc_pair_03 ;
     mao:has_component mao:straight_punch ;
     mao:has_component mao:grappling_claw ;
-    mao:has_component mao:straight_punch ;
     mao:has_component mao:bow_stance ;
-    mao:archivist_note "Source manual p.170"^^xsd:string ;
-    rdfs:label "Advance_straight_punch_A_03"@en ;
-    mao:name_en "Advance with straight punch"@en ;
-    mao:name_zh "進馬平搥"@zh-hk .
+    rdfs:label "Advance_with_straight_punch_A_03"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_03
 mao:gffk_dc_B_03 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_03 ;
+    mao:has_component mao:gffk_dc_pair_03 ;
     mao:has_component mao:crossing_bridge ;
     mao:has_component mao:straight_punch ;
     mao:has_component mao:bow_stance ;
-    mao:archivist_note "Source manual p.170"^^xsd:string ;
-    rdfs:label "Advance_straight_punch_B_03"@en ;
-    mao:name_en "Advance with straight punch"@en ;
-    mao:name_zh "進馬平搥"@zh-hk .
+    rdfs:label "Advance_with_straight_punch_B_03"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_04
 mao:gffk_dc_A_04 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_04 ;
+    mao:has_component mao:gffk_dc_pair_04 ;
     mao:has_component mao:twisting_stance ;
     mao:has_component mao:hanging_hammer ;
     mao:has_component mao:side_elbow ;
-    mao:archivist_note "Source manual p.170"^^xsd:string ;
-    mao:has_resource "P1-00:03:00" ;
-    rdfs:label "Hanging_fist_twist_stance_side_elbow_A_04"@en ;
-    mao:name_en "Hanging fist, twist stance and side elbow"@en ;
-    mao:name_zh "掛搥-扭馬頂踭"@zh-hk .
+    rdfs:label "Hanging_fist_twist_stance_and_side_elbow_A_04"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_04
 mao:gffk_dc_B_04 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_04 ;
+    mao:has_component mao:gffk_dc_pair_04 ;
     mao:has_component mao:blocking_palm ;
     mao:has_component mao:arm_twist ;
     mao:has_component mao:up_forcing_palm ;
-    mao:archivist_note "Source manual p.170"^^xsd:string ;
-    mao:has_resource "P1-00:03:00" ;
-    rdfs:label "Hanging_fist_twist_stance_side_elbow_B_04"@en ;
-    mao:name_en "Hanging fist, twist stance and side elbow"@en ;
-    mao:name_zh "掛搥-扭馬頂踭"@zh-hk .
+    rdfs:label "Hanging_fist_twist_stance_and_side_elbow_B_04"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_05
 mao:gffk_dc_A_05 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_05 ;
+    mao:has_component mao:gffk_dc_pair_05 ;
     mao:has_component mao:cat_stance ;
     mao:has_component mao:horse_stance ;
     mao:has_component mao:dbsquare_hammer ;
-    mao:archivist_note "Source manual p.171"^^xsd:string ;
-    rdfs:label "Horse_stance_vertical_fist_A_05"@en ;
-    mao:name_en "Horse stance vertical fist punch"@en ;
-    mao:name_zh "四平日字搥"@zh-hk .
+    rdfs:label "Horse_stance_vertical_fist_punch_A_05"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_05
 mao:gffk_dc_B_05 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_05 ;
+    mao:has_component mao:gffk_dc_pair_05 ;
     mao:has_component mao:qian_char_hand ;
-    mao:archivist_note "Source manual p.171"^^xsd:string ;
-    rdfs:label "Horse_stance_vertical_fist_B_05"@en ;
-    mao:name_en "Horse stance vertical fist punch"@en ;
-    mao:name_zh "四平日字搥"@zh-hk .
+    rdfs:label "Horse_stance_vertical_fist_punch_B_05"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_06
 mao:gffk_dc_A_06 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_06 ;
+    mao:has_component mao:gffk_dc_pair_06 ;
     mao:has_component mao:bullhorn_punch ;
-    mao:archivist_note "Source manual p.171"^^xsd:string ;
-    mao:has_resource "P1-00:05:00" ;
-    rdfs:label "Bullhorn_hammer_fist_A_06"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_A_06"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_06
 mao:gffk_dc_B_06 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_06 ;
+    mao:has_component mao:gffk_dc_pair_06 ;
     mao:has_component mao:blocking_palm ;
-    mao:archivist_note "Source manual p.171"^^xsd:string ;
-    mao:has_resource "P1-00:05:00" ;
-    rdfs:label "Bullhorn_hammer_fist_B_06"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_B_06"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_07
 mao:gffk_dc_A_07 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_07 ;
+    mao:has_component mao:gffk_dc_pair_07 ;
     mao:has_component mao:uw_forcing_palm ;
-    mao:archivist_note "Source manual p.172"^^xsd:string ;
-    rdfs:label "Double_bow_hands_A_07"@en ;
-    mao:name_en "Double bow hands"@en ;
-    mao:name_zh "雙弓手"@zh-hk .
+    rdfs:label "Double_bow_hands_A_07"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_07
 mao:gffk_dc_B_07 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_07 ;
+    mao:has_component mao:gffk_dc_pair_07 ;
     mao:has_component mao:db_bow_palm ;
-    mao:archivist_note "Source manual p.172"^^xsd:string ;
-    rdfs:label "Double_bow_hands_B_07"@en ;
-    mao:name_en "Double bow hands"@en ;
-    mao:name_zh "雙弓手"@zh-hk .
+    rdfs:label "Double_bow_hands_B_07"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_08
 mao:gffk_dc_A_08 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_08 ;
+    mao:has_component mao:gffk_dc_pair_08 ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:db_hanging_hammer ;
     mao:has_description "側掌:白方以撐掌壓向黑方腹部 | 黑方再轉用側掌打向白方腹部 | 割手:白方轉四平馬用右割手消去"@zh-hk ;
     mao:has_description "Zak zoeng: White fiqure strikes at Black fiqure's abdomen with caang zoeng (palm strike). | zak zoeng: Black figure counters with side palm strike (zak zoeng) aimed at White figure's abdomen. | Got sau: White figure shifts into sei ping maa and deflectswith right got sau."@en ;
-    mao:archivist_note "Source manual p.172"^^xsd:string ;
-    mao:has_resource "P1-00:08:00" ;
-    rdfs:label "Double_hanging_hammer_fists_A_08"@en ;
-    mao:name_en "Double hanging hammer fists"@en ;
-    mao:name_zh "雙掛搥"@zh-hk .
+    rdfs:label "Double_hanging_hammer_fists_A_08"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_08
 mao:gffk_dc_B_08 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_08 ;
+    mao:has_component mao:gffk_dc_pair_08 ;
     mao:has_component mao:cross_arm_block ;
     mao:has_description "側掌:白方以撐掌壓向黑方腹部 | 黑方轉四平馬用右割手 | 黑方再轉用側掌打向白方腹部"@zh-hk ;
     mao:has_description "Zak zoeng: White fiqure strikes at Black fiqure's abdomen with caang zoeng (palm strike). | Got sau: Black fiqure shifts his stance into sei ping maa and deflects with right got sau. | zak zoeng: Black figure counters with side palm strike (zak zoeng) aimed at White figure's abdomen."@en ;
-    mao:archivist_note "Source manual p.172"^^xsd:string ;
-    mao:has_resource "P1-00:08:00" ;
-    rdfs:label "Double_hanging_hammer_fists_B_08"@en ;
-    mao:name_en "Double hanging hammer fists"@en ;
-    mao:name_zh "雙掛搥"@zh-hk .
+    rdfs:label "Double_hanging_hammer_fists_B_08"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_09
 mao:gffk_dc_A_09 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_09 ;
+    mao:has_component mao:gffk_dc_pair_09 ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:dbsquare_hammer ;
     mao:has_component mao:split_n_attack_hand ;
     mao:has_description "側掌:白方運用割手後再以側掌打向黑方胸部·黑方即時以單弓手消去 | 獵手:黑方順勢獵白方右手·白方即時轉四平馬手抽拳在胸"@zh-hk ;
     mao:has_description "Zak zoeng: White figure counters with side palm strike(zak zoeng) aimed at Black figure's chest. Black figure simultaneously blocks with daan gung sau. | Laap sau: in the same movement Black figure grabs Whitefigure's right arm,Simultaneously, White figure changeshis stance to sei ping maa and pulls his fists to the chest."@en ;
-    mao:archivist_note "Source manual p.173"^^xsd:string ;
-    mao:has_resource "P1-00:09:00" ;
-    rdfs:label "Grab_and_break_guard_A_09"@en ;
-    mao:name_en "Grab and break guard"@en ;
-    mao:name_zh "獵手破排"@zh-hk .
+    rdfs:label "Grab_and_break_guard_A_09"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_09
 mao:gffk_dc_B_09 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_09 ;
+    mao:has_component mao:gffk_dc_pair_09 ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:db_blocking_palm ;
     mao:has_component mao:split_n_attack_hand ;
     mao:has_description "側掌:白方運用割手後再以側掌打向黑方胸部·黑方即時以單弓手消去 | 獵手:黑方順勢獵白方右手·白方即時轉四平馬手抽拳在胸"@zh-hk ;
     mao:has_description "Zak zoeng: White figure counters with side palm strike(zak zoeng) aimed at Black figure's chest. Black figure simultaneously blocks with daan gung sau. | Laap sau: in the same movement Black figure grabs Whitefigure's right arm,Simultaneously, White figure changeshis stance to sei ping maa and pulls his fists to the chest."@en ;
-    mao:archivist_note "Source manual p.173"^^xsd:string ;
-    mao:has_resource "P1-00:09:00" ;
-    rdfs:label "Grab_and_break_guard_B_09"@en ;
-    mao:name_en "Grab and break guard"@en ;
-    mao:name_zh "獵手破排"@zh-hk .
+    rdfs:label "Grab_and_break_guard_B_09"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_10
 mao:gffk_dc_A_10 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_10 ;
+    mao:has_component mao:gffk_dc_pair_10 ;
     mao:has_component mao:straight_punch ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:blocking_palm ;
     mao:has_description "進馬平搥:白方進左馬，右平搥打向黑方胸部，黑方左手穿橋擋住，接著出右平搥，白方再以左手獵手消去 | 白方右平搥打向黑方，黑方左手手消去，白方上右馬、黑方拉左馬"@zh-hk ;
     mao:has_description "Zeon maa ping ceoi: White figures takes a left step forwardand pulls a right punch (ping ceo) to Black figure's chestBlack fiqure blocks with left cyun kiu sau and counters withright ping ceoi, which White figure deflects with zou laap sau | Zeon maa ping ceoi: White fiqure throws a right ping ceoi at Black figure. Black fiqure deflects with zou laap sau. White figure then steps forward on the right while Black figurepulls back on the left."@en ;
-    rdfs:label "Advance_straight_punch_A_10"@en ;
-    mao:name_en "Advance with straight punch"@en ;
-    mao:name_zh "進馬平搥"@zh-hk .
+    rdfs:label "Advance_with_straight_punch_A_10"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_10
 mao:gffk_dc_B_10 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_10 ;
+    mao:has_component mao:gffk_dc_pair_10 ;
     mao:has_component mao:turning_palm ;
     mao:has_component mao:bullhorn_punch ;
     mao:has_description "進馬平搥:白方進左馬，右平搥打向黑方胸部，黑方左手穿橋擋住，接著出右平搥，白方再以左手獵手消去 | 白方右平搥打向黑方，黑方左手手消去，白方上右馬、黑方拉左馬"@zh-hk ;
     mao:has_description "Zeon maa ping ceoi: White figures takes a left step forwardand pulls a right punch (ping ceo) to Black figure's chestBlack fiqure blocks with left cyun kiu sau and counters withright ping ceoi, which White figure deflects with zou laap sau | Zeon maa ping ceoi: White fiqure throws a right ping ceoi at Black figure. Black fiqure deflects with zou laap sau. White figure then steps forward on the right while Black figurepulls back on the left."@en ;
-    rdfs:label "Advance_straight_punch_B_10"@en ;
-    mao:name_en "Advance with straight punch"@en ;
-    mao:name_zh "進馬平搥"@zh-hk .
+    rdfs:label "Advance_with_straight_punch_B_10"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_11
 mao:gffk_dc_A_11 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_11 ;
+    mao:has_component mao:gffk_dc_pair_11 ;
     mao:has_component mao:block_kick ;
     mao:has_description "右掛搥:白方上右馬後右手掛挺打向黑方頭部，黑方單弓手擋掛槌護頭 | 扭馬轉身:黑方擋住白方拳馬上扭其手關節至後,白方扭馬轉身以防關節被鎖，同時左爪叉頸，黑方握住白方手腕·雙方一起走馬轉方向，白方再打掛搥，黑方手開，用右手檔頭 | 扭馬頂踭:白方用左手頂踭頂向黑方右手·黑方手鬆開"@zh-hk ;
     mao:has_description "Jau gwaa ceoi: White figure takes a right step forward and strikes at Black figure's head with you gwaa ceoi. Black figure blocks with an overhead daan gung sau. | Nau maa zyun san: Black figure blocks White figure's punchand twists his arm backward at the elbow. White figuretwists his stance to prevent himself from getting into alock and grabs the opponent's neck with a left claw-handBlack figure holds White figure's wrist, Both sides shifttheir stances. White fiqure makes another gwaa ceoi whichforces Black figure to loosen his grip and block with hisright arm overhead. | Nau maa ding zaang: White figure thrusts his left elbow at Black figure's right hand, which again forces Black figure to loosen."@en ;
-    mao:archivist_note "Source manual p.174"^^xsd:string ;
-    rdfs:label "Leg_block_groin_kick_A_11"@en ;
-    mao:name_en "Leg block and groin kick"@en ;
-    mao:name_zh "消腳撩陰"@zh-hk .
+    rdfs:label "Leg_block_and_groin_kick_A_11"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_11
 mao:gffk_dc_B_11 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_11 ;
+    mao:has_component mao:gffk_dc_pair_11 ;
     mao:has_component mao:joint_lock ;
     mao:has_component mao:front_kick ;
     mao:has_description "右掛搥:白方上右馬後右手掛挺打向黑方頭部，黑方單弓手擋掛槌護頭 | 扭馬轉身:黑方擋住白方拳馬上扭其手關節至後,白方扭馬轉身以防關節被鎖，同時左爪叉頸，黑方握住白方手腕·雙方一起走馬轉方向，白方再打掛搥，黑方手開，用右手檔頭 | 扭馬頂踭:白方用左手頂踭頂向黑方右手·黑方手鬆開"@zh-hk ;
     mao:has_description "Jau gwaa ceoi: White figure takes a right step forward and strikes at Black figure's head with you gwaa ceoi. Black figure blocks with an overhead daan gung sau. | Nau maa zyun san: Black figure blocks White figure's punchand twists his arm backward at the elbow. White figuretwists his stance to prevent himself from getting into alock and grabs the opponent's neck with a left claw-handBlack figure holds White figure's wrist, Both sides shifttheir stances. White fiqure makes another gwaa ceoi whichforces Black figure to loosen his grip and block with hisright arm overhead. | Nau maa ding zaang: White figure thrusts his left elbow at Black figure's right hand, which again forces Black figure to loosen."@en ;
-    mao:archivist_note "Source manual p.174"^^xsd:string ;
-    rdfs:label "Leg_block_groin_kick_B_11"@en ;
-    mao:name_en "Leg block and groin kick"@en ;
-    mao:name_zh "消腳撩陰"@zh-hk .
+    rdfs:label "Leg_block_and_groin_kick_B_11"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_12
 mao:gffk_dc_A_12 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_12 ;
+    mao:has_component mao:gffk_dc_pair_12 ;
     mao:has_component mao:qian_char_hand ;
     mao:has_description "拍下:白方進馬右手拍打黑方下陰，黑方出右掌擋下，掌心向出"@zh-hk ;
     mao:has_description "Paak haa: White figure takes a right step forward and strikes at Black figure's groin. Black figure blocks with his right palm (facing out)."@en ;
-    rdfs:label "Horse_stance_vertical_fist_A_12"@en ;
-    mao:name_en "Horse stance vertical fist punch"@en ;
-    mao:name_zh "四平日字搥"@zh-hk .
+    rdfs:label "Horse_stance_vertical_fist_punch_A_12"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_12
 mao:gffk_dc_B_12 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_12 ;
+    mao:has_component mao:gffk_dc_pair_12 ;
     mao:has_component mao:cat_stance ;
     mao:has_component mao:horse_stance ;
     mao:has_component mao:dbsquare_hammer ;
     mao:has_description "拍下:白方進馬右手拍打黑方下陰，黑方出右掌擋下，掌心向出"@zh-hk ;
     mao:has_description "Paak haa: White figure takes a right step forward and strikes at Black figure's groin. Black figure blocks with his right palm (facing out)."@en ;
-    rdfs:label "Horse_stance_vertical_fist_B_12"@en ;
-    mao:name_en "Horse stance vertical fist punch"@en ;
-    mao:name_zh "四平日字搥"@zh-hk .
+    rdfs:label "Horse_stance_vertical_fist_punch_B_12"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_13
 mao:gffk_dc_A_13 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_13 ;
+    mao:has_component mao:gffk_dc_pair_13 ;
     mao:has_component mao:blocking_palm ;
-    mao:archivist_note "Source manual p.175"^^xsd:string ;
-    rdfs:label "Bullhorn_hammer_fist_A_13"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_A_13"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_13
 mao:gffk_dc_B_13 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_13 ;
+    mao:has_component mao:gffk_dc_pair_13 ;
     mao:has_component mao:bullhorn_punch ;
-    mao:archivist_note "Source manual p.175"^^xsd:string ;
-    rdfs:label "Bullhorn_hammer_fist_B_13"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_B_13"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_14
 mao:gffk_dc_A_14 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_14 ;
+    mao:has_component mao:gffk_dc_pair_14 ;
     mao:has_component mao:db_bow_palm ;
     mao:has_description "四平日字搥:白方收拳在腰，吊起右腳·凌空跳起到黑方前方落馬四平，右日字搥打向腹部，黑方以千字手擋格"@zh-hk ;
     mao:has_description "Sei ping jat zi ceoi: White figure pulls his fists to the waist, suspend his right leg, and leaps forward towards Black figure, landing in a horse stance and immediately pulls aright jat zi ceai to the opponent's abdomen. Black figureblocks with cin zi sau."@en ;
-    rdfs:label "Double_bow_hands_A_14"@en ;
-    mao:name_en "Double bow hands"@en ;
-    mao:name_zh "雙弓手"@zh-hk .
+    rdfs:label "Double_bow_hands_A_14"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_14
 mao:gffk_dc_B_14 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_14 ;
+    mao:has_component mao:gffk_dc_pair_14 ;
     mao:has_component mao:uw_forcing_palm ;
     mao:has_description "四平日字搥:白方收拳在腰，吊起右腳·凌空跳起到黑方前方落馬四平，右日字搥打向腹部，黑方以千字手擋格"@zh-hk ;
     mao:has_description "Sei ping jat zi ceoi: White figure pulls his fists to the waist, suspend his right leg, and leaps forward towards Black figure, landing in a horse stance and immediately pulls aright jat zi ceai to the opponent's abdomen. Black figureblocks with cin zi sau."@en ;
-    rdfs:label "Double_bow_hands_B_14"@en ;
-    mao:name_en "Double bow hands"@en ;
-    mao:name_zh "雙弓手"@zh-hk .
+    rdfs:label "Double_bow_hands_B_14"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_15
 mao:gffk_dc_A_15 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_15 ;
+    mao:has_component mao:gffk_dc_pair_15 ;
     mao:has_component mao:cross_arm_block ;
     mao:has_description "牛角搥:白方左手牛角搥打向黑方太陽穴，黑方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: White figure strikes at Black figure's temple with left ngau gok ceoi, which the latter blocks with you gung sau."@en ;
-    mao:archivist_note "Source manual p.176"^^xsd:string ;
-    mao:has_resource "P1-00:12:00" ;
-    rdfs:label "Double_hanging_hammer_fists_A_15"@en ;
-    mao:name_en "Double hanging hammer fists"@en ;
-    mao:name_zh "雙掛搥"@zh-hk .
+    rdfs:label "Double_hanging_hammer_fists_A_15"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_15
 mao:gffk_dc_B_15 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_15 ;
+    mao:has_component mao:gffk_dc_pair_15 ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:db_hanging_hammer ;
     mao:has_description "牛角搥:白方左手牛角搥打向黑方太陽穴，黑方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: White figure strikes at Black figure's temple with left ngau gok ceoi, which the latter blocks with you gung sau."@en ;
-    mao:archivist_note "Source manual p.176"^^xsd:string ;
-    mao:has_resource "P1-00:12:00" ;
-    rdfs:label "Double_hanging_hammer_fists_B_15"@en ;
-    mao:name_en "Double hanging hammer fists"@en ;
-    mao:name_zh "雙掛搥"@zh-hk .
+    rdfs:label "Double_hanging_hammer_fists_B_15"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_16
 mao:gffk_dc_A_16 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_16 ;
+    mao:has_component mao:gffk_dc_pair_16 ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:db_blocking_palm ;
     mao:has_component mao:split_n_attack_hand ;
     mao:has_description "雙弓手:黑方擋格後以雙弓手攻擊白方肋骨，白方以右迫手擋格"@zh-hk ;
     mao:has_description "Soeng gung sau: Black figure blocks and counters with soeng gung sau to White figure's ribs. White figure blocks with you bik sau."@en ;
-    rdfs:label "Grab_and_break_guard_A_16"@en ;
-    mao:name_en "Grab and break guard"@en ;
-    mao:name_zh "獵手破排"@zh-hk .
+    rdfs:label "Grab_and_break_guard_A_16"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_16
 mao:gffk_dc_B_16 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_16 ;
+    mao:has_component mao:gffk_dc_pair_16 ;
     mao:has_component mao:dbsquare_hammer ;
     mao:has_component mao:split_n_attack_hand ;
     mao:has_component mao:bow_stance ;
     mao:has_description "雙弓手:黑方擋格後以雙弓手攻擊白方肋骨，白方以右迫手擋格"@zh-hk ;
     mao:has_description "Soeng gung sau: Black figure blocks and counters with soeng gung sau to White figure's ribs. White figure blocks with you bik sau."@en ;
-    rdfs:label "Grab_and_break_guard_B_16"@en ;
-    mao:name_en "Grab and break guard"@en ;
-    mao:name_zh "獵手破排"@zh-hk .
+    rdfs:label "Grab_and_break_guard_B_16"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_17
 mao:gffk_dc_A_17 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_17 ;
+    mao:has_component mao:gffk_dc_pair_17 ;
     mao:has_component mao:turning_palm ;
     mao:has_description "雙掛搥:白方右馬雙掛搥打向黑方頭,黑方以交叉手擋"@zh-hk ;
     mao:has_description "Soeng gwaa ceoi: from a right stance White figure throws soeng gwaa ceoi to Black figure's head, which the latte blocks with a cross-hand block."@en ;
-    mao:archivist_note "Source manual p.177"^^xsd:string ;
-    mao:has_resource "P1-00:13:00" ;
-    rdfs:label "Advance_straight_punch_A_17"@en ;
-    mao:name_en "Advance with straight punch"@en ;
-    mao:name_zh "進馬平搥"@zh-hk .
+    rdfs:label "Advance_with_straight_punch_A_17"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_17
 mao:gffk_dc_B_17 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_17 ;
+    mao:has_component mao:gffk_dc_pair_17 ;
     mao:has_component mao:straight_punch ;
     mao:has_component mao:bow_stance ;
     mao:has_description "雙掛搥:白方右馬雙掛搥打向黑方頭,黑方以交叉手擋"@zh-hk ;
     mao:has_description "Soeng gwaa ceoi: from a right stance White figure throws soeng gwaa ceoi to Black figure's head, which the latte blocks with a cross-hand block."@en ;
-    mao:archivist_note "Source manual p.177"^^xsd:string ;
-    mao:has_resource "P1-00:13:00" ;
-    rdfs:label "Advance_straight_punch_B_17"@en ;
-    mao:name_en "Advance with straight punch"@en ;
-    mao:name_zh "進馬平搥"@zh-hk .
+    rdfs:label "Advance_with_straight_punch_B_17"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_18
 mao:gffk_dc_A_18 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_18 ;
+    mao:has_component mao:gffk_dc_pair_18 ;
     mao:has_component mao:bullhorn_punch ;
     mao:has_description "日字搥:雙方右吊腳，白方上右雙手日字搥打向黑方腹部，黑方同時上右馬雙膀手消去 | 撒手:黑方雙撒手捉著白方上臂 | 破排手：白方以破排手將黑方的手鬆開然後攻擊黑方，黑方同樣以破排手法消去。"@zh-hk ;
     mao:has_description "Jat zl ceoi: both sides suspend right leg. White figure takes a right step forward and pulls a doube jat zi ceoi at Biack figure's abdomen, Black figure also takes a right step forward and blocks with soeng bong sau. | Laap sau: Black figure uses soeng laap sau to grab White figure's upper arms. | Po pai sau: White figure used po pai sau to loosen Black figure's grip and counters with palm strike, Black fiqure also blocks and counters with po pai sau."@en ;
-    rdfs:label "Bullhorn_hammer_fist_A_18"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_A_18"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_18
 mao:gffk_dc_B_18 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_18 ;
+    mao:has_component mao:gffk_dc_pair_18 ;
     mao:has_component mao:blocking_palm ;
     mao:has_description "日字搥:雙方右吊腳，白方上右雙手日字搥打向黑方腹部，黑方同時上右馬雙膀手消去 | 撒手:黑方雙撒手捉著白方上臂 | 破排手：白方以破排手將黑方的手鬆開然後攻擊黑方，黑方同樣以破排手法消去。"@zh-hk ;
     mao:has_description "Jat zl ceoi: both sides suspend right leg. White figure takes a right step forward and pulls a doube jat zi ceoi at Biack figure's abdomen, Black figure also takes a right step forward and blocks with soeng bong sau. | Laap sau: Black figure uses soeng laap sau to grab White figure's upper arms. | Po pai sau: White figure used po pai sau to loosen Black figure's grip and counters with palm strike, Black fiqure also blocks and counters with po pai sau."@en ;
-    rdfs:label "Bullhorn_hammer_fist_B_18"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_B_18"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_19
 mao:gffk_dc_A_19 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_19 ;
+    mao:has_component mao:gffk_dc_pair_19 ;
     mao:has_component mao:joint_lock ;
     mao:has_component mao:front_kick ;
     mao:has_description "進馬平搥:白方上馬右平搥打向黑方，黑方右手圈手消去 | 牛角搥:黑方左牛角搥打向白方太陽穴,白方右弓手擋"@zh-hk ;
     mao:has_description "Zeon maa ping ceoi: White figure takes a step forward and pulls a right punch at Black figure, which the latter deflects with hyun sau. | Ngau gok ceoi: Black figure throws ngau gok ceoi at Whit figure's temple. White figure blocks with you gung sau."@en ;
-    mao:archivist_note "Source manual p.178"^^xsd:string ;
-    rdfs:label "Leg_block_groin_kick_A_19"@en ;
-    mao:name_en "Leg block and groin kick"@en ;
-    mao:name_zh "消腳撩陰"@zh-hk .
+    rdfs:label "Leg_block_and_groin_kick_A_19"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_19
 mao:gffk_dc_B_19 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_19 ;
+    mao:has_component mao:gffk_dc_pair_19 ;
     mao:has_component mao:block_kick ;
     mao:has_description "進馬平搥:白方上馬右平搥打向黑方，黑方右手圈手消去 | 牛角搥:黑方左牛角搥打向白方太陽穴,白方右弓手擋"@zh-hk ;
     mao:has_description "Zeon maa ping ceoi: White figure takes a step forward and pulls a right punch at Black figure, which the latter deflects with hyun sau. | Ngau gok ceoi: Black figure throws ngau gok ceoi at Whit figure's temple. White figure blocks with you gung sau."@en ;
-    mao:archivist_note "Source manual p.178"^^xsd:string ;
-    rdfs:label "Leg_block_groin_kick_B_19"@en ;
-    mao:name_en "Leg block and groin kick"@en ;
-    mao:name_zh "消腳撩陰"@zh-hk .
+    rdfs:label "Leg_block_and_groin_kick_B_19"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_20
 mao:gffk_dc_A_20 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_20 ;
+    mao:has_component mao:gffk_dc_pair_20 ;
     mao:has_component mao:dbsquare_hammer ;
     mao:has_component mao:bow_stance ;
     mao:has_description "持手:黑方以持手将白方雙手分開 | 消腳撩陰:黑方以撩陰腿法攻擊白方下陰·白方以消腳將其消去"@zh-hk ;
     mao:has_description "Ci sau: Black figure separates and holds White figure's arms with ci sau. | Siu goek liu jam: Black fiqure kicks with White figure's groin with liu jam teoi faat. White figure raises his knee to block."@en ;
-    mao:archivist_note "Source manual p.178"^^xsd:string ;
-    rdfs:label "Vertical_fist_advance_A_20"@en ;
-    mao:name_en "Vertical fist punch advance"@en ;
-    mao:name_zh "日字搥"@zh-hk .
+    rdfs:label "Vertical_fist_punch_advance_A_20"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_20
 mao:gffk_dc_B_20 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_20 ;
+    mao:has_component mao:gffk_dc_pair_20 ;
     mao:has_component mao:qian_char_hand ;
     mao:has_description "持手:黑方以持手将白方雙手分開 | 消腳撩陰:黑方以撩陰腿法攻擊白方下陰·白方以消腳將其消去"@zh-hk ;
     mao:has_description "Ci sau: Black figure separates and holds White figure's arms with ci sau. | Siu goek liu jam: Black fiqure kicks with White figure's groin with liu jam teoi faat. White figure raises his knee to block."@en ;
-    mao:archivist_note "Source manual p.178"^^xsd:string ;
-    rdfs:label "Vertical_fist_advance_B_20"@en ;
-    mao:name_en "Vertical fist punch advance"@en ;
-    mao:name_zh "日字搥"@zh-hk .
+    rdfs:label "Vertical_fist_punch_advance_B_20"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_21
 mao:gffk_dc_A_21 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_21 ;
+    mao:has_component mao:gffk_dc_pair_21 ;
     mao:has_component mao:bullhorn_punch ;
-    mao:archivist_note "Source manual p.179"^^xsd:string ;
-    mao:has_resource "P1-00:24:00" ;
-    rdfs:label "Bullhorn_hammer_fist_A_21"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_A_21"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_21
 mao:gffk_dc_B_21 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_21 ;
+    mao:has_component mao:gffk_dc_pair_21 ;
     mao:has_component mao:blocking_palm ;
-    mao:archivist_note "Source manual p.179"^^xsd:string ;
-    mao:has_resource "P1-00:24:00" ;
-    rdfs:label "Bullhorn_hammer_fist_B_21"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_B_21"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_22
 mao:gffk_dc_A_22 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_22 ;
+    mao:has_component mao:gffk_dc_pair_22 ;
     mao:has_component mao:tiger_tail_kick ;
     mao:has_description "四平日字搥:黑方收拳在腰，吊起右腳，凌空跳起到白方前方落馬四平，右日字四平日字搥打向腹部，白方以千字手擋格"@zh-hk ;
     mao:has_description "Sei ping jat zi ceoi: Black figure pulls both fists to his waist suspends his right leg and leaps towards White figurelanding in a horse stance and immediately pulls a right jat zceoi to the opponent's abdomen. White figure blocks withcin zi sau."@en ;
-    mao:archivist_note "Source manual p.180"^^xsd:string ;
-    rdfs:label "Tiger_tail_kick_A_22"@en ;
-    mao:name_en "Tiger tail kick"@en ;
-    mao:name_zh "虎尾腳"@zh-hk .
+    rdfs:label "Tiger_tail_kick_A_22"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_22
 mao:gffk_dc_B_22 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_22 ;
+    mao:has_component mao:gffk_dc_pair_22 ;
     mao:has_description "四平日字搥:黑方收拳在腰，吊起右腳，凌空跳起到白方前方落馬四平，右日字四平日字搥打向腹部，白方以千字手擋格"@zh-hk ;
     mao:has_description "Sei ping jat zi ceoi: Black figure pulls both fists to his waist suspends his right leg and leaps towards White figurelanding in a horse stance and immediately pulls a right jat zceoi to the opponent's abdomen. White figure blocks withcin zi sau."@en ;
-    mao:archivist_note "Source manual p.180"^^xsd:string ;
-    rdfs:label "Tiger_tail_kick_B_22"@en ;
-    mao:name_en "Tiger tail kick"@en ;
-    mao:name_zh "虎尾腳"@zh-hk .
+    rdfs:label "Tiger_tail_kick_B_22"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_23
 mao:gffk_dc_A_23 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_23 ;
+    mao:has_component mao:gffk_dc_pair_23 ;
     mao:has_component mao:qian_char_hand ;
     mao:has_description "牛角搥：黑方左手牛角搥打向白方太陽穴，白方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: Black figure strikes at White figure's temple with left ngau gok ceoi, which the latter blocks with you gung sau."@en ;
-    mao:archivist_note "Source manual p.181"^^xsd:string ;
-    rdfs:label "Vertical_fist_punch_A_23"@en ;
-    mao:name_en "Vertical fist punch"@en ;
-    mao:name_zh "日字搥"@zh-hk .
+    rdfs:label "Vertical_fist_punch_A_23"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_23
 mao:gffk_dc_B_23 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_23 ;
+    mao:has_component mao:gffk_dc_pair_23 ;
     mao:has_component mao:dbsquare_hammer ;
     mao:has_component mao:bow_stance ;
     mao:has_description "牛角搥：黑方左手牛角搥打向白方太陽穴，白方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: Black figure strikes at White figure's temple with left ngau gok ceoi, which the latter blocks with you gung sau."@en ;
-    mao:archivist_note "Source manual p.181"^^xsd:string ;
-    rdfs:label "Vertical_fist_punch_B_23"@en ;
-    mao:name_en "Vertical fist punch"@en ;
-    mao:name_zh "日字搥"@zh-hk .
+    rdfs:label "Vertical_fist_punch_B_23"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_24
 mao:gffk_dc_A_24 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_24 ;
+    mao:has_component mao:gffk_dc_pair_24 ;
     mao:has_component mao:blocking_palm ;
     mao:has_description "雙弓手:白方擋格後以雙弓手攻擊黑方肋骨，黑方以右迫手擋"@zh-hk ;
     mao:has_description "Soeng gung sau: White figure blocks and counters with soeng gung sau to Black figure's ribs. Black figure blocks with you bik sau."@en ;
-    mao:archivist_note "Source manual p.181"^^xsd:string ;
-    rdfs:label "Bullhorn_hammer_fist_A_24"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_A_24"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_24
 mao:gffk_dc_B_24 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_24 ;
+    mao:has_component mao:gffk_dc_pair_24 ;
     mao:has_component mao:bullhorn_punch ;
     mao:has_description "雙弓手:白方擋格後以雙弓手攻擊黑方肋骨，黑方以右迫手擋"@zh-hk ;
     mao:has_description "Soeng gung sau: White figure blocks and counters with soeng gung sau to Black figure's ribs. Black figure blocks with you bik sau."@en ;
-    mao:archivist_note "Source manual p.181"^^xsd:string ;
-    rdfs:label "Bullhorn_hammer_fist_B_24"@en ;
-    mao:name_en "Bullhorn hammer fist"@en ;
-    mao:name_zh "牛角搥"@zh-hk .
+    rdfs:label "Bullhorn_hammer_fist_B_24"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_25
 mao:gffk_dc_A_25 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_25 ;
+    mao:has_component mao:gffk_dc_pair_25 ;
     mao:has_description "雙掛搥:黑方右馬雙掛搥打向白方頭部，白方以交叉手擋"@zh-hk ;
     mao:has_description "Soeng gwaa ceoi: from a right stance Black figure throws soeng gwaa ceai to White fiqure's head, which the latter blocks with a cross-hand block."@en ;
-    mao:archivist_note "Source manual p.182"^^xsd:string ;
-    rdfs:label "Tiger_tail_kick_A_25"@en ;
-    mao:name_en "Tiger tail kick"@en ;
-    mao:name_zh "虎尾腳"@zh-hk .
+    rdfs:label "Tiger_tail_kick_A_25"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_25
 mao:gffk_dc_B_25 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_25 ;
+    mao:has_component mao:gffk_dc_pair_25 ;
     mao:has_component mao:tiger_tail_kick ;
     mao:has_description "雙掛搥:黑方右馬雙掛搥打向白方頭部，白方以交叉手擋"@zh-hk ;
     mao:has_description "Soeng gwaa ceoi: from a right stance Black figure throws soeng gwaa ceai to White fiqure's head, which the latter blocks with a cross-hand block."@en ;
-    mao:archivist_note "Source manual p.182"^^xsd:string ;
-    rdfs:label "Tiger_tail_kick_B_25"@en ;
-    mao:name_en "Tiger tail kick"@en ;
-    mao:name_zh "虎尾腳"@zh-hk .
+    rdfs:label "Tiger_tail_kick_B_25"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_26
 mao:gffk_dc_A_26 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_26 ;
+    mao:has_component mao:gffk_dc_pair_26 ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:rocket_hammer ;
     mao:has_description "日字搥:雙方右吊腳，黑方上右馬雙手日字搥打向白方腹部，白方同時上右馬雙膀手消去 | 獵手:白方以雙撒手捉著黑方上臂 | 破排手:黑方以破排手将白方的手鬆開然後攻擊白方，白方同樣以破排手法消去"@zh-hk ;
     mao:has_description "Jat zi ceoi: both sides suspend right leg. Black figure takes a right step forward and pulls a doube jat zi ceoi at White figure's abdomen, White figure also takes a right step forward and blocks with soeng bong sau. | Laap sau: White figure uses soeng laap sau to grab Blackfigure's upper arms. | Po pai sau: Black figure uses po pai sau to loosen White figure's grip and counters with palm strike. White figure also blocks and counters with po pai sau."@en ;
-    mao:archivist_note "Source manual p.184"^^xsd:string ;
-    rdfs:label "Rocket_hammer_combination_A_26"@en ;
-    mao:name_en "Rocket hammer fist combination"@en ;
-    mao:name_zh "拉馬火箭搥"@zh-hk .
+    rdfs:label "Rocket_hammer_fist_combination_A_26"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_26
 mao:gffk_dc_B_26 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_26 ;
+    mao:has_component mao:gffk_dc_pair_26 ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:crossing_bridge ;
     mao:has_description "日字搥:雙方右吊腳，黑方上右馬雙手日字搥打向白方腹部，白方同時上右馬雙膀手消去 | 獵手:白方以雙撒手捉著黑方上臂 | 破排手:黑方以破排手将白方的手鬆開然後攻擊白方，白方同樣以破排手法消去"@zh-hk ;
     mao:has_description "Jat zi ceoi: both sides suspend right leg. Black figure takes a right step forward and pulls a doube jat zi ceoi at White figure's abdomen, White figure also takes a right step forward and blocks with soeng bong sau. | Laap sau: White figure uses soeng laap sau to grab Blackfigure's upper arms. | Po pai sau: Black figure uses po pai sau to loosen White figure's grip and counters with palm strike. White figure also blocks and counters with po pai sau."@en ;
-    mao:archivist_note "Source manual p.184"^^xsd:string ;
-    rdfs:label "Rocket_hammer_combination_B_26"@en ;
-    mao:name_en "Rocket hammer fist combination"@en ;
-    mao:name_zh "拉馬火箭搥"@zh-hk .
+    rdfs:label "Rocket_hammer_fist_combination_B_26"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_27
 mao:gffk_dc_A_27 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_27 ;
+    mao:has_component mao:gffk_dc_pair_27 ;
     mao:has_description "進馬平搥:黑方上馬右平搥打向白方，白方右手圈手消去"@zh-hk ;
     mao:has_description "Zeon maa ping ceoi: Black figure takes a step forward and pulls a right punch at White figure, which the latter deflects with hyun sau."@en ;
-    rdfs:label "Grab_and_force_elbow_A_27"@en ;
-    mao:name_en "Grab and force elbow"@en ;
-    mao:name_zh "擸手迫踭"@zh-hk .
+    rdfs:label "Grab_and_force_elbow_A_27"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_27
 mao:gffk_dc_B_27 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_27 ;
+    mao:has_component mao:gffk_dc_pair_27 ;
     mao:has_component mao:grappling_claw ;
     mao:has_description "進馬平搥:黑方上馬右平搥打向白方，白方右手圈手消去"@zh-hk ;
     mao:has_description "Zeon maa ping ceoi: Black figure takes a step forward and pulls a right punch at White figure, which the latter deflects with hyun sau."@en ;
-    rdfs:label "Grab_and_force_elbow_B_27"@en ;
-    mao:name_en "Grab and force elbow"@en ;
-    mao:name_zh "擸手迫踭"@zh-hk .
+    rdfs:label "Grab_and_force_elbow_B_27"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_28
 mao:gffk_dc_A_28 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_28 ;
+    mao:has_component mao:gffk_dc_pair_28 ;
     mao:has_component mao:straight_punch ;
     mao:has_component mao:straight_cut_palm ;
     mao:has_description "牛角搥:白方左手牛角搥打向黑方太陽穴，黑方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: White figure throws ngau gok ceoi at Black figure's temple. Black figure blocks with you gung sau."@en ;
-    rdfs:label "Advance_punch_cutting_hand_A_28"@en ;
-    mao:name_en "Advance punch and cutting hand"@en ;
-    mao:name_zh "進馬平搥-切手"@zh-hk .
+    rdfs:label "Advance_punch_and_cutting_hand_A_28"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_28
 mao:gffk_dc_B_28 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_28 ;
+    mao:has_component mao:gffk_dc_pair_28 ;
     mao:has_component mao:uw_forcing_palm ;
     mao:has_component mao:turning_palm ;
     mao:has_description "牛角搥:白方左手牛角搥打向黑方太陽穴，黑方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: White figure throws ngau gok ceoi at Black figure's temple. Black figure blocks with you gung sau."@en ;
-    rdfs:label "Advance_punch_cutting_hand_B_28"@en ;
-    mao:name_en "Advance punch and cutting hand"@en ;
-    mao:name_zh "進馬平搥-切手"@zh-hk .
+    rdfs:label "Advance_punch_and_cutting_hand_B_28"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_29
 mao:gffk_dc_A_29 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_29 ;
+    mao:has_component mao:gffk_dc_pair_29 ;
     mao:has_component mao:uw_forcing_palm ;
     mao:has_description "持手:白方以持手将黑方雙手分開 | 消腳撩陰: 白方以撩陰腿法攻擊黑方下陰，黑方以消將其消去"@zh-hk ;
     mao:has_description "Ci sau: White figure separates and holds Black figure's arms with ci sau. | Siu goek liu jam: White figure kicks with Black figure's groin with liu jam teoi faat, Black figure raises his knee to block."@en ;
-    rdfs:label "Advance_straight_punch_A_29"@en ;
-    mao:name_en "Advance with straight punch"@en ;
-    mao:name_zh "進馬平搥"@zh-hk .
+    rdfs:label "Advance_with_straight_punch_A_29"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_29
 mao:gffk_dc_B_29 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_29 ;
+    mao:has_component mao:gffk_dc_pair_29 ;
     mao:has_component mao:straight_punch ;
     mao:has_description "持手:白方以持手将黑方雙手分開 | 消腳撩陰: 白方以撩陰腿法攻擊黑方下陰，黑方以消將其消去"@zh-hk ;
     mao:has_description "Ci sau: White figure separates and holds Black figure's arms with ci sau. | Siu goek liu jam: White figure kicks with Black figure's groin with liu jam teoi faat, Black figure raises his knee to block."@en ;
-    rdfs:label "Advance_straight_punch_B_29"@en ;
-    mao:name_en "Advance with straight punch"@en ;
-    mao:name_zh "進馬平搥"@zh-hk .
+    rdfs:label "Advance_with_straight_punch_B_29"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_30
 mao:gffk_dc_A_30 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_30 ;
+    mao:has_component mao:gffk_dc_pair_30 ;
     mao:has_component mao:turning_palm ;
-    mao:archivist_note "Source manual p.185"^^xsd:string ;
-    mao:has_resource "P2-00:03:00" ;
-    rdfs:label "Cutting_hand_A_30"@en ;
-    mao:name_en "Cutting hand"@en ;
-    mao:name_zh "切手"@zh-hk .
+    rdfs:label "Cutting_hand_A_30"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_30
 mao:gffk_dc_B_30 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_30 ;
+    mao:has_component mao:gffk_dc_pair_30 ;
     mao:has_component mao:straight_cut_palm ;
-    mao:archivist_note "Source manual p.185"^^xsd:string ;
-    mao:has_resource "P2-00:03:00" ;
-    rdfs:label "Cutting_hand_B_30"@en ;
-    mao:name_en "Cutting hand"@en ;
-    mao:name_zh "切手"@zh-hk .
+    rdfs:label "Cutting_hand_B_30"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_31
 mao:gffk_dc_A_31 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_31 ;
+    mao:has_component mao:gffk_dc_pair_31 ;
     mao:has_component mao:horse_stance ;
     mao:has_component mao:bullhorn_punch ;
-    mao:archivist_note "Source manual p.186"^^xsd:string ;
-    rdfs:label "Drop_stance_bullhorn_fist_A_31"@en ;
-    mao:name_en "Drop stance bullhorn fist"@en ;
-    mao:name_zh "落馬牛角搥"@zh-hk .
+    rdfs:label "Drop_stance_bullhorn_fist_A_31"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_31
 mao:gffk_dc_B_31 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_31 ;
+    mao:has_component mao:gffk_dc_pair_31 ;
     mao:has_component mao:up_forcing_palm ;
-    mao:archivist_note "Source manual p.186"^^xsd:string ;
-    rdfs:label "Drop_stance_bullhorn_fist_B_31"@en ;
-    mao:name_en "Drop stance bullhorn fist"@en ;
-    mao:name_zh "落馬牛角搥"@zh-hk .
+    rdfs:label "Drop_stance_bullhorn_fist_B_31"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_32
 mao:gffk_dc_A_32 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_32 ;
+    mao:has_component mao:gffk_dc_pair_32 ;
     mao:has_component mao:bow_stance ;
     mao:has_component mao:db_hanging_hammer ;
     mao:has_component mao:joint_lock ;
     mao:has_component mao:grappling_claw ;
-    mao:has_resource "P2-00:09:00" ;
-    rdfs:label "Advance_double_hanging_hammers_A_32"@en ;
-    mao:name_en "Advance double hanging hammer fists"@en ;
-    mao:name_zh "上馬雙掛搥"@zh-hk .
+    rdfs:label "Advance_double_hanging_hammer_fists_A_32"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_32
 mao:gffk_dc_B_32 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_32 ;
+    mao:has_component mao:gffk_dc_pair_32 ;
     mao:has_component mao:cross_arm_block ;
     mao:has_component mao:dbsquare_hammer ;
-    mao:has_resource "P2-00:09:00" ;
-    rdfs:label "Advance_double_hanging_hammers_B_32"@en ;
-    mao:name_en "Advance double hanging hammer fists"@en ;
-    mao:name_zh "上馬雙掛搥"@zh-hk .
+    rdfs:label "Advance_double_hanging_hammer_fists_B_32"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_33
 mao:gffk_dc_A_33 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_33 ;
+    mao:has_component mao:gffk_dc_pair_33 ;
     mao:has_component mao:front_kick ;
-    rdfs:label "Groin_lifting_kick_A_33"@en ;
-    mao:name_en "Groin lifting kick"@en ;
-    mao:name_zh "撩陰腿"@zh-hk .
+    rdfs:label "Groin_lifting_kick_A_33"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_33
 mao:gffk_dc_B_33 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_33 ;
+    mao:has_component mao:gffk_dc_pair_33 ;
     mao:has_component mao:twist_stance_blocking_palm ;
-    rdfs:label "Groin_lifting_kick_B_33"@en ;
-    mao:name_en "Groin lifting kick"@en ;
-    mao:name_zh "撩陰腿"@zh-hk .
+    rdfs:label "Groin_lifting_kick_B_33"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_34
 mao:gffk_dc_A_34 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_34 ;
+    mao:has_component mao:gffk_dc_pair_34 ;
     mao:has_component mao:bullhorn_punch ;
     mao:has_component mao:uw_forcing_palm ;
     mao:has_component mao:joint_lock ;
-    mao:archivist_note "Source manual p.187"^^xsd:string ;
-    mao:has_resource "P2-00:07:00" ;
-    rdfs:label "Turn_stance_uppercut_A_34"@en ;
-    mao:name_en "Turn stance and uppercut"@en ;
-    mao:name_zh "轉馬衝搥"@zh-hk .
+    rdfs:label "Turn_stance_and_uppercut_A_34"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_34
 mao:gffk_dc_B_34 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_34 ;
+    mao:has_component mao:gffk_dc_pair_34 ;
     mao:has_component mao:blocking_palm ;
-    mao:archivist_note "Source manual p.187"^^xsd:string ;
-    mao:has_resource "P2-00:07:00" ;
-    rdfs:label "Turn_stance_uppercut_B_34"@en ;
-    mao:name_en "Turn stance and uppercut"@en ;
-    mao:name_zh "轉馬衝搥"@zh-hk .
+    rdfs:label "Turn_stance_and_uppercut_B_34"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_35
 mao:gffk_dc_A_35 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_35 ;
+    mao:has_component mao:gffk_dc_pair_35 ;
     mao:has_component mao:dbsquare_hammer ;
     mao:has_description "日字搥:白方上馬右手日字搥打向黑方腹部·黑方右手千字手下劈擋住·左掌護胸"@zh-hk ;
     mao:has_description "Jat zi ceoi: White fiqure steps forward on the right and throws a right jat zi ceoi at Black figure's abdomen. Black figure blocks with a right cin zi sau, and guards his cheswith his left palm."@en ;
-    mao:archivist_note "Source manual p.188"^^xsd:string ;
-    rdfs:label "Vertical_fist_punch_A_35"@en ;
-    mao:name_en "Vertical fist punch"@en ;
-    mao:name_zh "日字搥"@zh-hk .
+    rdfs:label "Vertical_fist_punch_A_35"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_35
 mao:gffk_dc_B_35 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_35 ;
+    mao:has_component mao:gffk_dc_pair_35 ;
     mao:has_component mao:whipping_palm ;
     mao:has_description "日字搥:白方上馬右手日字搥打向黑方腹部·黑方右手千字手下劈擋住·左掌護胸"@zh-hk ;
     mao:has_description "Jat zi ceoi: White fiqure steps forward on the right and throws a right jat zi ceoi at Black figure's abdomen. Black figure blocks with a right cin zi sau, and guards his cheswith his left palm."@en ;
-    mao:archivist_note "Source manual p.188"^^xsd:string ;
-    rdfs:label "Vertical_fist_punch_B_35"@en ;
-    mao:name_en "Vertical fist punch"@en ;
-    mao:name_zh "日字搥"@zh-hk .
+    rdfs:label "Vertical_fist_punch_B_35"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_36
 mao:gffk_dc_A_36 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_36 ;
+    mao:has_component mao:gffk_dc_pair_36 ;
     mao:has_description "白方左手牛角搥打向黑方太陽穴,黑方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: White figure strikes with Black figure's temple with ngau gok ceoi. Black figure blocks with right gung sau."@en ;
-    mao:archivist_note "Source manual p.188"^^xsd:string ;
-    mao:has_resource "P2-00:05:00" ;
-    rdfs:label "Twist_stance_diagonal_kick_A_36"@en ;
-    mao:name_en "Twist stance diagonal kick"@en ;
-    mao:name_zh "扭馬劈腳"@zh-hk .
+    rdfs:label "Twist_stance_diagonal_kick_A_36"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_36
 mao:gffk_dc_B_36 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_36 ;
+    mao:has_component mao:gffk_dc_pair_36 ;
     mao:has_component mao:twist_stance_kick ;
     mao:has_description "白方左手牛角搥打向黑方太陽穴,黑方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: White figure strikes with Black figure's temple with ngau gok ceoi. Black figure blocks with right gung sau."@en ;
-    mao:archivist_note "Source manual p.188"^^xsd:string ;
-    mao:has_resource "P2-00:05:00" ;
-    rdfs:label "Twist_stance_diagonal_kick_B_36"@en ;
-    mao:name_en "Twist stance diagonal kick"@en ;
-    mao:name_zh "扭馬劈腳"@zh-hk .
+    rdfs:label "Twist_stance_diagonal_kick_B_36"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_37
 mao:gffk_dc_A_37 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_37 ;
+    mao:has_component mao:gffk_dc_pair_37 ;
     mao:has_component mao:turning ;
     mao:has_description "虎尾腳:白方以虎尾腳踢向黑方·黑方以雙伏手消去"@zh-hk ;
     mao:has_description "Fu mei goek (Tiger tail kick): White figure kicks at Black fiqure with fu mei goek. Black figure blocks with soeng fok sau."@en ;
-    mao:archivist_note "Source manual p.189"^^xsd:string ;
-    rdfs:label "High_low_uppercut_A_37"@en ;
-    mao:name_en "High and low uppercut"@en ;
-    mao:name_zh "上下沖搥"@zh-hk .
+    rdfs:label "High_and_low_uppercut_A_37"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_37
 mao:gffk_dc_B_37 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_37 ;
+    mao:has_component mao:gffk_dc_pair_37 ;
     mao:has_component mao:straight_cut_palm ;
     mao:has_description "虎尾腳:白方以虎尾腳踢向黑方·黑方以雙伏手消去"@zh-hk ;
     mao:has_description "Fu mei goek (Tiger tail kick): White figure kicks at Black fiqure with fu mei goek. Black figure blocks with soeng fok sau."@en ;
-    mao:archivist_note "Source manual p.189"^^xsd:string ;
-    rdfs:label "High_low_uppercut_B_37"@en ;
-    mao:name_en "High and low uppercut"@en ;
-    mao:name_zh "上下沖搥"@zh-hk .
+    rdfs:label "High_and_low_uppercut_B_37"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_38
 mao:gffk_dc_A_38 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_38 ;
+    mao:has_component mao:gffk_dc_pair_38 ;
     mao:has_component mao:hanging_hammer ;
     mao:has_component mao:straight_punch ;
-    mao:archivist_note "Source manual p.190"^^xsd:string ;
-    rdfs:label "Pull_and_straight_punch_A_38"@en ;
-    mao:name_en "Pull and straight punch"@en ;
-    mao:name_zh "一抽一搥"@zh-hk .
+    rdfs:label "Pull_and_straight_punch_A_38"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_38
 mao:gffk_dc_B_38 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_38 ;
+    mao:has_component mao:gffk_dc_pair_38 ;
     mao:has_component mao:bullhorn_punch ;
     mao:has_component mao:uw_forcing_palm ;
-    mao:archivist_note "Source manual p.190"^^xsd:string ;
-    rdfs:label "Pull_and_straight_punch_B_38"@en ;
-    mao:name_en "Pull and straight punch"@en ;
-    mao:name_zh "一抽一搥"@zh-hk .
+    rdfs:label "Pull_and_straight_punch_B_38"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_39
 mao:gffk_dc_A_39 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_39 ;
+    mao:has_component mao:gffk_dc_pair_39 ;
     mao:has_component mao:grappling_claw ;
     mao:has_component mao:up_forcing_palm ;
     mao:has_description "日字搥:黑方上馬右手日字搥打向白方腹部·白方右手千字手下劈擋住"@zh-hk ;
     mao:has_description "Jat zi ceoi: Black figure steps forward on the right and throws a right jat zi ceoi at White figure's abdomen. White figure blocks with a right cin zi sau, and guards his chestwith his left palm."@en ;
-    mao:archivist_note "Source manual p.190"^^xsd:string ;
-    rdfs:label "Hook_sweep_and_block_A_39"@en ;
-    mao:name_en "Hook sweep and block"@en ;
-    mao:name_zh "抅彈腳法"@zh-hk .
+    rdfs:label "Hook_sweep_and_block_A_39"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_39
 mao:gffk_dc_B_39 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_39 ;
+    mao:has_component mao:gffk_dc_pair_39 ;
     mao:has_component mao:hanging_hammer ;
     mao:has_description "日字搥:黑方上馬右手日字搥打向白方腹部·白方右手千字手下劈擋住"@zh-hk ;
     mao:has_description "Jat zi ceoi: Black figure steps forward on the right and throws a right jat zi ceoi at White figure's abdomen. White figure blocks with a right cin zi sau, and guards his chestwith his left palm."@en ;
-    mao:archivist_note "Source manual p.190"^^xsd:string ;
-    rdfs:label "Hook_sweep_and_block_B_39"@en ;
-    mao:name_en "Hook sweep and block"@en ;
-    mao:name_zh "抅彈腳法"@zh-hk .
+    rdfs:label "Hook_sweep_and_block_B_39"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_40
 mao:gffk_dc_A_40 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_40 ;
+    mao:has_component mao:gffk_dc_pair_40 ;
     mao:has_component mao:blocking_palm ;
     mao:has_description "牛角搥:黑左手牛角搥打向白方太陽穴,白方右弓手擋住"@zh-hk ;
     mao:has_description "Ngau gok ceoi: Black figure strikes with White figure's temple with ngau gok ceoi. White figure blocks with nght gung sau."@en ;
-    mao:archivist_note "Source manual p.191"^^xsd:string ;
-    rdfs:label "Advance_thrust_punch_A_40"@en ;
-    mao:name_en "Advance with thrust punch"@en ;
-    mao:name_zh "上馬插搥"@zh-hk .
+    rdfs:label "Advance_with_thrust_punch_A_40"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_40
 mao:gffk_dc_B_40 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_40 ;
+    mao:has_component mao:gffk_dc_pair_40 ;
     mao:has_component mao:thrust_punch ;
     mao:has_description "Ngau gok ceoi: Black figure strikes with White figure's temple with ngau gok ceoi. White figure blocks with nght gung sau."@en ;
-    mao:archivist_note "Source manual p.191"^^xsd:string ;
-    rdfs:label "Advance_thrust_punch_B_40"@en ;
-    mao:name_en "Advance with thrust punch"@en ;
-    mao:name_zh "上馬插搥"@zh-hk .
+    rdfs:label "Advance_with_thrust_punch_B_40"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_41
 mao:gffk_dc_A_41 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_41 ;
+    mao:has_component mao:gffk_dc_pair_41 ;
     mao:has_component mao:splitting_palm ;
     mao:has_component mao:qian_char_hand ;
     mao:has_description "虎尾腳:黑方以虎尾腳踢向白方，白方以雙伏手撥去"@zh-hk ;
     mao:has_description "Fu mei goek (Tiger tail kick): Black fiqure kicks atWhite figurewith fu mei goek. White figure blocks with soeng fok sau."@en ;
-    mao:archivist_note "Source manual p.191"^^xsd:string ;
-    rdfs:label "Splitting_palm_A_41"@en ;
-    mao:name_en "Splitting palm"@en ;
-    mao:name_zh "挑手"@zh-hk .
+    rdfs:label "Splitting_palm_A_41"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_41
 mao:gffk_dc_B_41 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_41 ;
+    mao:has_component mao:gffk_dc_pair_41 ;
     mao:has_component mao:hanging_hammer ;
     mao:has_component mao:bullhorn_punch ;
     mao:has_component mao:dbsquare_hammer ;
     mao:has_description "虎尾腳:黑方以虎尾腳踢向白方，白方以雙伏手撥去"@zh-hk ;
     mao:has_description "Fu mei goek (Tiger tail kick): Black fiqure kicks atWhite figurewith fu mei goek. White figure blocks with soeng fok sau."@en ;
-    mao:archivist_note "Source manual p.191"^^xsd:string ;
-    rdfs:label "Splitting_palm_B_41"@en ;
-    mao:name_en "Splitting palm"@en ;
-    mao:name_zh "挑手"@zh-hk .
+    rdfs:label "Splitting_palm_B_41"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_42
 mao:gffk_dc_A_42 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_42 ;
+    mao:has_component mao:gffk_dc_pair_42 ;
     mao:has_component mao:cross_arm_block ;
-    rdfs:label "Double_hanging_hammer_fists_A_42"@en ;
-    mao:name_en "Double hanging hammer fists"@en ;
-    mao:name_zh "雙掛搥"@zh-hk .
+    rdfs:label "Double_hanging_hammer_fists_A_42"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_42
 mao:gffk_dc_B_42 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_42 ;
+    mao:has_component mao:gffk_dc_pair_42 ;
     mao:has_component mao:db_hanging_hammer ;
     mao:has_component mao:joint_lock ;
-    rdfs:label "Double_hanging_hammer_fists_B_42"@en ;
-    mao:name_en "Double hanging hammer fists"@en ;
-    mao:name_zh "雙掛搥"@zh-hk .
+    rdfs:label "Double_hanging_hammer_fists_B_42"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_43
 mao:gffk_dc_A_43 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_43 ;
+    mao:has_component mao:gffk_dc_pair_43 ;
     mao:has_component mao:whipping_palm ;
-    rdfs:label "Right_slapping_palm_A_43"@en ;
-    mao:name_en "Right slapping palm"@en ;
-    mao:name_zh "右拍手"@zh-hk .
+    rdfs:label "Right_slapping_palm_A_43"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_43
 mao:gffk_dc_B_43 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_43 ;
+    mao:has_component mao:gffk_dc_pair_43 ;
     mao:has_component mao:dbsquare_hammer ;
-    rdfs:label "Right_slapping_palm_B_43"@en ;
-    mao:name_en "Right slapping palm"@en ;
-    mao:name_zh "右拍手"@zh-hk .
+    rdfs:label "Right_slapping_palm_B_43"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_A_44
 mao:gffk_dc_A_44 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
     mao:spars_against mao:gffk_dc_B_44 ;
+    mao:has_component mao:gffk_dc_pair_44 ;
     mao:has_component mao:tiger_tail_kick ;
     mao:has_description "拉馬火箭搥:白方左弓步右拳平肩向前打出，黑方左弓步雙伏手 | 火箭搥:白方以連環火箭搥打向黑方，黑方拉馬穿橋將其消去"@zh-hk ;
     mao:has_description "Laai maa fo zin ceoi: White figure pulls a right punch at shoulder level in a left bow stance.Black figure blocks with soeng fok sau in left now stance. | Fo zin ceoi: White fiqure makes a consecutive fo zi ceoi at Black figure, who pulls back and blocks with cyun kiu sau."@en ;
-    mao:archivist_note "Source manual p.193"^^xsd:string ;
-    rdfs:label "Tiger_tail_kick_A_44"@en ;
-    mao:name_en "Tiger tail kick"@en ;
-    mao:name_zh "虎尾腳"@zh-hk .
+    rdfs:label "Tiger_tail_kick_A_44"@en .
 
 ###  https://purl.org/maont/ontology/gffk_dc_B_44
 mao:gffk_dc_B_44 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
     mao:spars_against mao:gffk_dc_A_44 ;
+    mao:has_component mao:gffk_dc_pair_44 ;
     mao:has_component mao:twisting_stance ;
     mao:has_description "拉馬火箭搥:白方左弓步右拳平肩向前打出，黑方左弓步雙伏手 | 火箭搥:白方以連環火箭搥打向黑方，黑方拉馬穿橋將其消去"@zh-hk ;
     mao:has_description "Laai maa fo zin ceoi: White figure pulls a right punch at shoulder level in a left bow stance.Black figure blocks with soeng fok sau in left now stance. | Fo zin ceoi: White fiqure makes a consecutive fo zi ceoi at Black figure, who pulls back and blocks with cyun kiu sau."@en ;
-    mao:archivist_note "Source manual p.193"^^xsd:string ;
-    rdfs:label "Tiger_tail_kick_B_44"@en ;
-    mao:name_en "Tiger tail kick"@en ;
-    mao:name_zh "虎尾腳"@zh-hk .
+    rdfs:label "Tiger_tail_kick_B_44"@en .
