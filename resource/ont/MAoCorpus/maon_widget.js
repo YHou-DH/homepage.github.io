@@ -90,10 +90,8 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
     <div class="maon-view active" id="maon-view-query">
       <div id="maon-editor-area">
-        <textarea id="maon-sql-input" spellcheck="false">SELECT id, name_en, name_zh, primary_class, name_romanCAN
+        <textarea id="maon-sql-input" spellcheck="false">SELECT id, name_en, name_zh, primary_class
 FROM individuals
-WHERE used_in LIKE '%Hung_Kuen%'
-ORDER BY primary_class, name_en
 LIMIT 30;</textarea>
         <div id="maon-editor-actions">
           <button onclick="MAonSQL.run()">&#9654; Run</button>
@@ -143,8 +141,7 @@ const TEMPLATES={
     ["Hung Kuen — all techniques",         "SELECT id, name_en, name_zh, primary_class, name_romanCAN\nFROM individuals\nWHERE used_in LIKE '%Hung_Kuen%'\nORDER BY primary_class, name_en\nLIMIT 60;"],
     ["Choy Li Fut — all techniques",       "SELECT id, name_en, name_zh, primary_class, name_romanCAN\nFROM individuals\nWHERE used_in LIKE '%Choy_Li_Fut%'\nORDER BY primary_class, name_en\nLIMIT 60;"],
     ["White Crane — all techniques",       "SELECT id, name_en, name_zh, primary_class, name_romanCAN\nFROM individuals\nWHERE used_in LIKE '%White_Crane_Kungfu%'\nORDER BY primary_class, name_en\nLIMIT 60;"],
-    ["Shared: Hung Kuen + Choy Li Fut",    "SELECT id, name_en, name_zh, used_in\nFROM individuals\nWHERE used_in LIKE '%Hung_Kuen%'\n  AND used_in LIKE '%Choy_Li_Fut%'\nORDER BY name_en;"],
-    ["Shared: all three styles",           "SELECT id, name_en, name_zh, used_in\nFROM individuals\nWHERE used_in LIKE '%Hung_Kuen%'\n  AND used_in LIKE '%Choy_Li_Fut%'\n  AND used_in LIKE '%White_Crane_Kungfu%'\nORDER BY name_en;"]
+    ["Shared: Hung Kuen + Choy Li Fut",    "SELECT id, name_en, name_zh, used_in\nFROM individuals\nWHERE used_in LIKE '%Hung_Kuen%'\n  AND used_in LIKE '%Choy_Li_Fut%'\nORDER BY name_en;"]
   ],
   "By technique class": [
     ["Palm techniques",    "SELECT id, name_en, name_zh, name_romanCAN, name_romanMAN, used_in\nFROM individuals\nWHERE primary_class = 'palm_tech'\nORDER BY name_en;"],
@@ -157,7 +154,7 @@ const TEMPLATES={
     ["Bodywork",           "SELECT id, name_en, name_zh, name_romanCAN, used_in\nFROM individuals\nWHERE primary_class = 'bodywork'\nORDER BY name_en;"]
   ],
   "Systems & masters": [
-    ["All styles and systems", "SELECT id, name_en, name_zh, primary_class, belongs_to\nFROM individuals\nWHERE primary_class = 'MA_style'\n   OR primary_class = 'MA_system'\nORDER BY primary_class, name_en;"],
+    ["Styles and systems", "SELECT id, name_en, name_zh, primary_class, belongs_to\nFROM individuals\nWHERE primary_class = 'MA_style'\n   OR primary_class = 'MA_system'\nORDER BY primary_class, name_en;"],
     ["Masters",               "SELECT id, name_en, name_zh, teaches, has_principle\nFROM individuals\nWHERE primary_class = 'MA_Master'\nORDER BY name_en;"],
     ["Principles",            "SELECT id, name_en, name_zh, belongs_to\nFROM individuals\nWHERE primary_class LIKE '%principle%'\nORDER BY primary_class, name_en;"]
   ],
@@ -172,29 +169,31 @@ const TEMPLATES={
     ["All object properties",    "SELECT id, label, domain, range_cls, comment\nFROM object_properties\nORDER BY id;"]
   ],
   "Graph (relations)": [
-    ["Relations FROM individual",    "SELECT subject, predicate, object\nFROM relations\nWHERE subject = 'Hung_Kuen'\nORDER BY predicate;"],
-    ["Relations TO individual",      "SELECT subject, predicate, object\nFROM relations\nWHERE object = 'Hung_Kuen'\nORDER BY predicate, subject\nLIMIT 40;"],
     ["Similar-to pairs",             "SELECT subject, object\nFROM relations\nWHERE predicate = 'similar_to'\nORDER BY subject;"],
     ["Employs graph",                "SELECT subject, object\nFROM relations\nWHERE predicate = 'employs'\nORDER BY subject\nLIMIT 40;"]
-  ],
-  "Annotations": [
-    ["With archivist notes", "SELECT id, name_en, name_zh, archivist_note\nFROM individuals\nWHERE archivist_note IS NOT NULL\nORDER BY id;"],
-    ["With origin stories",  "SELECT id, name_en, name_zh, origin_story\nFROM individuals\nWHERE origin_story IS NOT NULL\nORDER BY id;"],
-    ["With descriptions",    "SELECT id, name_en, name_zh, description\nFROM individuals\nWHERE description IS NOT NULL\nORDER BY id;"]
   ]};
 function buildTemplates(){
   const c=document.getElementById('maon-templates-inner');
   let h='';
   for(const[group,items]of Object.entries(TEMPLATES)){
     h+=`<h4>${group}</h4>`;
-    items.forEach(([label,sql])=>{h+=`<button class="maon-tpl-btn" onclick="MAonSQL.applyTpl(${JSON.stringify(sql)})">${label}</button>`;});
+    items.forEach(([label])=>{h+=`<button class="maon-tpl-btn">${label}</button>`;});
   }
   c.innerHTML=h;
+  // Attach SQL via dataset after render — avoids inline onclick with JSON strings
+  let i=0;
+  for(const[,items]of Object.entries(TEMPLATES)){
+    items.forEach(([,sql])=>{c.querySelectorAll('.maon-tpl-btn')[i++].dataset.sql=sql;});
+  }
+  c.addEventListener('click',e=>{
+    const btn=e.target.closest('.maon-tpl-btn');
+    if(btn&&btn.dataset.sql)MAonSQL.applyTpl(btn.dataset.sql);
+  });
 }
 const SCHEMA={individuals:{desc:"Named OWL individuals.",cols:[["id","TEXT PK","Local URI name"],["label","TEXT","rdfs:label"],["comment","TEXT","rdfs:comment"],["name_en","TEXT","English name"],["name_zh","TEXT","Chinese name"],["name_romanCAN","TEXT","Cantonese (Jyutping)"],["name_romanMAN","TEXT","Mandarin (Pinyin)"],["other_name_en","TEXT","Alternate English names"],["other_name_zh","TEXT","Alternate Chinese names"],["primary_class","TEXT","OWL class"],["used_in","JSON[]","mao:used_in"],["belongs_to","JSON[]","mao:belongs_to"],["employs","JSON[]","mao:employs"],["has_component","JSON[]","mao:has_component"],["similar_to","JSON[]","mao:similar_to"],["type_of","JSON[]","mao:type_of"],["has_principle","JSON[]","mao:has_principle"],["teaches","JSON[]","mao:teaches"],["practiced_in","JSON[]","mao:practiced_in"],["description","TEXT","mao:has_description"],["archivist_note","TEXT","mao:archivist_note"],["origin_story","TEXT","mao:origin_story"],["characteristics","TEXT","mao:characteristics"]]},classes:{desc:"OWL classes.",cols:[["id","TEXT PK","Class name"],["label","TEXT","rdfs:label"],["comment","TEXT","Class definition"],["name_en","TEXT","English name"],["name_zh","TEXT","Chinese name"],["name_romanCAN","TEXT","Cantonese"],["name_romanMAN","TEXT","Mandarin"],["parent_class","TEXT","rdfs:subClassOf"]]},object_properties:{desc:"OWL ObjectProperties.",cols:[["id","TEXT PK","Property name"],["label","TEXT","rdfs:label"],["comment","TEXT","Definition"],["domain","JSON[]","rdfs:domain"],["range_cls","JSON[]","rdfs:range"],["name_zh","TEXT","Chinese name"]]},relations:{desc:"Flattened triple table.",cols:[["subject","TEXT","Source individual"],["predicate","TEXT","Property name"],["object","TEXT","Target"]]}  };
 function buildSchema(){
   const c=document.getElementById('maon-schema-inner');
-  let h='<p style="font-size:11px;color:#666;margin-bottom:12px">JSON array columns (used_in, belongs_to, employs…) are stored as arrays. Filter with <code>LIKE '%value%'</code>.</p>';
+  let h=`<p style="font-size:11px;color:#666;margin-bottom:12px">JSON array columns (used_in, belongs_to, employs…) are stored as arrays. Filter with <code>LIKE '%value%'</code>.</p>`;
   for(const[tname,tdef]of Object.entries(SCHEMA)){
     const cnt=TABLES[tname]?TABLES[tname].length:'?';
     h+=`<h3>${tname} <span style="font-weight:normal;font-size:11px;color:#666">(${cnt} rows) — ${tdef.desc}</span></h3>`;
@@ -272,7 +271,18 @@ function evalCond(cond,row){
   if(m){const rv=parseFloat(row[m[1]]),v=parseFloat(m[3]);if(!isNaN(rv)){switch(m[2]){case'=':return rv===v;case'!=':case'<>':return rv!==v;case'>':return rv>v;case'<':return rv<v;case'>=':return rv>=v;case'<=':return rv<=v;}}}
   return true;
 }
-function applyWhere(rows,clause){return rows.filter(r=>splitAnd(clause).every(c=>evalCond(c.trim(),r)));}
+function splitOr(clause){
+  const parts=[];let depth=0,start=0;const up=clause.toUpperCase();
+  for(let i=0;i<clause.length-3;i++){
+    if(clause[i]==='(')depth++;else if(clause[i]===')')depth--;
+    else if(depth===0&&up.slice(i,i+4)===' OR '){parts.push(clause.slice(start,i));start=i+4;i+=3;}
+  }
+  parts.push(clause.slice(start));return parts;
+}
+function applyWhere(rows,clause){
+  // OR has lower precedence than AND: split by OR first, each part evaluated as AND chain
+  return rows.filter(r=>splitOr(clause).some(orPart=>splitAnd(orPart.trim()).every(c=>evalCond(c.trim(),r))));
+}
 function applyOrder(rows,clause){
   const parts=clause.split(',').map(p=>{const m=p.trim().match(/^(\w+)\s*(ASC|DESC)?$/i);return m?{col:m[1],dir:(m[2]||'ASC').toUpperCase()}:null;}).filter(Boolean);
   return[...rows].sort((a,b)=>{for(const{col,dir}of parts){const av=a[col],bv=b[col];if(av==null)return 1;if(bv==null)return-1;const c=String(av).localeCompare(String(bv),undefined,{numeric:true});if(c!==0)return dir==='DESC'?-c:c;}return 0;});
@@ -294,7 +304,7 @@ function renderResults(result,elapsed){
       if(cell===null||cell===undefined){h+='<td class="maon-null">&#8212;</td>';}
       else if(Array.isArray(cell)){h+=`<td>${cell.map(v=>`<span class="maon-tag" onclick="MAonSQL.inject('${esc(v)}')">${esc(v)}</span>`).join('')}</td>`;}
       else if(typeof cell==='string'&&cell.startsWith('[')){
-        try{const arr=JSON.parse(cell);h+=`<td>${arr.length?arr.map(v=>`<span class="maon-tag" onclick="MAonSQL.inject('${esc(v)}')">${esc(v)}</span>`).join(''):'<span class="maon-null">[]</span>'}</td>`;}
+        try{const arr=(cell&&cell!=='[]')?JSON.parse(cell):[];h+=`<td>${arr.length?arr.map(v=>`<span class="maon-tag" onclick="MAonSQL.inject('${esc(v)}')">${esc(v)}</span>`).join(''):'<span class="maon-null">[]</span>'}</td>`;}
         catch{h+=`<td class="${isZh(cell)?'maon-zh':''}">${esc(cell)}</td>`;}
       }else if(col==='primary_class'||col==='parent_class'){h+=`<td><span class="maon-tag" onclick="MAonSQL.queryClass('${esc(cell)}')">${esc(cell)}</span></td>`;}
       else if(col==='id'||col==='subject'||col==='object'){h+=`<td><a href="#" style="color:#00c" onclick="MAonSQL.queryId('${esc(cell)}');return false">${esc(cell)}</a></td>`;}
