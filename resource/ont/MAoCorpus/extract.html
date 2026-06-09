@@ -8,7 +8,7 @@
 body {
   font-family: "Times New Roman", Times, serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #000;
   background: #fff;
   margin: 0;
@@ -182,6 +182,8 @@ a { color: #0000cc; }
   <div class="ont-iri">
     <dt>Ontology IRI: https://purl.org/maont/ontology/</dt>
     <dt>Permanent link for this documentation: https://purl.org/maont/techcorpus</dt>
+    <dt>* For any inquiries, feedback, or collaboration opportunities related to MAon, please contact the PI, Yumeng Hou (yumeng.hou@nus.edu.sg).</dt>
+
   </div>
 
   <div id="abstract">
@@ -195,9 +197,12 @@ a { color: #0000cc; }
     <dt><span><b>Current version:</b> 1.2</span></dt>
     <dt><span><b>Development History & Credits:</b></dt>
       <dd><b>Updates in v1.2:</b> An extension of the MAon ontology v1.1.x, incorporating traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983).<br/>
-        - &nbsp <b>Contributors: Luyi CHEN</b> (<a href="https://orcid.org/0009-0002-4630-7457" target="_blank">ORCID</a>) & <b>Yumeng HOU</b> (<a href="https://orcid.org/0000-0002-7908-0693" target="_blank">ORCID</a>)</dd>
+        - &nbsp <b>Contributors: Luyi CHEN</b> (<a href="https://orcid.org/0009-0002-4630-7457" target="_blank">ORCID</a>), with advice from Yumeng HOU</dd>
+      <dd><b>Updates in v1.2.1:</b> Introducing classes and object properties for sparring-training representation in the MAon ontology schema. This release also includes the instantiation of Form_movements for both sides and their corresponding spars_against relations in Gung Gee Fok Fu Kuen Deui Chaak (Taming Tiger Boxing Two-Man Set), accessible through SQL queries in the Open Dataset Explorer.<br/>
+        - &nbsp <b>Contributors: Jinghong Lin</b> (<a href="https://orcid.org/0000-0002-0865-4776" target="_blank">ORCID</a>), with advice from Yumeng HOU </dd>
+
       <dd><b>Updates in v1.1:</b> Refined terminology for improved conceptual accuracy. Specifically, <code>Form</code> has been renamed to <code>Form_movement</code>, with its associated object properties updated to <code>in_form</code> (previously <code>is_form_in</code>) and <code>similar_movement_to</code> (previously <code>similar_form_to</code>). <code>Armament</code> has been renamed to <code>Weaponry</code> to better align with the conventions of Asian martial arts studies, and <code>MA_Clan</code> has been introduced to better portray lineage and masters' networks.<br/>
-       - &nbsp <b>Contributor: Yumeng HOU</b></dd>
+       - &nbsp <b>Contributor: Yumeng HOU</b> (<a href="https://orcid.org/0000-0002-7908-0693" target="_blank">ORCID</a>)</dd>
     <dt><span><b>Ontology resources:</b></dt>
       <dd><a href="https://yumenghou.com/resource/ont/MAoCorpus/MAon.ttl" target="_blank"><b>MAon.ttl (v1.2)</b></a>: The core schema (classes and properties). Import this into an ontology editor (e.g., Protégé) to apply the structural framework for martial arts.</dd>
       <!-- <dd><a href="https://yumenghou.com/resource/ont/MAoCorpus/MAon_individual.ttl"><b>MAon Individuals</b></a>: Annotated instances of core individuals and vocabularies, such as key technical concepts, weapons, and objects.<button onclick="MAonSQL.open()">Browse annotation dataset (SQL)</button></dd> -->
