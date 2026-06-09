@@ -33,6 +33,14 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 <http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
 
 
+###  https://purl.org/maont/ontology/archivist_note
+mao:archivist_note rdf:type owl:AnnotationProperty ;
+                   rdfs:comment "A free-text annotation note about an individual or class, e.g. editorial remarks, caveats, or comparison notes."@en ;
+                   rdfs:label "archivist_note"@en ;
+                   mao:name_zh "備註"@zh-hk ;
+                   rdfs:range xsd:string .
+
+
 ###  https://purl.org/maont/ontology/characteristics
 mao:characteristics rdf:type owl:AnnotationProperty ;
                     rdfs:label "characteristics"@en ;
@@ -49,10 +57,10 @@ mao:characteristics_zh rdf:type owl:AnnotationProperty ;
 
 ###  https://purl.org/maont/ontology/classificationRule
 mao:classificationRule rdf:type owl:AnnotationProperty ;
-                           rdfs:comment "Records the rationale or rule used to assign the TypeClass to an individual."@en ;
-                           rdfs:label "classificationRule"@en ;
-                           mao:name_zh "分類規則"@zh-hk ;
-                           rdfs:range xsd:string .
+                       rdfs:comment "Records the rationale or rule used to assign the TypeClass to an individual."@en ;
+                       rdfs:label "classificationRule"@en ;
+                       mao:name_zh "分類規則"@zh-hk ;
+                       rdfs:range xsd:string .
 
 
 ###  https://purl.org/maont/ontology/has_description
@@ -62,14 +70,6 @@ mao:has_description rdf:type owl:AnnotationProperty ;
                     mao:name_zh "描述"@zh-hk ;
                     rdfs:subPropertyOf rdfs:comment ;
                     rdfs:range xsd:string .
-
-
-###  https://purl.org/maont/ontology/archivist_note
-mao:archivist_note rdf:type owl:AnnotationProperty ;
-             rdfs:comment "A free-text annotation note about an individual or class, e.g. editorial remarks, caveats, or comparison notes."@en ;
-             rdfs:label "archivist_note"@en ;
-             mao:name_zh "備註"@zh-hk ;
-             rdfs:range xsd:string .
 
 
 ###  https://purl.org/maont/ontology/has_resource
@@ -213,9 +213,9 @@ mao:employs rdf:type owl:ObjectProperty ,
                      owl:TransitiveProperty ;
             rdfs:domain mao:MA_technique ;
             rdfs:range mao:MA_technique ;
-            rdfs:label "employs"@en ;
             rdfs:comment "Instances of Techniques, particularly Combo_tech, acquire the identity of a combo technique with a collective impact of its technical components. To capture these characteristics, we use the employs property to indicate that a more complex instance of Technique is fulfilled by employing another or several other basic ones."@en ;
-            mao:name_zh "運用"@zh-hk.
+            rdfs:label "employs"@en ;
+            mao:name_zh "運用"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/employsBodyshape
@@ -268,6 +268,26 @@ mao:has rdf:type owl:ObjectProperty ;
         rdfs:range mao:MA_style ,
                    mao:MA_syllabus ;
         rdfs:label "has"@en .
+
+
+###  https://purl.org/maont/ontology/hasSideA
+mao:hasSideA rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf mao:has ;
+             rdfs:domain mao:sparring_set ;
+             rdfs:range mao:spar_sequence ;
+             rdfs:comment "Links a sparring_set to one or more spar_sequence instances on side A. Cardinality of this property equals the number of persons on side A."@en ;
+             rdfs:label "hasSideA"@en ;
+             mao:name_zh "甲方"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/hasSideB
+mao:hasSideB rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf mao:has ;
+             rdfs:domain mao:sparring_set ;
+             rdfs:range mao:spar_sequence ;
+             rdfs:comment "Links a sparring_set to one or more Spar_sequence instances on side B. Cardinality of this property equals the number of persons on side B."@en ;
+             rdfs:label "hasSideB"@en ;
+             mao:name_zh "乙方"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/hasStyle
@@ -528,9 +548,9 @@ mao:similar_movement_to rdf:type owl:ObjectProperty ;
                                  owl:TransitiveProperty ;
                         rdfs:domain mao:Form_move ;
                         rdfs:range mao:Form_move ;
+                        rdfs:comment "The similar_movement_to property represents a conceptual similarity between instances of Form."@en ;
                         rdfs:label "similar_movement_to"@en ;
-                        mao:name_zh "相似動作"@zh-hk ;
-                        rdfs:comment "The similar_movement_to property represents a conceptual similarity between instances of Form."@en .
+                        mao:name_zh "相似動作"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/similar_set_of
@@ -563,6 +583,18 @@ mao:simulates rdf:type owl:ObjectProperty ;
               rdfs:comment "Training tools refer to objects created to simulate a weapon, or part of it, to train a specific technique or physical qualities. The property simulates is utilized to indicate a possible analogy"@en ;
               rdfs:label "simulates"@en ;
               mao:name_zh "模擬"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/spars_against
+mao:spars_against rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  rdfs:domain mao:Form_move ,
+                              mao:combo_tech ;
+                  rdfs:range mao:Form_move ,
+                             mao:combo_tech ;
+                  rdfs:comment "Pairs a Form_move from side A with its counterpart on side B within the same sparring_set."@en ;
+                  rdfs:label "spars_against"@en ;
+                  mao:name_zh "對拆"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/taught_at
@@ -1503,10 +1535,10 @@ mao:breathing_tech rdf:type owl:Class ;
                                      owl:onProperty mao:type_of ;
                                      owl:someValuesFrom mao:MA_technique
                                    ] ;
+                   rdfs:comment "breathing_tetch is the class for breathing techniques, a fundamental aspect of martial arts, as well as physical training and life in general. Proper breathing can enhance physical performance, force generation, and mindfulness."@en ;
                    rdfs:label "Breathing_tech"@en ;
                    mao:name_en "Breathing Technique"@en ;
-                   mao:name_zh "呼吸法"@zh-hk ;
-                   rdfs:comment "breathing_tetch is the class for breathing techniques, a fundamental aspect of martial arts, as well as physical training and life in general. Proper breathing can enhance physical performance, force generation, and mindfulness."@en .
+                   mao:name_zh "呼吸法"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/bridge_principle
@@ -1589,7 +1621,8 @@ mao:elbow_tech rdf:type owl:Class ;
 mao:empty_hand_set rdf:type owl:Class ;
                    rdfs:subClassOf mao:Form_set ;
                    rdfs:comment "A form set practised without weapons (bare-hand form)."@en ;
-                   rdfs:label "Empty_hand_set"@en .
+                   rdfs:label "Empty_hand_set"@en ;
+                   mao:name_en "Empty-hand set"@en .
 
 
 ###  https://purl.org/maont/ontology/eye_tech
@@ -1843,6 +1876,15 @@ mao:shoulder_arm_training rdf:type owl:Class ;
                           mao:otherName_zh "肩膊訓練"@zh-hk .
 
 
+###  https://purl.org/maont/ontology/spar_sequence
+mao:spar_sequence rdf:type owl:Class ;
+                  rdfs:subClassOf mao:training_method ;
+                  rdfs:comment "A single performer's ordered sequence of Form_move instances within a sparring_set. One spar_sequence per person per side; the number of spar_sequence instances linked via hasSideA or hasSideB equals the number of persons on that side."@en ;
+                  rdfs:label "Spar_sequence"@en ;
+                  mao:name_en "Spar sequence"@en ;
+                  mao:name_zh "對拆序列"@zh-hk .
+
+
 ###  https://purl.org/maont/ontology/spar_training
 mao:spar_training rdf:type owl:Class ;
                   rdfs:subClassOf mao:training_method ,
@@ -1853,15 +1895,16 @@ mao:spar_training rdf:type owl:Class ;
                   rdfs:comment "Sparring is a form of training common to many combat sports and is considered the closest thing to a real fight without actually fighting. Usually, two persons are involved in sparring training, yet more is possible."@en ;
                   rdfs:label "Sparring"@en ;
                   mao:name_en "Sparring"@en ;
-                  mao:name_zh "對練"@zh-hk ;
-                  mao:otherName_zh "對拆"@zh-hk .
+                  mao:name_zh "對練"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/sparring_set
 mao:sparring_set rdf:type owl:Class ;
                  rdfs:subClassOf mao:Form_set ;
                  rdfs:comment "A choreographed two-person sparring form set."@en ;
-                 rdfs:label "Sparring_set"@en .
+                 rdfs:label "Sparring_set"@en ;
+                 mao:name_en "Sparring set"@en ;
+                 mao:name_zh "對拆"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/spear_weapon
@@ -1974,7 +2017,8 @@ mao:waist_training rdf:type owl:Class ;
 mao:weapon_set rdf:type owl:Class ;
                rdfs:subClassOf mao:Form_set ;
                rdfs:comment "A form set practised with weapons."@en ;
-               rdfs:label "Weapon_set"@en .
+               rdfs:label "Weapon_set"@en ;
+               mao:name_en "Weapon set"@en .
 
 
 ###  https://purl.org/maont/ontology/weapon_tech
