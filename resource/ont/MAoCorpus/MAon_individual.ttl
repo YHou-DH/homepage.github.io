@@ -84,21 +84,12 @@ mao:has_principle rdf:type owl:ObjectProperty .
 mao:has_symbol rdf:type owl:ObjectProperty .
 
 
-###  https://purl.org/maont/ontology/in_form
-mao:in_form rdf:type owl:ObjectProperty ;
-            owl:inverseOf mao:in_form .
-
-
 ###  https://purl.org/maont/ontology/is
 mao:is rdf:type owl:ObjectProperty .
 
 
 ###  https://purl.org/maont/ontology/in_form
-mao:in_form rdf:type owl:ObjectProperty ;
-               rdfs:domain mao:Form_move ;
-               rdfs:range mao:Form_set ;
-               rdfs:comment "Inverse of mao:in_form. Links a Form_move individual to the Form_set it belongs to."@en ;
-               rdfs:label "in_form"@en .
+mao:in_form rdf:type owl:ObjectProperty .
 
 
 ###  https://purl.org/maont/ontology/practiced_in

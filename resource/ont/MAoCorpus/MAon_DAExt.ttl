@@ -17,13 +17,6 @@
                                                rdfs:label "MAon Digital Archive Extension for HKMALA"@en .
 
 #################################################################
-#    Contributors
-#    MAon-DAExt author: [Luyi Chen](https://orcid.org/0009-0002-4630-7457) 
-#     with advice from  [Yumeng Hou](https://orcid.org/0000-0002-7908-0693) 
-#                     & [Xiaoyu Zhang](https://orcid.org/0000-0002-8057-3997)
-#################################################################
-
-#################################################################s
 #    Annotation properties
 #################################################################
 
@@ -136,7 +129,7 @@ hda:hasArchiveComponent rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/hkmala/ontology/maon-daext#hasArtist
 hda:hasArtist rdf:type owl:ObjectProperty ;
-              rdfs:domain hda:Interactive_system ;
+              rdfs:domain hda:New_media_installation ;
               rdfs:range hda:Agent ;
               rdfs:label "has artist"@en .
 
@@ -158,7 +151,7 @@ hda:hasCurator rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/hkmala/ontology/maon-daext#hasFormat
 hda:hasFormat rdf:type owl:ObjectProperty ;
-              rdfs:domain hda:Interactive_system ;
+              rdfs:domain hda:New_media_installation ;
               rdfs:range skos:Concept ;
               rdfs:label "has format"@en .
 
@@ -204,7 +197,7 @@ hda:memberOfArchive rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/hkmala/ontology/maon-daext#present_at
 hda:present_at rdf:type owl:ObjectProperty ;
-               rdfs:domain hda:Interactive_system ;
+               rdfs:domain hda:New_media_installation ;
                rdfs:range hda:Exhibition ;
                rdfs:comment "Installation, system, or digital-physical work appeared in or was used for an exhibition."@en ;
                rdfs:label "present at"@en .
@@ -236,13 +229,13 @@ hda:shownAt rdf:type owl:ObjectProperty ;
 ###  https://purl.org/hkmala/ontology/maon-daext#softwareForInstallation
 hda:softwareForInstallation rdf:type owl:ObjectProperty ;
                             rdfs:domain hda:Application ;
-                            rdfs:range hda:Interactive_system ;
+                            rdfs:range hda:New_media_installation ;
                             rdfs:label "software for installation"@en .
 
 
 ###  https://purl.org/hkmala/ontology/maon-daext#usesDigitalFile
 hda:usesDigitalFile rdf:type owl:ObjectProperty ;
-                    rdfs:domain hda:Interactive_system ;
+                    rdfs:domain hda:New_media_installation ;
                     rdfs:range hda:Digital_document ;
                     rdfs:comment "Indicates that an installation, application, or interactive system technically uses, incorporates, or depends on a digital file as source data, media material, processed input, or display content."@en ;
                     rdfs:label "uses digital file"@en .
@@ -250,7 +243,7 @@ hda:usesDigitalFile rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/hkmala/ontology/maon-daext#usesSystemOrTechnology
 hda:usesSystemOrTechnology rdf:type owl:ObjectProperty ;
-                           rdfs:domain hda:Interactive_system ;
+                           rdfs:domain hda:New_media_installation ;
                            rdfs:range skos:Concept ;
                            rdfs:comment "Special system or technology used by the installation, such as ReActor, Linear Navigator, Object Navigator, Five Perspective, 0.5Cave, iDOME, Kinect, or AR."@en ;
                            rdfs:label "uses system or technology"@en .
@@ -276,7 +269,7 @@ hda:hasAccessURL rdf:type owl:DatatypeProperty ;
 
 ###  https://purl.org/hkmala/ontology/maon-daext#hasCreationDate
 hda:hasCreationDate rdf:type owl:DatatypeProperty ;
-                    rdfs:domain hda:Interactive_system ;
+                    rdfs:domain hda:New_media_installation ;
                     rdfs:range xsd:date ;
                     rdfs:label "has creation date"@en .
 
@@ -422,7 +415,7 @@ hda:Application rdf:type owl:Class ;
 ###  https://purl.org/hkmala/ontology/maon-daext#Archive_component
 hda:Archive_component rdf:type owl:Class ;
                       rdfs:comment "A general class for entities that are managed as components of a digital archive, including digital documents, exhibitions, installations, and agents."@en ;
-                      rdfs:label "Archive component"@en .
+                      rdfs:label "Archive_component"@en .
 
 
 ###  https://purl.org/hkmala/ontology/maon-daext#Audio
@@ -449,14 +442,14 @@ hda:Digital_Archive rdf:type owl:Class ;
 hda:Digital_Learning_Platform rdf:type owl:Class ;
                               rdfs:subClassOf hda:Application ;
                               rdfs:comment "A digital learning platform or application that organizes and provides access to instructional videos and other learning resources."@en ;
-                              rdfs:label "Digital Learning Platform"@en .
+                              rdfs:label "Digital_Learning_Platform"@en .
 
 
 ###  https://purl.org/hkmala/ontology/maon-daext#Digital_document
 hda:Digital_document rdf:type owl:Class ;
                      rdfs:subClassOf hda:Archive_component ;
                      rdfs:comment "Superclass for archived digital objects in HKMALA."@en ;
-                     rdfs:label "Digital document"@en .
+                     rdfs:label "Digital_document"@en .
 
 
 ###  https://purl.org/hkmala/ontology/maon-daext#Digital_scan
@@ -515,13 +508,6 @@ hda:Instructional_video rdf:type owl:Class ;
                         rdfs:label "Instructional video"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Interactive_system
-hda:Interactive_system rdf:type owl:Class ;
-                       rdfs:subClassOf hda:Archive_component ;
-                       rdfs:comment "Installation artwork or digital media installation related to HKMALA materials."@en ;
-                       rdfs:label "New media installation"@en .
-
-
 ###  https://purl.org/hkmala/ontology/maon-daext#MA_demonstration
 hda:MA_demonstration rdf:type owl:Class ;
                      rdfs:subClassOf hda:Video_item ;
@@ -554,7 +540,14 @@ hda:MoCap_animation rdf:type owl:Class ;
 hda:MoCap_item rdf:type owl:Class ;
                rdfs:subClassOf hda:Digital_document ;
                rdfs:comment "Motion-capture data or motion-derived digital record documenting bodily movement, performance, or processed motion data."@en ;
-               rdfs:label "Motion capture item"@en .
+               rdfs:label "Motion_capture_item"@en .
+
+
+###  https://purl.org/hkmala/ontology/maon-daext#New_media_installation
+hda:New_media_installation rdf:type owl:Class ;
+                           rdfs:subClassOf hda:Archive_component ;
+                           rdfs:comment "Installation artwork or digital media installation related to HKMALA materials."@en ;
+                           rdfs:label "New_media_installation"@en .
 
 
 ###  https://purl.org/hkmala/ontology/maon-daext#Portrait
@@ -639,6 +632,11 @@ hda:Volumetric_video rdf:type owl:Class ;
                      rdfs:subClassOf hda:Video_item ;
                      rdfs:comment "Three-dimensional volumetric video capture."@en ;
                      rdfs:label "Volumetric video"@en .
+
+
+###  https://purl.org/hkmala/ontology/maon-daext/Website
+<https://purl.org/hkmala/ontology/maon-daext/Website> rdf:type owl:Class ;
+                                                      rdfs:subClassOf hda:Archive_component .
 
 
 ###  https://purl.org/maont/ontology/MA_Style
