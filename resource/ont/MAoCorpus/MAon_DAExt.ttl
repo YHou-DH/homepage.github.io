@@ -127,7 +127,7 @@ hda:documentsTechnique rdf:type owl:ObjectProperty ;
 ###  https://purl.org/hkmala/ontology/maon-daext#featuresMaster
 hda:featuresMaster rdf:type owl:ObjectProperty ;
                    rdfs:domain hda:Digital_document ;
-                   rdfs:range mao:MA_Master ;
+                   rdfs:range mao:MA_master ;
                    rdfs:comment "Master or practitioner visually shown, captured, or featured in the file as the filmed/captured subject."@en ;
                    rdfs:label "features_master"@en ;
                    skos:prefLabel "features_master"@en ;
