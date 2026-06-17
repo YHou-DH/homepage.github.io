@@ -12,229 +12,6 @@
 <https://purl.org/maont/ontology_individual> rdf:type owl:Ontology ;
                                               owl:imports <https://purl.org/maont/ontology> .
 
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://www.w3.org/2000/01/rdf-schema#description
-rdfs:description rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2000/01/rdf-schema#wikiURL
-rdfs:wikiURL rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/maont/ontology/name_en
-mao:name_en rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/maont/ontology/name_romanCAN
-mao:name_romanCAN rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/maont/ontology/name_romanMAN
-mao:name_romanMAN rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/maont/ontology/name_zh
-mao:name_zh rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/maont/ontology/otherName_en
-mao:otherName_en rdf:type owl:AnnotationProperty .
-
-
-###  https://purl.org/maont/ontology/otherName_zh
-mao:otherName_zh rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  https://purl.org/maont/ontology/belongs_to
-mao:belongs_to rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/documents
-mao:documents rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/employs
-mao:employs rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/has_component
-mao:has_component rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/has_intent
-mao:has_intent rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/has_origin_place
-mao:has_origin_place rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/has_principle
-mao:has_principle rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/has_symbol
-mao:has_symbol rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/is
-mao:is rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/in_form
-mao:in_form rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/practiced_in
-mao:practiced_in rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/represents
-mao:represents rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/similar_movement_to
-mao:similar_movement_to rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/similar_to
-mao:similar_to rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/teaches
-mao:teaches rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/type_of
-mao:type_of rdf:type owl:ObjectProperty .
-
-
-###  https://purl.org/maont/ontology/used_in
-mao:used_in rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://purl.org/maont/ontology/E53_place
-mao:E53_place rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/Form_move
-mao:Form_move rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/Form_set
-mao:Form_set rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/MA_Master
-mao:MA_Master rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/MA_style
-mao:MA_style rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/MA_system
-mao:MA_system rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/MA_tactic
-mao:MA_tactic rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/ManualBook
-mao:ManualBook rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/Philosophical_concepts
-mao:Philosophical_concepts rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/Video_item
-mao:Video_item rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/bodywork
-mao:bodywork rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/breath_principle
-mao:breath_principle rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/breathing_tech
-mao:breathing_tech rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/bridge_principle
-mao:bridge_principle rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/bridge_tech
-mao:bridge_tech rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/claw_tech
-mao:claw_tech rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/combo_tech
-mao:combo_tech rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/elbow_tech
-mao:elbow_tech rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/empty_hand_set
-mao:empty_hand_set rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/fist_tech
-mao:fist_tech rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/footwork
-mao:footwork rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/gesture
-mao:gesture rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/handwork
-mao:handwork rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/honor_code
-mao:honor_code rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/leg_tech
-mao:leg_tech rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/palm_tech
-mao:palm_tech rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/stance
-mao:stance rdf:type owl:Class .
-
-
-###  https://purl.org/maont/ontology/symbolic_animal
-mao:symbolic_animal rdf:type owl:Class .
-
 
 #################################################################
 #    Individuals
@@ -323,7 +100,7 @@ mao:Lam_Family_Hung_Kuen rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/Lam_Sai_Wing
 mao:Lam_Sai_Wing rdf:type owl:NamedIndividual ,
-                          mao:MA_Master ;
+                          mao:MA_master ;
                  rdfs:label "Lam_Sai_Wing"@en .
 
 
@@ -466,7 +243,7 @@ mao:back_thrust_punch rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/backfist
 mao:backfist rdf:type owl:NamedIndividual ,
-                      mao:gesture ;
+                      mao:handshape ;
              mao:used_in mao:Choy_Li_Fut ,
                          mao:Hung_Kuen ,
                          mao:White_Crane_Kungfu ;
@@ -520,7 +297,7 @@ mao:blacktiger_punch rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/blade_palm
 mao:blade_palm rdf:type owl:NamedIndividual ,
-                        mao:gesture ;
+                        mao:handshape ;
                mao:used_in mao:Hung_Kuen ,
                            mao:White_Crane_Kungfu ;
                rdfs:label "blade_palm"@en ;
@@ -663,7 +440,7 @@ mao:brushing_palm rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/bullhorn_fist
 mao:bullhorn_fist rdf:type owl:NamedIndividual ,
-                           mao:gesture ;
+                           mao:handshape ;
                   mao:used_in mao:Choy_Li_Fut ,
                               mao:Hung_Kuen ,
                               mao:White_Crane_Kungfu ;
@@ -832,7 +609,7 @@ mao:cirling_palm rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/claw_palm
 mao:claw_palm rdf:type owl:NamedIndividual ,
-                       mao:gesture ;
+                       mao:handshape ;
               mao:used_in mao:Choy_Li_Fut ,
                           mao:Hung_Kuen ,
                           mao:White_Crane_Kungfu ;
@@ -908,7 +685,7 @@ mao:cr_whip_punch rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/crane_beak
 mao:crane_beak rdf:type owl:NamedIndividual ,
-                        mao:gesture ;
+                        mao:handshape ;
                mao:used_in mao:White_Crane_Kungfu ;
                rdfs:label "crane_beak"@en ;
                mao:name_en "Crane beak"@en ;
@@ -920,7 +697,7 @@ mao:crane_beak rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/crane_claw_palm
 mao:crane_claw_palm rdf:type owl:NamedIndividual ,
-                             mao:gesture ;
+                             mao:handshape ;
                     mao:used_in mao:White_Crane_Kungfu ;
                     rdfs:label "crane_claw_palm"@en ;
                     mao:name_en "Crane-claw palm"@en ;
@@ -931,7 +708,7 @@ mao:crane_claw_palm rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/crane_head_palm
 mao:crane_head_palm rdf:type owl:NamedIndividual ,
-                             mao:gesture ;
+                             mao:handshape ;
                     mao:used_in mao:White_Crane_Kungfu ;
                     rdfs:label "crane_head_palm"@en ;
                     mao:name_en "Crane-head palm"@en ;
@@ -954,7 +731,7 @@ mao:crane_kick rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/crane_wing_palm
 mao:crane_wing_palm rdf:type owl:NamedIndividual ,
-                             mao:gesture ;
+                             mao:handshape ;
                     mao:used_in mao:White_Crane_Kungfu ;
                     rdfs:label "crane_wing_palm"@en ;
                     mao:name_en "Crane-wing palm"@en ;
@@ -1444,7 +1221,7 @@ mao:f_elbow_n_sna_hand rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/facing_sun_palm
 mao:facing_sun_palm rdf:type owl:NamedIndividual ,
-                             mao:gesture ;
+                             mao:handshape ;
                     mao:represents mao:Uprightness ;
                     mao:used_in mao:Hung_Kuen ,
                                 mao:White_Crane_Kungfu ;
@@ -1460,7 +1237,7 @@ mao:facing_sun_palm rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/finger_hand
 mao:finger_hand rdf:type owl:NamedIndividual ,
-                         mao:gesture ;
+                         mao:handshape ;
                 mao:used_in mao:Hung_Kuen ;
                 rdfs:label "finger_hand"@en ;
                 mao:name_en "Finger hand"@en ;
@@ -1474,7 +1251,7 @@ mao:finger_hand rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/fishing_hand
 mao:fishing_hand rdf:type owl:NamedIndividual ,
-                          mao:gesture ;
+                          mao:handshape ;
                  mao:used_in mao:Choy_Li_Fut ,
                              mao:Hung_Kuen ;
                  rdfs:label "fishing_hand"@en ;
@@ -1488,7 +1265,7 @@ mao:fishing_hand rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/flat_palm
 mao:flat_palm rdf:type owl:NamedIndividual ,
-                       mao:gesture ;
+                       mao:handshape ;
               mao:used_in mao:Hung_Kuen ,
                           mao:White_Crane_Kungfu ;
               rdfs:label "palm"@en ;
@@ -1525,7 +1302,7 @@ mao:forcing_elbow rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/fore_knuckle_fist
 mao:fore_knuckle_fist rdf:type owl:NamedIndividual ,
-                               mao:gesture ;
+                               mao:handshape ;
                       mao:used_in mao:Choy_Li_Fut ,
                                   mao:Hung_Kuen ,
                                   mao:White_Crane_Kungfu ;
@@ -1540,7 +1317,7 @@ mao:fore_knuckle_fist rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/forefist
 mao:forefist rdf:type owl:NamedIndividual ,
-                      mao:gesture ;
+                      mao:handshape ;
              mao:used_in mao:Choy_Li_Fut ,
                          mao:Hung_Kuen ,
                          mao:White_Crane_Kungfu ;
@@ -1781,7 +1558,7 @@ mao:hook_sweep rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/horizontal_buddha_palm
 mao:horizontal_buddha_palm rdf:type owl:NamedIndividual ,
-                                    mao:gesture ;
+                                    mao:handshape ;
                            mao:type_of mao:flat_palm ;
                            mao:used_in mao:Hung_Kuen ;
                            rdfs:label "horizontal_buddha_palm"@en ;
@@ -1889,7 +1666,7 @@ mao:jumping rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/knocking_fist
 mao:knocking_fist rdf:type owl:NamedIndividual ,
-                           mao:gesture ;
+                           mao:handshape ;
                   mao:used_in mao:Choy_Li_Fut ,
                               mao:Hung_Kuen ,
                               mao:White_Crane_Kungfu ;
@@ -1955,7 +1732,7 @@ mao:leopard rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/leopard_palm
 mao:leopard_palm rdf:type owl:NamedIndividual ,
-                          mao:gesture ;
+                          mao:handshape ;
                  mao:used_in mao:Choy_Li_Fut ;
                  rdfs:label "leopard_palm"@en ;
                  mao:name_en "Leopard palm"@en ;
@@ -2289,7 +2066,7 @@ mao:reverse_hanging_fist rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/reverse_palm
 mao:reverse_palm rdf:type owl:NamedIndividual ,
-                          mao:gesture ;
+                          mao:handshape ;
                  rdfs:label "reverse_palm"@en ;
                  mao:name_en "Reverse palm"@en ;
                  mao:name_romanCAN "Faan Zoeng"@en ;
@@ -4643,7 +4420,7 @@ mao:upright_body rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/upright_buddha_palm
 mao:upright_buddha_palm rdf:type owl:NamedIndividual ,
-                                 mao:gesture ;
+                                 mao:handshape ;
                         mao:type_of mao:flat_palm ;
                         mao:used_in mao:Hung_Kuen ;
                         rdfs:label "buddha_palm"@en ;
@@ -4727,7 +4504,7 @@ mao:white_crane rdf:type owl:NamedIndividual ,
 
 ###  https://purl.org/maont/ontology/willow_leaf_palm
 mao:willow_leaf_palm rdf:type owl:NamedIndividual ,
-                              mao:gesture ;
+                              mao:handshape ;
                      mao:used_in mao:Choy_Li_Fut ,
                                  mao:Hung_Kuen ,
                                  mao:White_Crane_Kungfu ;
