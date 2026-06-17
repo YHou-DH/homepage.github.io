@@ -142,7 +142,7 @@ mao:name_originalLang rdf:type rdfs:Datatype ;
 
 ###  https://purl.org/maont/ontology/adapts
 mao:adapts rdf:type owl:ObjectProperty ;
-           rdfs:domain mao:MA_Master ;
+           rdfs:domain mao:MA_master ;
            rdfs:range mao:MA_style ,
                       mao:MA_syllabus ,
                       mao:armament ,
@@ -176,7 +176,7 @@ mao:belongs_to rdf:type owl:ObjectProperty ,
 
 ###  https://purl.org/maont/ontology/creates
 mao:creates rdf:type owl:ObjectProperty ;
-            rdfs:domain mao:MA_Master ;
+            rdfs:domain mao:MA_master ;
             rdfs:range mao:MA_style ,
                        mao:MA_syllabus ,
                        mao:armament ,
@@ -197,8 +197,8 @@ mao:developed_from rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/maont/ontology/documents
 mao:documents rdf:type owl:ObjectProperty ;
-              rdfs:domain mao:MA_Book ;
-              rdfs:range mao:MA_Master ,
+              rdfs:domain mao:MA_book ;
+              rdfs:range mao:MA_master ,
                          mao:MA_institute ,
                          mao:MA_style ,
                          mao:MA_system ,
@@ -252,12 +252,12 @@ mao:employsStance rdf:type owl:ObjectProperty ;
 mao:features_in rdf:type owl:ObjectProperty ;
                 rdfs:domain mao:Form_move ,
                             mao:Form_set ,
-                            mao:MA_Master ,
+                            mao:MA_master ,
                             mao:MA_institute ,
                             mao:armament ,
                             mao:training_tool ;
                 rdfs:range mao:Digital_document ,
-                           mao:MA_Book ;
+                           mao:MA_book ;
                 rdfs:label "features_in"@en .
 
 
@@ -303,7 +303,7 @@ mao:hasStyle rdf:type owl:ObjectProperty ;
 ###  https://purl.org/maont/ontology/has_birthplace
 mao:has_birthplace rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf mao:has ;
-                   rdfs:domain mao:MA_Master ;
+                   rdfs:domain mao:MA_master ;
                    rdfs:range mao:E53_place ;
                    rdfs:label "has_birthplace"@en .
 
@@ -388,8 +388,8 @@ mao:has_symbol rdf:type owl:ObjectProperty ;
 ###  https://purl.org/maont/ontology/has_work
 mao:has_work rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf mao:has ;
-             rdfs:domain mao:MA_Master ;
-             rdfs:range mao:MA_Book ;
+             rdfs:domain mao:MA_master ;
+             rdfs:range mao:MA_book ;
              rdfs:label "has_work"@en ;
              mao:name_zh "有作品"@zh-hk .
 
@@ -446,35 +446,35 @@ mao:is_child_of rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/maont/ontology/is_master_of
 mao:is_master_of rdf:type owl:ObjectProperty ;
-                 rdfs:domain mao:MA_Master ;
-                 rdfs:range mao:MA_Master ;
+                 rdfs:domain mao:MA_master ;
+                 rdfs:range mao:MA_master ;
                  rdfs:label "is_master_of"@en .
 
 
 ###  https://purl.org/maont/ontology/is_member_of
 mao:is_member_of rdf:type owl:ObjectProperty ;
-                 rdfs:domain mao:MA_Master ;
-                 rdfs:range mao:MA_Clan ;
+                 rdfs:domain mao:MA_master ;
+                 rdfs:range mao:MA_clan ;
                  rdfs:label "is_member_of"@en .
 
 
 ###  https://purl.org/maont/ontology/is_parent_of
 mao:is_parent_of rdf:type owl:ObjectProperty ;
-                 rdfs:domain mao:MA_Master ;
-                 rdfs:range mao:MA_Master ;
+                 rdfs:domain mao:MA_master ;
+                 rdfs:range mao:MA_master ;
                  rdfs:label "is_parent_of"@en .
 
 
 ###  https://purl.org/maont/ontology/is_student_of
 mao:is_student_of rdf:type owl:ObjectProperty ;
-                  rdfs:domain mao:MA_Master ;
-                  rdfs:range mao:MA_Master ;
+                  rdfs:domain mao:MA_master ;
+                  rdfs:range mao:MA_master ;
                   rdfs:label "is_student_of"@en .
 
 
 ###  https://purl.org/maont/ontology/lives_in_ts
 mao:lives_in_ts rdf:type owl:ObjectProperty ;
-                rdfs:domain mao:MA_Master ;
+                rdfs:domain mao:MA_master ;
                 rdfs:range mao:E52_timespan ;
                 rdfs:label "lives_in_ts"@en .
 
@@ -506,7 +506,7 @@ mao:practiced_in rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/maont/ontology/practices
 mao:practices rdf:type owl:ObjectProperty ;
-              rdfs:domain mao:MA_Master ;
+              rdfs:domain mao:MA_master ;
               rdfs:range mao:MA_style ,
                          mao:MA_system ;
               rdfs:comment "The practices property signifies that a Master is known to practise a certain style or system."@en ;
@@ -535,7 +535,7 @@ The property represents in MAon shares a similar interpretation with the P138 re
 
 ###  https://purl.org/maont/ontology/resides_in
 mao:resides_in rdf:type owl:ObjectProperty ;
-               rdfs:domain mao:MA_Master ;
+               rdfs:domain mao:MA_master ;
                rdfs:range mao:E53_place ;
                rdfs:label "resides_in"@en .
 
@@ -608,7 +608,7 @@ mao:taught_at rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/maont/ontology/teaches
 mao:teaches rdf:type owl:ObjectProperty ;
-            rdfs:domain mao:MA_Master ;
+            rdfs:domain mao:MA_master ;
             rdfs:range mao:Form_set ,
                        mao:MA_style ,
                        mao:MA_system ;
@@ -617,7 +617,7 @@ mao:teaches rdf:type owl:ObjectProperty ;
 
 ###  https://purl.org/maont/ontology/teaches_at
 mao:teaches_at rdf:type owl:ObjectProperty ;
-               rdfs:domain mao:MA_Master ;
+               rdfs:domain mao:MA_master ;
                rdfs:range mao:MA_institute ;
                rdfs:label "teaches_at"@en .
 
@@ -699,7 +699,7 @@ mao:employsHands rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/maont/ontology/has_birth_year
 mao:has_birth_year rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf mao:dataProperties ;
-                   rdfs:domain mao:MA_Master ;
+                   rdfs:domain mao:MA_master ;
                    rdfs:range xsd:gYear ;
                    rdfs:label "has_birth_year"@en ;
                    mao:name_zh "生年"@zh-hk .
@@ -708,7 +708,7 @@ mao:has_birth_year rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/maont/ontology/has_courtesy_name
 mao:has_courtesy_name rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf mao:dataProperties ;
-                      rdfs:domain mao:MA_Master ;
+                      rdfs:domain mao:MA_master ;
                       rdfs:range xsd:string ;
                       rdfs:label "has_courtesy_name"@en ;
                       mao:name_zh "字"@zh-hk .
@@ -717,7 +717,7 @@ mao:has_courtesy_name rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/maont/ontology/has_death_year
 mao:has_death_year rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf mao:dataProperties ;
-                   rdfs:domain mao:MA_Master ;
+                   rdfs:domain mao:MA_master ;
                    rdfs:range xsd:gYear ;
                    rdfs:label "has_death_year"@en ;
                    mao:name_zh "卒年"@zh-hk .
@@ -726,7 +726,7 @@ mao:has_death_year rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/maont/ontology/has_ethnicity
 mao:has_ethnicity rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf mao:dataProperties ;
-                  rdfs:domain mao:MA_Master ;
+                  rdfs:domain mao:MA_master ;
                   rdfs:range xsd:string ;
                   rdfs:label "has_ethnicity"@en ;
                   mao:name_zh "民族"@zh-hk .
@@ -735,7 +735,7 @@ mao:has_ethnicity rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/maont/ontology/has_gender
 mao:has_gender rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf mao:dataProperties ;
-               rdfs:domain mao:MA_Master ;
+               rdfs:domain mao:MA_master ;
                rdfs:range xsd:string ;
                rdfs:label "has_gender"@en ;
                mao:name_zh "性别"@zh-hk .
@@ -744,7 +744,7 @@ mao:has_gender rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/maont/ontology/has_life_experience
 mao:has_life_experience rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf mao:dataProperties ;
-                        rdfs:domain mao:MA_Master ;
+                        rdfs:domain mao:MA_master ;
                         rdfs:range xsd:string ;
                         rdfs:label "has_life_experience"@en ;
                         mao:name_zh "生平"@zh-hk .
@@ -753,7 +753,7 @@ mao:has_life_experience rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/maont/ontology/has_profession
 mao:has_profession rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf mao:dataProperties ;
-                   rdfs:domain mao:MA_Master ;
+                   rdfs:domain mao:MA_master ;
                    rdfs:range xsd:string ;
                    rdfs:label "has_profession"@en ;
                    mao:name_zh "职业"@zh-hk .
@@ -762,7 +762,7 @@ mao:has_profession rdf:type owl:DatatypeProperty ;
 ###  https://purl.org/maont/ontology/has_pseudonym
 mao:has_pseudonym rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf mao:dataProperties ;
-                  rdfs:domain mao:MA_Master ;
+                  rdfs:domain mao:MA_master ;
                   rdfs:range xsd:string ;
                   rdfs:label "has_pseudonym"@en ;
                   mao:name_zh "号"@zh-hk .
@@ -934,7 +934,7 @@ mao:Form_set rdf:type owl:Class ;
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty mao:features_in ;
-                               owl:someValuesFrom mao:MA_Book
+                               owl:someValuesFrom mao:MA_book
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty mao:has_component ;
@@ -971,8 +971,8 @@ mao:Interactive_system rdf:type owl:Class ;
                        rdfs:label "Interactive_system"@en .
 
 
-###  https://purl.org/maont/ontology/MA_Book
-mao:MA_Book rdf:type owl:Class ;
+###  https://purl.org/maont/ontology/MA_book
+mao:MA_book rdf:type owl:Class ;
             rdfs:subClassOf mao:E31_document ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:documents ;
@@ -980,7 +980,7 @@ mao:MA_Book rdf:type owl:Class ;
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:documents ;
-                              owl:someValuesFrom mao:MA_Master
+                              owl:someValuesFrom mao:MA_master
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:documents ;
@@ -1000,7 +1000,7 @@ mao:MA_Book rdf:type owl:Class ;
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:type_of ;
-                              owl:someValuesFrom mao:MA_Book
+                              owl:someValuesFrom mao:MA_book
                             ] ;
             rdfs:comment "The class MA_Document encompasses a variety of information objects that record aspects of martial arts. These can be either physical or digital and include ancient manuscripts, books, manuals, and audiovisual contents, amongst others. It's important to note that an instance of MA_Document may behold identities. We bridge the class with the CIDOC-CRM E31 Document to facilitate flexible interoperations and potential acquisition of additional data, and facilitates semantic enrichment of other linked data sources through assertion or inference rules."@en ;
             rdfs:label "MA_Document"@en ;
@@ -1008,8 +1008,8 @@ mao:MA_Book rdf:type owl:Class ;
             mao:name_zh "武術文檔"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/MA_Clan
-mao:MA_Clan rdf:type owl:Class ;
+###  https://purl.org/maont/ontology/MA_clan
+mao:MA_clan rdf:type owl:Class ;
             rdfs:subClassOf mao:E74.Group ;
             rdfs:comment "A martial arts clan is a patrilineal or discipleship lineage group founded around a specific master or family. Clans typically share training norms and honour codes and may maintain their own transmission records. Examples: Lam Family Hung Kuen, Hung Sing Choy Lay Fut."@en ;
             rdfs:label "MA_Clan"@en ;
@@ -1018,8 +1018,8 @@ mao:MA_Clan rdf:type owl:Class ;
             mao:otherName_en "Martial Arts Family"@en .
 
 
-###  https://purl.org/maont/ontology/MA_Master
-mao:MA_Master rdf:type owl:Class ;
+###  https://purl.org/maont/ontology/MA_master
+mao:MA_master rdf:type owl:Class ;
               rdfs:subClassOf mao:E21_Person ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:adapts ;
@@ -1071,7 +1071,7 @@ mao:MA_Master rdf:type owl:Class ;
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:features_in ;
-                                owl:someValuesFrom mao:MA_Book
+                                owl:someValuesFrom mao:MA_book
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:has_birthplace ;
@@ -1079,31 +1079,31 @@ mao:MA_Master rdf:type owl:Class ;
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:has_work ;
-                                owl:someValuesFrom mao:MA_Book
+                                owl:someValuesFrom mao:MA_book
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:is_child_of ;
-                                owl:someValuesFrom mao:MA_Master
+                                owl:someValuesFrom mao:MA_master
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:is_master_of ;
-                                owl:someValuesFrom mao:MA_Master
+                                owl:someValuesFrom mao:MA_master
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:is_member_of ;
-                                owl:someValuesFrom mao:MA_Clan
+                                owl:someValuesFrom mao:MA_clan
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:is_member_of ;
-                                owl:someValuesFrom mao:MA_Organization
+                                owl:someValuesFrom mao:MA_organization
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:is_parent_of ;
-                                owl:someValuesFrom mao:MA_Master
+                                owl:someValuesFrom mao:MA_master
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:is_student_of ;
-                                owl:someValuesFrom mao:MA_Master
+                                owl:someValuesFrom mao:MA_master
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:lives_in_ts ;
@@ -1168,8 +1168,8 @@ mao:MA_Master rdf:type owl:Class ;
               mao:otherName_zh "武術家"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/MA_Organization
-mao:MA_Organization rdf:type owl:Class ;
+###  https://purl.org/maont/ontology/MA_organization
+mao:MA_organization rdf:type owl:Class ;
                     rdfs:subClassOf mao:E74.Group ;
                     rdfs:comment "Any collective social agent involved in the administration, promotion, research, or governance of martial arts, for example national associations, competitive federations, and academic research bodies. Distinguished from MA_Institute, which is a dedicated teaching and transmission institution."@en ;
                     rdfs:label "MA_Organization"@en ;
@@ -1179,7 +1179,7 @@ mao:MA_Organization rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_institute
 mao:MA_institute rdf:type owl:Class ;
-                 rdfs:subClassOf mao:MA_Organization ,
+                 rdfs:subClassOf mao:MA_organization ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty mao:adopts ;
                                    owl:someValuesFrom mao:MA_syllabus
@@ -1400,7 +1400,7 @@ mao:MA_technique rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/ManualBook
 mao:ManualBook rdf:type owl:Class ;
-               rdfs:subClassOf mao:MA_Book ;
+               rdfs:subClassOf mao:MA_book ;
                rdfs:comment "A printed or manuscript martial arts manual or book."@en ;
                rdfs:label "ManualBook"@en .
 
