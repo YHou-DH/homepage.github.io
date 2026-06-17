@@ -228,15 +228,22 @@ mao:employsBodyshape rdf:type owl:ObjectProperty ;
                      mao:name_zh "運用身形"@zh-hk .
 
 
+###  https://purl.org/maont/ontology/employsHandshape
+mao:employsHandshape rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf mao:employs ;
+                    rdfs:domain mao:MA_technique ;
+                    rdfs:range mao:handshape ;
+                    rdfs:comment "Specifies the handshape (手形) employed by a technique. Subproperty of mao:employs, narrowing the range to mao:handshape."@en ;
+                    rdfs:label "employs handshape"@en ;
+                    mao:name_zh "運用手形"@zh-hk .
+
 ###  https://purl.org/maont/ontology/employsGesture
 mao:employsGesture rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf mao:employs ;
-                   rdfs:domain mao:MA_technique ;
-                   rdfs:range mao:gesture ;
-                   rdfs:comment "Specifies the hand shape (手型) employed by a technique. Subproperty of mao:employs, narrowing the range to mao:gesture."@en ;
-                   rdfs:label "employsGesture"@en ;
-                   mao:name_zh "運用手形"@zh-hk .
-
+    owl:deprecated "true"^^xsd:boolean ;
+    owl:equivalentProperty mao:employsHandshape ;
+    rdfs:label "employs gesture"@en ;
+    rdfs:comment "Deprecated property retained for backward compatibility. Use mao:employsHandshape instead."@en ;
+    dcterms:isReplacedBy mao:employsHandshape .
 
 ###  https://purl.org/maont/ontology/employsStance
 mao:employsStance rdf:type owl:ObjectProperty ;
@@ -1571,7 +1578,7 @@ mao:claw_tech rdf:type owl:Class ;
               rdfs:subClassOf mao:handwork ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:employs ;
-                                owl:someValuesFrom mao:gesture
+                                owl:someValuesFrom mao:handshape
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:type_of ;
@@ -1643,7 +1650,7 @@ mao:finger_tech rdf:type owl:Class ;
                 rdfs:subClassOf mao:handwork ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty mao:employs ;
-                                  owl:someValuesFrom mao:gesture
+                                  owl:someValuesFrom mao:handshape
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty mao:type_of ;
@@ -1660,7 +1667,7 @@ mao:fist_tech rdf:type owl:Class ;
               rdfs:subClassOf mao:handwork ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:employs ;
-                                owl:someValuesFrom mao:gesture
+                                owl:someValuesFrom mao:handshape
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:type_of ;
@@ -1693,21 +1700,29 @@ mao:footwork_principle rdf:type owl:Class ;
                        mao:name_zh "腳法原則"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/gesture
-mao:gesture rdf:type owl:Class ;
+###  https://purl.org/maont/ontology/handshape
+mao:handshape rdf:type owl:Class ;
             rdfs:subClassOf mao:handwork ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:type_of ;
                               owl:someValuesFrom mao:handwork
                             ] ;
-            rdfs:comment "Gestures, or hand shapes, denote the shape or status of the hand employed in a specific handwork."@en ;
-            rdfs:label "Gesture"@en ;
-            mao:name_en "Gesture"@en ;
+            rdfs:comment "A handshape (or gesture) denotes the shape or status of the hand employed in a specific handwork."@en ;
+            rdfs:label "Handshape"@en ;
+            mao:name_en "Handshape"@en ;
             mao:name_romanCAN "Sau Jing"@en ;
             mao:name_romanMAN "Shou Xing"@en ;
             mao:name_zh "手形"@zh-hk ;
-            mao:otherName_en "Hand shape"@en .
+            mao:otherName_en "Gesture"@en .
 
+
+###  https://purl.org/maont/ontology/gesture
+mao:gesture rdf:type owl:Class ;
+    owl:deprecated "true"^^xsd:boolean ;
+    owl:equivalentClass mao:handshape ;
+    rdfs:label "Gesture"@en ;
+    rdfs:comment "Deprecated class. Use mao:handshape instead."@en ;
+    dcterms:isReplacedBy mao:handshape .
 
 ###  https://purl.org/maont/ontology/grading_system
 mao:grading_system rdf:type owl:Class ;
@@ -1815,7 +1830,7 @@ mao:palm_tech rdf:type owl:Class ;
               rdfs:subClassOf mao:handwork ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:employs ;
-                                owl:someValuesFrom mao:gesture
+                                owl:someValuesFrom mao:handshape
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty mao:type_of ;
