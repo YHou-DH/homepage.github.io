@@ -1,0 +1,1456 @@
+@prefix rw: <http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602#> .
+@prefix rw-vocab: <http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602/vocab#> .
+@prefix rw-data: <http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602/data#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+
+<http://www.semanticweb.org/ontologies/rattan-weaving-sg/202602> rdf:type owl:Ontology ;
+    owl:versionInfo "2.0"@en ;
+    dct:modified "2026-06-23"^^xsd:date ;
+    rdfs:label "Rattan Weaving Ontology"@en ;
+    rdfs:comment """An ontology for Rattan Weaving as Intangible Cultural Heritage in Singapore,
+    aligned with CIDOC CRM and enriched with a SKOS thesaurus layer. Version 2.0 incorporates
+    corrections and relational structures derived from the annotation of the Chun Mee Lee
+    rattan furniture corpus."""@en .
+
+#======================================================================
+#  Referenced CIDOC-CRM classes
+#======================================================================
+
+<http://www.cidoc-crm.org/cidoc-crm/E12_Production> rdf:type owl:Class .
+<http://www.cidoc-crm.org/cidoc-crm/E21_Person> rdf:type owl:Class .
+<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> rdf:type owl:Class .
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> rdf:type owl:Class .
+<http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> rdf:type owl:Class .
+<http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> rdf:type owl:Class .
+<http://www.cidoc-crm.org/cidoc-crm/E53_Place> rdf:type owl:Class .
+<http://www.cidoc-crm.org/cidoc-crm/E55_Type> rdf:type owl:Class .
+<http://www.cidoc-crm.org/cidoc-crm/E57_Material> rdf:type owl:Class .
+
+#======================================================================
+#  Core classes
+#======================================================================
+
+rw:Context rdf:type owl:Class ;
+    rdfs:label "Context"@en ;
+    skos:prefLabel "Context"@en ;
+    skos:definition "Abstract grouping for contextual entities (place, time, heritage)."@en .
+
+rw:GeographicalContext rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ,
+        rw:Context ;
+    rdfs:label "Geographical Context"@en ;
+    skos:prefLabel "Geographical Context"@en ;
+    skos:definition "A place where a product originates or a technique is practiced."@en ;
+    skos:broader rw:Context .
+
+rw:TemporalContext rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ,
+        rw:Context ;
+    rdfs:label "Temporal Context"@en ;
+    skos:prefLabel "Temporal Context"@en ;
+    skos:definition "A period associated with a product or process."@en ;
+    skos:broader rw:Context .
+
+rw:HeritageStatus rdf:type owl:Class ;
+    rdfs:subClassOf rw:Context ;
+    rdfs:label "Heritage Status"@en ;
+    skos:prefLabel "Heritage Status"@en ;
+    skos:definition "A formal recognition of a craft practice as cultural heritage."@en ;
+    skos:broader rw:Context .
+
+rw:Craftsman rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+    rdfs:label "Craftsman"@en ;
+    skos:prefLabel "Craftsman"@en ;
+    skos:definition "A person skilled in the practice of rattan weaving."@en .
+
+rw:ComponentApplication rdf:type owl:Class ;
+    rdfs:label "Component Application"@en ;
+    skos:prefLabel "Component Application"@en ;
+    skos:definition "Reified link recording that a crafted product bears a specific weaving pattern on a specific component."@en .
+
+rw:IntegrationMethod rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+    rdfs:label "Integration Method"@en ;
+    skos:prefLabel "Integration Method"@en ;
+    skos:definition "A method by which woven elements are integrated with a structural frame."@en .
+
+rw:StructuralConfiguration rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+    rdfs:label "Structural Configuration"@en ;
+    skos:prefLabel "Structural Configuration"@en ;
+    skos:definition "Overall structural construction type of a crafted product."@en .
+
+rw:ObjectComponent rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Object Component"@en ;
+    skos:prefLabel "Object Component"@en ;
+    skos:definition "A distinguishable physical part of a crafted product (seat, backrest, etc.)."@en .
+
+rw:EquipmentTool rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Equipment Tool"@en ;
+    skos:prefLabel "Equipment Tool"@en ;
+    skos:definition "A tool or piece of equipment employed in a rattan-working technique."@en .
+
+rw:RattanWeavingPattern rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+    rdfs:label "Rattan Weaving Pattern"@en ;
+    skos:prefLabel "Rattan Weaving Pattern"@en ;
+    skos:definition "A repeating structural or visual arrangement produced by a technique."@en .
+
+rw:RattanBindingPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Rattan Binding Pattern"@en ;
+    skos:prefLabel "Rattan Binding Pattern"@en ;
+    skos:definition "A binding-derived pattern arrangement."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:RattanStructuralPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Rattan Structural Pattern"@en ;
+    skos:prefLabel "Rattan Structural Pattern"@en ;
+    skos:definition "A frame/structural pattern arrangement."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:VisualDesignMotif rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
+    rdfs:label "Visual Design Motif"@en ;
+    skos:prefLabel "Visual Design Motif"@en ;
+    skos:definition "A representational or decorative motif shown on a product."@en .
+
+rw:ColorDyePattern rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
+    rdfs:label "Color Dye Pattern"@en ;
+    skos:prefLabel "Color Dye Pattern"@en ;
+    skos:definition "A coloration or dye arrangement on a product surface."@en .
+
+#======================================================================
+#  Domain taxonomies (from controlled vocabulary)
+#======================================================================
+
+###  --- Classes_E22 ---
+rw:CraftedProduct rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Crafted Product"@en ;
+    skos:prefLabel "Crafted Product"@en .
+
+rw:Artwork rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftedProduct ;
+    rdfs:label "Artwork"@en ;
+    skos:prefLabel "Artwork"@en ;
+    skos:broader rw:CraftedProduct .
+
+rw:Basket rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftedProduct ;
+    rdfs:label "Basket"@en ;
+    skos:prefLabel "Basket"@en ;
+    skos:definition "A woven container used for storage or carrying."@en ;
+    skos:broader rw:CraftedProduct .
+
+rw:Furniture rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftedProduct ;
+    rdfs:label "Furniture"@en ;
+    skos:prefLabel "Furniture"@en ;
+    skos:broader rw:CraftedProduct .
+
+rw:SeatingFurniture rdf:type owl:Class ;
+    rdfs:subClassOf rw:Furniture ;
+    rdfs:label "Seating Furniture"@en ;
+    skos:prefLabel "Seating Furniture"@en ;
+    skos:broader rw:Furniture .
+
+rw:Armchair rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Armchair"@en ;
+    skos:prefLabel "Armchair"@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:HighArmchair rdf:type owl:Class ;
+    rdfs:subClassOf rw:Armchair ;
+    rdfs:label "High Armchair"@en ;
+    skos:prefLabel "High Armchair"@en ;
+    skos:broader rw:Armchair .
+
+rw:LowArmchair rdf:type owl:Class ;
+    rdfs:subClassOf rw:Armchair ;
+    rdfs:label "Low Armchair"@en ;
+    skos:prefLabel "Low Armchair"@en ;
+    skos:broader rw:Armchair .
+
+rw:BabyChair rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Baby Chair"@en ;
+    skos:prefLabel "Baby Chair"@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:DiningChair rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Dining Chair"@en ;
+    skos:prefLabel "Dining Chair"@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:PeacockChair rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Peacock Chair"@en ;
+    skos:prefLabel "Peacock Chair"@en ;
+    skos:definition "An iconic rattan chair with a large fan-shaped back."@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:RockingChair rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Rocking Chair"@en ;
+    skos:prefLabel "Rocking Chair"@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:RockingHorseChair rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Rocking Horse Chair"@en ;
+    skos:prefLabel "Rocking Horse Chair"@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:TetChair rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Tet Chair"@en ;
+    skos:prefLabel "Tet Chair"@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:Sofa rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Sofa"@en ;
+    skos:prefLabel "Sofa"@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:Stool rdf:type owl:Class ;
+    rdfs:subClassOf rw:SeatingFurniture ;
+    rdfs:label "Stool"@en ;
+    skos:prefLabel "Stool"@en ;
+    skos:broader rw:SeatingFurniture .
+
+rw:TableFurniture rdf:type owl:Class ;
+    rdfs:subClassOf rw:Furniture ;
+    rdfs:label "Table Furniture"@en ;
+    skos:prefLabel "Table Furniture"@en ;
+    skos:broader rw:Furniture .
+
+rw:CoffeeTable rdf:type owl:Class ;
+    rdfs:subClassOf rw:TableFurniture ;
+    rdfs:label "Coffee Table"@en ;
+    skos:prefLabel "Coffee Table"@en ;
+    skos:broader rw:TableFurniture .
+
+rw:Shelf rdf:type owl:Class ;
+    rdfs:subClassOf rw:Furniture ;
+    rdfs:label "Shelf"@en ;
+    skos:prefLabel "Shelf"@en ;
+    skos:broader rw:Furniture .
+
+rw:VanityStand rdf:type owl:Class ;
+    rdfs:subClassOf rw:Furniture ;
+    rdfs:label "Vanity Stand"@en ;
+    skos:prefLabel "Vanity Stand"@en ;
+    skos:broader rw:Furniture .
+
+rw:StorageObject rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftedProduct ;
+    rdfs:label "Storage Object"@en ;
+    skos:prefLabel "Storage Object"@en ;
+    skos:broader rw:CraftedProduct .
+
+rw:UmbrellaHolder rdf:type owl:Class ;
+    rdfs:subClassOf rw:StorageObject ;
+    rdfs:label "Umbrella Holder"@en ;
+    skos:prefLabel "Umbrella Holder"@en ;
+    skos:broader rw:StorageObject .
+
+rw:NewspaperStand rdf:type owl:Class ;
+    rdfs:subClassOf rw:StorageObject ;
+    rdfs:label "Newspaper Stand"@en ;
+    skos:prefLabel "Newspaper Stand"@en ;
+    skos:broader rw:StorageObject .
+
+rw:ServingObject rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftedProduct ;
+    rdfs:label "Serving Object"@en ;
+    skos:prefLabel "Serving Object"@en ;
+    skos:broader rw:CraftedProduct .
+
+rw:Tray rdf:type owl:Class ;
+    rdfs:subClassOf rw:ServingObject ;
+    rdfs:label "Tray"@en ;
+    skos:prefLabel "Tray"@en ;
+    skos:broader rw:ServingObject .
+
+rw:HomeDecor rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftedProduct ;
+    rdfs:label "Home Decor"@en ;
+    skos:prefLabel "Home Decor"@en ;
+    skos:broader rw:CraftedProduct .
+
+rw:Toy rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftedProduct ;
+    rdfs:label "Toy"@en ;
+    skos:prefLabel "Toy"@en ;
+    skos:broader rw:CraftedProduct .
+
+rw:SepakTakrawBall rdf:type owl:Class ;
+    rdfs:subClassOf rw:Toy ;
+    rdfs:label "Sepak Takraw Ball"@en ;
+    skos:prefLabel "Sepak Takraw Ball"@en ;
+    skos:broader rw:Toy .
+
+rw:HouseholdObject rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftedProduct ;
+    rdfs:label "Household Object"@en ;
+    skos:prefLabel "Household Object"@en ;
+    skos:broader rw:CraftedProduct .
+
+rw:BedsheetBeater rdf:type owl:Class ;
+    rdfs:subClassOf rw:HouseholdObject ;
+    rdfs:label "Bedsheet Beater"@en ;
+    skos:prefLabel "Bedsheet Beater"@en ;
+    skos:broader rw:HouseholdObject .
+
+rw:RattanPillow rdf:type owl:Class ;
+    rdfs:subClassOf rw:HouseholdObject ;
+    rdfs:label "Rattan Pillow"@en ;
+    skos:prefLabel "Rattan Pillow"@en ;
+    skos:broader rw:HouseholdObject .
+
+rw:Handfan rdf:type owl:Class ;
+    rdfs:subClassOf rw:HouseholdObject ;
+    rdfs:label "Handfan"@en ;
+    skos:prefLabel "Handfan"@en ;
+    skos:broader rw:HouseholdObject .
+
+rw:WokLidCover rdf:type owl:Class ;
+    rdfs:subClassOf rw:HouseholdObject ;
+    rdfs:label "Wok Lid Cover"@en ;
+    skos:prefLabel "Wok Lid Cover"@en ;
+    skos:broader rw:HouseholdObject .
+
+
+###  --- Materials ---
+rw:Material rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E57_Material> ;
+    rdfs:label "Material"@en ;
+    skos:prefLabel "Material"@en .
+
+rw:Bamboo rdf:type owl:Class ;
+    rdfs:subClassOf rw:Material ;
+    rdfs:label "Bamboo"@en ;
+    skos:prefLabel "Bamboo"@en ;
+    skos:definition "A grass plant whose split canes are used alongside rattan in weaving."@en ;
+    skos:broader rw:Material .
+
+rw:BambooStrip rdf:type owl:Class ;
+    rdfs:subClassOf rw:Bamboo ;
+    rdfs:label "Bamboo Strip"@en ;
+    skos:prefLabel "Bamboo Strip"@en ;
+    skos:broader rw:Bamboo .
+
+rw:BambooSplint rdf:type owl:Class ;
+    rdfs:subClassOf rw:Bamboo ;
+    rdfs:label "Bamboo Splint"@en ;
+    skos:prefLabel "Bamboo Splint"@en ;
+    skos:broader rw:Bamboo .
+
+rw:BambooPole rdf:type owl:Class ;
+    rdfs:subClassOf rw:Bamboo ;
+    rdfs:label "Bamboo Pole"@en ;
+    skos:prefLabel "Bamboo Pole"@en ;
+    skos:broader rw:Bamboo .
+
+rw:Rattan rdf:type owl:Class ;
+    rdfs:subClassOf rw:Material ;
+    rdfs:label "Rattan"@en ;
+    skos:prefLabel "Rattan"@en ;
+    skos:definition "A climbing palm whose stems are used as the primary raw material in rattan weaving."@en ;
+    skos:broader rw:Material ;
+    skos:altLabel "Rotan"@en .
+
+rw:RattanSkin rdf:type owl:Class ;
+    rdfs:subClassOf rw:Rattan ;
+    rdfs:label "Rattan Skin"@en ;
+    skos:prefLabel "Rattan Skin"@en ;
+    skos:broader rw:Rattan .
+
+rw:RattanCore rdf:type owl:Class ;
+    rdfs:subClassOf rw:Rattan ;
+    rdfs:label "Rattan Core"@en ;
+    skos:prefLabel "Rattan Core"@en ;
+    skos:broader rw:Rattan .
+
+rw:RattanReed rdf:type owl:Class ;
+    rdfs:subClassOf rw:Rattan ;
+    rdfs:label "Rattan Reed"@en ;
+    skos:prefLabel "Rattan Reed"@en ;
+    skos:broader rw:Rattan .
+
+rw:Wood rdf:type owl:Class ;
+    rdfs:subClassOf rw:Material ;
+    rdfs:label "Wood"@en ;
+    skos:prefLabel "Wood"@en ;
+    skos:broader rw:Material .
+
+rw:Steel rdf:type owl:Class ;
+    rdfs:subClassOf rw:Material ;
+    rdfs:label "Steel"@en ;
+    skos:prefLabel "Steel"@en ;
+    skos:broader rw:Material .
+
+rw:SyntheticCane rdf:type owl:Class ;
+    rdfs:subClassOf rw:Material ;
+    rdfs:label "Synthetic Cane"@en ;
+    skos:prefLabel "Synthetic Cane"@en ;
+    skos:broader rw:Material .
+
+
+###  --- Techniques ---
+rw:RattanCraftTechnique rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> ;
+    rdfs:label "Rattan Craft Technique"@en ;
+    skos:prefLabel "Rattan Craft Technique"@en .
+
+rw:MaterialPreparationTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanCraftTechnique ;
+    rdfs:label "Material Preparation Technique"@en ;
+    skos:prefLabel "Material Preparation Technique"@en ;
+    skos:broader rw:RattanCraftTechnique .
+
+rw:Soaking rdf:type owl:Class ;
+    rdfs:subClassOf rw:MaterialPreparationTechnique ;
+    rdfs:label "Soaking"@en ;
+    skos:prefLabel "Soaking"@en ;
+    skos:definition "Immersing rattan in water to increase flexibility prior to weaving."@en ;
+    skos:broader rw:MaterialPreparationTechnique ;
+    skos:altLabel "Water Soaking"@en .
+
+rw:Heating rdf:type owl:Class ;
+    rdfs:subClassOf rw:MaterialPreparationTechnique ;
+    rdfs:label "Heating"@en ;
+    skos:prefLabel "Heating"@en ;
+    skos:definition "Applying heat to rattan to make it pliable for bending and shaping."@en ;
+    skos:broader rw:MaterialPreparationTechnique .
+
+rw:Splitting rdf:type owl:Class ;
+    rdfs:subClassOf rw:MaterialPreparationTechnique ;
+    rdfs:label "Splitting"@en ;
+    skos:prefLabel "Splitting"@en ;
+    skos:definition "Splitting rattan canes lengthwise into strips for use in flat weaving."@en ;
+    skos:broader rw:MaterialPreparationTechnique .
+
+rw:FormingTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanCraftTechnique ;
+    rdfs:label "Forming Technique"@en ;
+    skos:prefLabel "Forming Technique"@en ;
+    skos:broader rw:RattanCraftTechnique .
+
+rw:Bending rdf:type owl:Class ;
+    rdfs:subClassOf rw:FormingTechnique ;
+    rdfs:label "Bending"@en ;
+    skos:prefLabel "Bending"@en ;
+    skos:broader rw:FormingTechnique .
+
+rw:StructuralAssemblyTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanCraftTechnique ;
+    rdfs:label "Structural Assembly Technique"@en ;
+    skos:prefLabel "Structural Assembly Technique"@en ;
+    skos:broader rw:RattanCraftTechnique .
+
+rw:Binding rdf:type owl:Class ;
+    rdfs:subClassOf rw:StructuralAssemblyTechnique ;
+    rdfs:label "Binding"@en ;
+    skos:prefLabel "Binding"@en ;
+    skos:broader rw:StructuralAssemblyTechnique .
+
+rw:ContinuousBinding rdf:type owl:Class ;
+    rdfs:subClassOf rw:Binding ;
+    rdfs:label "Continuous Binding"@en ;
+    skos:prefLabel "Continuous Binding"@en ;
+    skos:broader rw:Binding .
+
+rw:CrossBinding rdf:type owl:Class ;
+    rdfs:subClassOf rw:Binding ;
+    rdfs:label "Cross Binding"@en ;
+    skos:prefLabel "Cross Binding"@en ;
+    skos:broader rw:Binding .
+
+rw:CornerBinding rdf:type owl:Class ;
+    rdfs:subClassOf rw:Binding ;
+    rdfs:label "Corner Binding"@en ;
+    skos:prefLabel "Corner Binding"@en ;
+    skos:broader rw:Binding .
+
+rw:TBinding rdf:type owl:Class ;
+    rdfs:subClassOf rw:Binding ;
+    rdfs:label "T Binding"@en ;
+    skos:prefLabel "T Binding"@en ;
+    skos:broader rw:Binding .
+
+rw:YBinding rdf:type owl:Class ;
+    rdfs:subClassOf rw:Binding ;
+    rdfs:label "Y Binding"@en ;
+    skos:prefLabel "Y Binding"@en ;
+    skos:broader rw:Binding .
+
+rw:DoubleYBinding rdf:type owl:Class ;
+    rdfs:subClassOf rw:Binding ;
+    rdfs:label "Double Y Binding"@en ;
+    skos:prefLabel "Double Y Binding"@en ;
+    skos:broader rw:Binding .
+
+rw:N3DJointBinding rdf:type owl:Class ;
+    rdfs:subClassOf rw:Binding ;
+    rdfs:label "N3 D Joint Binding"@en ;
+    skos:prefLabel "N3 D Joint Binding"@en ;
+    skos:broader rw:Binding .
+
+rw:LockWrapBinding rdf:type owl:Class ;
+    rdfs:subClassOf rw:Binding ;
+    rdfs:label "Lock Wrap Binding"@en ;
+    skos:prefLabel "Lock Wrap Binding"@en ;
+    skos:broader rw:Binding .
+
+rw:Drilling rdf:type owl:Class ;
+    rdfs:subClassOf rw:StructuralAssemblyTechnique ;
+    rdfs:label "Drilling"@en ;
+    skos:prefLabel "Drilling"@en ;
+    skos:broader rw:StructuralAssemblyTechnique .
+
+rw:Fastening rdf:type owl:Class ;
+    rdfs:subClassOf rw:StructuralAssemblyTechnique ;
+    rdfs:label "Fastening"@en ;
+    skos:prefLabel "Fastening"@en ;
+    skos:broader rw:StructuralAssemblyTechnique .
+
+rw:WeavingTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanCraftTechnique ;
+    rdfs:label "Weaving Technique"@en ;
+    skos:prefLabel "Weaving Technique"@en ;
+    skos:broader rw:RattanCraftTechnique .
+
+rw:PlaitingTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:WeavingTechnique ;
+    rdfs:label "Plaiting Technique"@en ;
+    skos:prefLabel "Plaiting Technique"@en ;
+    skos:broader rw:WeavingTechnique .
+
+rw:TwoAxisPlaiting rdf:type owl:Class ;
+    rdfs:subClassOf rw:PlaitingTechnique ;
+    rdfs:label "Two Axis Plaiting"@en ;
+    skos:prefLabel "Two Axis Plaiting"@en ;
+    skos:broader rw:PlaitingTechnique .
+
+rw:ThreeAxisPlaiting rdf:type owl:Class ;
+    rdfs:subClassOf rw:PlaitingTechnique ;
+    rdfs:label "Three Axis Plaiting"@en ;
+    skos:prefLabel "Three Axis Plaiting"@en ;
+    skos:broader rw:PlaitingTechnique .
+
+rw:MultiAxisPlaiting rdf:type owl:Class ;
+    rdfs:subClassOf rw:PlaitingTechnique ;
+    rdfs:label "Multi Axis Plaiting"@en ;
+    skos:prefLabel "Multi Axis Plaiting"@en ;
+    skos:broader rw:PlaitingTechnique .
+
+rw:StakeAndStrandTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:WeavingTechnique ;
+    rdfs:label "Stake And Strand Technique"@en ;
+    skos:prefLabel "Stake And Strand Technique"@en ;
+    skos:broader rw:WeavingTechnique .
+
+rw:Randing rdf:type owl:Class ;
+    rdfs:subClassOf rw:StakeAndStrandTechnique ;
+    rdfs:label "Randing"@en ;
+    skos:prefLabel "Randing"@en ;
+    skos:broader rw:StakeAndStrandTechnique .
+
+rw:Pairing rdf:type owl:Class ;
+    rdfs:subClassOf rw:StakeAndStrandTechnique ;
+    rdfs:label "Pairing"@en ;
+    skos:prefLabel "Pairing"@en ;
+    skos:broader rw:StakeAndStrandTechnique .
+
+rw:Slewing rdf:type owl:Class ;
+    rdfs:subClassOf rw:StakeAndStrandTechnique ;
+    rdfs:label "Slewing"@en ;
+    skos:prefLabel "Slewing"@en ;
+    skos:broader rw:StakeAndStrandTechnique .
+
+rw:Waling rdf:type owl:Class ;
+    rdfs:subClassOf rw:StakeAndStrandTechnique ;
+    rdfs:label "Waling"@en ;
+    skos:prefLabel "Waling"@en ;
+    skos:broader rw:StakeAndStrandTechnique .
+
+rw:Braiding rdf:type owl:Class ;
+    rdfs:subClassOf rw:StakeAndStrandTechnique ;
+    rdfs:label "Braiding"@en ;
+    skos:prefLabel "Braiding"@en ;
+    skos:broader rw:StakeAndStrandTechnique .
+
+rw:TwiningTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:WeavingTechnique ;
+    rdfs:label "Twining Technique"@en ;
+    skos:prefLabel "Twining Technique"@en ;
+    skos:broader rw:WeavingTechnique .
+
+rw:CoilingTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:WeavingTechnique ;
+    rdfs:label "Coiling Technique"@en ;
+    skos:prefLabel "Coiling Technique"@en ;
+    skos:broader rw:WeavingTechnique .
+
+rw:FinishingTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanCraftTechnique ;
+    rdfs:label "Finishing Technique"@en ;
+    skos:prefLabel "Finishing Technique"@en ;
+    skos:broader rw:RattanCraftTechnique .
+
+rw:TrimmingTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:FinishingTechnique ;
+    rdfs:label "Trimming Technique"@en ;
+    skos:prefLabel "Trimming Technique"@en ;
+    skos:broader rw:FinishingTechnique .
+
+rw:VarnishingTechnique rdf:type owl:Class ;
+    rdfs:subClassOf rw:FinishingTechnique ;
+    rdfs:label "Varnishing Technique"@en ;
+    skos:prefLabel "Varnishing Technique"@en ;
+    skos:broader rw:FinishingTechnique .
+
+
+###  --- WeavingPatterns ---
+rw:PlainWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Plain Weave Pattern"@en ;
+    skos:prefLabel "Plain Weave Pattern"@en ;
+    skos:definition "Dense orthogonal square cells; simplest over-under interlacing."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:BoxWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Box Weave Pattern"@en ;
+    skos:prefLabel "Box Weave Pattern"@en ;
+    skos:definition "Open orthogonal square cells."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:RadialWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Radial Weave Pattern"@en ;
+    skos:prefLabel "Radial Weave Pattern"@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:HexagonalWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Hexagonal Weave Pattern"@en ;
+    skos:prefLabel "Hexagonal Weave Pattern"@en ;
+    skos:definition "Repeating six-sided open cells in a three-directional lattice."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:HerringboneWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Herringbone Weave Pattern"@en ;
+    skos:prefLabel "Herringbone Weave Pattern"@en ;
+    skos:definition "Alternating diagonal strands forming V-shaped rows."@en ;
+    skos:broader rw:RattanWeavingPattern ;
+    skos:altLabel "Chevron"@en .
+
+rw:DiamondWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Diamond Weave Pattern"@en ;
+    skos:prefLabel "Diamond Weave Pattern"@en ;
+    skos:definition "Repeating diamond-shaped openings formed by diagonal strands."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:WickerWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Wicker Weave Pattern"@en ;
+    skos:prefLabel "Wicker Weave Pattern"@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:OctagonalWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Octagonal Weave Pattern"@en ;
+    skos:prefLabel "Octagonal Weave Pattern"@en ;
+    skos:definition "Repeating eight-sided open cells connected by short bridges."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:BraidedEdgePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Braided Edge Pattern"@en ;
+    skos:prefLabel "Braided Edge Pattern"@en ;
+    skos:definition "Multiple strands interlaced into a braid, typically at edges/rims."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:CompositeWeavePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Composite Weave Pattern"@en ;
+    skos:prefLabel "Composite Weave Pattern"@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:SpiralCoilPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Spiral Coil Pattern"@en ;
+    skos:prefLabel "Spiral Coil Pattern"@en ;
+    skos:definition "Continuous strand coiled in concentric or spiral loops."@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:PlainWickerPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Plain Wicker Pattern"@en ;
+    skos:prefLabel "Plain Wicker Pattern"@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:TwistedWickerPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Twisted Wicker Pattern"@en ;
+    skos:prefLabel "Twisted Wicker Pattern"@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:SlewingBandWickerPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Slewing Band Wicker Pattern"@en ;
+    skos:prefLabel "Slewing Band Wicker Pattern"@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+rw:WalingWickerPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanWeavingPattern ;
+    rdfs:label "Waling Wicker Pattern"@en ;
+    skos:prefLabel "Waling Wicker Pattern"@en ;
+    skos:broader rw:RattanWeavingPattern .
+
+
+###  --- EquipmentTools ---
+rw:HeatingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Heating Tool"@en ;
+    skos:prefLabel "Heating Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:Blowtorch rdf:type owl:Class ;
+    rdfs:subClassOf rw:HeatingTool ;
+    rdfs:label "Blowtorch"@en ;
+    skos:prefLabel "Blowtorch"@en ;
+    skos:broader rw:HeatingTool .
+
+rw:BrandingIron rdf:type owl:Class ;
+    rdfs:subClassOf rw:HeatingTool ;
+    rdfs:label "Branding Iron"@en ;
+    skos:prefLabel "Branding Iron"@en ;
+    skos:broader rw:HeatingTool .
+
+rw:SoakingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Soaking Tool"@en ;
+    skos:prefLabel "Soaking Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:Bucket rdf:type owl:Class ;
+    rdfs:subClassOf rw:SoakingTool ;
+    rdfs:label "Bucket"@en ;
+    skos:prefLabel "Bucket"@en ;
+    skos:broader rw:SoakingTool .
+
+rw:SprayBottle rdf:type owl:Class ;
+    rdfs:subClassOf rw:SoakingTool ;
+    rdfs:label "Spray Bottle"@en ;
+    skos:prefLabel "Spray Bottle"@en ;
+    skos:broader rw:SoakingTool .
+
+rw:HoldingClampingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Holding Clamping Tool"@en ;
+    skos:prefLabel "Holding Clamping Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:FClamp rdf:type owl:Class ;
+    rdfs:subClassOf rw:HoldingClampingTool ;
+    rdfs:label "F Clamp"@en ;
+    skos:prefLabel "F Clamp"@en ;
+    skos:broader rw:HoldingClampingTool .
+
+rw:BendingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Bending Tool"@en ;
+    skos:prefLabel "Bending Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:RattanBendingLever rdf:type owl:Class ;
+    rdfs:subClassOf rw:BendingTool ;
+    rdfs:label "Rattan Bending Lever"@en ;
+    skos:prefLabel "Rattan Bending Lever"@en ;
+    skos:broader rw:BendingTool .
+
+rw:CuttingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Cutting Tool"@en ;
+    skos:prefLabel "Cutting Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:UtilityKnife rdf:type owl:Class ;
+    rdfs:subClassOf rw:CuttingTool ;
+    rdfs:label "Utility Knife"@en ;
+    skos:prefLabel "Utility Knife"@en ;
+    skos:broader rw:CuttingTool .
+
+rw:Saw rdf:type owl:Class ;
+    rdfs:subClassOf rw:CuttingTool ;
+    rdfs:label "Saw"@en ;
+    skos:prefLabel "Saw"@en ;
+    skos:broader rw:CuttingTool .
+
+rw:PruningShears rdf:type owl:Class ;
+    rdfs:subClassOf rw:CuttingTool ;
+    rdfs:label "Pruning Shears"@en ;
+    skos:prefLabel "Pruning Shears"@en ;
+    skos:broader rw:CuttingTool .
+
+rw:EndCutter rdf:type owl:Class ;
+    rdfs:subClassOf rw:CuttingTool ;
+    rdfs:label "End Cutter"@en ;
+    skos:prefLabel "End Cutter"@en ;
+    skos:broader rw:CuttingTool .
+
+rw:HeavyDutyCleaver rdf:type owl:Class ;
+    rdfs:subClassOf rw:CuttingTool ;
+    rdfs:label "Heavy Duty Cleaver"@en ;
+    skos:prefLabel "Heavy Duty Cleaver"@en ;
+    skos:broader rw:CuttingTool .
+
+rw:SplittingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Splitting Tool"@en ;
+    skos:prefLabel "Splitting Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:RattanSplittingKnife rdf:type owl:Class ;
+    rdfs:subClassOf rw:SplittingTool ;
+    rdfs:label "Rattan Splitting Knife"@en ;
+    skos:prefLabel "Rattan Splitting Knife"@en ;
+    skos:broader rw:SplittingTool .
+
+rw:ShavingScrapingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Shaving Scraping Tool"@en ;
+    skos:prefLabel "Shaving Scraping Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:MetalSpokeshave rdf:type owl:Class ;
+    rdfs:subClassOf rw:ShavingScrapingTool ;
+    rdfs:label "Metal Spokeshave"@en ;
+    skos:prefLabel "Metal Spokeshave"@en ;
+    skos:broader rw:ShavingScrapingTool .
+
+rw:RattanScraper rdf:type owl:Class ;
+    rdfs:subClassOf rw:ShavingScrapingTool ;
+    rdfs:label "Rattan Scraper"@en ;
+    skos:prefLabel "Rattan Scraper"@en ;
+    skos:broader rw:ShavingScrapingTool .
+
+rw:WoodRasp rdf:type owl:Class ;
+    rdfs:subClassOf rw:ShavingScrapingTool ;
+    rdfs:label "Wood Rasp"@en ;
+    skos:prefLabel "Wood Rasp"@en ;
+    skos:broader rw:ShavingScrapingTool .
+
+rw:DrillingPiercingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Drilling Piercing Tool"@en ;
+    skos:prefLabel "Drilling Piercing Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:BraceHandDrill rdf:type owl:Class ;
+    rdfs:subClassOf rw:DrillingPiercingTool ;
+    rdfs:label "Brace Hand Drill"@en ;
+    skos:prefLabel "Brace Hand Drill"@en ;
+    skos:broader rw:DrillingPiercingTool .
+
+rw:ElectricDrill rdf:type owl:Class ;
+    rdfs:subClassOf rw:DrillingPiercingTool ;
+    rdfs:label "Electric Drill"@en ;
+    skos:prefLabel "Electric Drill"@en ;
+    skos:broader rw:DrillingPiercingTool .
+
+rw:Awl rdf:type owl:Class ;
+    rdfs:subClassOf rw:DrillingPiercingTool ;
+    rdfs:label "Awl"@en ;
+    skos:prefLabel "Awl"@en ;
+    skos:broader rw:DrillingPiercingTool .
+
+rw:WeavingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Weaving Tool"@en ;
+    skos:prefLabel "Weaving Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:Bodkin rdf:type owl:Class ;
+    rdfs:subClassOf rw:WeavingTool ;
+    rdfs:label "Bodkin"@en ;
+    skos:prefLabel "Bodkin"@en ;
+    skos:broader rw:WeavingTool .
+
+rw:FasteningTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Fastening Tool"@en ;
+    skos:prefLabel "Fastening Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:StapleGun rdf:type owl:Class ;
+    rdfs:subClassOf rw:FasteningTool ;
+    rdfs:label "Staple Gun"@en ;
+    skos:prefLabel "Staple Gun"@en ;
+    skos:broader rw:FasteningTool .
+
+rw:PneumaticBradNailer rdf:type owl:Class ;
+    rdfs:subClassOf rw:FasteningTool ;
+    rdfs:label "Pneumatic Brad Nailer"@en ;
+    skos:prefLabel "Pneumatic Brad Nailer"@en ;
+    skos:broader rw:FasteningTool .
+
+rw:Hammer rdf:type owl:Class ;
+    rdfs:subClassOf rw:FasteningTool ;
+    rdfs:label "Hammer"@en ;
+    skos:prefLabel "Hammer"@en ;
+    skos:broader rw:FasteningTool .
+
+rw:FinishingTool rdf:type owl:Class ;
+    rdfs:subClassOf rw:EquipmentTool ;
+    rdfs:label "Finishing Tool"@en ;
+    skos:prefLabel "Finishing Tool"@en ;
+    skos:broader rw:EquipmentTool .
+
+rw:Brush rdf:type owl:Class ;
+    rdfs:subClassOf rw:FinishingTool ;
+    rdfs:label "Brush"@en ;
+    skos:prefLabel "Brush"@en ;
+    skos:broader rw:FinishingTool .
+
+rw:Varnish rdf:type owl:Class ;
+    rdfs:subClassOf rw:FinishingTool ;
+    rdfs:label "Varnish"@en ;
+    skos:prefLabel "Varnish"@en ;
+    skos:broader rw:FinishingTool .
+
+
+###  --- CraftingProcesses ---
+rw:CraftingProcess rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E12_Production> ;
+    rdfs:label "Crafting Process"@en ;
+    skos:prefLabel "Crafting Process"@en .
+
+rw:MaterialPreparationProcess rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftingProcess ;
+    rdfs:label "Material Preparation Process"@en ;
+    skos:prefLabel "Material Preparation Process"@en ;
+    skos:broader rw:CraftingProcess .
+
+rw:FormingProcess rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftingProcess ;
+    rdfs:label "Forming Process"@en ;
+    skos:prefLabel "Forming Process"@en ;
+    skos:broader rw:CraftingProcess .
+
+rw:StructuralAssemblyProcess rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftingProcess ;
+    rdfs:label "Structural Assembly Process"@en ;
+    skos:prefLabel "Structural Assembly Process"@en ;
+    skos:broader rw:CraftingProcess .
+
+rw:WeavingProcess rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftingProcess ;
+    rdfs:label "Weaving Process"@en ;
+    skos:prefLabel "Weaving Process"@en ;
+    skos:broader rw:CraftingProcess .
+
+rw:FinishingProcess rdf:type owl:Class ;
+    rdfs:subClassOf rw:CraftingProcess ;
+    rdfs:label "Finishing Process"@en ;
+    skos:prefLabel "Finishing Process"@en ;
+    skos:broader rw:CraftingProcess .
+
+
+###  --- VisualMotifs ---
+rw:FloralMotif rdf:type owl:Class ;
+    rdfs:subClassOf rw:VisualDesignMotif ;
+    rdfs:label "Floral Motif"@en ;
+    skos:prefLabel "Floral Motif"@en ;
+    skos:broader rw:VisualDesignMotif .
+
+rw:GeometricMotif rdf:type owl:Class ;
+    rdfs:subClassOf rw:VisualDesignMotif ;
+    rdfs:label "Geometric Motif"@en ;
+    skos:prefLabel "Geometric Motif"@en ;
+    skos:broader rw:VisualDesignMotif .
+
+rw:AnimalMotif rdf:type owl:Class ;
+    rdfs:subClassOf rw:VisualDesignMotif ;
+    rdfs:label "Animal Motif"@en ;
+    skos:prefLabel "Animal Motif"@en ;
+    skos:broader rw:VisualDesignMotif .
+
+rw:SymbolicMotif rdf:type owl:Class ;
+    rdfs:subClassOf rw:VisualDesignMotif ;
+    rdfs:label "Symbolic Motif"@en ;
+    skos:prefLabel "Symbolic Motif"@en ;
+    skos:broader rw:VisualDesignMotif .
+
+rw:FigurativeMotif rdf:type owl:Class ;
+    rdfs:subClassOf rw:VisualDesignMotif ;
+    rdfs:label "Figurative Motif"@en ;
+    skos:prefLabel "Figurative Motif"@en ;
+    skos:broader rw:VisualDesignMotif .
+
+
+###  --- ColorDyePatterns ---
+rw:NaturalMaterialVariation rdf:type owl:Class ;
+    rdfs:subClassOf rw:ColorDyePattern ;
+    rdfs:label "Natural Material Variation"@en ;
+    skos:prefLabel "Natural Material Variation"@en ;
+    skos:broader rw:ColorDyePattern .
+
+rw:AlternatingColor rdf:type owl:Class ;
+    rdfs:subClassOf rw:ColorDyePattern ;
+    rdfs:label "Alternating Color"@en ;
+    skos:prefLabel "Alternating Color"@en ;
+    skos:broader rw:ColorDyePattern .
+
+rw:Monochrome rdf:type owl:Class ;
+    rdfs:subClassOf rw:ColorDyePattern ;
+    rdfs:label "Monochrome"@en ;
+    skos:prefLabel "Monochrome"@en ;
+    skos:broader rw:ColorDyePattern .
+
+rw:Gradient rdf:type owl:Class ;
+    rdfs:subClassOf rw:ColorDyePattern ;
+    rdfs:label "Gradient"@en ;
+    skos:prefLabel "Gradient"@en ;
+    skos:broader rw:ColorDyePattern .
+
+
+###  --- ObjectComponents ---
+rw:Surface rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Surface"@en ;
+    skos:prefLabel "Surface"@en .
+
+rw:Seat rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Seat"@en ;
+    skos:prefLabel "Seat"@en .
+
+rw:Backrest rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Backrest"@en ;
+    skos:prefLabel "Backrest"@en .
+
+rw:Armrest rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Armrest"@en ;
+    skos:prefLabel "Armrest"@en .
+
+rw:Leg rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Leg"@en ;
+    skos:prefLabel "Leg"@en .
+
+rw:Frame rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Frame"@en ;
+    skos:prefLabel "Frame"@en .
+
+rw:Panel rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Panel"@en ;
+    skos:prefLabel "Panel"@en .
+
+rw:SidePanel rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Side Panel"@en ;
+    skos:prefLabel "Side Panel"@en .
+
+rw:Top rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Top"@en ;
+    skos:prefLabel "Top"@en .
+
+rw:BottomBase rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Bottom / Base"@en ;
+    skos:prefLabel "Bottom / Base"@en .
+
+rw:LidCover rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Lid / Cover"@en ;
+    skos:prefLabel "Lid / Cover"@en .
+
+rw:Handle rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Handle"@en ;
+    skos:prefLabel "Handle"@en .
+
+rw:EdgeRim rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Edge / Rim"@en ;
+    skos:prefLabel "Edge / Rim"@en .
+
+rw:Joint rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Joint"@en ;
+    skos:prefLabel "Joint"@en .
+
+rw:CornerJoint rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Corner Joint"@en ;
+    skos:prefLabel "Corner Joint"@en .
+
+rw:SupportMember rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Support Member"@en ;
+    skos:prefLabel "Support Member"@en .
+
+rw:CrossBrace rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Cross Brace"@en ;
+    skos:prefLabel "Cross Brace"@en .
+
+rw:Other rdf:type owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    rdfs:label "Other"@en ;
+    skos:prefLabel "Other"@en .
+
+
+###  --- StructuralConfiguration ---
+rw:SelfSupportingWovenStructure rdf:type owl:Class ;
+    rdfs:subClassOf rw:StructuralConfiguration ;
+    rdfs:label "Self Supporting Woven Structure"@en ;
+    skos:prefLabel "Self Supporting Woven Structure"@en ;
+    skos:broader rw:StructuralConfiguration .
+
+rw:HybridFrameAndWovenStructure rdf:type owl:Class ;
+    rdfs:subClassOf rw:StructuralConfiguration ;
+    rdfs:label "Hybrid Frame And Woven Structure"@en ;
+    skos:prefLabel "Hybrid Frame And Woven Structure"@en ;
+    skos:broader rw:StructuralConfiguration .
+
+rw:BoundFrameStructure rdf:type owl:Class ;
+    rdfs:subClassOf rw:StructuralConfiguration ;
+    rdfs:label "Bound Frame Structure"@en ;
+    skos:prefLabel "Bound Frame Structure"@en ;
+    skos:broader rw:StructuralConfiguration .
+
+
+###  --- BindingPatterns (optional) ---
+rw:LinearWrapPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanBindingPattern ;
+    rdfs:label "Linear Wrap Pattern"@en ;
+    skos:prefLabel "Linear Wrap Pattern"@en ;
+    skos:broader rw:RattanBindingPattern .
+
+rw:CrossWrapPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanBindingPattern ;
+    rdfs:label "Cross Wrap Pattern"@en ;
+    skos:prefLabel "Cross Wrap Pattern"@en ;
+    skos:broader rw:RattanBindingPattern .
+
+rw:DiagonalPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanBindingPattern ;
+    rdfs:label "Diagonal Pattern"@en ;
+    skos:prefLabel "Diagonal Pattern"@en ;
+    skos:broader rw:RattanBindingPattern .
+
+rw:TJointWrapPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanBindingPattern ;
+    rdfs:label "T Joint Wrap Pattern"@en ;
+    skos:prefLabel "T Joint Wrap Pattern"@en ;
+    skos:broader rw:RattanBindingPattern .
+
+rw:HerringboneJointPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanBindingPattern ;
+    rdfs:label "Herringbone Joint Pattern"@en ;
+    skos:prefLabel "Herringbone Joint Pattern"@en ;
+    skos:broader rw:RattanBindingPattern .
+
+rw:CornerInfillPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanBindingPattern ;
+    rdfs:label "Corner Infill Pattern"@en ;
+    skos:prefLabel "Corner Infill Pattern"@en ;
+    skos:broader rw:RattanBindingPattern .
+
+
+###  --- StructuralPatterns (optional) ---
+rw:LinearArrayPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanStructuralPattern ;
+    rdfs:label "Linear Array Pattern"@en ;
+    skos:prefLabel "Linear Array Pattern"@en ;
+    skos:broader rw:RattanStructuralPattern .
+
+rw:CurvedLoopPattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanStructuralPattern ;
+    rdfs:label "Curved Loop Pattern"@en ;
+    skos:prefLabel "Curved Loop Pattern"@en ;
+    skos:broader rw:RattanStructuralPattern .
+
+rw:RadialFramePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanStructuralPattern ;
+    rdfs:label "Radial Frame Pattern"@en ;
+    skos:prefLabel "Radial Frame Pattern"@en ;
+    skos:broader rw:RattanStructuralPattern .
+
+rw:OrganicFramePattern rdf:type owl:Class ;
+    rdfs:subClassOf rw:RattanStructuralPattern ;
+    rdfs:label "Organic Frame Pattern"@en ;
+    skos:prefLabel "Organic Frame Pattern"@en ;
+    skos:broader rw:RattanStructuralPattern .
+
+
+###  --- Integration Methods ---
+rw:HoletoHoleWeaving rdf:type owl:Class ;
+    rdfs:subClassOf rw:IntegrationMethod ;
+    rdfs:label "Holeto Hole Weaving"@en ;
+    skos:prefLabel "Holeto Hole Weaving"@en ;
+    skos:broader rw:IntegrationMethod .
+
+rw:WrappedFrameAttachment rdf:type owl:Class ;
+    rdfs:subClassOf rw:IntegrationMethod ;
+    rdfs:label "Wrapped Frame Attachment"@en ;
+    skos:prefLabel "Wrapped Frame Attachment"@en ;
+    skos:broader rw:IntegrationMethod .
+
+rw:BoundFrameAttachment rdf:type owl:Class ;
+    rdfs:subClassOf rw:IntegrationMethod ;
+    rdfs:label "Bound Frame Attachment"@en ;
+    skos:prefLabel "Bound Frame Attachment"@en ;
+    skos:broader rw:IntegrationMethod .
+
+
+#======================================================================
+#  Object properties
+#======================================================================
+
+rw:produced_through rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by> ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:CraftingProcess ;
+    rdfs:label "produced_through"@en ;
+    rdfs:comment "Links a crafted product to the production process (E12) that created it."@en .
+
+rw:produced_by rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:Craftsman ;
+    rdfs:label "produced_by"@en ;
+    rdfs:comment "Shortcut linking a product directly to its maker."@en .
+
+rw:executes rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:Craftsman ;
+    rdfs:range rw:CraftingProcess ;
+    rdfs:label "executes"@en ;
+    rdfs:comment "A craftsman executes a crafting process (conceptual inverse of crm:P14_carried_out_by)."@en .
+
+rw:located_at rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location> ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:GeographicalContext ;
+    rdfs:label "located_at"@en ;
+    rdfs:comment "Links a crafted product to the place where it is held or originates."@en .
+
+rw:practiced_in rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:RattanCraftTechnique ;
+    rdfs:range rw:GeographicalContext ;
+    rdfs:label "practiced_in"@en ;
+    rdfs:comment "Region(s) where a technique is traditionally practiced."@en .
+
+rw:took_place_at rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> ;
+    rdfs:domain rw:CraftingProcess ;
+    rdfs:range rw:GeographicalContext ;
+    rdfs:label "took_place_at"@en .
+
+rw:has_timespan rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> ;
+    rdfs:range rw:TemporalContext ;
+    rdfs:label "has_timespan"@en .
+
+rw:has_heritage_status rdf:type owl:ObjectProperty ;
+    rdfs:range rw:HeritageStatus ;
+    rdfs:label "has_heritage_status"@en ;
+    rdfs:comment "Links a craft practice, product, or practitioner to a heritage classification."@en .
+
+rw:transmitted_by rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:RattanCraftTechnique ;
+    rdfs:range rw:Craftsman ;
+    rdfs:label "transmitted_by"@en ;
+    rdfs:comment "Practitioner responsible for transmitting knowledge of a technique."@en .
+
+rw:is_made_of rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P45_consists_of> ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:Material ;
+    rdfs:label "is_made_of"@en ;
+    rdfs:comment "The material(s) a crafted product is made of."@en .
+
+rw:transforms_material rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:CraftingProcess ;
+    rdfs:range rw:Material ;
+    rdfs:label "transforms_material"@en .
+
+rw:applies_technique rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:CraftingProcess ;
+    rdfs:range rw:RattanCraftTechnique ;
+    rdfs:label "applies_technique"@en ;
+    rdfs:comment "A crafting process applies a rattan craft technique (workbook: involves)."@en .
+
+rw:produces_pattern rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:RattanCraftTechnique ;
+    rdfs:range rw:RattanWeavingPattern ;
+    rdfs:label "produces_pattern"@en ;
+    rdfs:comment "A technique produces a given weaving pattern."@en .
+
+rw:employs rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:RattanCraftTechnique ;
+    rdfs:range rw:EquipmentTool ;
+    rdfs:label "employs"@en ;
+    rdfs:comment "A technique employs a tool or piece of equipment."@en .
+
+rw:requires_equipment rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:RattanCraftTechnique ;
+    rdfs:range rw:EquipmentTool ;
+    rdfs:label "requires_equipment"@en .
+
+rw:requires_tool rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:RattanCraftTechnique ;
+    rdfs:range rw:EquipmentTool ;
+    rdfs:label "requires_tool"@en .
+
+rw:has_component rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:ObjectComponent ;
+    rdfs:label "has_component"@en ;
+    rdfs:comment "A crafted product has a physical component."@en .
+
+rw:bears_pattern_application rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:ComponentApplication ;
+    rdfs:label "bears_pattern_application"@en ;
+    rdfs:comment "Links a product to a reified statement that a component bears a pattern."@en .
+
+rw:on_component rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:ComponentApplication ;
+    rdfs:range rw:ObjectComponent ;
+    rdfs:label "on_component"@en ;
+    rdfs:comment "The component on which a pattern application is observed."@en .
+
+rw:applies_pattern rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:ComponentApplication ;
+    rdfs:range rw:RattanWeavingPattern ;
+    rdfs:label "applies_pattern"@en ;
+    rdfs:comment "The weaving pattern recorded in a component application."@en .
+
+rw:bears_weaving_pattern rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:RattanWeavingPattern ;
+    rdfs:label "bears_weaving_pattern"@en ;
+    rdfs:comment "Direct (component-agnostic) shortcut: a product bears a weaving pattern."@en .
+
+rw:bears_motif rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item> ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:VisualDesignMotif ;
+    rdfs:label "bears_motif"@en ;
+    rdfs:comment "A crafted product bears a visual design motif."@en .
+
+rw:shows_color_dye_pattern rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P65_shows_visual_item> ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:ColorDyePattern ;
+    rdfs:label "shows_color_dye_pattern"@en ;
+    rdfs:comment "A crafted product shows a color/dye pattern."@en .
+
+rw:has_structural_configuration rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:StructuralConfiguration ;
+    rdfs:label "has_structural_configuration"@en ;
+    rdfs:comment "The overall structural construction type of a crafted product."@en .
+
+rw:uses_integration_method rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range rw:IntegrationMethod ;
+    rdfs:label "uses_integration_method"@en ;
+    rdfs:comment "The method by which woven elements integrate with the frame."@en .
+
+rw:is_depicted_by rdf:type owl:ObjectProperty ;
+    rdfs:domain rw:RattanWeavingPattern ;
+    rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
+    rdfs:label "is_depicted_by"@en ;
+    rdfs:comment "A pattern is depicted by an image (reference exemplar)."@en .
+
+#======================================================================
+#  Datatype properties
+#======================================================================
+
+rw:has_object_id rdf:type owl:DatatypeProperty ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "has_object_id"@en ;
+    rdfs:comment "Local identifier of the 3D object record."@en .
+
+rw:has_3d_data_path rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "has_3d_data_path"@en ;
+    rdfs:comment "Path to a 3D asset (.glb/.gltf/.obj/.ply/.fbx/.usdz)."@en .
+
+rw:has_image_path rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "has_image_path"@en ;
+    rdfs:comment "Path to a 2D image asset."@en .
+
+rw:has_caption rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "has_caption"@en ;
+    rdfs:comment "Caption or region description for an image."@en .
+
+rw:has_annotator_note rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "has_annotator_note"@en ;
+    rdfs:comment "Free-text note recorded by the annotator."@en .
+
+rw:has_specific_tool_name rdf:type owl:DatatypeProperty ;
+    rdfs:domain rw:EquipmentTool ;
+    rdfs:range xsd:string ;
+    rdfs:label "has_specific_tool_name"@en ;
+    rdfs:comment "Specific named instance of a tool type."@en .
+
+rw:has_heritage_label rdf:type owl:DatatypeProperty ;
+    rdfs:domain rw:HeritageStatus ;
+    rdfs:range xsd:string ;
+    rdfs:label "has_heritage_label"@en ;
+    rdfs:comment "Human-readable heritage designation."@en .
+
+rw:has_year rdf:type owl:DatatypeProperty ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "has_year"@en .
+
+rw:has_size_class rdf:type owl:DatatypeProperty ;
+    rdfs:domain rw:CraftedProduct ;
+    rdfs:range xsd:string ;
+    rdfs:label "has_size_class"@en ;
+    rdfs:comment "Optional descriptive size or height variant of a product (e.g. High or Low). Recommended as the proper home for High/Low-style distinctions instead of dedicated subclasses."@en .
+
+###  --- Annotation-derived additions ---
+rw:BenchStop rdf:type owl:Class ;
+    rdfs:subClassOf rw:HoldingClampingTool ;
+    rdfs:label "Bench Stop"@en ;
+    skos:prefLabel "Bench Stop"@en ;
+    skos:broader rw:HoldingClampingTool .
+
