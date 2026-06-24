@@ -374,12 +374,12 @@ mao:has_principle rdf:type owl:ObjectProperty ;
                   mao:name_zh "有原則"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/has_rhyme
-mao:has_rhyme rdf:type owl:ObjectProperty ;
+###  https://purl.org/maont/ontology/has_verse
+mao:has_verse rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf mao:has ;
               rdfs:domain mao:Form_set ;
-              rdfs:range mao:MA_rhyme ;
-              rdfs:label "has_rhyme"@en .
+              rdfs:range mao:MA_verse ;
+              rdfs:label "has_verse"@en .
 
 
 ###  https://purl.org/maont/ontology/has_symbol
@@ -948,8 +948,8 @@ mao:Form_set rdf:type owl:Class ;
                                owl:someValuesFrom mao:Form_move
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty mao:has_rhyme ;
-                               owl:someValuesFrom mao:MA_rhyme
+                               owl:onProperty mao:has_verse ;
+                               owl:someValuesFrom mao:MA_verse
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty mao:practiced_in ;
@@ -1223,11 +1223,11 @@ mao:MA_principle rdf:type owl:Class ;
                  mao:otherName_zh "拳理"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/MA_rhyme
-mao:MA_rhyme rdf:type owl:Class ;
+###  https://purl.org/maont/ontology/MA_verse
+mao:MA_verse rdf:type owl:Class ;
              rdfs:subClassOf mao:E73.Information_Object ;
              rdfs:comment "A mnemonic verse or oral formula (歌訣) encoding the key principles or movement sequences of a martial arts style or form. Passed down through oral tradition as a memory aid."@en ;
-             rdfs:label "MA_Rhyme"@en ;
+             rdfs:label "MA_Verse"@en ;
              mao:name_zh "歌訣"@zh-hk .
 
 
