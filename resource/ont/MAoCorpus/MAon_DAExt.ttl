@@ -7,21 +7,63 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
 @base <https://purl.org/hkmala/ontology/maon-daext#> .
 
-<https://purl.org/hkmala/ontology/maon-daext> rdf:type owl:Ontology ;
-                                               owl:imports <https://purl.org/maont/ontology> ;
-                                               dcterms:description "A provisional digital archive extension of MAon for modelling HKMALA archive-level entities, digital documents, moving-image resources, motion-capture-derived outputs, textual records, installations, exhibitions, agents, and file-level relations for Linked Art alignment."@en ;
-                                               rdfs:comment "This extension imports MAon and adds a file/archive layer for HKMALA."@en ;
-                                               rdfs:label "MAon Digital Archive Extension for HKMALA"@en .
+<https://purl.org/hkmala/ontology/maon-daext>
+    rdf:type owl:Ontology ;
 
-#################################################################
-#    Contributors
-#    MAon-DAExt author: [Luyi Chen](https://orcid.org/0009-0002-4630-7457) 
-#     with advice from  [Yumeng Hou](https://orcid.org/0000-0002-7908-0693) 
-#                     & [Xiaoyu Zhang](https://orcid.org/0000-0002-8057-3997)
-#################################################################
+    ## ── Identity ──────────────────────────────────────────────────
+    vann:preferredNamespaceUri "https://purl.org/hkmala/ontology/maon-daext#"^^xsd:anyURI ;
+    vann:preferredNamespacePrefix "hda"^^xsd:string ;
+
+    ## ── Imports ───────────────────────────────────────────────────
+    owl:imports <https://purl.org/maont/ontology> ;
+
+    ## ── Versioning ────────────────────────────────────────────────
+    owl:versionIRI <https://purl.org/hkmala/ontology/maon-daext/1.0> ;
+    owl:versionInfo "1.0"^^xsd:string ;
+
+    ## ── Labels & description ──────────────────────────────────────
+    dc:title "MAon Digital Archive Extension"@en ;
+    rdfs:label "MAon Digital Archive Extension"@en ;
+    rdfs:comment "This extension imports MAon and adds a file/archive layer for HKMALA."@en ;
+    dcterms:description "A provisional digital archive extension of MAon for modelling HKMALA archive-level entities, digital documents, moving-image resources, motion-capture-derived outputs, textual records, installations, exhibitions, agents, and file-level relations for Linked Art alignment."@en ;
+
+    ## ── License ───────────────────────────────────────────────────
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+
+    ## ── Provenance ────────────────────────────────────────────────
+    dcterms:creator [
+        rdf:type foaf:Person ;
+        foaf:name "Luyi Chen"^^xsd:string ;
+        foaf:homepage <https://orcid.org/0009-0002-4630-7457>
+    ] ;
+    dcterms:contributor [
+        rdf:type foaf:Person ;
+        foaf:name "Yumeng Hou"^^xsd:string ;
+        foaf:homepage <https://orcid.org/0000-0002-7908-0693>
+    ] ;
+    dcterms:contributor [
+        rdf:type foaf:Person ;
+        foaf:name "Xiaoyu Zhang"^^xsd:string ;
+        foaf:homepage <https://orcid.org/0000-0002-8057-3997>
+    ] ;
+    dcterms:created "2025-01-01"^^xsd:date ;
+    dcterms:issued "2025-01-01"^^xsd:date ;
+    dcterms:publisher "National University of Singapore"^^xsd:string ;
+
+    ## ── Citation ──────────────────────────────────────────────────
+    dcterms:bibliographicCitation "MAon Digital Archive Extension (v1.0). https://purl.org/hkmala/ontology/maon-daext"^^xsd:string ;
+
+    ## ── Status & source ───────────────────────────────────────────
+    bibo:status "unstable"^^xsd:string ;
+    dcterms:source <https://purl.org/hkmala/ontology/maon-daext> .
 
 
 #################################################################
