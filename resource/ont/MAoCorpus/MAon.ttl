@@ -1,60 +1,98 @@
 @prefix : <https://purl.org/maont/ontology> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix mao: <https://purl.org/maont/ontology> .
+@prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix mod: <https://w3id.org/mod#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <https://schema.org/> .
-
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://purl.org/maont/ontology> .
 
-<https://purl.org/maont/ontology>
-    rdf:type owl:Ontology ;
-
-    ## ── Identity ──────────────────────────────────────────────────
-    vann:preferredNamespaceUri "https://purl.org/maont/ontology"^^xsd:anyURI ;
-    vann:preferredNamespacePrefix "mao"^^xsd:string ;
-
-    ## ── Versioning ────────────────────────────────────────────────
-    owl:versionIRI <https://purl.org/maont/ontology> ;
-    owl:versionInfo "1.2"^^xsd:string ;
-
-    ## ── Labels & description ──────────────────────────────────────
-    dc:title "MAon — Martial Arts Ontology"@en ;
-    rdfs:label "MAon — Martial Arts Ontology v1.2"@en ;
-    rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
-
-    ## ── License ───────────────────────────────────────────────────
-    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-
-    ## ── Provenance ────────────────────────────────────────────────
-    dcterms:creator "Yumeng Hou"^^xsd:string ;
-    dcterms:contributor "Luyi Chen"^^xsd:string ;
-    dcterms:created "2024-01-01"^^xsd:date ;
-    dcterms:issued "2024-01-01"^^xsd:date ;
-    dcterms:modified "2026-06-24"^^xsd:date ;
-    dcterms:publisher "YH"^^xsd:string ;
-
-    ## ── Citation ──────────────────────────────────────────────────
-    dcterms:bibliographicCitation "MAon: Martial Arts Ontology (v1.2). https://purl.org/maont/ontology"^^xsd:string ;
-
-    ## ── Status & source ───────────────────────────────────────────
-    bibo:status "unstable"^^xsd:string ;
-    dcterms:source <https://purl.org/maont/ontology> ;
-
-    ## ── Documentation ─────────────────────────────────────────────
-    rdfs:seeAlso <https://yumenghou.com/resource/ont/MAoCorpus/extract.html> .
+<https://purl.org/maont/ontology> rdf:type owl:Ontology ;
+                                   owl:versionIRI <https://purl.org/maont/ontology> ;
+                                   dc:title "MAon — Martial Arts Ontology"@en ;
+                                   dcterms:bibliographicCitation "MAon: Martial Arts Ontology (v1.2). https://purl.org/maont/ontology" ;
+                                   dcterms:contributor "Luyi Chen" ;
+                                   dcterms:created "2024-01-01"^^xsd:date ;
+                                   dcterms:creator "Yumeng Hou" ;
+                                   dcterms:issued "2024-01-01"^^xsd:date ;
+                                   dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                   dcterms:modified "2026-06-24"^^xsd:date ;
+                                   dcterms:publisher "YH" ;
+                                   dcterms:source <https://purl.org/maont/ontology> ;
+                                   bibo:status "unstable" ;
+                                   vann:preferredNamespacePrefix "mao" ;
+                                   vann:preferredNamespaceUri "https://purl.org/maont/ontology"^^xsd:anyURI ;
+                                   rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
+                                   rdfs:label "MAon — Martial Arts Ontology v1.2"@en ;
+                                   rdfs:seeAlso <https://yumenghou.com/resource/ont/MAoCorpus/extract.html> ;
+                                   owl:versionInfo "1.2" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/isReplacedBy
+dcterms:isReplacedBy rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+bibo:status rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
 
 ###  http://www.w3.org/2000/01/rdf-schema#description
 rdfs:description rdf:type owl:AnnotationProperty .
@@ -166,6 +204,10 @@ mao:otherName_zh rdf:type owl:AnnotationProperty ;
 #    Datatypes
 #################################################################
 
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#gYear
 xsd:gYear rdf:type rdfs:Datatype .
 
@@ -238,8 +280,8 @@ mao:developed_from rdf:type owl:ObjectProperty ;
 ###  https://purl.org/maont/ontologydocuments
 mao:documents rdf:type owl:ObjectProperty ;
               rdfs:domain mao:MA_book ;
-              rdfs:range mao:MA_master ,
-                         mao:MA_institute ,
+              rdfs:range mao:MA_institute ,
+                         mao:MA_master ,
                          mao:MA_style ,
                          mao:MA_system ,
                          mao:MA_technique ,
@@ -268,22 +310,24 @@ mao:employsBodyshape rdf:type owl:ObjectProperty ;
                      mao:name_zh "運用身形"@zh-hk .
 
 
-###  https://purl.org/maont/ontologyemploysHandshape
-mao:employsHandshape rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf mao:employs ;
-                    rdfs:domain mao:MA_technique ;
-                    rdfs:range mao:handshape ;
-                    rdfs:comment "Specifies the handshape (手形) employed by a technique. Subproperty of mao:employs, narrowing the range to mao:handshape."@en ;
-                    rdfs:label "employs handshape"@en ;
-                    mao:name_zh "運用手形"@zh-hk .
-
 ###  https://purl.org/maont/ontologyemploysGesture
 mao:employsGesture rdf:type owl:ObjectProperty ;
-    owl:deprecated "true"^^xsd:boolean ;
-    owl:equivalentProperty mao:employsHandshape ;
-    rdfs:label "employs gesture"@en ;
-    rdfs:comment "Deprecated property retained for backward compatibility. Use mao:employsHandshape instead."@en ;
-    dcterms:isReplacedBy mao:employsHandshape .
+                   owl:equivalentProperty mao:employsHandshape ;
+                   dcterms:isReplacedBy mao:employsHandshape ;
+                   rdfs:comment "Deprecated property retained for backward compatibility. Use mao:employsHandshape instead."@en ;
+                   rdfs:label "employs gesture"@en ;
+                   owl:deprecated "true"^^xsd:boolean .
+
+
+###  https://purl.org/maont/ontologyemploysHandshape
+mao:employsHandshape rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf mao:employs ;
+                     rdfs:domain mao:MA_technique ;
+                     rdfs:range mao:handshape ;
+                     rdfs:comment "Specifies the handshape (手形) employed by a technique. Subproperty of mao:employs, narrowing the range to mao:handshape."@en ;
+                     rdfs:label "employs handshape"@en ;
+                     mao:name_zh "運用手形"@zh-hk .
+
 
 ###  https://purl.org/maont/ontologyemploysStance
 mao:employsStance rdf:type owl:ObjectProperty ;
@@ -299,8 +343,8 @@ mao:employsStance rdf:type owl:ObjectProperty ;
 mao:features_in rdf:type owl:ObjectProperty ;
                 rdfs:domain mao:Form_move ,
                             mao:Form_set ,
-                            mao:MA_master ,
                             mao:MA_institute ,
+                            mao:MA_master ,
                             mao:armament ,
                             mao:training_tool ;
                 rdfs:range mao:Digital_document ,
@@ -414,14 +458,6 @@ mao:has_principle rdf:type owl:ObjectProperty ;
                   mao:name_zh "有原則"@zh-hk .
 
 
-###  https://purl.org/maont/ontologyhas_verse
-mao:has_verse rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf mao:has ;
-              rdfs:domain mao:Form_set ;
-              rdfs:range mao:MA_verse ;
-              rdfs:label "has_verse"@en .
-
-
 ###  https://purl.org/maont/ontologyhas_symbol
 mao:has_symbol rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf mao:has ;
@@ -430,6 +466,14 @@ mao:has_symbol rdf:type owl:ObjectProperty ;
                rdfs:range mao:symbolic_animal ;
                rdfs:label "has_symbol"@en ;
                mao:name_zh "有象徵"@zh-hk .
+
+
+###  https://purl.org/maont/ontologyhas_verse
+mao:has_verse rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf mao:has ;
+              rdfs:domain mao:Form_set ;
+              rdfs:range mao:MA_verse ;
+              rdfs:label "has_verse"@en .
 
 
 ###  https://purl.org/maont/ontologyhas_work
@@ -590,8 +634,7 @@ mao:resides_in rdf:type owl:ObjectProperty ;
 ###  https://purl.org/maont/ontologysimilar_movement_to
 mao:similar_movement_to rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf mao:similar_to ;
-                        rdf:type owl:FunctionalProperty ,
-                                 owl:SymmetricProperty ,
+                        rdf:type owl:SymmetricProperty ,
                                  owl:TransitiveProperty ;
                         rdfs:domain mao:Form_move ;
                         rdfs:range mao:Form_move ;
@@ -1027,11 +1070,11 @@ mao:MA_book rdf:type owl:Class ;
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:documents ;
-                              owl:someValuesFrom mao:MA_master
+                              owl:someValuesFrom mao:MA_institute
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:documents ;
-                              owl:someValuesFrom mao:MA_institute
+                              owl:someValuesFrom mao:MA_master
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:documents ;
@@ -1063,6 +1106,35 @@ mao:MA_clan rdf:type owl:Class ;
             mao:name_en "Martial Arts Clan"@en ;
             mao:name_zh "家族譜系"@zh-hk ;
             mao:otherName_en "Martial Arts Family"@en .
+
+
+###  https://purl.org/maont/ontologyMA_institute
+mao:MA_institute rdf:type owl:Class ;
+                 rdfs:subClassOf mao:MA_organization ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty mao:adopts ;
+                                   owl:someValuesFrom mao:MA_syllabus
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty mao:adopts ;
+                                   owl:someValuesFrom mao:training_method
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty mao:located_at ;
+                                   owl:someValuesFrom mao:E53_place
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty mao:teaches ;
+                                   owl:someValuesFrom mao:MA_style
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty mao:teaches ;
+                                   owl:someValuesFrom mao:MA_system
+                                 ] ;
+                 rdfs:comment "MA_Institute represents social agents specifically involved in the activities of training, transmission, and assessment of martial arts, e.g. a school, clan, sect, or athletic association. Instances of this class typically have a physical location, represented by the property located at to relate to a place, accordingly subsuming the CIDOC-CRM assertions about E53 Place and P156 occupies."@en ;
+                 rdfs:label "MA_Institute"@en ;
+                 mao:name_en "Martial Arts Institute"@en ;
+                 mao:name_zh "武術機構"@zh-hk .
 
 
 ###  https://purl.org/maont/ontologyMA_master
@@ -1224,35 +1296,6 @@ mao:MA_organization rdf:type owl:Class ;
                     mao:name_zh "武術組織"@zh-hk .
 
 
-###  https://purl.org/maont/ontologyMA_institute
-mao:MA_institute rdf:type owl:Class ;
-                 rdfs:subClassOf mao:MA_organization ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty mao:adopts ;
-                                   owl:someValuesFrom mao:MA_syllabus
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty mao:adopts ;
-                                   owl:someValuesFrom mao:training_method
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty mao:located_at ;
-                                   owl:someValuesFrom mao:E53_place
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty mao:teaches ;
-                                   owl:someValuesFrom mao:MA_style
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty mao:teaches ;
-                                   owl:someValuesFrom mao:MA_system
-                                 ] ;
-                 rdfs:comment "MA_Institute represents social agents specifically involved in the activities of training, transmission, and assessment of martial arts, e.g. a school, clan, sect, or athletic association. Instances of this class typically have a physical location, represented by the property located at to relate to a place, accordingly subsuming the CIDOC-CRM assertions about E53 Place and P156 occupies."@en ;
-                 rdfs:label "MA_Institute"@en ;
-                 mao:name_en "Martial Arts Institute"@en ;
-                 mao:name_zh "武術機構"@zh-hk .
-
-
 ###  https://purl.org/maont/ontologyMA_principle
 mao:MA_principle rdf:type owl:Class ;
                  rdfs:subClassOf mao:E73.Information_Object ;
@@ -1261,14 +1304,6 @@ mao:MA_principle rdf:type owl:Class ;
                  mao:name_en "Principle (martial arts)"@en ;
                  mao:name_zh "理法"@zh-hk ;
                  mao:otherName_zh "拳理"@zh-hk .
-
-
-###  https://purl.org/maont/ontologyMA_verse
-mao:MA_verse rdf:type owl:Class ;
-             rdfs:subClassOf mao:E73.Information_Object ;
-             rdfs:comment "A mnemonic verse or oral formula (歌訣) encoding the key principles or movement sequences of a martial arts style or form. Passed down through oral tradition as a memory aid."@en ;
-             rdfs:label "MA_Verse"@en ;
-             mao:name_zh "歌訣"@zh-hk .
 
 
 ###  https://purl.org/maont/ontologyMA_style
@@ -1443,6 +1478,14 @@ mao:MA_technique rdf:type owl:Class ;
                  rdfs:label "MA_Technique"@en ;
                  mao:name_en "Martial Arts Technique"@en ;
                  mao:name_zh "技術"@zh-hk .
+
+
+###  https://purl.org/maont/ontologyMA_verse
+mao:MA_verse rdf:type owl:Class ;
+             rdfs:subClassOf mao:E73.Information_Object ;
+             rdfs:comment "A mnemonic verse or oral formula (歌訣) encoding the key principles or movement sequences of a martial arts style or form. Passed down through oral tradition as a memory aid."@en ;
+             rdfs:label "MA_Verse"@en ;
+             mao:name_zh "歌訣"@zh-hk .
 
 
 ###  https://purl.org/maont/ontologyManualBook
@@ -1740,35 +1783,36 @@ mao:footwork_principle rdf:type owl:Class ;
                        mao:name_zh "腳法原則"@zh-hk .
 
 
-###  https://purl.org/maont/ontologyhandshape
-mao:handshape rdf:type owl:Class ;
-            rdfs:subClassOf mao:handwork ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty mao:type_of ;
-                              owl:someValuesFrom mao:handwork
-                            ] ;
-            rdfs:comment "A handshape (or gesture) denotes the shape or status of the hand employed in a specific handwork."@en ;
-            rdfs:label "Handshape"@en ;
-            mao:name_en "Handshape"@en ;
-            mao:name_romanCAN "Sau Jing"@en ;
-            mao:name_romanMAN "Shou Xing"@en ;
-            mao:name_zh "手形"@zh-hk ;
-            mao:otherName_en "Gesture"@en .
-
-
 ###  https://purl.org/maont/ontologygesture
 mao:gesture rdf:type owl:Class ;
-    owl:deprecated "true"^^xsd:boolean ;
-    owl:equivalentClass mao:handshape ;
-    rdfs:label "Gesture"@en ;
-    rdfs:comment "Deprecated class. Use mao:handshape instead."@en ;
-    dcterms:isReplacedBy mao:handshape .
+            owl:equivalentClass mao:handshape ;
+            dcterms:isReplacedBy mao:handshape ;
+            rdfs:comment "Deprecated class. Use mao:handshape instead."@en ;
+            rdfs:label "Gesture"@en ;
+            owl:deprecated "true"^^xsd:boolean .
+
 
 ###  https://purl.org/maont/ontologygrading_system
 mao:grading_system rdf:type owl:Class ;
                    rdfs:subClassOf mao:MA_syllabus ;
                    rdfs:comment "A structured grading or rank-assessment system within a martial arts syllabus."@en ;
                    rdfs:label "Grading_system"@en .
+
+
+###  https://purl.org/maont/ontologyhandshape
+mao:handshape rdf:type owl:Class ;
+              rdfs:subClassOf mao:handwork ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty mao:type_of ;
+                                owl:someValuesFrom mao:handwork
+                              ] ;
+              rdfs:comment "A handshape (or gesture) denotes the shape or status of the hand employed in a specific handwork."@en ;
+              rdfs:label "Handshape"@en ;
+              mao:name_en "Handshape"@en ;
+              mao:name_romanCAN "Sau Jing"@en ;
+              mao:name_romanMAN "Shou Xing"@en ;
+              mao:name_zh "手形"@zh-hk ;
+              mao:otherName_en "Gesture"@en .
 
 
 ###  https://purl.org/maont/ontologyhandwork
