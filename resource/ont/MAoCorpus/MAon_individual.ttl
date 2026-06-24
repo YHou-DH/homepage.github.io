@@ -1,13 +1,13 @@
-@prefix : <https://purl.org/maont/ontology/> .
+@prefix : <https://purl.org/maont/ontology> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix mao: <https://purl.org/maont/ontology/> .
+@prefix mao: <https://purl.org/maont/ontology> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@base <https://purl.org/maont/ontology/> .
+@base <https://purl.org/maont/ontology> .
 
 <https://purl.org/maont/ontology_individual> rdf:type owl:Ontology ;
                                               owl:imports <https://purl.org/maont/ontology> .
@@ -17,7 +17,7 @@
 #    Individuals
 #################################################################
 
-###  https://purl.org/maont/ontology/Book_Gung_Gee_Fook_Fu_Kuen_by_Lam_Sai_Wing
+###  https://purl.org/maont/ontologyBook_Gung_Gee_Fook_Fu_Kuen_by_Lam_Sai_Wing
 mao:Book_Gung_Gee_Fook_Fu_Kuen_by_Lam_Sai_Wing rdf:type owl:NamedIndividual ,
                                                         mao:ManualBook ;
                                                mao:documents mao:Gung_Gee_Fook_Fu_Kuen ,
@@ -26,7 +26,7 @@ mao:Book_Gung_Gee_Fook_Fu_Kuen_by_Lam_Sai_Wing rdf:type owl:NamedIndividual ,
                                                rdfs:label "Book:Gung_Gee_Fook_Fu_Kuen_by_Lam_Sai_Wing"@en .
 
 
-###  https://purl.org/maont/ontology/Choy_Li_Fut
+###  https://purl.org/maont/ontologyChoy_Li_Fut
 mao:Choy_Li_Fut rdf:type owl:NamedIndividual ,
                          mao:MA_system ;
                 mao:belongs_to mao:Southern_Chinese_Martial_Arts ;
@@ -37,7 +37,7 @@ mao:Choy_Li_Fut rdf:type owl:NamedIndividual ,
                 mao:otherName_en "Choy Lei Fat"@en .
 
 
-###  https://purl.org/maont/ontology/Dan_Tien_focus
+###  https://purl.org/maont/ontologyDan_Tien_focus
 mao:Dan_Tien_focus rdf:type owl:NamedIndividual ,
                             mao:breath_principle ;
                    mao:used_in mao:Choy_Li_Fut ,
@@ -48,13 +48,13 @@ mao:Dan_Tien_focus rdf:type owl:NamedIndividual ,
                    mao:name_zh "氣沉丹田"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/GungGee_video_OscarLam
+###  https://purl.org/maont/ontologyGungGee_video_OscarLam
 mao:GungGee_video_OscarLam rdf:type owl:NamedIndividual ,
                                     mao:Video_item ;
                            rdfs:label "GungGee_video_OscarLam"@en .
 
 
-###  https://purl.org/maont/ontology/Gung_Gee_Fook_Fu_Kuen
+###  https://purl.org/maont/ontologyGung_Gee_Fook_Fu_Kuen
 mao:Gung_Gee_Fook_Fu_Kuen rdf:type owl:NamedIndividual ,
                                    mao:empty_hand_set ;
                           mao:belongs_to mao:Hung_Kuen ;
@@ -66,12 +66,12 @@ mao:Gung_Gee_Fook_Fu_Kuen rdf:type owl:NamedIndividual ,
                                            "gung_chi_fok_hei_chuen"@en .
 
 
-###  https://purl.org/maont/ontology/Hung_Kuen
+###  https://purl.org/maont/ontologyHung_Kuen
 mao:Hung_Kuen rdf:type owl:NamedIndividual ,
                        mao:MA_system ;
               mao:belongs_to mao:Southern_Chinese_Martial_Arts ;
               mao:has_principle mao:Dan_Tien_focus ,
-                                <https://purl.org/maont/ontology/12_bridges> ;
+                                <https://purl.org/maont/ontology12_bridges> ;
               mao:has_symbol mao:Snake ,
                              mao:dragon ,
                              mao:leopard ,
@@ -85,7 +85,7 @@ mao:Hung_Kuen rdf:type owl:NamedIndividual ,
               mao:otherName_zh "洪家,洪家拳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/Lam_Family_Hung_Kuen
+###  https://purl.org/maont/ontologyLam_Family_Hung_Kuen
 mao:Lam_Family_Hung_Kuen rdf:type owl:NamedIndividual ,
                                   mao:MA_style ,
                                   [ rdf:type owl:Restriction ;
@@ -98,19 +98,19 @@ mao:Lam_Family_Hung_Kuen rdf:type owl:NamedIndividual ,
                          mao:name_zh "林家洪拳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/Lam_Sai_Wing
+###  https://purl.org/maont/ontologyLam_Sai_Wing
 mao:Lam_Sai_Wing rdf:type owl:NamedIndividual ,
                           mao:MA_master ;
                  rdfs:label "Lam_Sai_Wing"@en .
 
 
-###  https://purl.org/maont/ontology/Snake
+###  https://purl.org/maont/ontologySnake
 mao:Snake rdf:type owl:NamedIndividual ,
                    mao:symbolic_animal ;
           rdfs:label "Snake"@en .
 
 
-###  https://purl.org/maont/ontology/Southern_Chinese_Martial_Arts
+###  https://purl.org/maont/ontologySouthern_Chinese_Martial_Arts
 mao:Southern_Chinese_Martial_Arts rdf:type owl:NamedIndividual ,
                                            mao:MA_system ;
                                   rdfs:label "Southern_Chinese_Martial_Arts"@en ;
@@ -121,7 +121,7 @@ mao:Southern_Chinese_Martial_Arts rdf:type owl:NamedIndividual ,
                                   mao:otherName_zh "南拳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/T_backfist_n_punch
+###  https://purl.org/maont/ontologyT_backfist_n_punch
 mao:T_backfist_n_punch rdf:type owl:NamedIndividual ,
                                 mao:combo_tech ;
                        mao:employs mao:backfist_n_punch_combo ,
@@ -135,13 +135,13 @@ mao:T_backfist_n_punch rdf:type owl:NamedIndividual ,
                        mao:name_zh "品字掛打"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/Uprightness
+###  https://purl.org/maont/ontologyUprightness
 mao:Uprightness rdf:type owl:NamedIndividual ,
                          mao:honor_code ;
                 rdfs:label "Uprightness"@en .
 
 
-###  https://purl.org/maont/ontology/White_Crane_Kungfu
+###  https://purl.org/maont/ontologyWhite_Crane_Kungfu
 mao:White_Crane_Kungfu rdf:type owl:NamedIndividual ,
                                 mao:MA_system ,
                                 [ rdf:type owl:Restriction ;
@@ -149,7 +149,7 @@ mao:White_Crane_Kungfu rdf:type owl:NamedIndividual ,
                                   owl:someValuesFrom mao:breathing_tech
                                 ] ;
                        mao:belongs_to mao:Southern_Chinese_Martial_Arts ;
-                       mao:has_origin_place <https://purl.org/maont/ontology/YongChun(place)> ;
+                       mao:has_origin_place <https://purl.org/maont/ontologyYongChun(place)> ;
                        mao:has_principle mao:Dan_Tien_focus ;
                        mao:has_symbol mao:white_crane ;
                        rdfs:label "White_Crane_Kungfu"@en ;
@@ -159,7 +159,7 @@ mao:White_Crane_Kungfu rdf:type owl:NamedIndividual ,
                        mao:otherName_en "White Crane Boxing"@en .
 
 
-###  https://purl.org/maont/ontology/Yin_Yang
+###  https://purl.org/maont/ontologyYin_Yang
 mao:Yin_Yang rdf:type owl:NamedIndividual ,
                       mao:Philosophical_concepts ;
              rdfs:label "Yin_Yang"@en ;
@@ -167,7 +167,7 @@ mao:Yin_Yang rdf:type owl:NamedIndividual ,
              mao:name_zh "陰陽"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/Yongchun_White_Crane
+###  https://purl.org/maont/ontologyYongchun_White_Crane
 mao:Yongchun_White_Crane rdf:type owl:NamedIndividual ,
                                   mao:MA_style ;
                          mao:belongs_to mao:White_Crane_Kungfu ;
@@ -177,7 +177,7 @@ mao:Yongchun_White_Crane rdf:type owl:NamedIndividual ,
                          mao:otherName_en "Fujian White Crane"@en .
 
 
-###  https://purl.org/maont/ontology/arm_lock
+###  https://purl.org/maont/ontologyarm_lock
 mao:arm_lock rdf:type owl:NamedIndividual ,
                       mao:handwork ;
              mao:type_of mao:joint_lock ;
@@ -186,7 +186,7 @@ mao:arm_lock rdf:type owl:NamedIndividual ,
              mao:name_zh "鎖臂"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/arm_lock_sweep
+###  https://purl.org/maont/ontologyarm_lock_sweep
 mao:arm_lock_sweep rdf:type owl:NamedIndividual ,
                             mao:combo_tech ;
                    mao:employs mao:arm_lock ,
@@ -201,7 +201,7 @@ mao:arm_lock_sweep rdf:type owl:NamedIndividual ,
                    mao:name_zh "撥手掃脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/attack_int
+###  https://purl.org/maont/ontologyattack_int
 mao:attack_int rdf:type owl:NamedIndividual ,
                         mao:MA_tactic ;
                rdfs:label "attack_int"@en ;
@@ -209,7 +209,7 @@ mao:attack_int rdf:type owl:NamedIndividual ,
                mao:name_zh "攻擊"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/attack_subduing
+###  https://purl.org/maont/ontologyattack_subduing
 mao:attack_subduing rdf:type owl:NamedIndividual ,
                              mao:MA_tactic ;
                     rdfs:label "attack_subdue"@en ;
@@ -217,7 +217,7 @@ mao:attack_subduing rdf:type owl:NamedIndividual ,
                     mao:name_zh "致命攻擊"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/attack_while_defend
+###  https://purl.org/maont/ontologyattack_while_defend
 mao:attack_while_defend rdf:type owl:NamedIndividual ,
                                  mao:MA_tactic ;
                         rdfs:label "attack_while_block"@en ;
@@ -225,7 +225,7 @@ mao:attack_while_defend rdf:type owl:NamedIndividual ,
                         mao:name_zh "格打"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/back_thrust_punch
+###  https://purl.org/maont/ontologyback_thrust_punch
 mao:back_thrust_punch rdf:type owl:NamedIndividual ,
                                mao:fist_tech ;
                       mao:employs mao:spiral_arm ,
@@ -241,7 +241,7 @@ mao:back_thrust_punch rdf:type owl:NamedIndividual ,
                                        "Thrust punch in the eye"@en .
 
 
-###  https://purl.org/maont/ontology/backfist
+###  https://purl.org/maont/ontologybackfist
 mao:backfist rdf:type owl:NamedIndividual ,
                       mao:handshape ;
              mao:used_in mao:Choy_Li_Fut ,
@@ -254,7 +254,7 @@ mao:backfist rdf:type owl:NamedIndividual ,
              mao:name_zh "背拳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/backfist_n_punch_combo
+###  https://purl.org/maont/ontologybackfist_n_punch_combo
 mao:backfist_n_punch_combo rdf:type owl:NamedIndividual ,
                                     mao:combo_tech ;
                            mao:employs mao:body_twisting ,
@@ -270,7 +270,7 @@ mao:backfist_n_punch_combo rdf:type owl:NamedIndividual ,
                            mao:name_zh "掛打"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/black_tiger_claw
+###  https://purl.org/maont/ontologyblack_tiger_claw
 mao:black_tiger_claw rdf:type owl:NamedIndividual ,
                               mao:claw_tech ;
                      mao:employs mao:tiger_claw ;
@@ -282,7 +282,7 @@ mao:black_tiger_claw rdf:type owl:NamedIndividual ,
                      mao:name_zh "黑虎爪"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/blacktiger_punch
+###  https://purl.org/maont/ontologyblacktiger_punch
 mao:blacktiger_punch rdf:type owl:NamedIndividual ,
                               mao:combo_tech ;
                      mao:employs mao:dbsquare_hammer ,
@@ -295,7 +295,7 @@ mao:blacktiger_punch rdf:type owl:NamedIndividual ,
                      mao:otherName_en "Side and reverse vertical fist punch combination"@en .
 
 
-###  https://purl.org/maont/ontology/blade_palm
+###  https://purl.org/maont/ontologyblade_palm
 mao:blade_palm rdf:type owl:NamedIndividual ,
                         mao:handshape ;
                mao:used_in mao:Hung_Kuen ,
@@ -308,7 +308,7 @@ mao:blade_palm rdf:type owl:NamedIndividual ,
                mao:otherName_en "Horizontal spearhand"@en .
 
 
-###  https://purl.org/maont/ontology/block_kick
+###  https://purl.org/maont/ontologyblock_kick
 mao:block_kick rdf:type owl:NamedIndividual ,
                         mao:leg_tech ;
                mao:employs mao:lifting_gravity_centere ;
@@ -321,7 +321,7 @@ mao:block_kick rdf:type owl:NamedIndividual ,
                mao:otherName_zh "吊脚馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/block_n_front_kick
+###  https://purl.org/maont/ontologyblock_n_front_kick
 mao:block_n_front_kick rdf:type owl:NamedIndividual ,
                                 mao:leg_tech ;
                        mao:employs mao:block_kick ,
@@ -334,7 +334,7 @@ mao:block_n_front_kick rdf:type owl:NamedIndividual ,
                        mao:name_zh "消脚撩陰腿"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/blocking_palm
+###  https://purl.org/maont/ontologyblocking_palm
 mao:blocking_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:employs mao:tiger_claw ;
@@ -348,7 +348,7 @@ mao:blocking_palm rdf:type owl:NamedIndividual ,
                   mao:otherName_en "Bong Sau"@en .
 
 
-###  https://purl.org/maont/ontology/blocking_palms
+###  https://purl.org/maont/ontologyblocking_palms
 mao:blocking_palms rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:similar_to mao:butterfly_palm ;
@@ -360,7 +360,7 @@ mao:blocking_palms rdf:type owl:NamedIndividual ,
                    mao:name_zh "抱牌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/body_twisting
+###  https://purl.org/maont/ontologybody_twisting
 mao:body_twisting rdf:type owl:NamedIndividual ,
                            mao:bodywork ;
                   mao:used_in mao:Choy_Li_Fut ,
@@ -374,7 +374,7 @@ mao:body_twisting rdf:type owl:NamedIndividual ,
                   mao:otherName_en "Upper body twist"@en .
 
 
-###  https://purl.org/maont/ontology/bouncing_kick
+###  https://purl.org/maont/ontologybouncing_kick
 mao:bouncing_kick rdf:type owl:NamedIndividual ,
                            mao:leg_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -385,7 +385,7 @@ mao:bouncing_kick rdf:type owl:NamedIndividual ,
                   mao:name_zh "跳脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/bow_stance
+###  https://purl.org/maont/ontologybow_stance
 mao:bow_stance rdf:type owl:NamedIndividual ,
                         mao:stance ;
                mao:used_in mao:Choy_Li_Fut ,
@@ -401,7 +401,7 @@ mao:bow_stance rdf:type owl:NamedIndividual ,
                mao:otherName_zh "弓步"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/breath_regulation
+###  https://purl.org/maont/ontologybreath_regulation
 mao:breath_regulation rdf:type owl:NamedIndividual ,
                                mao:MA_tactic ;
                       rdfs:label "breath_control"@en ;
@@ -409,7 +409,7 @@ mao:breath_regulation rdf:type owl:NamedIndividual ,
                       mao:name_zh "調整呼吸，存氣蓄力"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/breathing_in
+###  https://purl.org/maont/ontologybreathing_in
 mao:breathing_in rdf:type owl:NamedIndividual ,
                           mao:breathing_tech ;
                  rdfs:label "breathing_in"@en ;
@@ -418,7 +418,7 @@ mao:breathing_in rdf:type owl:NamedIndividual ,
                  mao:otherName_zh "吸氣"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/breathing_out
+###  https://purl.org/maont/ontologybreathing_out
 mao:breathing_out rdf:type owl:NamedIndividual ,
                            mao:breathing_tech ;
                   rdfs:label "breathing_out"@en ;
@@ -427,7 +427,7 @@ mao:breathing_out rdf:type owl:NamedIndividual ,
                   mao:otherName_zh "呼氣"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/brushing_palm
+###  https://purl.org/maont/ontologybrushing_palm
 mao:brushing_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -438,7 +438,7 @@ mao:brushing_palm rdf:type owl:NamedIndividual ,
                   mao:name_zh "梳手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/bullhorn_fist
+###  https://purl.org/maont/ontologybullhorn_fist
 mao:bullhorn_fist rdf:type owl:NamedIndividual ,
                            mao:handshape ;
                   mao:used_in mao:Choy_Li_Fut ,
@@ -452,7 +452,7 @@ mao:bullhorn_fist rdf:type owl:NamedIndividual ,
                   mao:otherName_en "One knuckle fist"@en .
 
 
-###  https://purl.org/maont/ontology/bullhorn_punch
+###  https://purl.org/maont/ontologybullhorn_punch
 mao:bullhorn_punch rdf:type owl:NamedIndividual ,
                             mao:fist_tech ;
                    owl:sameAs mao:hook_punch ;
@@ -467,9 +467,9 @@ mao:bullhorn_punch rdf:type owl:NamedIndividual ,
                                     "金星挂角"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/hook_punch
+###  https://purl.org/maont/ontologyhook_punch
 
-###  https://purl.org/maont/ontology/bullhorn_uppercut
+###  https://purl.org/maont/ontologybullhorn_uppercut
 mao:bullhorn_uppercut rdf:type owl:NamedIndividual ,
                                mao:combo_tech ;
                       mao:employs mao:bullhorn_punch ,
@@ -483,7 +483,7 @@ mao:bullhorn_uppercut rdf:type owl:NamedIndividual ,
                       mao:otherName_en "Horizontal hook followed by uppercut"@en .
 
 
-###  https://purl.org/maont/ontology/bumping_kick
+###  https://purl.org/maont/ontologybumping_kick
 mao:bumping_kick rdf:type owl:NamedIndividual ,
                           mao:leg_tech ;
                  mao:used_in mao:White_Crane_Kungfu ;
@@ -494,7 +494,7 @@ mao:bumping_kick rdf:type owl:NamedIndividual ,
                  mao:name_zh "顛脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/butterfly_palm
+###  https://purl.org/maont/ontologybutterfly_palm
 mao:butterfly_palm rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:grappling_palm ,
@@ -511,7 +511,7 @@ mao:butterfly_palm rdf:type owl:NamedIndividual ,
                    mao:otherName_en "Butterfly Palm"@en .
 
 
-###  https://purl.org/maont/ontology/bw_unicorn_stance
+###  https://purl.org/maont/ontologybw_unicorn_stance
 mao:bw_unicorn_stance rdf:type owl:NamedIndividual ,
                                mao:stance ;
                       mao:similar_to mao:unicorn_steps ;
@@ -523,7 +523,7 @@ mao:bw_unicorn_stance rdf:type owl:NamedIndividual ,
                       mao:name_zh "偷馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/cat_stance
+###  https://purl.org/maont/ontologycat_stance
 mao:cat_stance rdf:type owl:NamedIndividual ,
                         mao:stance ;
                mao:used_in mao:Choy_Li_Fut ,
@@ -541,7 +541,7 @@ mao:cat_stance rdf:type owl:NamedIndividual ,
                                 "虛步"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/cat_to_bow_stance
+###  https://purl.org/maont/ontologycat_to_bow_stance
 mao:cat_to_bow_stance rdf:type owl:NamedIndividual ,
                                mao:footwork ;
                       mao:employs mao:body_twisting ,
@@ -555,7 +555,7 @@ mao:cat_to_bow_stance rdf:type owl:NamedIndividual ,
                       mao:name_zh "吊馬進子午馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/catch_n_whip
+###  https://purl.org/maont/ontologycatch_n_whip
 mao:catch_n_whip rdf:type owl:NamedIndividual ,
                           mao:combo_tech ;
                  mao:employs mao:cr_whip_punch ,
@@ -568,7 +568,7 @@ mao:catch_n_whip rdf:type owl:NamedIndividual ,
                  mao:name_zh "擒鞭"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/chlf_hook_punch
+###  https://purl.org/maont/ontologychlf_hook_punch
 mao:chlf_hook_punch rdf:type owl:NamedIndividual ,
                              mao:fist_tech ;
                     mao:employs mao:knocking_fist ;
@@ -582,7 +582,7 @@ mao:chlf_hook_punch rdf:type owl:NamedIndividual ,
                     mao:otherName_zh "扫搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/choy_throwing_punch
+###  https://purl.org/maont/ontologychoy_throwing_punch
 mao:choy_throwing_punch rdf:type owl:NamedIndividual ,
                                  mao:fist_tech ;
                         mao:employs mao:body_twisting ,
@@ -596,7 +596,7 @@ mao:choy_throwing_punch rdf:type owl:NamedIndividual ,
                         mao:name_zh "抛捶(蔡李佛)"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/cirling_palm
+###  https://purl.org/maont/ontologycirling_palm
 mao:cirling_palm rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:used_in mao:White_Crane_Kungfu ;
@@ -607,7 +607,7 @@ mao:cirling_palm rdf:type owl:NamedIndividual ,
                  mao:name_zh "磐手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/claw_palm
+###  https://purl.org/maont/ontologyclaw_palm
 mao:claw_palm rdf:type owl:NamedIndividual ,
                        mao:handshape ;
               mao:used_in mao:Choy_Li_Fut ,
@@ -620,7 +620,7 @@ mao:claw_palm rdf:type owl:NamedIndividual ,
               mao:name_zh "虎爪"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/clipping_fists
+###  https://purl.org/maont/ontologyclipping_fists
 mao:clipping_fists rdf:type owl:NamedIndividual ,
                             mao:combo_tech ;
                    mao:employs mao:straight_punch ;
@@ -636,7 +636,7 @@ mao:clipping_fists rdf:type owl:NamedIndividual ,
                                     "連環扣打"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/closed_body
+###  https://purl.org/maont/ontologyclosed_body
 mao:closed_body rdf:type owl:NamedIndividual ,
                          mao:bodywork ;
                 rdfs:label "closed_body"@en ;
@@ -646,7 +646,7 @@ mao:closed_body rdf:type owl:NamedIndividual ,
                 mao:name_zh "合"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/covering_palm
+###  https://purl.org/maont/ontologycovering_palm
 mao:covering_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -657,7 +657,7 @@ mao:covering_palm rdf:type owl:NamedIndividual ,
                   mao:name_zh "罩手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/cr_cutting_palm
+###  https://purl.org/maont/ontologycr_cutting_palm
 mao:cr_cutting_palm rdf:type owl:NamedIndividual ,
                              mao:palm_tech ;
                     mao:employs mao:willow_leaf_palm ;
@@ -670,7 +670,7 @@ mao:cr_cutting_palm rdf:type owl:NamedIndividual ,
                     mao:name_zh "割手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/cr_whip_punch
+###  https://purl.org/maont/ontologycr_whip_punch
 mao:cr_whip_punch rdf:type owl:NamedIndividual ,
                            mao:fist_tech ;
                   mao:similar_to mao:sky_hammer ;
@@ -683,7 +683,7 @@ mao:cr_whip_punch rdf:type owl:NamedIndividual ,
                   mao:name_zh "鞭搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/crane_beak
+###  https://purl.org/maont/ontologycrane_beak
 mao:crane_beak rdf:type owl:NamedIndividual ,
                         mao:handshape ;
                mao:used_in mao:White_Crane_Kungfu ;
@@ -695,7 +695,7 @@ mao:crane_beak rdf:type owl:NamedIndividual ,
                mao:otherName_en "Eagle beak"@en .
 
 
-###  https://purl.org/maont/ontology/crane_claw_palm
+###  https://purl.org/maont/ontologycrane_claw_palm
 mao:crane_claw_palm rdf:type owl:NamedIndividual ,
                              mao:handshape ;
                     mao:used_in mao:White_Crane_Kungfu ;
@@ -706,7 +706,7 @@ mao:crane_claw_palm rdf:type owl:NamedIndividual ,
                     mao:name_zh "鶴爪掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/crane_head_palm
+###  https://purl.org/maont/ontologycrane_head_palm
 mao:crane_head_palm rdf:type owl:NamedIndividual ,
                              mao:handshape ;
                     mao:used_in mao:White_Crane_Kungfu ;
@@ -717,7 +717,7 @@ mao:crane_head_palm rdf:type owl:NamedIndividual ,
                     mao:name_zh "鶴頭掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/crane_kick
+###  https://purl.org/maont/ontologycrane_kick
 mao:crane_kick rdf:type owl:NamedIndividual ,
                         mao:leg_tech ;
                mao:used_in mao:White_Crane_Kungfu ;
@@ -729,7 +729,7 @@ mao:crane_kick rdf:type owl:NamedIndividual ,
                mao:otherName_en "Front kick with ball of foot"@en .
 
 
-###  https://purl.org/maont/ontology/crane_wing_palm
+###  https://purl.org/maont/ontologycrane_wing_palm
 mao:crane_wing_palm rdf:type owl:NamedIndividual ,
                              mao:handshape ;
                     mao:used_in mao:White_Crane_Kungfu ;
@@ -742,7 +742,7 @@ mao:crane_wing_palm rdf:type owl:NamedIndividual ,
                                      "鶴翅手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/crest_throwing_hammers
+###  https://purl.org/maont/ontologycrest_throwing_hammers
 mao:crest_throwing_hammers rdf:type owl:NamedIndividual ,
                                     mao:combo_tech ;
                            mao:employs mao:reverse_hanging_fist ,
@@ -757,7 +757,7 @@ mao:crest_throwing_hammers rdf:type owl:NamedIndividual ,
                            mao:otherName_zh "碌鼓搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/cross_punch
+###  https://purl.org/maont/ontologycross_punch
 mao:cross_punch rdf:type owl:NamedIndividual ,
                          mao:fist_tech ;
                 mao:employs mao:crossing_bridge ,
@@ -772,7 +772,7 @@ mao:cross_punch rdf:type owl:NamedIndividual ,
                 mao:otherName_zh "穿捶"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/crossing_bridge
+###  https://purl.org/maont/ontologycrossing_bridge
 mao:crossing_bridge rdf:type owl:NamedIndividual ,
                              mao:bridge_tech ;
                     mao:used_in mao:Choy_Li_Fut ,
@@ -789,7 +789,7 @@ mao:crossing_bridge rdf:type owl:NamedIndividual ,
                                      "穿橋手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/crossing_kick
+###  https://purl.org/maont/ontologycrossing_kick
 mao:crossing_kick rdf:type owl:NamedIndividual ,
                            mao:leg_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -800,7 +800,7 @@ mao:crossing_kick rdf:type owl:NamedIndividual ,
                   mao:name_zh "穿脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/curving_leg
+###  https://purl.org/maont/ontologycurving_leg
 mao:curving_leg rdf:type owl:NamedIndividual ,
                          mao:leg_tech ;
                 mao:used_in mao:White_Crane_Kungfu ;
@@ -811,7 +811,7 @@ mao:curving_leg rdf:type owl:NamedIndividual ,
                 mao:name_zh "割脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/curving_palm
+###  https://purl.org/maont/ontologycurving_palm
 mao:curving_palm rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:employs mao:crossing_bridge ,
@@ -826,7 +826,7 @@ mao:curving_palm rdf:type owl:NamedIndividual ,
                  mao:otherName_en "Curving palm"@en .
 
 
-###  https://purl.org/maont/ontology/cut_n_block_palm
+###  https://purl.org/maont/ontologycut_n_block_palm
 mao:cut_n_block_palm rdf:type owl:NamedIndividual ,
                               mao:palm_tech ;
                      mao:employs mao:blocking_palm ,
@@ -840,7 +840,7 @@ mao:cut_n_block_palm rdf:type owl:NamedIndividual ,
                      mao:otherName_zh "外膀撥手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/cutting_elbow
+###  https://purl.org/maont/ontologycutting_elbow
 mao:cutting_elbow rdf:type owl:NamedIndividual ,
                            mao:elbow_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -851,7 +851,7 @@ mao:cutting_elbow rdf:type owl:NamedIndividual ,
                   mao:name_zh "刈肘"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_blocking_palm
+###  https://purl.org/maont/ontologydb_blocking_palm
 mao:db_blocking_palm rdf:type owl:NamedIndividual ,
                               mao:palm_tech ;
                      mao:employs mao:blocking_palm ;
@@ -863,7 +863,7 @@ mao:db_blocking_palm rdf:type owl:NamedIndividual ,
                      mao:name_zh "雙膀手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_bow_palm
+###  https://purl.org/maont/ontologydb_bow_palm
 mao:db_bow_palm rdf:type owl:NamedIndividual ,
                          mao:palm_tech ;
                 mao:employs mao:flat_palm ,
@@ -880,7 +880,7 @@ mao:db_bow_palm rdf:type owl:NamedIndividual ,
                 mao:otherName_zh "雙弓千字"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_claw_bw
+###  https://purl.org/maont/ontologydb_claw_bw
 mao:db_claw_bw rdf:type owl:NamedIndividual ,
                         mao:combo_tech ;
                mao:employs mao:crossing_bridge ,
@@ -895,7 +895,7 @@ mao:db_claw_bw rdf:type owl:NamedIndividual ,
                mao:otherName_en "Double claw strike by a golden dragon"@en .
 
 
-###  https://purl.org/maont/ontology/db_cr_cutting_palm
+###  https://purl.org/maont/ontologydb_cr_cutting_palm
 mao:db_cr_cutting_palm rdf:type owl:NamedIndividual ,
                                 mao:palm_tech ;
                        mao:employs mao:cr_cutting_palm ;
@@ -907,7 +907,7 @@ mao:db_cr_cutting_palm rdf:type owl:NamedIndividual ,
                        mao:name_zh "雙割"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_curving_palm
+###  https://purl.org/maont/ontologydb_curving_palm
 mao:db_curving_palm rdf:type owl:NamedIndividual ,
                              mao:palm_tech ;
                     mao:employs mao:curving_palm ;
@@ -919,7 +919,7 @@ mao:db_curving_palm rdf:type owl:NamedIndividual ,
                     mao:name_zh "雙割"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_hanging_hammer
+###  https://purl.org/maont/ontologydb_hanging_hammer
 mao:db_hanging_hammer rdf:type owl:NamedIndividual ,
                                mao:fist_tech ;
                       mao:employs mao:hanging_hammer ;
@@ -930,7 +930,7 @@ mao:db_hanging_hammer rdf:type owl:NamedIndividual ,
                       mao:otherName_en "Double hanging back fist"@en .
 
 
-###  https://purl.org/maont/ontology/db_inch_bridges
+###  https://purl.org/maont/ontologydb_inch_bridges
 mao:db_inch_bridges rdf:type owl:NamedIndividual ,
                              mao:bridge_tech ;
                     mao:employs mao:finger_hand ,
@@ -945,7 +945,7 @@ mao:db_inch_bridges rdf:type owl:NamedIndividual ,
                     mao:otherName_zh "雙標手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_splitting_palms
+###  https://purl.org/maont/ontologydb_splitting_palms
 mao:db_splitting_palms rdf:type owl:NamedIndividual ,
                                 mao:palm_tech ;
                        mao:employs mao:splitting_palm ;
@@ -958,7 +958,7 @@ mao:db_splitting_palms rdf:type owl:NamedIndividual ,
                        mao:name_zh "雙挑"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_spreading_wings
+###  https://purl.org/maont/ontologydb_spreading_wings
 mao:db_spreading_wings rdf:type owl:NamedIndividual ,
                                 mao:palm_tech ;
                        mao:employs mao:covering_palm ,
@@ -971,7 +971,7 @@ mao:db_spreading_wings rdf:type owl:NamedIndividual ,
                        mao:name_zh "雙展翅"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_subduing_palms
+###  https://purl.org/maont/ontologydb_subduing_palms
 mao:db_subduing_palms rdf:type owl:NamedIndividual ,
                                mao:palm_tech ;
                       mao:employs mao:subduing_palm ;
@@ -983,7 +983,7 @@ mao:db_subduing_palms rdf:type owl:NamedIndividual ,
                       mao:name_zh "雙伏手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_swing_palms
+###  https://purl.org/maont/ontologydb_swing_palms
 mao:db_swing_palms rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:swing_palm ;
@@ -995,7 +995,7 @@ mao:db_swing_palms rdf:type owl:NamedIndividual ,
                    mao:name_zh "雙搖"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_thrust_palm
+###  https://purl.org/maont/ontologydb_thrust_palm
 mao:db_thrust_palm rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:reverse_palm ;
@@ -1009,7 +1009,7 @@ mao:db_thrust_palm rdf:type owl:NamedIndividual ,
                    mao:name_zh "雙插手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_uw_forcing_palms
+###  https://purl.org/maont/ontologydb_uw_forcing_palms
 mao:db_uw_forcing_palms rdf:type owl:NamedIndividual ,
                                  mao:palm_tech ;
                         mao:employs mao:uw_forcing_palm ;
@@ -1022,7 +1022,7 @@ mao:db_uw_forcing_palms rdf:type owl:NamedIndividual ,
                         mao:otherName_zh "秦瓊獻鐧"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/db_vertical_thrust
+###  https://purl.org/maont/ontologydb_vertical_thrust
 mao:db_vertical_thrust rdf:type owl:NamedIndividual ,
                                 mao:palm_tech ;
                        mao:employs mao:willow_leaf_palm ;
@@ -1034,7 +1034,7 @@ mao:db_vertical_thrust rdf:type owl:NamedIndividual ,
                        mao:name_zh "雙插"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/dbsquare_hammer
+###  https://purl.org/maont/ontologydbsquare_hammer
 mao:dbsquare_hammer rdf:type owl:NamedIndividual ,
                              mao:fist_tech ;
                     mao:employs mao:forefist ;
@@ -1048,7 +1048,7 @@ mao:dbsquare_hammer rdf:type owl:NamedIndividual ,
                                      "Vertical fist punch"@en .
 
 
-###  https://purl.org/maont/ontology/defense_block
+###  https://purl.org/maont/ontologydefense_block
 mao:defense_block rdf:type owl:NamedIndividual ,
                            mao:MA_tactic ;
                   rdfs:label "defend_block"@en ;
@@ -1056,7 +1056,7 @@ mao:defense_block rdf:type owl:NamedIndividual ,
                   mao:name_zh "阻擋攻擊"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/defense_dodge
+###  https://purl.org/maont/ontologydefense_dodge
 mao:defense_dodge rdf:type owl:NamedIndividual ,
                            mao:MA_tactic ;
                   rdfs:label "defend_dodge"@en ;
@@ -1064,7 +1064,7 @@ mao:defense_dodge rdf:type owl:NamedIndividual ,
                   mao:name_zh "閃避"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/descend_elbow
+###  https://purl.org/maont/ontologydescend_elbow
 mao:descend_elbow rdf:type owl:NamedIndividual ,
                            mao:elbow_tech ;
                   mao:used_in mao:Hung_Kuen ;
@@ -1075,7 +1075,7 @@ mao:descend_elbow rdf:type owl:NamedIndividual ,
                   mao:name_zh "沉踭"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/distance_management
+###  https://purl.org/maont/ontologydistance_management
 mao:distance_management rdf:type owl:NamedIndividual ,
                                  mao:MA_tactic ;
                         rdfs:label "distance_management"@en ;
@@ -1083,7 +1083,7 @@ mao:distance_management rdf:type owl:NamedIndividual ,
                         mao:name_zh "距離控制"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/divide_punch
+###  https://purl.org/maont/ontologydivide_punch
 mao:divide_punch rdf:type owl:NamedIndividual ,
                           mao:fist_tech ;
                  mao:employs mao:side_punch ;
@@ -1100,7 +1100,7 @@ mao:divide_punch rdf:type owl:NamedIndividual ,
                                   "雙邊搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/dividing_bridge
+###  https://purl.org/maont/ontologydividing_bridge
 mao:dividing_bridge rdf:type owl:NamedIndividual ,
                              mao:bridge_tech ;
                     mao:used_in mao:Hung_Kuen ;
@@ -1112,7 +1112,7 @@ mao:dividing_bridge rdf:type owl:NamedIndividual ,
                     mao:otherName_zh "分橋手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/dodging_body
+###  https://purl.org/maont/ontologydodging_body
 mao:dodging_body rdf:type owl:NamedIndividual ,
                           mao:bodywork ;
                  mao:used_in mao:White_Crane_Kungfu ;
@@ -1123,7 +1123,7 @@ mao:dodging_body rdf:type owl:NamedIndividual ,
                  mao:name_zh "消身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/double_claws
+###  https://purl.org/maont/ontologydouble_claws
 mao:double_claws rdf:type owl:NamedIndividual ,
                           mao:claw_tech ;
                  mao:employs mao:tiger_claw ;
@@ -1136,7 +1136,7 @@ mao:double_claws rdf:type owl:NamedIndividual ,
                  mao:otherName_en "Double Claw Hand"@en .
 
 
-###  https://purl.org/maont/ontology/dragging_palm
+###  https://purl.org/maont/ontologydragging_palm
 mao:dragging_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -1147,13 +1147,13 @@ mao:dragging_palm rdf:type owl:NamedIndividual ,
                   mao:name_zh "拖手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/dragon
+###  https://purl.org/maont/ontologydragon
 mao:dragon rdf:type owl:NamedIndividual ,
                     mao:symbolic_animal ;
            rdfs:label "Dragon"@en .
 
 
-###  https://purl.org/maont/ontology/dragon_wagging
+###  https://purl.org/maont/ontologydragon_wagging
 mao:dragon_wagging rdf:type owl:NamedIndividual ,
                             mao:combo_tech ;
                    mao:employs mao:hanging_hammer ,
@@ -1166,7 +1166,7 @@ mao:dragon_wagging rdf:type owl:NamedIndividual ,
                    mao:name_zh "烏龍擺尾"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/dw_block_n_target_hand
+###  https://purl.org/maont/ontologydw_block_n_target_hand
 mao:dw_block_n_target_hand rdf:type owl:NamedIndividual ,
                                     mao:combo_tech ;
                            mao:employs mao:target_hand ,
@@ -1181,7 +1181,7 @@ mao:dw_block_n_target_hand rdf:type owl:NamedIndividual ,
                            mao:name_zh "冚標手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/elbow_slap_fist
+###  https://purl.org/maont/ontologyelbow_slap_fist
 mao:elbow_slap_fist rdf:type owl:NamedIndividual ,
                              mao:combo_tech ;
                     mao:employs mao:hanging_hammer ,
@@ -1195,7 +1195,7 @@ mao:elbow_slap_fist rdf:type owl:NamedIndividual ,
                     mao:name_zh "踭爪掛"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/extending_hand
+###  https://purl.org/maont/ontologyextending_hand
 mao:extending_hand rdf:type owl:NamedIndividual ,
                             mao:bridge_tech ;
                    mao:used_in mao:Hung_Kuen ;
@@ -1206,7 +1206,7 @@ mao:extending_hand rdf:type owl:NamedIndividual ,
                    mao:name_zh "展手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/f_elbow_n_sna_hand
+###  https://purl.org/maont/ontologyf_elbow_n_sna_hand
 mao:f_elbow_n_sna_hand rdf:type owl:NamedIndividual ,
                                 mao:combo_tech ;
                        mao:employs mao:forcing_elbow ,
@@ -1219,7 +1219,7 @@ mao:f_elbow_n_sna_hand rdf:type owl:NamedIndividual ,
                        mao:name_zh "逼踭分漏手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/facing_sun_palm
+###  https://purl.org/maont/ontologyfacing_sun_palm
 mao:facing_sun_palm rdf:type owl:NamedIndividual ,
                              mao:handshape ;
                     mao:represents mao:Uprightness ;
@@ -1235,7 +1235,7 @@ mao:facing_sun_palm rdf:type owl:NamedIndividual ,
                                      "龍形掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/finger_hand
+###  https://purl.org/maont/ontologyfinger_hand
 mao:finger_hand rdf:type owl:NamedIndividual ,
                          mao:handshape ;
                 mao:used_in mao:Hung_Kuen ;
@@ -1249,7 +1249,7 @@ mao:finger_hand rdf:type owl:NamedIndividual ,
                                  "指定中原手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/fishing_hand
+###  https://purl.org/maont/ontologyfishing_hand
 mao:fishing_hand rdf:type owl:NamedIndividual ,
                           mao:handshape ;
                  mao:used_in mao:Choy_Li_Fut ,
@@ -1263,7 +1263,7 @@ mao:fishing_hand rdf:type owl:NamedIndividual ,
                  mao:otherName_zh "勾手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/flat_palm
+###  https://purl.org/maont/ontologyflat_palm
 mao:flat_palm rdf:type owl:NamedIndividual ,
                        mao:handshape ;
               mao:used_in mao:Hung_Kuen ,
@@ -1275,7 +1275,7 @@ mao:flat_palm rdf:type owl:NamedIndividual ,
               mao:name_zh "平掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/forcing_bridge
+###  https://purl.org/maont/ontologyforcing_bridge
 mao:forcing_bridge rdf:type owl:NamedIndividual ,
                             mao:bridge_tech ;
                    mao:used_in mao:Hung_Kuen ;
@@ -1287,7 +1287,7 @@ mao:forcing_bridge rdf:type owl:NamedIndividual ,
                    mao:otherName_zh "逼橋"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/forcing_elbow
+###  https://purl.org/maont/ontologyforcing_elbow
 mao:forcing_elbow rdf:type owl:NamedIndividual ,
                            mao:elbow_tech ;
                   mao:used_in mao:Hung_Kuen ;
@@ -1300,7 +1300,7 @@ mao:forcing_elbow rdf:type owl:NamedIndividual ,
                   mao:otherName_zh "迫踭"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/fore_knuckle_fist
+###  https://purl.org/maont/ontologyfore_knuckle_fist
 mao:fore_knuckle_fist rdf:type owl:NamedIndividual ,
                                mao:handshape ;
                       mao:used_in mao:Choy_Li_Fut ,
@@ -1315,7 +1315,7 @@ mao:fore_knuckle_fist rdf:type owl:NamedIndividual ,
                                        "排掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/forefist
+###  https://purl.org/maont/ontologyforefist
 mao:forefist rdf:type owl:NamedIndividual ,
                       mao:handshape ;
              mao:used_in mao:Choy_Li_Fut ,
@@ -1329,7 +1329,7 @@ mao:forefist rdf:type owl:NamedIndividual ,
              mao:otherName_en "Straight Fist Strike"@en .
 
 
-###  https://purl.org/maont/ontology/front_block_hands
+###  https://purl.org/maont/ontologyfront_block_hands
 mao:front_block_hands rdf:type owl:NamedIndividual ,
                                mao:combo_tech ;
                       mao:employs mao:blocking_palm ,
@@ -1343,7 +1343,7 @@ mao:front_block_hands rdf:type owl:NamedIndividual ,
                       mao:name_zh "子午冚膀手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/front_kick
+###  https://purl.org/maont/ontologyfront_kick
 mao:front_kick rdf:type owl:NamedIndividual ,
                         mao:leg_tech ;
                mao:used_in mao:Hung_Kuen ,
@@ -1361,7 +1361,7 @@ mao:front_kick rdf:type owl:NamedIndividual ,
                                 "撩陰腳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/fw_face_body
+###  https://purl.org/maont/ontologyfw_face_body
 mao:fw_face_body rdf:type owl:NamedIndividual ,
                           mao:bodywork ;
                  mao:used_in mao:Choy_Li_Fut ,
@@ -1376,7 +1376,7 @@ mao:fw_face_body rdf:type owl:NamedIndividual ,
                  mao:otherName_en "Front Body Position"@en .
 
 
-###  https://purl.org/maont/ontology/grappling_claw
+###  https://purl.org/maont/ontologygrappling_claw
 mao:grappling_claw rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:tiger_claw ;
@@ -1390,7 +1390,7 @@ mao:grappling_claw rdf:type owl:NamedIndividual ,
                    mao:otherName_en "claw_hand"@en .
 
 
-###  https://purl.org/maont/ontology/grappling_palm
+###  https://purl.org/maont/ontologygrappling_palm
 mao:grappling_palm rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:crossing_bridge ,
@@ -1403,7 +1403,7 @@ mao:grappling_palm rdf:type owl:NamedIndividual ,
                    mao:name_zh "擸掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/gripping_leg
+###  https://purl.org/maont/ontologygripping_leg
 mao:gripping_leg rdf:type owl:NamedIndividual ,
                           mao:leg_tech ;
                  mao:used_in mao:White_Crane_Kungfu ;
@@ -1414,7 +1414,7 @@ mao:gripping_leg rdf:type owl:NamedIndividual ,
                  mao:name_zh "蟹脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/hang_block_knuckle
+###  https://purl.org/maont/ontologyhang_block_knuckle
 mao:hang_block_knuckle rdf:type owl:NamedIndividual ,
                                 mao:combo_tech ;
                        mao:employs mao:hanging_hammer ,
@@ -1428,7 +1428,7 @@ mao:hang_block_knuckle rdf:type owl:NamedIndividual ,
                        mao:name_zh "掛冚釘拳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/hanging_hammer
+###  https://purl.org/maont/ontologyhanging_hammer
 mao:hanging_hammer rdf:type owl:NamedIndividual ,
                             mao:fist_tech ;
                    mao:employs mao:backfist ,
@@ -1444,7 +1444,7 @@ mao:hanging_hammer rdf:type owl:NamedIndividual ,
                    mao:otherName_en "Hanging back fist"@en .
 
 
-###  https://purl.org/maont/ontology/hanging_n_chop
+###  https://purl.org/maont/ontologyhanging_n_chop
 mao:hanging_n_chop rdf:type owl:NamedIndividual ,
                             mao:combo_tech ;
                    mao:employs mao:hanging_hammer ,
@@ -1460,7 +1460,7 @@ mao:hanging_n_chop rdf:type owl:NamedIndividual ,
                    mao:otherName_zh "掛搥千字"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/hard_bridge
+###  https://purl.org/maont/ontologyhard_bridge
 mao:hard_bridge rdf:type owl:NamedIndividual ,
                          mao:bridge_principle ;
                 rdfs:label "hard_bridge"@en ;
@@ -1468,7 +1468,7 @@ mao:hard_bridge rdf:type owl:NamedIndividual ,
                 mao:name_zh "剛"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/heaven_n_earth_bridge
+###  https://purl.org/maont/ontologyheaven_n_earth_bridge
 mao:heaven_n_earth_bridge rdf:type owl:NamedIndividual ,
                                    mao:bridge_principle ;
                           rdfs:label "heaven_n_earth_bridge"@en ;
@@ -1477,7 +1477,7 @@ mao:heaven_n_earth_bridge rdf:type owl:NamedIndividual ,
                           mao:otherName_zh "定乾坤"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/hold_stamp_palms
+###  https://purl.org/maont/ontologyhold_stamp_palms
 mao:hold_stamp_palms rdf:type owl:NamedIndividual ,
                               mao:palm_tech ;
                      mao:used_in mao:White_Crane_Kungfu ;
@@ -1488,7 +1488,7 @@ mao:hold_stamp_palms rdf:type owl:NamedIndividual ,
                      mao:name_zh "抱印"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/holding_breath
+###  https://purl.org/maont/ontologyholding_breath
 mao:holding_breath rdf:type owl:NamedIndividual ,
                             mao:breathing_tech ;
                    rdfs:label "holding_breath"@en ;
@@ -1496,7 +1496,7 @@ mao:holding_breath rdf:type owl:NamedIndividual ,
                    mao:name_zh "屏氣"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/holding_leg
+###  https://purl.org/maont/ontologyholding_leg
 mao:holding_leg rdf:type owl:NamedIndividual ,
                          mao:leg_tech ;
                 mao:used_in mao:White_Crane_Kungfu ;
@@ -1507,7 +1507,7 @@ mao:holding_leg rdf:type owl:NamedIndividual ,
                 mao:name_zh "寄脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/holding_palm
+###  https://purl.org/maont/ontologyholding_palm
 mao:holding_palm rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:used_in mao:Hung_Kuen ,
@@ -1519,7 +1519,7 @@ mao:holding_palm rdf:type owl:NamedIndividual ,
                  mao:name_zh "托手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/honest_integrity
+###  https://purl.org/maont/ontologyhonest_integrity
 mao:honest_integrity rdf:type owl:NamedIndividual ,
                               mao:honor_code ;
                      rdfs:label "Virtue"@en ;
@@ -1527,7 +1527,7 @@ mao:honest_integrity rdf:type owl:NamedIndividual ,
                      mao:name_zh "品德高尚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/hook_punch
+###  https://purl.org/maont/ontologyhook_punch
 mao:hook_punch rdf:type owl:NamedIndividual ,
                         mao:fist_tech ;
                mao:employs mao:bullhorn_fist ;
@@ -1544,7 +1544,7 @@ mao:hook_punch rdf:type owl:NamedIndividual ,
                mao:otherName_zh "牛角搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/hook_sweep
+###  https://purl.org/maont/ontologyhook_sweep
 mao:hook_sweep rdf:type owl:NamedIndividual ,
                         mao:leg_tech ;
                mao:used_in mao:Hung_Kuen ;
@@ -1556,7 +1556,7 @@ mao:hook_sweep rdf:type owl:NamedIndividual ,
                mao:otherName_en "Ankle sweep"@en .
 
 
-###  https://purl.org/maont/ontology/horizontal_buddha_palm
+###  https://purl.org/maont/ontologyhorizontal_buddha_palm
 mao:horizontal_buddha_palm rdf:type owl:NamedIndividual ,
                                     mao:handshape ;
                            mao:type_of mao:flat_palm ;
@@ -1566,7 +1566,7 @@ mao:horizontal_buddha_palm rdf:type owl:NamedIndividual ,
                            mao:name_zh "横掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/horizontal_palm_strike
+###  https://purl.org/maont/ontologyhorizontal_palm_strike
 mao:horizontal_palm_strike rdf:type owl:NamedIndividual ,
                                     mao:palm_tech ;
                            mao:employs mao:horizontal_buddha_palm ;
@@ -1580,7 +1580,7 @@ mao:horizontal_palm_strike rdf:type owl:NamedIndividual ,
                            mao:otherName_zh "攻橋手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/horse_stance
+###  https://purl.org/maont/ontologyhorse_stance
 mao:horse_stance rdf:type owl:NamedIndividual ,
                           mao:stance ;
                  mao:similar_to mao:out_horse_stance ;
@@ -1594,7 +1594,7 @@ mao:horse_stance rdf:type owl:NamedIndividual ,
                  mao:otherName_zh "四平大馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/horse_to_bow_stance
+###  https://purl.org/maont/ontologyhorse_to_bow_stance
 mao:horse_to_bow_stance rdf:type owl:NamedIndividual ,
                                  mao:footwork ;
                         mao:employs mao:body_twisting ,
@@ -1609,7 +1609,7 @@ mao:horse_to_bow_stance rdf:type owl:NamedIndividual ,
                         mao:name_zh "四平馬轉子午馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/inch_body
+###  https://purl.org/maont/ontologyinch_body
 mao:inch_body rdf:type owl:NamedIndividual ,
                        mao:bodywork ;
               mao:used_in mao:White_Crane_Kungfu ;
@@ -1620,7 +1620,7 @@ mao:inch_body rdf:type owl:NamedIndividual ,
               mao:name_zh "俊身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/inch_bridge
+###  https://purl.org/maont/ontologyinch_bridge
 mao:inch_bridge rdf:type owl:NamedIndividual ,
                          mao:bridge_principle ;
                 rdfs:label "inch_bridge"@en ;
@@ -1629,7 +1629,7 @@ mao:inch_bridge rdf:type owl:NamedIndividual ,
                 mao:otherName_en "One-inch power"@en .
 
 
-###  https://purl.org/maont/ontology/inward_sweep
+###  https://purl.org/maont/ontologyinward_sweep
 mao:inward_sweep rdf:type owl:NamedIndividual ,
                           mao:leg_tech ;
                  mao:similar_to mao:hook_sweep ;
@@ -1641,7 +1641,7 @@ mao:inward_sweep rdf:type owl:NamedIndividual ,
                  mao:name_zh "内掃"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/joint_lock
+###  https://purl.org/maont/ontologyjoint_lock
 mao:joint_lock rdf:type owl:NamedIndividual ,
                         mao:handwork ;
                rdfs:label "joint_lock"@en ;
@@ -1651,7 +1651,7 @@ mao:joint_lock rdf:type owl:NamedIndividual ,
                                 "chin na"@en .
 
 
-###  https://purl.org/maont/ontology/jumping
+###  https://purl.org/maont/ontologyjumping
 mao:jumping rdf:type owl:NamedIndividual ,
                      mao:bodywork ;
             mao:used_in mao:Choy_Li_Fut ,
@@ -1664,7 +1664,7 @@ mao:jumping rdf:type owl:NamedIndividual ,
             mao:otherName_zh "跳馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/knocking_fist
+###  https://purl.org/maont/ontologyknocking_fist
 mao:knocking_fist rdf:type owl:NamedIndividual ,
                            mao:handshape ;
                   mao:used_in mao:Choy_Li_Fut ,
@@ -1680,7 +1680,7 @@ mao:knocking_fist rdf:type owl:NamedIndividual ,
                                    "鳳眼拳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/latch_fist
+###  https://purl.org/maont/ontologylatch_fist
 mao:latch_fist rdf:type owl:NamedIndividual ,
                         mao:combo_tech ;
                mao:employs mao:cat_stance ,
@@ -1696,7 +1696,7 @@ mao:latch_fist rdf:type owl:NamedIndividual ,
                mao:otherName_en "Double-fist block"@en .
 
 
-###  https://purl.org/maont/ontology/leaning_body
+###  https://purl.org/maont/ontologyleaning_body
 mao:leaning_body rdf:type owl:NamedIndividual ,
                           mao:bodywork ;
                  mao:used_in mao:White_Crane_Kungfu ;
@@ -1707,7 +1707,7 @@ mao:leaning_body rdf:type owl:NamedIndividual ,
                  mao:name_zh "欹身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/leg_sweep
+###  https://purl.org/maont/ontologyleg_sweep
 mao:leg_sweep rdf:type owl:NamedIndividual ,
                        mao:leg_tech ;
               mao:used_in mao:Choy_Li_Fut ,
@@ -1724,13 +1724,13 @@ mao:leg_sweep rdf:type owl:NamedIndividual ,
                                "掃脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/leopard
+###  https://purl.org/maont/ontologyleopard
 mao:leopard rdf:type owl:NamedIndividual ,
                      mao:symbolic_animal ;
             rdfs:label "Leopard"@en .
 
 
-###  https://purl.org/maont/ontology/leopard_palm
+###  https://purl.org/maont/ontologyleopard_palm
 mao:leopard_palm rdf:type owl:NamedIndividual ,
                           mao:handshape ;
                  mao:used_in mao:Choy_Li_Fut ;
@@ -1743,7 +1743,7 @@ mao:leopard_palm rdf:type owl:NamedIndividual ,
                  mao:otherName_zh "熊掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/lifting_body
+###  https://purl.org/maont/ontologylifting_body
 mao:lifting_body rdf:type owl:NamedIndividual ,
                           mao:bodywork ;
                  mao:used_in mao:White_Crane_Kungfu ;
@@ -1754,7 +1754,7 @@ mao:lifting_body rdf:type owl:NamedIndividual ,
                  mao:name_zh "撩身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/lifting_bridge
+###  https://purl.org/maont/ontologylifting_bridge
 mao:lifting_bridge rdf:type owl:NamedIndividual ,
                             mao:bridge_principle ;
                    rdfs:label "lift_bridge"@en ;
@@ -1762,7 +1762,7 @@ mao:lifting_bridge rdf:type owl:NamedIndividual ,
                    mao:name_zh "提"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/lifting_gravity_centere
+###  https://purl.org/maont/ontologylifting_gravity_centere
 mao:lifting_gravity_centere rdf:type owl:NamedIndividual ,
                                      mao:bodywork ;
                             rdfs:label "lifting_gravity_centre"@en ;
@@ -1773,7 +1773,7 @@ mao:lifting_gravity_centere rdf:type owl:NamedIndividual ,
                             mao:otherName_zh "提升重心"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/lock_n_drag_hand
+###  https://purl.org/maont/ontologylock_n_drag_hand
 mao:lock_n_drag_hand rdf:type owl:NamedIndividual ,
                               mao:combo_tech ;
                      mao:employs mao:arm_lock ,
@@ -1788,7 +1788,7 @@ mao:lock_n_drag_hand rdf:type owl:NamedIndividual ,
                      mao:otherName_zh "帶馬歸槽"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/loose_to_stiff
+###  https://purl.org/maont/ontologyloose_to_stiff
 mao:loose_to_stiff rdf:type owl:NamedIndividual ,
                             mao:bodywork ;
                    rdfs:label "loose_to_stiff"@en ;
@@ -1796,7 +1796,7 @@ mao:loose_to_stiff rdf:type owl:NamedIndividual ,
                    mao:name_zh "由鬆轉緊"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/looseness
+###  https://purl.org/maont/ontologylooseness
 mao:looseness rdf:type owl:NamedIndividual ,
                        mao:bodywork ;
               rdfs:label "looseness"@en ;
@@ -1806,7 +1806,7 @@ mao:looseness rdf:type owl:NamedIndividual ,
               mao:name_zh "鬆"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/lower_gravity_centere
+###  https://purl.org/maont/ontologylower_gravity_centere
 mao:lower_gravity_centere rdf:type owl:NamedIndividual ,
                                    mao:bodywork ;
                           rdfs:label "lower_gravity_centre"@en ;
@@ -1817,7 +1817,7 @@ mao:lower_gravity_centere rdf:type owl:NamedIndividual ,
                           mao:otherName_zh "降低中心"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/lower_swing_palm
+###  https://purl.org/maont/ontologylower_swing_palm
 mao:lower_swing_palm rdf:type owl:NamedIndividual ,
                               mao:palm_tech ;
                      mao:used_in mao:White_Crane_Kungfu ;
@@ -1828,7 +1828,7 @@ mao:lower_swing_palm rdf:type owl:NamedIndividual ,
                      mao:name_zh "下搖"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/mantis_flick
+###  https://purl.org/maont/ontologymantis_flick
 mao:mantis_flick rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:employs mao:willow_leaf_palm ;
@@ -1841,7 +1841,7 @@ mao:mantis_flick rdf:type owl:NamedIndividual ,
                  mao:otherName_en "Horizontal knife hand chopping forward"@en .
 
 
-###  https://purl.org/maont/ontology/mirror_palm
+###  https://purl.org/maont/ontologymirror_palm
 mao:mirror_palm rdf:type owl:NamedIndividual ,
                          mao:combo_tech ;
                 mao:employs mao:body_twisting ,
@@ -1856,7 +1856,7 @@ mao:mirror_palm rdf:type owl:NamedIndividual ,
                 mao:otherName_en "Horizontal knife hand block"@en .
 
 
-###  https://purl.org/maont/ontology/move_bridge
+###  https://purl.org/maont/ontologymove_bridge
 mao:move_bridge rdf:type owl:NamedIndividual ,
                          mao:bridge_principle ;
                 rdfs:label "move_bridge"@en ;
@@ -1865,7 +1865,7 @@ mao:move_bridge rdf:type owl:NamedIndividual ,
                 mao:otherName_en "Redirecting"@en .
 
 
-###  https://purl.org/maont/ontology/nailing_hammer
+###  https://purl.org/maont/ontologynailing_hammer
 mao:nailing_hammer rdf:type owl:NamedIndividual ,
                             mao:fist_tech ;
                    mao:employs mao:bullhorn_fist ,
@@ -1879,7 +1879,7 @@ mao:nailing_hammer rdf:type owl:NamedIndividual ,
                    mao:name_zh "釘搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/nr_horse_stance
+###  https://purl.org/maont/ontologynr_horse_stance
 mao:nr_horse_stance rdf:type owl:NamedIndividual ,
                              mao:stance ;
                     mao:similar_to mao:out_horse_stance ;
@@ -1891,7 +1891,7 @@ mao:nr_horse_stance rdf:type owl:NamedIndividual ,
                     mao:name_zh "小四平馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/open_body
+###  https://purl.org/maont/ontologyopen_body
 mao:open_body rdf:type owl:NamedIndividual ,
                        mao:bodywork ;
               rdfs:label "open_body"@en ;
@@ -1901,7 +1901,7 @@ mao:open_body rdf:type owl:NamedIndividual ,
               mao:name_zh "開"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/out_horse_stance
+###  https://purl.org/maont/ontologyout_horse_stance
 mao:out_horse_stance rdf:type owl:NamedIndividual ,
                               mao:stance ;
                      mao:similar_to mao:horse_stance ;
@@ -1915,7 +1915,7 @@ mao:out_horse_stance rdf:type owl:NamedIndividual ,
                      mao:otherName_zh "外八字馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/outward_sweep
+###  https://purl.org/maont/ontologyoutward_sweep
 mao:outward_sweep rdf:type owl:NamedIndividual ,
                            mao:leg_tech ;
                   mao:similar_to mao:hook_sweep ;
@@ -1927,7 +1927,7 @@ mao:outward_sweep rdf:type owl:NamedIndividual ,
                   mao:name_zh "外掃"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/palm_strike
+###  https://purl.org/maont/ontologypalm_strike
 mao:palm_strike rdf:type owl:NamedIndividual ,
                          mao:palm_tech ;
                 mao:employs mao:upright_buddha_palm ;
@@ -1945,7 +1945,7 @@ mao:palm_strike rdf:type owl:NamedIndividual ,
                                  "Upright palm strike"@en .
 
 
-###  https://purl.org/maont/ontology/pecking_palm
+###  https://purl.org/maont/ontologypecking_palm
 mao:pecking_palm rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:employs mao:crane_beak ,
@@ -1958,13 +1958,13 @@ mao:pecking_palm rdf:type owl:NamedIndividual ,
                  mao:name_zh "啄手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/power_generation
+###  https://purl.org/maont/ontologypower_generation
 mao:power_generation rdf:type owl:NamedIndividual ,
                               mao:MA_tactic ;
                      rdfs:label "power_generation"@en .
 
 
-###  https://purl.org/maont/ontology/pressure_bridge
+###  https://purl.org/maont/ontologypressure_bridge
 mao:pressure_bridge rdf:type owl:NamedIndividual ,
                              mao:bridge_principle ;
                     rdfs:label "pressure_bridge"@en ;
@@ -1974,7 +1974,7 @@ mao:pressure_bridge rdf:type owl:NamedIndividual ,
                     mao:otherName_zh "迫"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/probing_elbow
+###  https://purl.org/maont/ontologyprobing_elbow
 mao:probing_elbow rdf:type owl:NamedIndividual ,
                            mao:elbow_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -1985,7 +1985,7 @@ mao:probing_elbow rdf:type owl:NamedIndividual ,
                   mao:name_zh "勘肘"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/probing_palm
+###  https://purl.org/maont/ontologyprobing_palm
 mao:probing_palm rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:similar_to mao:blocking_palm ;
@@ -1997,7 +1997,7 @@ mao:probing_palm rdf:type owl:NamedIndividual ,
                  mao:name_zh "勘手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/pushing_leg
+###  https://purl.org/maont/ontologypushing_leg
 mao:pushing_leg rdf:type owl:NamedIndividual ,
                          mao:leg_tech ;
                 mao:used_in mao:White_Crane_Kungfu ;
@@ -2008,7 +2008,7 @@ mao:pushing_leg rdf:type owl:NamedIndividual ,
                 mao:name_zh "趕脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/qian_char_hand
+###  https://purl.org/maont/ontologyqian_char_hand
 mao:qian_char_hand rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:willow_leaf_palm ;
@@ -2025,7 +2025,7 @@ mao:qian_char_hand rdf:type owl:NamedIndividual ,
                    mao:otherName_zh "劈掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/reconciliation_block
+###  https://purl.org/maont/ontologyreconciliation_block
 mao:reconciliation_block rdf:type owl:NamedIndividual ,
                                   mao:MA_tactic ;
                          rdfs:label "defend_by_attack"@en ;
@@ -2033,7 +2033,7 @@ mao:reconciliation_block rdf:type owl:NamedIndividual ,
                          mao:name_zh "連消帶打"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/reconciliation_redirection
+###  https://purl.org/maont/ontologyreconciliation_redirection
 mao:reconciliation_redirection rdf:type owl:NamedIndividual ,
                                         mao:MA_tactic ;
                                rdfs:label "defend_deflect"@en ;
@@ -2041,7 +2041,7 @@ mao:reconciliation_redirection rdf:type owl:NamedIndividual ,
                                mao:name_zh "化解，改變攻擊方向"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/respect
+###  https://purl.org/maont/ontologyrespect
 mao:respect rdf:type owl:NamedIndividual ,
                      mao:honor_code ;
             mao:is mao:honest_integrity ;
@@ -2050,7 +2050,7 @@ mao:respect rdf:type owl:NamedIndividual ,
             mao:name_zh "尊敬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/reverse_hanging_fist
+###  https://purl.org/maont/ontologyreverse_hanging_fist
 mao:reverse_hanging_fist rdf:type owl:NamedIndividual ,
                                   mao:fist_tech ;
                          mao:employs mao:hanging_hammer ,
@@ -2064,7 +2064,7 @@ mao:reverse_hanging_fist rdf:type owl:NamedIndividual ,
                          mao:name_zh "反身掛搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/reverse_palm
+###  https://purl.org/maont/ontologyreverse_palm
 mao:reverse_palm rdf:type owl:NamedIndividual ,
                           mao:handshape ;
                  rdfs:label "reverse_palm"@en ;
@@ -2075,7 +2075,7 @@ mao:reverse_palm rdf:type owl:NamedIndividual ,
                  mao:otherName_en "Lower palm"@en .
 
 
-###  https://purl.org/maont/ontology/rocket_hammer
+###  https://purl.org/maont/ontologyrocket_hammer
 mao:rocket_hammer rdf:type owl:NamedIndividual ,
                            mao:fist_tech ;
                   mao:employs mao:body_twisting ,
@@ -2089,7 +2089,7 @@ mao:rocket_hammer rdf:type owl:NamedIndividual ,
                   mao:name_zh "火箭搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/rolling_elbow
+###  https://purl.org/maont/ontologyrolling_elbow
 mao:rolling_elbow rdf:type owl:NamedIndividual ,
                            mao:elbow_tech ;
                   mao:used_in mao:Hung_Kuen ;
@@ -2101,7 +2101,7 @@ mao:rolling_elbow rdf:type owl:NamedIndividual ,
                   mao:otherName_en "Luk Zang"@en .
 
 
-###  https://purl.org/maont/ontology/rubbing_hand
+###  https://purl.org/maont/ontologyrubbing_hand
 mao:rubbing_hand rdf:type owl:NamedIndividual ,
                           mao:fist_tech ,
                           mao:palm_tech ;
@@ -2116,7 +2116,7 @@ mao:rubbing_hand rdf:type owl:NamedIndividual ,
                  mao:name_zh "搓手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/san_chin_stance
+###  https://purl.org/maont/ontologysan_chin_stance
 mao:san_chin_stance rdf:type owl:NamedIndividual ,
                              mao:stance ;
                     mao:similar_to mao:bow_stance ;
@@ -2131,13 +2131,13 @@ mao:san_chin_stance rdf:type owl:NamedIndividual ,
                                      "小子午馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/san_zhan
+###  https://purl.org/maont/ontologysan_zhan
 mao:san_zhan rdf:type owl:NamedIndividual ,
                       mao:empty_hand_set ;
              rdfs:label "San_zhan"@en .
 
 
-###  https://purl.org/maont/ontology/seizing_palm
+###  https://purl.org/maont/ontologyseizing_palm
 mao:seizing_palm rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:used_in mao:White_Crane_Kungfu ;
@@ -2151,7 +2151,7 @@ mao:seizing_palm rdf:type owl:NamedIndividual ,
                                   "Kam Sau"@en .
 
 
-###  https://purl.org/maont/ontology/separating_bridge
+###  https://purl.org/maont/ontologyseparating_bridge
 mao:separating_bridge rdf:type owl:NamedIndividual ,
                                mao:bridge_principle ;
                       rdfs:label "separate_bridge"@en ;
@@ -2159,7 +2159,7 @@ mao:separating_bridge rdf:type owl:NamedIndividual ,
                       mao:name_zh "分"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/serial_upper_claws
+###  https://purl.org/maont/ontologyserial_upper_claws
 mao:serial_upper_claws rdf:type owl:NamedIndividual ,
                                 mao:combo_tech ;
                        mao:employs mao:bow_stance ,
@@ -2176,7 +2176,7 @@ mao:serial_upper_claws rdf:type owl:NamedIndividual ,
                                         "連環三爪手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/side_block_hands
+###  https://purl.org/maont/ontologyside_block_hands
 mao:side_block_hands rdf:type owl:NamedIndividual ,
                               mao:combo_tech ;
                      mao:employs mao:blocking_palm ,
@@ -2190,7 +2190,7 @@ mao:side_block_hands rdf:type owl:NamedIndividual ,
                      mao:name_zh "外膀手二"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/side_elbow
+###  https://purl.org/maont/ontologyside_elbow
 mao:side_elbow rdf:type owl:NamedIndividual ,
                         mao:elbow_tech ;
                mao:used_in mao:Hung_Kuen ,
@@ -2206,7 +2206,7 @@ mao:side_elbow rdf:type owl:NamedIndividual ,
                mao:otherName_zh "橫頂踭"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/side_hanging_fist
+###  https://purl.org/maont/ontologyside_hanging_fist
 mao:side_hanging_fist rdf:type owl:NamedIndividual ,
                                mao:combo_tech ;
                       mao:employs mao:body_twisting ,
@@ -2220,7 +2220,7 @@ mao:side_hanging_fist rdf:type owl:NamedIndividual ,
                       mao:name_zh "偏身掛捶"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/side_leaning_body
+###  https://purl.org/maont/ontologyside_leaning_body
 mao:side_leaning_body rdf:type owl:NamedIndividual ,
                                mao:bodywork ;
                       mao:used_in mao:Choy_Li_Fut ,
@@ -2232,7 +2232,7 @@ mao:side_leaning_body rdf:type owl:NamedIndividual ,
                       mao:name_zh "斜身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/side_punch
+###  https://purl.org/maont/ontologyside_punch
 mao:side_punch rdf:type owl:NamedIndividual ,
                         mao:fist_tech ;
                mao:employs mao:backfist ,
@@ -2248,7 +2248,7 @@ mao:side_punch rdf:type owl:NamedIndividual ,
                mao:otherName_zh "分搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/sidestep_n_whip_fist
+###  https://purl.org/maont/ontologysidestep_n_whip_fist
 mao:sidestep_n_whip_fist rdf:type owl:NamedIndividual ,
                                   mao:combo_tech ;
                          mao:employs mao:body_twisting ,
@@ -2262,7 +2262,7 @@ mao:sidestep_n_whip_fist rdf:type owl:NamedIndividual ,
                          mao:name_zh "走马捎捶"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/sideways_body
+###  https://purl.org/maont/ontologysideways_body
 mao:sideways_body rdf:type owl:NamedIndividual ,
                            mao:bodywork ;
                   mao:used_in mao:Choy_Li_Fut ,
@@ -2274,7 +2274,7 @@ mao:sideways_body rdf:type owl:NamedIndividual ,
                   mao:name_zh "偏身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/sky_hammer
+###  https://purl.org/maont/ontologysky_hammer
 mao:sky_hammer rdf:type owl:NamedIndividual ,
                         mao:fist_tech ;
                mao:employs mao:backfist ,
@@ -2291,7 +2291,7 @@ mao:sky_hammer rdf:type owl:NamedIndividual ,
                                 "(上)沖搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/slap_n_cross_punch
+###  https://purl.org/maont/ontologyslap_n_cross_punch
 mao:slap_n_cross_punch rdf:type owl:NamedIndividual ,
                                 mao:combo_tech ;
                        mao:employs mao:cross_punch ,
@@ -2305,7 +2305,7 @@ mao:slap_n_cross_punch rdf:type owl:NamedIndividual ,
                        mao:name_zh "拍开穿攔"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/slap_n_throw_punch
+###  https://purl.org/maont/ontologyslap_n_throw_punch
 mao:slap_n_throw_punch rdf:type owl:NamedIndividual ,
                                 mao:combo_tech ;
                        mao:employs mao:choy_throwing_punch ,
@@ -2318,7 +2318,7 @@ mao:slap_n_throw_punch rdf:type owl:NamedIndividual ,
                        mao:name_zh "拍开抛捶"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/slap_n_whip_fist
+###  https://purl.org/maont/ontologyslap_n_whip_fist
 mao:slap_n_whip_fist rdf:type owl:NamedIndividual ,
                               mao:combo_tech ;
                      mao:employs mao:chlf_hook_punch ,
@@ -2331,7 +2331,7 @@ mao:slap_n_whip_fist rdf:type owl:NamedIndividual ,
                      mao:name_zh "拍开捎捶"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/soft_bridge
+###  https://purl.org/maont/ontologysoft_bridge
 mao:soft_bridge rdf:type owl:NamedIndividual ,
                          mao:bridge_principle ;
                 rdfs:label "soft_bridge"@en ;
@@ -2339,7 +2339,7 @@ mao:soft_bridge rdf:type owl:NamedIndividual ,
                 mao:name_zh "柔"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/spiral_arm
+###  https://purl.org/maont/ontologyspiral_arm
 mao:spiral_arm rdf:type owl:NamedIndividual ,
                         mao:bodywork ;
                mao:used_in mao:Choy_Li_Fut ,
@@ -2352,7 +2352,7 @@ mao:spiral_arm rdf:type owl:NamedIndividual ,
                mao:name_zh "旋轉臂"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/split_n_attack_hand
+###  https://purl.org/maont/ontologysplit_n_attack_hand
 mao:split_n_attack_hand rdf:type owl:NamedIndividual ,
                                  mao:combo_tech ;
                         mao:employs mao:curving_palm ,
@@ -2366,7 +2366,7 @@ mao:split_n_attack_hand rdf:type owl:NamedIndividual ,
                         mao:otherName_zh "偷漏手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/splitting_palm
+###  https://purl.org/maont/ontologysplitting_palm
 mao:splitting_palm rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:tiger_claw ;
@@ -2382,7 +2382,7 @@ mao:splitting_palm rdf:type owl:NamedIndividual ,
                                     "bridge_hand"@en .
 
 
-###  https://purl.org/maont/ontology/stabilizing_bridge
+###  https://purl.org/maont/ontologystabilizing_bridge
 mao:stabilizing_bridge rdf:type owl:NamedIndividual ,
                                 mao:bridge_tech ;
                        mao:used_in mao:Hung_Kuen ;
@@ -2394,7 +2394,7 @@ mao:stabilizing_bridge rdf:type owl:NamedIndividual ,
                        mao:otherName_zh "定橋"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/stamp_palm_strike
+###  https://purl.org/maont/ontologystamp_palm_strike
 mao:stamp_palm_strike rdf:type owl:NamedIndividual ,
                                mao:palm_tech ;
                       mao:employs mao:upright_buddha_palm ;
@@ -2407,7 +2407,7 @@ mao:stamp_palm_strike rdf:type owl:NamedIndividual ,
                       mao:name_zh "印掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/stance_turning
+###  https://purl.org/maont/ontologystance_turning
 mao:stance_turning rdf:type owl:NamedIndividual ,
                             mao:bodywork ;
                    mao:employs mao:body_twisting ;
@@ -2421,7 +2421,7 @@ mao:stance_turning rdf:type owl:NamedIndividual ,
                    mao:name_zh "轉馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/stay_bridge
+###  https://purl.org/maont/ontologystay_bridge
 mao:stay_bridge rdf:type owl:NamedIndividual ,
                          mao:bridge_principle ;
                 rdfs:label "stay_bridge"@en ;
@@ -2429,7 +2429,7 @@ mao:stay_bridge rdf:type owl:NamedIndividual ,
                 mao:name_zh "留"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/steady_bridge
+###  https://purl.org/maont/ontologysteady_bridge
 mao:steady_bridge rdf:type owl:NamedIndividual ,
                            mao:bridge_principle ;
                   rdfs:comment "身体保持中正不偏，重心稳固，是阴阳转换的根基"@zh ;
@@ -2440,7 +2440,7 @@ mao:steady_bridge rdf:type owl:NamedIndividual ,
                                    "Still"@en .
 
 
-###  https://purl.org/maont/ontology/stepping
+###  https://purl.org/maont/ontologystepping
 mao:stepping rdf:type owl:NamedIndividual ,
                       mao:footwork ;
              mao:used_in mao:Choy_Li_Fut ,
@@ -2453,7 +2453,7 @@ mao:stepping rdf:type owl:NamedIndividual ,
              mao:name_zh "走馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/sticky_leg
+###  https://purl.org/maont/ontologysticky_leg
 mao:sticky_leg rdf:type owl:NamedIndividual ,
                         mao:leg_tech ;
                mao:used_in mao:White_Crane_Kungfu ;
@@ -2464,7 +2464,7 @@ mao:sticky_leg rdf:type owl:NamedIndividual ,
                mao:name_zh "粘脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/sticky_palm
+###  https://purl.org/maont/ontologysticky_palm
 mao:sticky_palm rdf:type owl:NamedIndividual ,
                          mao:palm_tech ;
                 mao:used_in mao:White_Crane_Kungfu ;
@@ -2475,7 +2475,7 @@ mao:sticky_palm rdf:type owl:NamedIndividual ,
                 mao:name_zh "帶手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/stiff_elbow
+###  https://purl.org/maont/ontologystiff_elbow
 mao:stiff_elbow rdf:type owl:NamedIndividual ,
                          mao:elbow_tech ;
                 rdfs:label "stiff_elbow"@en ;
@@ -2485,7 +2485,7 @@ mao:stiff_elbow rdf:type owl:NamedIndividual ,
                 mao:name_zh "堅肘"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/stiff_palm
+###  https://purl.org/maont/ontologystiff_palm
 mao:stiff_palm rdf:type owl:NamedIndividual ,
                         mao:palm_tech ;
                mao:used_in mao:White_Crane_Kungfu ;
@@ -2496,7 +2496,7 @@ mao:stiff_palm rdf:type owl:NamedIndividual ,
                mao:name_zh "堅手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/stiffness
+###  https://purl.org/maont/ontologystiffness
 mao:stiffness rdf:type owl:NamedIndividual ,
                        mao:bodywork ;
               rdfs:label "stiffness"@en ;
@@ -2506,7 +2506,7 @@ mao:stiffness rdf:type owl:NamedIndividual ,
               mao:name_zh "緊"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/straight_bridge
+###  https://purl.org/maont/ontologystraight_bridge
 mao:straight_bridge rdf:type owl:NamedIndividual ,
                              mao:bridge_principle ;
                     rdfs:label "straight_bridge"@en ;
@@ -2514,7 +2514,7 @@ mao:straight_bridge rdf:type owl:NamedIndividual ,
                     mao:name_zh "直"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/straight_cut_palm
+###  https://purl.org/maont/ontologystraight_cut_palm
 mao:straight_cut_palm rdf:type owl:NamedIndividual ,
                                mao:palm_tech ;
                       mao:employs mao:willow_leaf_palm ;
@@ -2529,7 +2529,7 @@ mao:straight_cut_palm rdf:type owl:NamedIndividual ,
                       mao:otherName_en "Vertical knife hand strike"@en .
 
 
-###  https://purl.org/maont/ontology/straight_kick
+###  https://purl.org/maont/ontologystraight_kick
 mao:straight_kick rdf:type owl:NamedIndividual ,
                            mao:leg_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -2540,7 +2540,7 @@ mao:straight_kick rdf:type owl:NamedIndividual ,
                   mao:name_zh "直脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/straight_punch
+###  https://purl.org/maont/ontologystraight_punch
 mao:straight_punch rdf:type owl:NamedIndividual ,
                             mao:fist_tech ;
                    mao:employs mao:forefist ;
@@ -2557,7 +2557,7 @@ mao:straight_punch rdf:type owl:NamedIndividual ,
                    mao:otherName_zh "直拳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/subdue_bridge
+###  https://purl.org/maont/ontologysubdue_bridge
 mao:subdue_bridge rdf:type owl:NamedIndividual ,
                            mao:bridge_principle ;
                   rdfs:label "subdue_bridge"@en ;
@@ -2565,7 +2565,7 @@ mao:subdue_bridge rdf:type owl:NamedIndividual ,
                   mao:name_zh "制"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/subduing_palm
+###  https://purl.org/maont/ontologysubduing_palm
 mao:subduing_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:employs mao:tiger_claw ;
@@ -2579,7 +2579,7 @@ mao:subduing_palm rdf:type owl:NamedIndividual ,
                   mao:otherName_zh "伏手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/sun_palm_strike
+###  https://purl.org/maont/ontologysun_palm_strike
 mao:sun_palm_strike rdf:type owl:NamedIndividual ,
                              mao:palm_tech ;
                     mao:employs mao:facing_sun_palm ;
@@ -2591,7 +2591,7 @@ mao:sun_palm_strike rdf:type owl:NamedIndividual ,
                     mao:name_zh "單昭陽"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/sweep_stance
+###  https://purl.org/maont/ontologysweep_stance
 mao:sweep_stance rdf:type owl:NamedIndividual ,
                           mao:stance ;
                  mao:used_in mao:Choy_Li_Fut ,
@@ -2606,7 +2606,7 @@ mao:sweep_stance rdf:type owl:NamedIndividual ,
                  mao:otherName_zh "僕步"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/swing_body
+###  https://purl.org/maont/ontologyswing_body
 mao:swing_body rdf:type owl:NamedIndividual ,
                         mao:bodywork ;
                mao:used_in mao:White_Crane_Kungfu ;
@@ -2617,7 +2617,7 @@ mao:swing_body rdf:type owl:NamedIndividual ,
                mao:name_zh "搖身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/swing_palm
+###  https://purl.org/maont/ontologyswing_palm
 mao:swing_palm rdf:type owl:NamedIndividual ,
                         mao:palm_tech ;
                mao:used_in mao:White_Crane_Kungfu ;
@@ -2628,7 +2628,7 @@ mao:swing_palm rdf:type owl:NamedIndividual ,
                mao:name_zh "搖手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/switch_hitting
+###  https://purl.org/maont/ontologyswitch_hitting
 mao:switch_hitting rdf:type owl:NamedIndividual ,
                             mao:bodywork ;
                    mao:used_in mao:Choy_Li_Fut ,
@@ -2643,7 +2643,7 @@ mao:switch_hitting rdf:type owl:NamedIndividual ,
                                     "變相"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_1
+###  https://purl.org/maont/ontologytaming_tiger_1
 mao:taming_tiger_1 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_intent mao:breath_regulation ;
@@ -2654,7 +2654,7 @@ mao:taming_tiger_1 rdf:type owl:NamedIndividual ,
                    mao:name_zh "合脚離開一寸闊"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_10
+###  https://purl.org/maont/ontologytaming_tiger_10
 mao:taming_tiger_10 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:horse_stance ;
@@ -2665,7 +2665,7 @@ mao:taming_tiger_10 rdf:type owl:NamedIndividual ,
                     mao:name_zh "腳肘開發落四平"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_11
+###  https://purl.org/maont/ontologytaming_tiger_11
 mao:taming_tiger_11 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:db_blocking_palm ,
@@ -2679,7 +2679,7 @@ mao:taming_tiger_11 rdf:type owl:NamedIndividual ,
                     mao:name_zh "抽拳在胸雙切膀"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_12
+###  https://purl.org/maont/ontologytaming_tiger_12
 mao:taming_tiger_12 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:facing_sun_palm ,
@@ -2694,7 +2694,7 @@ mao:taming_tiger_12 rdf:type owl:NamedIndividual ,
                     mao:name_zh "合掌分開定金橋"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_13
+###  https://purl.org/maont/ontologytaming_tiger_13
 mao:taming_tiger_13 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:finger_hand ,
@@ -2709,7 +2709,7 @@ mao:taming_tiger_13 rdf:type owl:NamedIndividual ,
                     mao:name_zh "一指三株拋肘手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_14
+###  https://purl.org/maont/ontologytaming_tiger_14
 mao:taming_tiger_14 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:grappling_claw ,
@@ -2726,7 +2726,7 @@ mao:taming_tiger_14 rdf:type owl:NamedIndividual ,
                     mao:name_zh "連拋三次有三勻"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_15
+###  https://purl.org/maont/ontologytaming_tiger_15
 mao:taming_tiger_15 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:dw_block_n_target_hand ,
@@ -2745,7 +2745,7 @@ mao:taming_tiger_15 rdf:type owl:NamedIndividual ,
                     mao:name_zh "四拋標串撐天指"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_16
+###  https://purl.org/maont/ontologytaming_tiger_16
 mao:taming_tiger_16 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:db_curving_palm ,
@@ -2764,7 +2764,7 @@ mao:taming_tiger_16 rdf:type owl:NamedIndividual ,
                     mao:name_zh "雙抽雙割一揸分"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_17
+###  https://purl.org/maont/ontologytaming_tiger_17
 mao:taming_tiger_17 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:block_kick ,
@@ -2778,7 +2778,7 @@ mao:taming_tiger_17 rdf:type owl:NamedIndividual ,
                     mao:name_zh "出左吊右拉歸後"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_18
+###  https://purl.org/maont/ontologytaming_tiger_18
 mao:taming_tiger_18 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:block_n_front_kick ;
@@ -2793,7 +2793,7 @@ mao:taming_tiger_18 rdf:type owl:NamedIndividual ,
                     mao:name_zh "鏟腳四平八分馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_19
+###  https://purl.org/maont/ontologytaming_tiger_19
 mao:taming_tiger_19 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:blocking_palm ,
@@ -2808,7 +2808,7 @@ mao:taming_tiger_19 rdf:type owl:NamedIndividual ,
                     mao:name_zh "子午連轉單膀手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_2
+###  https://purl.org/maont/ontologytaming_tiger_2
 mao:taming_tiger_2 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_component mao:forefist ;
@@ -2820,7 +2820,7 @@ mao:taming_tiger_2 rdf:type owl:NamedIndividual ,
                    mao:name_zh "兩手揸拳藏在腰"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_20
+###  https://purl.org/maont/ontologytaming_tiger_20
 mao:taming_tiger_20 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:cat_stance ,
@@ -2840,7 +2840,7 @@ mao:taming_tiger_20 rdf:type owl:NamedIndividual ,
                     mao:name_zh "一挑擰馬千字落"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_21
+###  https://purl.org/maont/ontologytaming_tiger_21
 mao:taming_tiger_21 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -2858,7 +2858,7 @@ mao:taming_tiger_21 rdf:type owl:NamedIndividual ,
                     mao:name_zh "抽手轉身割歸後"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_22
+###  https://purl.org/maont/ontologytaming_tiger_22
 mao:taming_tiger_22 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:horizontal_palm_strike ,
@@ -2873,7 +2873,7 @@ mao:taming_tiger_22 rdf:type owl:NamedIndividual ,
                     mao:name_zh "上馬連變側掌打"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_23
+###  https://purl.org/maont/ontologytaming_tiger_23
 mao:taming_tiger_23 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:horse_stance ,
@@ -2892,7 +2892,7 @@ mao:taming_tiger_23 rdf:type owl:NamedIndividual ,
                     mao:name_zh "四平肘頂標串出"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_24
+###  https://purl.org/maont/ontologytaming_tiger_24
 mao:taming_tiger_24 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:curving_palm ,
@@ -2909,7 +2909,7 @@ mao:taming_tiger_24 rdf:type owl:NamedIndividual ,
                     mao:name_zh "割手四平掌打正"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_25
+###  https://purl.org/maont/ontologytaming_tiger_25
 mao:taming_tiger_25 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:dividing_bridge ,
@@ -2928,7 +2928,7 @@ mao:taming_tiger_25 rdf:type owl:NamedIndividual ,
                     mao:name_zh "一揸抽手轉一分"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_26
+###  https://purl.org/maont/ontologytaming_tiger_26
 mao:taming_tiger_26 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -2939,7 +2939,7 @@ mao:taming_tiger_26 rdf:type owl:NamedIndividual ,
                     mao:name_zh "出右吊左拉歸後"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_27
+###  https://purl.org/maont/ontologytaming_tiger_27
 mao:taming_tiger_27 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -2950,7 +2950,7 @@ mao:taming_tiger_27 rdf:type owl:NamedIndividual ,
                     mao:name_zh "鏟腳四平馬八分"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_28
+###  https://purl.org/maont/ontologytaming_tiger_28
 mao:taming_tiger_28 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -2961,7 +2961,7 @@ mao:taming_tiger_28 rdf:type owl:NamedIndividual ,
                     mao:name_zh "子午一轉右膀手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_29
+###  https://purl.org/maont/ontologytaming_tiger_29
 mao:taming_tiger_29 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -2972,7 +2972,7 @@ mao:taming_tiger_29 rdf:type owl:NamedIndividual ,
                     mao:name_zh "一挑擰馬右千字"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_3
+###  https://purl.org/maont/ontologytaming_tiger_3
 mao:taming_tiger_3 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_component mao:straight_cut_palm ;
@@ -2984,7 +2984,7 @@ mao:taming_tiger_3 rdf:type owl:NamedIndividual ,
                    mao:name_zh "抽上胸中一切出"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_30
+###  https://purl.org/maont/ontologytaming_tiger_30
 mao:taming_tiger_30 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -2995,7 +2995,7 @@ mao:taming_tiger_30 rdf:type owl:NamedIndividual ,
                     mao:name_zh "抽手轉身割歸後"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_31
+###  https://purl.org/maont/ontologytaming_tiger_31
 mao:taming_tiger_31 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3006,7 +3006,7 @@ mao:taming_tiger_31 rdf:type owl:NamedIndividual ,
                     mao:name_zh "上馬連出一側掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_32
+###  https://purl.org/maont/ontologytaming_tiger_32
 mao:taming_tiger_32 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3017,7 +3017,7 @@ mao:taming_tiger_32 rdf:type owl:NamedIndividual ,
                     mao:name_zh "四平肘頂標串手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_33
+###  https://purl.org/maont/ontologytaming_tiger_33
 mao:taming_tiger_33 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3028,7 +3028,7 @@ mao:taming_tiger_33 rdf:type owl:NamedIndividual ,
                     mao:name_zh "割手四平掌打正"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_34
+###  https://purl.org/maont/ontologytaming_tiger_34
 mao:taming_tiger_34 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3039,7 +3039,7 @@ mao:taming_tiger_34 rdf:type owl:NamedIndividual ,
                     mao:name_zh "一揸一抽轉一分"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_35
+###  https://purl.org/maont/ontologytaming_tiger_35
 mao:taming_tiger_35 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:cat_stance ,
@@ -3054,7 +3054,7 @@ mao:taming_tiger_35 rdf:type owl:NamedIndividual ,
                     mao:name_zh "出左踏右吊腳馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_36
+###  https://purl.org/maont/ontologytaming_tiger_36
 mao:taming_tiger_36 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3075,7 +3075,7 @@ mao:taming_tiger_36 rdf:type owl:NamedIndividual ,
                     mao:name_zh "照鏡手法爪三勻"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_37
+###  https://purl.org/maont/ontologytaming_tiger_37
 mao:taming_tiger_37 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3092,7 +3092,7 @@ mao:taming_tiger_37 rdf:type owl:NamedIndividual ,
                     mao:name_zh "帶馬歸槽拉轉後"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_38
+###  https://purl.org/maont/ontologytaming_tiger_38
 mao:taming_tiger_38 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3103,7 +3103,7 @@ mao:taming_tiger_38 rdf:type owl:NamedIndividual ,
                     mao:name_zh "貓兒洗面又三勻"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_39
+###  https://purl.org/maont/ontologytaming_tiger_39
 mao:taming_tiger_39 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:grappling_claw ,
@@ -3120,7 +3120,7 @@ mao:taming_tiger_39 rdf:type owl:NamedIndividual ,
                     mao:name_zh "帶馬扭身再拉後"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_4
+###  https://purl.org/maont/ontologytaming_tiger_4
 mao:taming_tiger_4 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_component mao:forefist ;
@@ -3131,7 +3131,7 @@ mao:taming_tiger_4 rdf:type owl:NamedIndividual ,
                    mao:name_zh "反手抽拳對膀肩"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_40
+###  https://purl.org/maont/ontologytaming_tiger_40
 mao:taming_tiger_40 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ;
@@ -3143,7 +3143,7 @@ mao:taming_tiger_40 rdf:type owl:NamedIndividual ,
                     mao:name_zh "右腳一齣子午馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_41
+###  https://purl.org/maont/ontologytaming_tiger_41
 mao:taming_tiger_41 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3160,7 +3160,7 @@ mao:taming_tiger_41 rdf:type owl:NamedIndividual ,
                     mao:name_zh "前弓後箭雙切膀"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_42
+###  https://purl.org/maont/ontologytaming_tiger_42
 mao:taming_tiger_42 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3180,7 +3180,7 @@ mao:taming_tiger_42 rdf:type owl:NamedIndividual ,
                     mao:name_zh "左上右落千字手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_43
+###  https://purl.org/maont/ontologytaming_tiger_43
 mao:taming_tiger_43 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3197,7 +3197,7 @@ mao:taming_tiger_43 rdf:type owl:NamedIndividual ,
                     mao:name_zh "拉馬抽拳雙掛落"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_44
+###  https://purl.org/maont/ontologytaming_tiger_44
 mao:taming_tiger_44 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3214,7 +3214,7 @@ mao:taming_tiger_44 rdf:type owl:NamedIndividual ,
                     mao:name_zh "進馬兜肘雙虎爪"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_45
+###  https://purl.org/maont/ontologytaming_tiger_45
 mao:taming_tiger_45 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bullhorn_uppercut ,
@@ -3230,7 +3230,7 @@ mao:taming_tiger_45 rdf:type owl:NamedIndividual ,
                     mao:name_zh "牛角一槌轉通天"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_46
+###  https://purl.org/maont/ontologytaming_tiger_46
 mao:taming_tiger_46 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3249,7 +3249,7 @@ mao:taming_tiger_46 rdf:type owl:NamedIndividual ,
                     mao:name_zh "回馬拋肘上四勻"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_47
+###  https://purl.org/maont/ontologytaming_tiger_47
 mao:taming_tiger_47 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:horse_stance ,
@@ -3262,7 +3262,7 @@ mao:taming_tiger_47 rdf:type owl:NamedIndividual ,
                     mao:name_zh "轉身向後四平馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_48
+###  https://purl.org/maont/ontologytaming_tiger_48
 mao:taming_tiger_48 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3274,7 +3274,7 @@ mao:taming_tiger_48 rdf:type owl:NamedIndividual ,
                     mao:name_zh "雙膀切落合掌分"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_49
+###  https://purl.org/maont/ontologytaming_tiger_49
 mao:taming_tiger_49 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3285,7 +3285,7 @@ mao:taming_tiger_49 rdf:type owl:NamedIndividual ,
                     mao:name_zh "一指撐天三株出"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_5
+###  https://purl.org/maont/ontologytaming_tiger_5
 mao:taming_tiger_5 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_component mao:dw_block_n_target_hand ,
@@ -3301,7 +3301,7 @@ mao:taming_tiger_5 rdf:type owl:NamedIndividual ,
                    mao:name_zh "橫迫三株標串掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_50
+###  https://purl.org/maont/ontologytaming_tiger_50
 mao:taming_tiger_50 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3312,7 +3312,7 @@ mao:taming_tiger_50 rdf:type owl:NamedIndividual ,
                     mao:name_zh "標串手法定金橋"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_51
+###  https://purl.org/maont/ontologytaming_tiger_51
 mao:taming_tiger_51 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3323,7 +3323,7 @@ mao:taming_tiger_51 rdf:type owl:NamedIndividual ,
                     mao:name_zh "雙抽雙割一揸分"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_52
+###  https://purl.org/maont/ontologytaming_tiger_52
 mao:taming_tiger_52 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:butterfly_palm ,
@@ -3347,7 +3347,7 @@ mao:taming_tiger_52 rdf:type owl:NamedIndividual ,
                     mao:name_zh "蝶掌一迫分漏手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_53
+###  https://purl.org/maont/ontologytaming_tiger_53
 mao:taming_tiger_53 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3358,7 +3358,7 @@ mao:taming_tiger_53 rdf:type owl:NamedIndividual ,
                     mao:name_zh "再撤蝶掌迫分漏"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_54
+###  https://purl.org/maont/ontologytaming_tiger_54
 mao:taming_tiger_54 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:body_twisting ,
@@ -3378,7 +3378,7 @@ mao:taming_tiger_54 rdf:type owl:NamedIndividual ,
                     mao:name_zh "撤掌連環抅彈腳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_55
+###  https://purl.org/maont/ontologytaming_tiger_55
 mao:taming_tiger_55 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:turning_steps ;
@@ -3389,7 +3389,7 @@ mao:taming_tiger_55 rdf:type owl:NamedIndividual ,
                     mao:name_zh "斜風擺柳轉車身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_56
+###  https://purl.org/maont/ontologytaming_tiger_56
 mao:taming_tiger_56 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3400,7 +3400,7 @@ mao:taming_tiger_56 rdf:type owl:NamedIndividual ,
                     mao:name_zh "雙膀切落起左右"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_57
+###  https://purl.org/maont/ontologytaming_tiger_57
 mao:taming_tiger_57 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3411,7 +3411,7 @@ mao:taming_tiger_57 rdf:type owl:NamedIndividual ,
                     mao:name_zh "一撇一劃千字手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_58
+###  https://purl.org/maont/ontologytaming_tiger_58
 mao:taming_tiger_58 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3422,7 +3422,7 @@ mao:taming_tiger_58 rdf:type owl:NamedIndividual ,
                     mao:name_zh "拉馬抽拳雙掛落"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_59
+###  https://purl.org/maont/ontologytaming_tiger_59
 mao:taming_tiger_59 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3433,7 +3433,7 @@ mao:taming_tiger_59 rdf:type owl:NamedIndividual ,
                     mao:name_zh "進馬兜肘雙虎爪"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_6
+###  https://purl.org/maont/ontologytaming_tiger_6
 mao:taming_tiger_6 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_component mao:descend_elbow ,
@@ -3447,7 +3447,7 @@ mao:taming_tiger_6 rdf:type owl:NamedIndividual ,
                    mao:name_zh "沉踭一定指撐天"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_60
+###  https://purl.org/maont/ontologytaming_tiger_60
 mao:taming_tiger_60 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3458,7 +3458,7 @@ mao:taming_tiger_60 rdf:type owl:NamedIndividual ,
                     mao:name_zh "牛角一槌轉通天"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_61
+###  https://purl.org/maont/ontologytaming_tiger_61
 mao:taming_tiger_61 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3478,7 +3478,7 @@ mao:taming_tiger_61 rdf:type owl:NamedIndividual ,
                     mao:name_zh "坐馬單橋槌進步"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_62
+###  https://purl.org/maont/ontologytaming_tiger_62
 mao:taming_tiger_62 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3497,7 +3497,7 @@ mao:taming_tiger_62 rdf:type owl:NamedIndividual ,
                     mao:name_zh "拉馬一頂碌肘撇"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_63
+###  https://purl.org/maont/ontologytaming_tiger_63
 mao:taming_tiger_63 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3520,7 +3520,7 @@ mao:taming_tiger_63 rdf:type owl:NamedIndividual ,
                     mao:name_zh "回頭蝶掌莫延遲"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_64
+###  https://purl.org/maont/ontologytaming_tiger_64
 mao:taming_tiger_64 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:blacktiger_punch ,
@@ -3540,7 +3540,7 @@ mao:taming_tiger_64 rdf:type owl:NamedIndividual ,
                     mao:name_zh "黑虎槌法連環打"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_65
+###  https://purl.org/maont/ontologytaming_tiger_65
 mao:taming_tiger_65 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3559,7 +3559,7 @@ mao:taming_tiger_65 rdf:type owl:NamedIndividual ,
                     mao:name_zh "蝴蝶一掌麒麟步"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_66
+###  https://purl.org/maont/ontologytaming_tiger_66
 mao:taming_tiger_66 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3570,7 +3570,7 @@ mao:taming_tiger_66 rdf:type owl:NamedIndividual ,
                     mao:name_zh "連環蝶掌步麒麟"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_67
+###  https://purl.org/maont/ontologytaming_tiger_67
 mao:taming_tiger_67 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3587,7 +3587,7 @@ mao:taming_tiger_67 rdf:type owl:NamedIndividual ,
                     mao:name_zh "右抽一拳連打出"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_68
+###  https://purl.org/maont/ontologytaming_tiger_68
 mao:taming_tiger_68 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3598,7 +3598,7 @@ mao:taming_tiger_68 rdf:type owl:NamedIndividual ,
                     mao:name_zh "左右連環一樣同"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_69
+###  https://purl.org/maont/ontologytaming_tiger_69
 mao:taming_tiger_69 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:backfist_n_punch_combo ,
@@ -3612,7 +3612,7 @@ mao:taming_tiger_69 rdf:type owl:NamedIndividual ,
                     mao:name_zh "轉身單掛槌中出"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_7
+###  https://purl.org/maont/ontologytaming_tiger_7
 mao:taming_tiger_7 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_component mao:forefist ,
@@ -3624,7 +3624,7 @@ mao:taming_tiger_7 rdf:type owl:NamedIndividual ,
                    mao:name_zh "右手揸拳左用掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_70
+###  https://purl.org/maont/ontologytaming_tiger_70
 mao:taming_tiger_70 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3635,7 +3635,7 @@ mao:taming_tiger_70 rdf:type owl:NamedIndividual ,
                     mao:name_zh "拉馬轉身掛打槌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_71
+###  https://purl.org/maont/ontologytaming_tiger_71
 mao:taming_tiger_71 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3646,7 +3646,7 @@ mao:taming_tiger_71 rdf:type owl:NamedIndividual ,
                     mao:name_zh "向前掛打連環落"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_72
+###  https://purl.org/maont/ontologytaming_tiger_72
 mao:taming_tiger_72 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:horse_stance ,
@@ -3662,7 +3662,7 @@ mao:taming_tiger_72 rdf:type owl:NamedIndividual ,
                     mao:name_zh "後腳一拉千字手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_73
+###  https://purl.org/maont/ontologytaming_tiger_73
 mao:taming_tiger_73 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3685,7 +3685,7 @@ mao:taming_tiger_73 rdf:type owl:NamedIndividual ,
                     mao:name_zh "進馬一槌定肘出"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_74
+###  https://purl.org/maont/ontologytaming_tiger_74
 mao:taming_tiger_74 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:elbow_slap_fist ,
@@ -3708,7 +3708,7 @@ mao:taming_tiger_74 rdf:type owl:NamedIndividual ,
                     mao:name_zh "分漏單掛轉金龍"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_75
+###  https://purl.org/maont/ontologytaming_tiger_75
 mao:taming_tiger_75 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3727,7 +3727,7 @@ mao:taming_tiger_75 rdf:type owl:NamedIndividual ,
                     mao:name_zh "子午一掌虎尾腳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_76
+###  https://purl.org/maont/ontologytaming_tiger_76
 mao:taming_tiger_76 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3747,7 +3747,7 @@ mao:taming_tiger_76 rdf:type owl:NamedIndividual ,
                     mao:name_zh "轉身蛇形又搶珠"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_77
+###  https://purl.org/maont/ontologytaming_tiger_77
 mao:taming_tiger_77 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3766,7 +3766,7 @@ mao:taming_tiger_77 rdf:type owl:NamedIndividual ,
                     mao:name_zh "飯匙頭起蛇擺尾"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_78
+###  https://purl.org/maont/ontologytaming_tiger_78
 mao:taming_tiger_78 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3784,7 +3784,7 @@ mao:taming_tiger_78 rdf:type owl:NamedIndividual ,
                     mao:name_zh "轉身一跳碌鼓槌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_79
+###  https://purl.org/maont/ontologytaming_tiger_79
 mao:taming_tiger_79 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3804,7 +3804,7 @@ mao:taming_tiger_79 rdf:type owl:NamedIndividual ,
                     mao:name_zh "出右攻迫左側掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_8
+###  https://purl.org/maont/ontologytaming_tiger_8
 mao:taming_tiger_8 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_component mao:cat_stance ,
@@ -3819,7 +3819,7 @@ mao:taming_tiger_8 rdf:type owl:NamedIndividual ,
                    mao:name_zh "吊腳收胸見禮謙"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_80
+###  https://purl.org/maont/ontologytaming_tiger_80
 mao:taming_tiger_80 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3830,7 +3830,7 @@ mao:taming_tiger_80 rdf:type owl:NamedIndividual ,
                     mao:name_zh "左馬攻迫側掌來"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_81
+###  https://purl.org/maont/ontologytaming_tiger_81
 mao:taming_tiger_81 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:front_block_hands ,
@@ -3846,7 +3846,7 @@ mao:taming_tiger_81 rdf:type owl:NamedIndividual ,
                     mao:name_zh "上右子午出膀手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_82
+###  https://purl.org/maont/ontologytaming_tiger_82
 mao:taming_tiger_82 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3866,7 +3866,7 @@ mao:taming_tiger_82 rdf:type owl:NamedIndividual ,
                     mao:name_zh "千斤一墜鐵門閂"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_83
+###  https://purl.org/maont/ontologytaming_tiger_83
 mao:taming_tiger_83 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3884,7 +3884,7 @@ mao:taming_tiger_83 rdf:type owl:NamedIndividual ,
                     mao:name_zh "跳馬猛弓射箭槌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_84
+###  https://purl.org/maont/ontologytaming_tiger_84
 mao:taming_tiger_84 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:crossing_bridge ,
@@ -3906,7 +3906,7 @@ mao:taming_tiger_84 rdf:type owl:NamedIndividual ,
                     mao:name_zh "抅彈一迫黑虎爪"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_85
+###  https://purl.org/maont/ontologytaming_tiger_85
 mao:taming_tiger_85 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:black_tiger_claw ,
@@ -3923,7 +3923,7 @@ mao:taming_tiger_85 rdf:type owl:NamedIndividual ,
                     mao:name_zh "退馬金龍爪獻來"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_86
+###  https://purl.org/maont/ontologytaming_tiger_86
 mao:taming_tiger_86 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3944,7 +3944,7 @@ mao:taming_tiger_86 rdf:type owl:NamedIndividual ,
                     mao:name_zh "轉身一橋槌打出"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_87
+###  https://purl.org/maont/ontologytaming_tiger_87
 mao:taming_tiger_87 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:body_twisting ,
@@ -3967,7 +3967,7 @@ mao:taming_tiger_87 rdf:type owl:NamedIndividual ,
                     mao:name_zh "吊腳纏枝一槌來"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_88
+###  https://purl.org/maont/ontologytaming_tiger_88
 mao:taming_tiger_88 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -3978,7 +3978,7 @@ mao:taming_tiger_88 rdf:type owl:NamedIndividual ,
                     mao:name_zh "左右連環各一勻"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_89
+###  https://purl.org/maont/ontologytaming_tiger_89
 mao:taming_tiger_89 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -3996,7 +3996,7 @@ mao:taming_tiger_89 rdf:type owl:NamedIndividual ,
                     mao:name_zh "蝶掌一捋分左右"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_9
+###  https://purl.org/maont/ontologytaming_tiger_9
 mao:taming_tiger_9 rdf:type owl:NamedIndividual ,
                             mao:Form_move ;
                    mao:has_component mao:forefist ;
@@ -4007,7 +4007,7 @@ mao:taming_tiger_9 rdf:type owl:NamedIndividual ,
                    mao:name_zh "扭手收拳歸原位"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_90
+###  https://purl.org/maont/ontologytaming_tiger_90
 mao:taming_tiger_90 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:black_tiger_claw ,
@@ -4029,7 +4029,7 @@ mao:taming_tiger_90 rdf:type owl:NamedIndividual ,
                     mao:name_zh "三星連環黑虎爪"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_91
+###  https://purl.org/maont/ontologytaming_tiger_91
 mao:taming_tiger_91 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:has_component mao:bow_stance ,
@@ -4049,7 +4049,7 @@ mao:taming_tiger_91 rdf:type owl:NamedIndividual ,
                     mao:name_zh "轉身一橋又一槌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_92
+###  https://purl.org/maont/ontologytaming_tiger_92
 mao:taming_tiger_92 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -4060,7 +4060,7 @@ mao:taming_tiger_92 rdf:type owl:NamedIndividual ,
                     mao:name_zh "收拳見禮須吊腳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/taming_tiger_93
+###  https://purl.org/maont/ontologytaming_tiger_93
 mao:taming_tiger_93 rdf:type owl:NamedIndividual ,
                              mao:Form_move ;
                     mao:in_form mao:Gung_Gee_Fook_Fu_Kuen ;
@@ -4070,7 +4070,7 @@ mao:taming_tiger_93 rdf:type owl:NamedIndividual ,
                     mao:name_zh "扭手收拳一鞠躬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/tangling_palms
+###  https://purl.org/maont/ontologytangling_palms
 mao:tangling_palms rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:uw_forcing_palm ;
@@ -4083,7 +4083,7 @@ mao:tangling_palms rdf:type owl:NamedIndividual ,
                    mao:otherName_en "Circular forcing palm"@en .
 
 
-###  https://purl.org/maont/ontology/target_hand
+###  https://purl.org/maont/ontologytarget_hand
 mao:target_hand rdf:type owl:NamedIndividual ,
                          mao:palm_tech ;
                 mao:employs mao:blade_palm ;
@@ -4101,7 +4101,7 @@ mao:target_hand rdf:type owl:NamedIndividual ,
                 mao:otherName_zh "標指"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/three_extending_hand
+###  https://purl.org/maont/ontologythree_extending_hand
 mao:three_extending_hand rdf:type owl:NamedIndividual ,
                                   mao:bridge_tech ;
                          mao:employs mao:extending_hand ;
@@ -4116,7 +4116,7 @@ mao:three_extending_hand rdf:type owl:NamedIndividual ,
                                           "連環三展"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/throwing_elbow
+###  https://purl.org/maont/ontologythrowing_elbow
 mao:throwing_elbow rdf:type owl:NamedIndividual ,
                             mao:elbow_tech ;
                    mao:used_in mao:Hung_Kuen ;
@@ -4129,7 +4129,7 @@ mao:throwing_elbow rdf:type owl:NamedIndividual ,
                    mao:otherName_zh "直踭"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/throwing_hammer
+###  https://purl.org/maont/ontologythrowing_hammer
 mao:throwing_hammer rdf:type owl:NamedIndividual ,
                              mao:fist_tech ;
                     mao:employs mao:backfist ,
@@ -4144,7 +4144,7 @@ mao:throwing_hammer rdf:type owl:NamedIndividual ,
                     mao:name_zh "抛搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/throwing_palm
+###  https://purl.org/maont/ontologythrowing_palm
 mao:throwing_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:used_in mao:White_Crane_Kungfu ;
@@ -4157,7 +4157,7 @@ mao:throwing_palm rdf:type owl:NamedIndividual ,
                   mao:otherName_en "Wrist Flicking Hand"@en .
 
 
-###  https://purl.org/maont/ontology/thrust_punch
+###  https://purl.org/maont/ontologythrust_punch
 mao:thrust_punch rdf:type owl:NamedIndividual ,
                           mao:fist_tech ;
                  mao:employs mao:fore_knuckle_fist ;
@@ -4170,7 +4170,7 @@ mao:thrust_punch rdf:type owl:NamedIndividual ,
                  mao:name_zh "插捶"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/thrusting_palm
+###  https://purl.org/maont/ontologythrusting_palm
 mao:thrusting_palm rdf:type owl:NamedIndividual ,
                             mao:palm_tech ;
                    mao:employs mao:reverse_palm ;
@@ -4187,13 +4187,13 @@ mao:thrusting_palm rdf:type owl:NamedIndividual ,
                    mao:otherName_zh "扱手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/tiger
+###  https://purl.org/maont/ontologytiger
 mao:tiger rdf:type owl:NamedIndividual ,
                    mao:symbolic_animal ;
           rdfs:label "Tiger"@en .
 
 
-###  https://purl.org/maont/ontology/tiger_claw
+###  https://purl.org/maont/ontologytiger_claw
 mao:tiger_claw rdf:type owl:NamedIndividual ,
                         mao:claw_tech ;
                mao:employs mao:claw_palm ;
@@ -4209,7 +4209,7 @@ mao:tiger_claw rdf:type owl:NamedIndividual ,
                mao:name_zh "虎爪"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/tiger_tail_kick
+###  https://purl.org/maont/ontologytiger_tail_kick
 mao:tiger_tail_kick rdf:type owl:NamedIndividual ,
                              mao:leg_tech ;
                     mao:used_in mao:Hung_Kuen ,
@@ -4223,7 +4223,7 @@ mao:tiger_tail_kick rdf:type owl:NamedIndividual ,
                     mao:otherName_en "Side thrust kick"@en .
 
 
-###  https://purl.org/maont/ontology/torsion
+###  https://purl.org/maont/ontologytorsion
 mao:torsion rdf:type owl:NamedIndividual ,
                      mao:bodywork ;
             mao:employs mao:body_twisting ;
@@ -4232,7 +4232,7 @@ mao:torsion rdf:type owl:NamedIndividual ,
             mao:name_zh "扭轉發力"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/trample
+###  https://purl.org/maont/ontologytrample
 mao:trample rdf:type owl:NamedIndividual ,
                      mao:leg_tech ;
             mao:used_in mao:White_Crane_Kungfu ;
@@ -4243,7 +4243,7 @@ mao:trample rdf:type owl:NamedIndividual ,
             mao:name_zh "踩"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/turfing_kick
+###  https://purl.org/maont/ontologyturfing_kick
 mao:turfing_kick rdf:type owl:NamedIndividual ,
                           mao:leg_tech ;
                  mao:used_in mao:White_Crane_Kungfu ;
@@ -4254,7 +4254,7 @@ mao:turfing_kick rdf:type owl:NamedIndividual ,
                  mao:name_zh "趨脚"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/turning
+###  https://purl.org/maont/ontologyturning
 mao:turning rdf:type owl:NamedIndividual ,
                      mao:bodywork ;
             mao:used_in mao:Hung_Kuen ,
@@ -4266,7 +4266,7 @@ mao:turning rdf:type owl:NamedIndividual ,
             mao:name_zh "轉身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/turning_palm
+###  https://purl.org/maont/ontologyturning_palm
 mao:turning_palm rdf:type owl:NamedIndividual ,
                           mao:palm_tech ;
                  mao:employs mao:crossing_bridge ,
@@ -4282,7 +4282,7 @@ mao:turning_palm rdf:type owl:NamedIndividual ,
                  mao:otherName_en "hyun_sau"@en .
 
 
-###  https://purl.org/maont/ontology/turning_stance
+###  https://purl.org/maont/ontologyturning_stance
 mao:turning_stance rdf:type owl:NamedIndividual ,
                             mao:stance ;
                    mao:similar_to mao:unicorn_steps ;
@@ -4294,7 +4294,7 @@ mao:turning_stance rdf:type owl:NamedIndividual ,
                    mao:name_zh "拐馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/turning_steps
+###  https://purl.org/maont/ontologyturning_steps
 mao:turning_steps rdf:type owl:NamedIndividual ,
                            mao:footwork ;
                   mao:employs mao:turning ,
@@ -4308,7 +4308,7 @@ mao:turning_steps rdf:type owl:NamedIndividual ,
                   mao:name_zh "斜風擺柳"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/twisting_stance
+###  https://purl.org/maont/ontologytwisting_stance
 mao:twisting_stance rdf:type owl:NamedIndividual ,
                              mao:stance ;
                     mao:used_in mao:Choy_Li_Fut ,
@@ -4323,7 +4323,7 @@ mao:twisting_stance rdf:type owl:NamedIndividual ,
                                      "纏絲馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/two_dragons_outof_sea
+###  https://purl.org/maont/ontologytwo_dragons_outof_sea
 mao:two_dragons_outof_sea rdf:type owl:NamedIndividual ,
                                    mao:palm_tech ;
                           mao:employs mao:upright_buddha_palm ;
@@ -4336,7 +4336,7 @@ mao:two_dragons_outof_sea rdf:type owl:NamedIndividual ,
                           mao:otherName_zh "雙撐掌"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/two_finger_strike
+###  https://purl.org/maont/ontologytwo_finger_strike
 mao:two_finger_strike rdf:type owl:NamedIndividual ,
                                mao:handwork ;
                       mao:used_in mao:Hung_Kuen ,
@@ -4351,7 +4351,7 @@ mao:two_finger_strike rdf:type owl:NamedIndividual ,
                                        "還魂飽鶴"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/unicorn_stance
+###  https://purl.org/maont/ontologyunicorn_stance
 mao:unicorn_stance rdf:type owl:NamedIndividual ,
                             mao:stance ;
                    mao:used_in mao:Choy_Li_Fut ;
@@ -4364,7 +4364,7 @@ mao:unicorn_stance rdf:type owl:NamedIndividual ,
                                     "跪馬"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/unicorn_steps
+###  https://purl.org/maont/ontologyunicorn_steps
 mao:unicorn_steps rdf:type owl:NamedIndividual ,
                            mao:stance ;
                   mao:employs mao:stepping ;
@@ -4379,7 +4379,7 @@ mao:unicorn_steps rdf:type owl:NamedIndividual ,
                   mao:otherName_zh "歇步"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/up_forcing_palm
+###  https://purl.org/maont/ontologyup_forcing_palm
 mao:up_forcing_palm rdf:type owl:NamedIndividual ,
                              mao:palm_tech ;
                     mao:employs mao:tiger_claw ;
@@ -4394,7 +4394,7 @@ mao:up_forcing_palm rdf:type owl:NamedIndividual ,
                                      "擋頭"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/upper_swing_palm
+###  https://purl.org/maont/ontologyupper_swing_palm
 mao:upper_swing_palm rdf:type owl:NamedIndividual ,
                               mao:palm_tech ;
                      mao:used_in mao:White_Crane_Kungfu ;
@@ -4405,7 +4405,7 @@ mao:upper_swing_palm rdf:type owl:NamedIndividual ,
                      mao:name_zh "上搖"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/upright_body
+###  https://purl.org/maont/ontologyupright_body
 mao:upright_body rdf:type owl:NamedIndividual ,
                           mao:bodywork ;
                  mao:used_in mao:Choy_Li_Fut ,
@@ -4418,7 +4418,7 @@ mao:upright_body rdf:type owl:NamedIndividual ,
                  mao:name_zh "直身"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/upright_buddha_palm
+###  https://purl.org/maont/ontologyupright_buddha_palm
 mao:upright_buddha_palm rdf:type owl:NamedIndividual ,
                                  mao:handshape ;
                         mao:type_of mao:flat_palm ;
@@ -4429,7 +4429,7 @@ mao:upright_buddha_palm rdf:type owl:NamedIndividual ,
                         mao:otherName_en "Upright palm"@en .
 
 
-###  https://purl.org/maont/ontology/uprightness
+###  https://purl.org/maont/ontologyuprightness
 mao:uprightness rdf:type owl:NamedIndividual ,
                          mao:honor_code ;
                 mao:is mao:honest_integrity ;
@@ -4438,7 +4438,7 @@ mao:uprightness rdf:type owl:NamedIndividual ,
                 mao:name_zh "頂天立地"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/upward_punches
+###  https://purl.org/maont/ontologyupward_punches
 mao:upward_punches rdf:type owl:NamedIndividual ,
                             mao:fist_tech ;
                    mao:employs mao:bullhorn_fist ;
@@ -4450,7 +4450,7 @@ mao:upward_punches rdf:type owl:NamedIndividual ,
                    mao:name_zh "父子雙隨"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/uw_forcing_palm
+###  https://purl.org/maont/ontologyuw_forcing_palm
 mao:uw_forcing_palm rdf:type owl:NamedIndividual ,
                              mao:palm_tech ;
                     mao:employs mao:tiger_claw ;
@@ -4464,7 +4464,7 @@ mao:uw_forcing_palm rdf:type owl:NamedIndividual ,
                                      "逼橋"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/whipping_palm
+###  https://purl.org/maont/ontologywhipping_palm
 mao:whipping_palm rdf:type owl:NamedIndividual ,
                            mao:palm_tech ;
                   mao:employs mao:tiger_claw ;
@@ -4480,7 +4480,7 @@ mao:whipping_palm rdf:type owl:NamedIndividual ,
                                    "Kan Sau"@en .
 
 
-###  https://purl.org/maont/ontology/whipping_punch
+###  https://purl.org/maont/ontologywhipping_punch
 mao:whipping_punch rdf:type owl:NamedIndividual ,
                             mao:fist_tech ;
                    mao:employs mao:knocking_fist ;
@@ -4496,13 +4496,13 @@ mao:whipping_punch rdf:type owl:NamedIndividual ,
                    mao:otherName_zh "鞭搥"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/white_crane
+###  https://purl.org/maont/ontologywhite_crane
 mao:white_crane rdf:type owl:NamedIndividual ,
                          mao:symbolic_animal ;
                 rdfs:label "White_crane"@en .
 
 
-###  https://purl.org/maont/ontology/willow_leaf_palm
+###  https://purl.org/maont/ontologywillow_leaf_palm
 mao:willow_leaf_palm rdf:type owl:NamedIndividual ,
                               mao:handshape ;
                      mao:used_in mao:Choy_Li_Fut ,
@@ -4517,7 +4517,7 @@ mao:willow_leaf_palm rdf:type owl:NamedIndividual ,
                      mao:otherName_zh "铙钹手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/wiping_palm
+###  https://purl.org/maont/ontologywiping_palm
 mao:wiping_palm rdf:type owl:NamedIndividual ,
                          mao:palm_tech ;
                 mao:used_in mao:White_Crane_Kungfu ;
@@ -4528,8 +4528,8 @@ mao:wiping_palm rdf:type owl:NamedIndividual ,
                 mao:name_zh "抹手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/12_bridges
-<https://purl.org/maont/ontology/12_bridges> rdf:type owl:NamedIndividual ,
+###  https://purl.org/maont/ontology12_bridges
+<https://purl.org/maont/ontology12_bridges> rdf:type owl:NamedIndividual ,
                                                       mao:bridge_principle ;
                                              mao:belongs_to mao:Hung_Kuen ;
                                              mao:has_component mao:hard_bridge ,
@@ -4552,8 +4552,8 @@ mao:wiping_palm rdf:type owl:NamedIndividual ,
                                                               "洪拳十二橋手"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/YongChun(place)
-<https://purl.org/maont/ontology/YongChun(place)> rdf:type owl:NamedIndividual ,
+###  https://purl.org/maont/ontologyYongChun(place)
+<https://purl.org/maont/ontologyYongChun(place)> rdf:type owl:NamedIndividual ,
                                                            mao:E53_place ;
                                                   rdfs:label "YongChun_(place)"@en ;
                                                   mao:name_en "Yong Chun"@en .
@@ -4571,7 +4571,7 @@ mao:wiping_palm rdf:type owl:NamedIndividual ,
 #    (not yet in MAon_individual.ttl)
 #################################################################
 
-###  https://purl.org/maont/ontology/arm_twist
+###  https://purl.org/maont/ontologyarm_twist
 mao:arm_twist rdf:type owl:NamedIndividual ,
            mao:handwork ;
     mao:used_in mao:Hung_Kuen ;
@@ -4580,7 +4580,7 @@ mao:arm_twist rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Nau Kei Sau"@en ;
     mao:name_zh "扭其手"@zh-hk .
 
-###  https://purl.org/maont/ontology/twist_stance_kick
+###  https://purl.org/maont/ontologytwist_stance_kick
 mao:twist_stance_kick rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Hung_Kuen ;
@@ -4589,7 +4589,7 @@ mao:twist_stance_kick rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Nau Maa Pek Goek"@en ;
     mao:name_zh "扭馬劈腳"@zh-hk .
 
-###  https://purl.org/maont/ontology/cross_arm_block
+###  https://purl.org/maont/ontologycross_arm_block
 mao:cross_arm_block rdf:type owl:NamedIndividual ,
            mao:palm_tech ;
     mao:used_in mao:Hung_Kuen ;
@@ -4598,7 +4598,7 @@ mao:cross_arm_block rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Gau Caa Sau"@en ;
     mao:name_zh "交叉手"@zh-hk .
 
-###  https://purl.org/maont/ontology/twist_stance_blocking_palm
+###  https://purl.org/maont/ontologytwist_stance_blocking_palm
 mao:twist_stance_blocking_palm rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Hung_Kuen ;
@@ -4611,7 +4611,7 @@ mao:twist_stance_blocking_palm rdf:type owl:NamedIndividual ,
 #    Sparring set
 #################################################################
 
-###  https://purl.org/maont/ontology/Gung_Gee_Fok_Fu_Kuen_Deui_Chaak
+###  https://purl.org/maont/ontologyGung_Gee_Fok_Fu_Kuen_Deui_Chaak
 mao:Gung_Gee_Fok_Fu_Kuen_Deui_Chaak rdf:type owl:NamedIndividual ,
                                               mao:sparring_set ;
     mao:practiced_in mao:Lam_Family_Hung_Kuen ;
@@ -4623,14 +4623,14 @@ mao:Gung_Gee_Fok_Fu_Kuen_Deui_Chaak rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Gung Gee Fok Fu Kuen Deui Chaak"@en ;
     mao:otherName_en "Taming Tiger Boxing Two-Man Set"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_seqA
+###  https://purl.org/maont/ontologygffk_dc_seqA
 mao:gffk_dc_seqA rdf:type owl:NamedIndividual ,
                           mao:spar_sequence ;
     rdfs:label "gffk_dc_seqA"@en ;
     mao:name_en "White figure sequence"@en ;
     mao:name_zh "白方序列"@zh-hk .
 
-###  https://purl.org/maont/ontology/gffk_dc_seqB
+###  https://purl.org/maont/ontologygffk_dc_seqB
 mao:gffk_dc_seqB rdf:type owl:NamedIndividual ,
                           mao:spar_sequence ;
     rdfs:label "gffk_dc_seqB"@en ;
@@ -4643,7 +4643,7 @@ mao:gffk_dc_seqB rdf:type owl:NamedIndividual ,
 #    Both Form_move instances (A and B) reference this via has_component.
 #################################################################
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_01
+###  https://purl.org/maont/ontologygffk_dc_pair_01
 mao:gffk_dc_pair_01 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4654,7 +4654,7 @@ mao:gffk_dc_pair_01 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.169"^^xsd:string ;
     mao:has_resource "P1-00:01:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_02
+###  https://purl.org/maont/ontologygffk_dc_pair_02
 mao:gffk_dc_pair_02 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4664,7 +4664,7 @@ mao:gffk_dc_pair_02 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Zak Zoeng Laap Sau"@en ;
     mao:archivist_note "Source manual p.169"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_03
+###  https://purl.org/maont/ontologygffk_dc_pair_03
 mao:gffk_dc_pair_03 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4674,7 +4674,7 @@ mao:gffk_dc_pair_03 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Zeon Maa Ping Ceoi"@en ;
     mao:archivist_note "Source manual p.170"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_04
+###  https://purl.org/maont/ontologygffk_dc_pair_04
 mao:gffk_dc_pair_04 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4685,7 +4685,7 @@ mao:gffk_dc_pair_04 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.170"^^xsd:string ;
     mao:has_resource "P1-00:03:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_05
+###  https://purl.org/maont/ontologygffk_dc_pair_05
 mao:gffk_dc_pair_05 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4695,7 +4695,7 @@ mao:gffk_dc_pair_05 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Sei Ping Jat Zi Ceoi"@en ;
     mao:archivist_note "Source manual p.171"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_06
+###  https://purl.org/maont/ontologygffk_dc_pair_06
 mao:gffk_dc_pair_06 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4706,7 +4706,7 @@ mao:gffk_dc_pair_06 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.171"^^xsd:string ;
     mao:has_resource "P1-00:05:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_07
+###  https://purl.org/maont/ontologygffk_dc_pair_07
 mao:gffk_dc_pair_07 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4716,7 +4716,7 @@ mao:gffk_dc_pair_07 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Soeng Gung Sau"@en ;
     mao:archivist_note "Source manual p.172"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_08
+###  https://purl.org/maont/ontologygffk_dc_pair_08
 mao:gffk_dc_pair_08 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4727,7 +4727,7 @@ mao:gffk_dc_pair_08 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.172"^^xsd:string ;
     mao:has_resource "P1-00:08:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_09
+###  https://purl.org/maont/ontologygffk_dc_pair_09
 mao:gffk_dc_pair_09 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4738,7 +4738,7 @@ mao:gffk_dc_pair_09 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.173"^^xsd:string ;
     mao:has_resource "P1-00:09:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_10
+###  https://purl.org/maont/ontologygffk_dc_pair_10
 mao:gffk_dc_pair_10 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4747,7 +4747,7 @@ mao:gffk_dc_pair_10 rdf:type owl:NamedIndividual ,
     mao:name_zh "進馬平搥"@zh-hk ;
     mao:name_romanCAN "Zeon Maa Ping Ceoi"@en  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_11
+###  https://purl.org/maont/ontologygffk_dc_pair_11
 mao:gffk_dc_pair_11 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4757,7 +4757,7 @@ mao:gffk_dc_pair_11 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Siu Goek Liu Jam"@en ;
     mao:archivist_note "Source manual p.174"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_12
+###  https://purl.org/maont/ontologygffk_dc_pair_12
 mao:gffk_dc_pair_12 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4766,7 +4766,7 @@ mao:gffk_dc_pair_12 rdf:type owl:NamedIndividual ,
     mao:name_zh "四平日字搥"@zh-hk ;
     mao:name_romanCAN "Sei Ping Jat Zi Ceoi"@en  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_13
+###  https://purl.org/maont/ontologygffk_dc_pair_13
 mao:gffk_dc_pair_13 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4776,7 +4776,7 @@ mao:gffk_dc_pair_13 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Ngau Gok Ceoi"@en ;
     mao:archivist_note "Source manual p.175"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_14
+###  https://purl.org/maont/ontologygffk_dc_pair_14
 mao:gffk_dc_pair_14 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4785,7 +4785,7 @@ mao:gffk_dc_pair_14 rdf:type owl:NamedIndividual ,
     mao:name_zh "雙弓手"@zh-hk ;
     mao:name_romanCAN "Soeng Gung Sau"@en  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_15
+###  https://purl.org/maont/ontologygffk_dc_pair_15
 mao:gffk_dc_pair_15 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4796,7 +4796,7 @@ mao:gffk_dc_pair_15 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.176"^^xsd:string ;
     mao:has_resource "P1-00:12:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_16
+###  https://purl.org/maont/ontologygffk_dc_pair_16
 mao:gffk_dc_pair_16 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4805,7 +4805,7 @@ mao:gffk_dc_pair_16 rdf:type owl:NamedIndividual ,
     mao:name_zh "獵手破排"@zh-hk ;
     mao:name_romanCAN "Laap Sau Po Paai"@en  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_17
+###  https://purl.org/maont/ontologygffk_dc_pair_17
 mao:gffk_dc_pair_17 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4816,7 +4816,7 @@ mao:gffk_dc_pair_17 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.177"^^xsd:string ;
     mao:has_resource "P1-00:13:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_18
+###  https://purl.org/maont/ontologygffk_dc_pair_18
 mao:gffk_dc_pair_18 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4825,7 +4825,7 @@ mao:gffk_dc_pair_18 rdf:type owl:NamedIndividual ,
     mao:name_zh "牛角搥"@zh-hk ;
     mao:name_romanCAN "Ngau Gok Ceoi"@en  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_19
+###  https://purl.org/maont/ontologygffk_dc_pair_19
 mao:gffk_dc_pair_19 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4835,7 +4835,7 @@ mao:gffk_dc_pair_19 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Siu Goek Liu Jam"@en ;
     mao:archivist_note "Source manual p.178"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_20
+###  https://purl.org/maont/ontologygffk_dc_pair_20
 mao:gffk_dc_pair_20 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4845,7 +4845,7 @@ mao:gffk_dc_pair_20 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Jat Zi Ceoi"@en ;
     mao:archivist_note "Source manual p.178"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_21
+###  https://purl.org/maont/ontologygffk_dc_pair_21
 mao:gffk_dc_pair_21 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4856,7 +4856,7 @@ mao:gffk_dc_pair_21 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.179"^^xsd:string ;
     mao:has_resource "P1-00:24:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_22
+###  https://purl.org/maont/ontologygffk_dc_pair_22
 mao:gffk_dc_pair_22 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4866,7 +4866,7 @@ mao:gffk_dc_pair_22 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Fu Mei Goek"@en ;
     mao:archivist_note "Source manual p.180"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_23
+###  https://purl.org/maont/ontologygffk_dc_pair_23
 mao:gffk_dc_pair_23 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4876,7 +4876,7 @@ mao:gffk_dc_pair_23 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Jat Zi Ceoi"@en ;
     mao:archivist_note "Source manual p.181"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_24
+###  https://purl.org/maont/ontologygffk_dc_pair_24
 mao:gffk_dc_pair_24 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4886,7 +4886,7 @@ mao:gffk_dc_pair_24 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Ngau Gok Ceoi"@en ;
     mao:archivist_note "Source manual p.181"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_25
+###  https://purl.org/maont/ontologygffk_dc_pair_25
 mao:gffk_dc_pair_25 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4896,7 +4896,7 @@ mao:gffk_dc_pair_25 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Fu Mei Goek"@en ;
     mao:archivist_note "Source manual p.182"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_26
+###  https://purl.org/maont/ontologygffk_dc_pair_26
 mao:gffk_dc_pair_26 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4906,7 +4906,7 @@ mao:gffk_dc_pair_26 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Laai Maa Fo Zin Ceoi"@en ;
     mao:archivist_note "Source manual p.184"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_27
+###  https://purl.org/maont/ontologygffk_dc_pair_27
 mao:gffk_dc_pair_27 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4915,7 +4915,7 @@ mao:gffk_dc_pair_27 rdf:type owl:NamedIndividual ,
     mao:name_zh "擸手迫踭"@zh-hk ;
     mao:name_romanCAN "Laap Sau Bik Zaang"@en  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_28
+###  https://purl.org/maont/ontologygffk_dc_pair_28
 mao:gffk_dc_pair_28 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4924,7 +4924,7 @@ mao:gffk_dc_pair_28 rdf:type owl:NamedIndividual ,
     mao:name_zh "進馬平搥-切手"@zh-hk ;
     mao:name_romanCAN "Zeon Maa Ping Ceoi Cit Sau"@en  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_29
+###  https://purl.org/maont/ontologygffk_dc_pair_29
 mao:gffk_dc_pair_29 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4933,7 +4933,7 @@ mao:gffk_dc_pair_29 rdf:type owl:NamedIndividual ,
     mao:name_zh "進馬平搥"@zh-hk ;
     mao:name_romanCAN "Zeon Maa Ping Ceoi"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_30
+###  https://purl.org/maont/ontologygffk_dc_pair_30
 mao:gffk_dc_pair_30 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4944,7 +4944,7 @@ mao:gffk_dc_pair_30 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.185"^^xsd:string ;
     mao:has_resource "P2-00:03:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_31
+###  https://purl.org/maont/ontologygffk_dc_pair_31
 mao:gffk_dc_pair_31 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4954,7 +4954,7 @@ mao:gffk_dc_pair_31 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Lok Maa Ngau Gok Ceoi"@en ;
     mao:archivist_note "Source manual p.186"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_32
+###  https://purl.org/maont/ontologygffk_dc_pair_32
 mao:gffk_dc_pair_32 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4964,7 +4964,7 @@ mao:gffk_dc_pair_32 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Soeng Maa Soeng Gwaa Ceoi"@en ;
     mao:has_resource "P2-00:09:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_33
+###  https://purl.org/maont/ontologygffk_dc_pair_33
 mao:gffk_dc_pair_33 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4973,7 +4973,7 @@ mao:gffk_dc_pair_33 rdf:type owl:NamedIndividual ,
     mao:name_zh "撩陰腿"@zh-hk ;
     mao:name_romanCAN "Liu Jam Teoi"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_34
+###  https://purl.org/maont/ontologygffk_dc_pair_34
 mao:gffk_dc_pair_34 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4984,7 +4984,7 @@ mao:gffk_dc_pair_34 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.187"^^xsd:string ;
     mao:has_resource "P2-00:07:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_35
+###  https://purl.org/maont/ontologygffk_dc_pair_35
 mao:gffk_dc_pair_35 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -4994,7 +4994,7 @@ mao:gffk_dc_pair_35 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Jat Zi Ceoi"@en ;
     mao:archivist_note "Source manual p.188"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_36
+###  https://purl.org/maont/ontologygffk_dc_pair_36
 mao:gffk_dc_pair_36 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5005,7 +5005,7 @@ mao:gffk_dc_pair_36 rdf:type owl:NamedIndividual ,
     mao:archivist_note "Source manual p.188"^^xsd:string ;
     mao:has_resource "P2-00:05:00"  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_37
+###  https://purl.org/maont/ontologygffk_dc_pair_37
 mao:gffk_dc_pair_37 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5015,7 +5015,7 @@ mao:gffk_dc_pair_37 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Soeng Haa Cung Ceoi"@en ;
     mao:archivist_note "Source manual p.189"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_38
+###  https://purl.org/maont/ontologygffk_dc_pair_38
 mao:gffk_dc_pair_38 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5025,7 +5025,7 @@ mao:gffk_dc_pair_38 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Jat Cau Jat Ceoi"@en ;
     mao:archivist_note "Source manual p.190"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_39
+###  https://purl.org/maont/ontologygffk_dc_pair_39
 mao:gffk_dc_pair_39 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5035,7 +5035,7 @@ mao:gffk_dc_pair_39 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Gau Taan Teoi Faat"@en ;
     mao:archivist_note "Source manual p.190"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_40
+###  https://purl.org/maont/ontologygffk_dc_pair_40
 mao:gffk_dc_pair_40 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5045,7 +5045,7 @@ mao:gffk_dc_pair_40 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Soeng Maa Caap Ceoi"@en ;
     mao:archivist_note "Source manual p.191"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_41
+###  https://purl.org/maont/ontologygffk_dc_pair_41
 mao:gffk_dc_pair_41 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5055,7 +5055,7 @@ mao:gffk_dc_pair_41 rdf:type owl:NamedIndividual ,
     mao:name_romanCAN "Tiu Sau"@en ;
     mao:archivist_note "Source manual p.191"^^xsd:string  .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_42
+###  https://purl.org/maont/ontologygffk_dc_pair_42
 mao:gffk_dc_pair_42 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5064,7 +5064,7 @@ mao:gffk_dc_pair_42 rdf:type owl:NamedIndividual ,
     mao:name_zh "雙掛搥"@zh-hk ;
     mao:name_romanCAN "Soeng Gwaa Ceoi"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_43
+###  https://purl.org/maont/ontologygffk_dc_pair_43
 mao:gffk_dc_pair_43 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5073,7 +5073,7 @@ mao:gffk_dc_pair_43 rdf:type owl:NamedIndividual ,
     mao:name_zh "右拍手"@zh-hk ;
     mao:name_romanCAN "Jau Paak Sau"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_pair_44
+###  https://purl.org/maont/ontologygffk_dc_pair_44
 mao:gffk_dc_pair_44 rdf:type owl:NamedIndividual ,
            mao:combo_tech ;
     mao:used_in mao:Lam_Family_Hung_Kuen ;
@@ -5096,7 +5096,7 @@ mao:gffk_dc_pair_44 rdf:type owl:NamedIndividual ,
 #    rdfs:label is a positional slug only.
 #################################################################
 
-###  https://purl.org/maont/ontology/gffk_dc_A_01
+###  https://purl.org/maont/ontologygffk_dc_A_01
 mao:gffk_dc_A_01 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5105,7 +5105,7 @@ mao:gffk_dc_A_01 rdf:type owl:NamedIndividual ,
     mao:has_component mao:palm_strike ;
     rdfs:label "Side_palm_and_cutting_hand_A_01"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_01
+###  https://purl.org/maont/ontologygffk_dc_B_01
 mao:gffk_dc_B_01 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5115,7 +5115,7 @@ mao:gffk_dc_B_01 rdf:type owl:NamedIndividual ,
     mao:has_component mao:horse_stance ;
     rdfs:label "Side_palm_and_cutting_hand_B_01"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_02
+###  https://purl.org/maont/ontologygffk_dc_A_02
 mao:gffk_dc_A_02 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5125,7 +5125,7 @@ mao:gffk_dc_A_02 rdf:type owl:NamedIndividual ,
     mao:has_component mao:horse_stance ;
     rdfs:label "Side_palm_and_arm_drag_claw_A_02"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_02
+###  https://purl.org/maont/ontologygffk_dc_B_02
 mao:gffk_dc_B_02 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5135,7 +5135,7 @@ mao:gffk_dc_B_02 rdf:type owl:NamedIndividual ,
     mao:has_component mao:grappling_claw ;
     rdfs:label "Side_palm_and_arm_drag_claw_B_02"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_03
+###  https://purl.org/maont/ontologygffk_dc_A_03
 mao:gffk_dc_A_03 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5146,7 +5146,7 @@ mao:gffk_dc_A_03 rdf:type owl:NamedIndividual ,
     mao:has_component mao:bow_stance ;
     rdfs:label "Advance_with_straight_punch_A_03"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_03
+###  https://purl.org/maont/ontologygffk_dc_B_03
 mao:gffk_dc_B_03 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5157,7 +5157,7 @@ mao:gffk_dc_B_03 rdf:type owl:NamedIndividual ,
     mao:has_component mao:bow_stance ;
     rdfs:label "Advance_with_straight_punch_B_03"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_04
+###  https://purl.org/maont/ontologygffk_dc_A_04
 mao:gffk_dc_A_04 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5168,7 +5168,7 @@ mao:gffk_dc_A_04 rdf:type owl:NamedIndividual ,
     mao:has_component mao:side_elbow ;
     rdfs:label "Hanging_fist_twist_stance_and_side_elbow_A_04"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_04
+###  https://purl.org/maont/ontologygffk_dc_B_04
 mao:gffk_dc_B_04 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5179,7 +5179,7 @@ mao:gffk_dc_B_04 rdf:type owl:NamedIndividual ,
     mao:has_component mao:up_forcing_palm ;
     rdfs:label "Hanging_fist_twist_stance_and_side_elbow_B_04"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_05
+###  https://purl.org/maont/ontologygffk_dc_A_05
 mao:gffk_dc_A_05 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5190,7 +5190,7 @@ mao:gffk_dc_A_05 rdf:type owl:NamedIndividual ,
     mao:has_component mao:dbsquare_hammer ;
     rdfs:label "Horse_stance_vertical_fist_punch_A_05"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_05
+###  https://purl.org/maont/ontologygffk_dc_B_05
 mao:gffk_dc_B_05 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5199,7 +5199,7 @@ mao:gffk_dc_B_05 rdf:type owl:NamedIndividual ,
     mao:has_component mao:qian_char_hand ;
     rdfs:label "Horse_stance_vertical_fist_punch_B_05"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_06
+###  https://purl.org/maont/ontologygffk_dc_A_06
 mao:gffk_dc_A_06 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5208,7 +5208,7 @@ mao:gffk_dc_A_06 rdf:type owl:NamedIndividual ,
     mao:has_component mao:bullhorn_punch ;
     rdfs:label "Bullhorn_hammer_fist_A_06"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_06
+###  https://purl.org/maont/ontologygffk_dc_B_06
 mao:gffk_dc_B_06 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5217,7 +5217,7 @@ mao:gffk_dc_B_06 rdf:type owl:NamedIndividual ,
     mao:has_component mao:blocking_palm ;
     rdfs:label "Bullhorn_hammer_fist_B_06"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_07
+###  https://purl.org/maont/ontologygffk_dc_A_07
 mao:gffk_dc_A_07 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5226,7 +5226,7 @@ mao:gffk_dc_A_07 rdf:type owl:NamedIndividual ,
     mao:has_component mao:uw_forcing_palm ;
     rdfs:label "Double_bow_hands_A_07"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_07
+###  https://purl.org/maont/ontologygffk_dc_B_07
 mao:gffk_dc_B_07 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5235,7 +5235,7 @@ mao:gffk_dc_B_07 rdf:type owl:NamedIndividual ,
     mao:has_component mao:db_bow_palm ;
     rdfs:label "Double_bow_hands_B_07"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_08
+###  https://purl.org/maont/ontologygffk_dc_A_08
 mao:gffk_dc_A_08 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5247,7 +5247,7 @@ mao:gffk_dc_A_08 rdf:type owl:NamedIndividual ,
     mao:has_description "Zak zoeng: White fiqure strikes at Black fiqure's abdomen with caang zoeng (palm strike). | zak zoeng: Black figure counters with side palm strike (zak zoeng) aimed at White figure's abdomen. | Got sau: White figure shifts into sei ping maa and deflectswith right got sau."@en ;
     rdfs:label "Double_hanging_hammer_fists_A_08"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_08
+###  https://purl.org/maont/ontologygffk_dc_B_08
 mao:gffk_dc_B_08 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5258,7 +5258,7 @@ mao:gffk_dc_B_08 rdf:type owl:NamedIndividual ,
     mao:has_description "Zak zoeng: White fiqure strikes at Black fiqure's abdomen with caang zoeng (palm strike). | Got sau: Black fiqure shifts his stance into sei ping maa and deflects with right got sau. | zak zoeng: Black figure counters with side palm strike (zak zoeng) aimed at White figure's abdomen."@en ;
     rdfs:label "Double_hanging_hammer_fists_B_08"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_09
+###  https://purl.org/maont/ontologygffk_dc_A_09
 mao:gffk_dc_A_09 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5271,7 +5271,7 @@ mao:gffk_dc_A_09 rdf:type owl:NamedIndividual ,
     mao:has_description "Zak zoeng: White figure counters with side palm strike(zak zoeng) aimed at Black figure's chest. Black figure simultaneously blocks with daan gung sau. | Laap sau: in the same movement Black figure grabs Whitefigure's right arm,Simultaneously, White figure changeshis stance to sei ping maa and pulls his fists to the chest."@en ;
     rdfs:label "Grab_and_break_guard_A_09"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_09
+###  https://purl.org/maont/ontologygffk_dc_B_09
 mao:gffk_dc_B_09 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5284,7 +5284,7 @@ mao:gffk_dc_B_09 rdf:type owl:NamedIndividual ,
     mao:has_description "Zak zoeng: White figure counters with side palm strike(zak zoeng) aimed at Black figure's chest. Black figure simultaneously blocks with daan gung sau. | Laap sau: in the same movement Black figure grabs Whitefigure's right arm,Simultaneously, White figure changeshis stance to sei ping maa and pulls his fists to the chest."@en ;
     rdfs:label "Grab_and_break_guard_B_09"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_10
+###  https://purl.org/maont/ontologygffk_dc_A_10
 mao:gffk_dc_A_10 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5297,7 +5297,7 @@ mao:gffk_dc_A_10 rdf:type owl:NamedIndividual ,
     mao:has_description "Zeon maa ping ceoi: White figures takes a left step forwardand pulls a right punch (ping ceo) to Black figure's chestBlack fiqure blocks with left cyun kiu sau and counters withright ping ceoi, which White figure deflects with zou laap sau | Zeon maa ping ceoi: White fiqure throws a right ping ceoi at Black figure. Black fiqure deflects with zou laap sau. White figure then steps forward on the right while Black figurepulls back on the left."@en ;
     rdfs:label "Advance_with_straight_punch_A_10"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_10
+###  https://purl.org/maont/ontologygffk_dc_B_10
 mao:gffk_dc_B_10 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5309,7 +5309,7 @@ mao:gffk_dc_B_10 rdf:type owl:NamedIndividual ,
     mao:has_description "Zeon maa ping ceoi: White figures takes a left step forwardand pulls a right punch (ping ceo) to Black figure's chestBlack fiqure blocks with left cyun kiu sau and counters withright ping ceoi, which White figure deflects with zou laap sau | Zeon maa ping ceoi: White fiqure throws a right ping ceoi at Black figure. Black fiqure deflects with zou laap sau. White figure then steps forward on the right while Black figurepulls back on the left."@en ;
     rdfs:label "Advance_with_straight_punch_B_10"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_11
+###  https://purl.org/maont/ontologygffk_dc_A_11
 mao:gffk_dc_A_11 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5320,7 +5320,7 @@ mao:gffk_dc_A_11 rdf:type owl:NamedIndividual ,
     mao:has_description "Jau gwaa ceoi: White figure takes a right step forward and strikes at Black figure's head with you gwaa ceoi. Black figure blocks with an overhead daan gung sau. | Nau maa zyun san: Black figure blocks White figure's punchand twists his arm backward at the elbow. White figuretwists his stance to prevent himself from getting into alock and grabs the opponent's neck with a left claw-handBlack figure holds White figure's wrist, Both sides shifttheir stances. White fiqure makes another gwaa ceoi whichforces Black figure to loosen his grip and block with hisright arm overhead. | Nau maa ding zaang: White figure thrusts his left elbow at Black figure's right hand, which again forces Black figure to loosen."@en ;
     rdfs:label "Leg_block_and_groin_kick_A_11"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_11
+###  https://purl.org/maont/ontologygffk_dc_B_11
 mao:gffk_dc_B_11 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5332,7 +5332,7 @@ mao:gffk_dc_B_11 rdf:type owl:NamedIndividual ,
     mao:has_description "Jau gwaa ceoi: White figure takes a right step forward and strikes at Black figure's head with you gwaa ceoi. Black figure blocks with an overhead daan gung sau. | Nau maa zyun san: Black figure blocks White figure's punchand twists his arm backward at the elbow. White figuretwists his stance to prevent himself from getting into alock and grabs the opponent's neck with a left claw-handBlack figure holds White figure's wrist, Both sides shifttheir stances. White fiqure makes another gwaa ceoi whichforces Black figure to loosen his grip and block with hisright arm overhead. | Nau maa ding zaang: White figure thrusts his left elbow at Black figure's right hand, which again forces Black figure to loosen."@en ;
     rdfs:label "Leg_block_and_groin_kick_B_11"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_12
+###  https://purl.org/maont/ontologygffk_dc_A_12
 mao:gffk_dc_A_12 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5343,7 +5343,7 @@ mao:gffk_dc_A_12 rdf:type owl:NamedIndividual ,
     mao:has_description "Paak haa: White figure takes a right step forward and strikes at Black figure's groin. Black figure blocks with his right palm (facing out)."@en ;
     rdfs:label "Horse_stance_vertical_fist_punch_A_12"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_12
+###  https://purl.org/maont/ontologygffk_dc_B_12
 mao:gffk_dc_B_12 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5356,7 +5356,7 @@ mao:gffk_dc_B_12 rdf:type owl:NamedIndividual ,
     mao:has_description "Paak haa: White figure takes a right step forward and strikes at Black figure's groin. Black figure blocks with his right palm (facing out)."@en ;
     rdfs:label "Horse_stance_vertical_fist_punch_B_12"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_13
+###  https://purl.org/maont/ontologygffk_dc_A_13
 mao:gffk_dc_A_13 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5365,7 +5365,7 @@ mao:gffk_dc_A_13 rdf:type owl:NamedIndividual ,
     mao:has_component mao:blocking_palm ;
     rdfs:label "Bullhorn_hammer_fist_A_13"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_13
+###  https://purl.org/maont/ontologygffk_dc_B_13
 mao:gffk_dc_B_13 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5374,7 +5374,7 @@ mao:gffk_dc_B_13 rdf:type owl:NamedIndividual ,
     mao:has_component mao:bullhorn_punch ;
     rdfs:label "Bullhorn_hammer_fist_B_13"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_14
+###  https://purl.org/maont/ontologygffk_dc_A_14
 mao:gffk_dc_A_14 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5385,7 +5385,7 @@ mao:gffk_dc_A_14 rdf:type owl:NamedIndividual ,
     mao:has_description "Sei ping jat zi ceoi: White figure pulls his fists to the waist, suspend his right leg, and leaps forward towards Black figure, landing in a horse stance and immediately pulls aright jat zi ceai to the opponent's abdomen. Black figureblocks with cin zi sau."@en ;
     rdfs:label "Double_bow_hands_A_14"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_14
+###  https://purl.org/maont/ontologygffk_dc_B_14
 mao:gffk_dc_B_14 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5396,7 +5396,7 @@ mao:gffk_dc_B_14 rdf:type owl:NamedIndividual ,
     mao:has_description "Sei ping jat zi ceoi: White figure pulls his fists to the waist, suspend his right leg, and leaps forward towards Black figure, landing in a horse stance and immediately pulls aright jat zi ceai to the opponent's abdomen. Black figureblocks with cin zi sau."@en ;
     rdfs:label "Double_bow_hands_B_14"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_15
+###  https://purl.org/maont/ontologygffk_dc_A_15
 mao:gffk_dc_A_15 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5407,7 +5407,7 @@ mao:gffk_dc_A_15 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: White figure strikes at Black figure's temple with left ngau gok ceoi, which the latter blocks with you gung sau."@en ;
     rdfs:label "Double_hanging_hammer_fists_A_15"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_15
+###  https://purl.org/maont/ontologygffk_dc_B_15
 mao:gffk_dc_B_15 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5419,7 +5419,7 @@ mao:gffk_dc_B_15 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: White figure strikes at Black figure's temple with left ngau gok ceoi, which the latter blocks with you gung sau."@en ;
     rdfs:label "Double_hanging_hammer_fists_B_15"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_16
+###  https://purl.org/maont/ontologygffk_dc_A_16
 mao:gffk_dc_A_16 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5432,7 +5432,7 @@ mao:gffk_dc_A_16 rdf:type owl:NamedIndividual ,
     mao:has_description "Soeng gung sau: Black figure blocks and counters with soeng gung sau to White figure's ribs. White figure blocks with you bik sau."@en ;
     rdfs:label "Grab_and_break_guard_A_16"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_16
+###  https://purl.org/maont/ontologygffk_dc_B_16
 mao:gffk_dc_B_16 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5445,7 +5445,7 @@ mao:gffk_dc_B_16 rdf:type owl:NamedIndividual ,
     mao:has_description "Soeng gung sau: Black figure blocks and counters with soeng gung sau to White figure's ribs. White figure blocks with you bik sau."@en ;
     rdfs:label "Grab_and_break_guard_B_16"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_17
+###  https://purl.org/maont/ontologygffk_dc_A_17
 mao:gffk_dc_A_17 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5456,7 +5456,7 @@ mao:gffk_dc_A_17 rdf:type owl:NamedIndividual ,
     mao:has_description "Soeng gwaa ceoi: from a right stance White figure throws soeng gwaa ceoi to Black figure's head, which the latte blocks with a cross-hand block."@en ;
     rdfs:label "Advance_with_straight_punch_A_17"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_17
+###  https://purl.org/maont/ontologygffk_dc_B_17
 mao:gffk_dc_B_17 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5468,7 +5468,7 @@ mao:gffk_dc_B_17 rdf:type owl:NamedIndividual ,
     mao:has_description "Soeng gwaa ceoi: from a right stance White figure throws soeng gwaa ceoi to Black figure's head, which the latte blocks with a cross-hand block."@en ;
     rdfs:label "Advance_with_straight_punch_B_17"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_18
+###  https://purl.org/maont/ontologygffk_dc_A_18
 mao:gffk_dc_A_18 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5479,7 +5479,7 @@ mao:gffk_dc_A_18 rdf:type owl:NamedIndividual ,
     mao:has_description "Jat zl ceoi: both sides suspend right leg. White figure takes a right step forward and pulls a doube jat zi ceoi at Biack figure's abdomen, Black figure also takes a right step forward and blocks with soeng bong sau. | Laap sau: Black figure uses soeng laap sau to grab White figure's upper arms. | Po pai sau: White figure used po pai sau to loosen Black figure's grip and counters with palm strike, Black fiqure also blocks and counters with po pai sau."@en ;
     rdfs:label "Bullhorn_hammer_fist_A_18"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_18
+###  https://purl.org/maont/ontologygffk_dc_B_18
 mao:gffk_dc_B_18 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5490,7 +5490,7 @@ mao:gffk_dc_B_18 rdf:type owl:NamedIndividual ,
     mao:has_description "Jat zl ceoi: both sides suspend right leg. White figure takes a right step forward and pulls a doube jat zi ceoi at Biack figure's abdomen, Black figure also takes a right step forward and blocks with soeng bong sau. | Laap sau: Black figure uses soeng laap sau to grab White figure's upper arms. | Po pai sau: White figure used po pai sau to loosen Black figure's grip and counters with palm strike, Black fiqure also blocks and counters with po pai sau."@en ;
     rdfs:label "Bullhorn_hammer_fist_B_18"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_19
+###  https://purl.org/maont/ontologygffk_dc_A_19
 mao:gffk_dc_A_19 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5502,7 +5502,7 @@ mao:gffk_dc_A_19 rdf:type owl:NamedIndividual ,
     mao:has_description "Zeon maa ping ceoi: White figure takes a step forward and pulls a right punch at Black figure, which the latter deflects with hyun sau. | Ngau gok ceoi: Black figure throws ngau gok ceoi at Whit figure's temple. White figure blocks with you gung sau."@en ;
     rdfs:label "Leg_block_and_groin_kick_A_19"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_19
+###  https://purl.org/maont/ontologygffk_dc_B_19
 mao:gffk_dc_B_19 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5513,7 +5513,7 @@ mao:gffk_dc_B_19 rdf:type owl:NamedIndividual ,
     mao:has_description "Zeon maa ping ceoi: White figure takes a step forward and pulls a right punch at Black figure, which the latter deflects with hyun sau. | Ngau gok ceoi: Black figure throws ngau gok ceoi at Whit figure's temple. White figure blocks with you gung sau."@en ;
     rdfs:label "Leg_block_and_groin_kick_B_19"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_20
+###  https://purl.org/maont/ontologygffk_dc_A_20
 mao:gffk_dc_A_20 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5525,7 +5525,7 @@ mao:gffk_dc_A_20 rdf:type owl:NamedIndividual ,
     mao:has_description "Ci sau: Black figure separates and holds White figure's arms with ci sau. | Siu goek liu jam: Black fiqure kicks with White figure's groin with liu jam teoi faat. White figure raises his knee to block."@en ;
     rdfs:label "Vertical_fist_punch_advance_A_20"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_20
+###  https://purl.org/maont/ontologygffk_dc_B_20
 mao:gffk_dc_B_20 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5536,7 +5536,7 @@ mao:gffk_dc_B_20 rdf:type owl:NamedIndividual ,
     mao:has_description "Ci sau: Black figure separates and holds White figure's arms with ci sau. | Siu goek liu jam: Black fiqure kicks with White figure's groin with liu jam teoi faat. White figure raises his knee to block."@en ;
     rdfs:label "Vertical_fist_punch_advance_B_20"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_21
+###  https://purl.org/maont/ontologygffk_dc_A_21
 mao:gffk_dc_A_21 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5545,7 +5545,7 @@ mao:gffk_dc_A_21 rdf:type owl:NamedIndividual ,
     mao:has_component mao:bullhorn_punch ;
     rdfs:label "Bullhorn_hammer_fist_A_21"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_21
+###  https://purl.org/maont/ontologygffk_dc_B_21
 mao:gffk_dc_B_21 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5554,7 +5554,7 @@ mao:gffk_dc_B_21 rdf:type owl:NamedIndividual ,
     mao:has_component mao:blocking_palm ;
     rdfs:label "Bullhorn_hammer_fist_B_21"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_22
+###  https://purl.org/maont/ontologygffk_dc_A_22
 mao:gffk_dc_A_22 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5565,7 +5565,7 @@ mao:gffk_dc_A_22 rdf:type owl:NamedIndividual ,
     mao:has_description "Sei ping jat zi ceoi: Black figure pulls both fists to his waist suspends his right leg and leaps towards White figurelanding in a horse stance and immediately pulls a right jat zceoi to the opponent's abdomen. White figure blocks withcin zi sau."@en ;
     rdfs:label "Tiger_tail_kick_A_22"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_22
+###  https://purl.org/maont/ontologygffk_dc_B_22
 mao:gffk_dc_B_22 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5575,7 +5575,7 @@ mao:gffk_dc_B_22 rdf:type owl:NamedIndividual ,
     mao:has_description "Sei ping jat zi ceoi: Black figure pulls both fists to his waist suspends his right leg and leaps towards White figurelanding in a horse stance and immediately pulls a right jat zceoi to the opponent's abdomen. White figure blocks withcin zi sau."@en ;
     rdfs:label "Tiger_tail_kick_B_22"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_23
+###  https://purl.org/maont/ontologygffk_dc_A_23
 mao:gffk_dc_A_23 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5586,7 +5586,7 @@ mao:gffk_dc_A_23 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: Black figure strikes at White figure's temple with left ngau gok ceoi, which the latter blocks with you gung sau."@en ;
     rdfs:label "Vertical_fist_punch_A_23"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_23
+###  https://purl.org/maont/ontologygffk_dc_B_23
 mao:gffk_dc_B_23 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5598,7 +5598,7 @@ mao:gffk_dc_B_23 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: Black figure strikes at White figure's temple with left ngau gok ceoi, which the latter blocks with you gung sau."@en ;
     rdfs:label "Vertical_fist_punch_B_23"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_24
+###  https://purl.org/maont/ontologygffk_dc_A_24
 mao:gffk_dc_A_24 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5609,7 +5609,7 @@ mao:gffk_dc_A_24 rdf:type owl:NamedIndividual ,
     mao:has_description "Soeng gung sau: White figure blocks and counters with soeng gung sau to Black figure's ribs. Black figure blocks with you bik sau."@en ;
     rdfs:label "Bullhorn_hammer_fist_A_24"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_24
+###  https://purl.org/maont/ontologygffk_dc_B_24
 mao:gffk_dc_B_24 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5620,7 +5620,7 @@ mao:gffk_dc_B_24 rdf:type owl:NamedIndividual ,
     mao:has_description "Soeng gung sau: White figure blocks and counters with soeng gung sau to Black figure's ribs. Black figure blocks with you bik sau."@en ;
     rdfs:label "Bullhorn_hammer_fist_B_24"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_25
+###  https://purl.org/maont/ontologygffk_dc_A_25
 mao:gffk_dc_A_25 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5630,7 +5630,7 @@ mao:gffk_dc_A_25 rdf:type owl:NamedIndividual ,
     mao:has_description "Soeng gwaa ceoi: from a right stance Black figure throws soeng gwaa ceai to White fiqure's head, which the latter blocks with a cross-hand block."@en ;
     rdfs:label "Tiger_tail_kick_A_25"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_25
+###  https://purl.org/maont/ontologygffk_dc_B_25
 mao:gffk_dc_B_25 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5641,7 +5641,7 @@ mao:gffk_dc_B_25 rdf:type owl:NamedIndividual ,
     mao:has_description "Soeng gwaa ceoi: from a right stance Black figure throws soeng gwaa ceai to White fiqure's head, which the latter blocks with a cross-hand block."@en ;
     rdfs:label "Tiger_tail_kick_B_25"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_26
+###  https://purl.org/maont/ontologygffk_dc_A_26
 mao:gffk_dc_A_26 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5653,7 +5653,7 @@ mao:gffk_dc_A_26 rdf:type owl:NamedIndividual ,
     mao:has_description "Jat zi ceoi: both sides suspend right leg. Black figure takes a right step forward and pulls a doube jat zi ceoi at White figure's abdomen, White figure also takes a right step forward and blocks with soeng bong sau. | Laap sau: White figure uses soeng laap sau to grab Blackfigure's upper arms. | Po pai sau: Black figure uses po pai sau to loosen White figure's grip and counters with palm strike. White figure also blocks and counters with po pai sau."@en ;
     rdfs:label "Rocket_hammer_fist_combination_A_26"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_26
+###  https://purl.org/maont/ontologygffk_dc_B_26
 mao:gffk_dc_B_26 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5665,7 +5665,7 @@ mao:gffk_dc_B_26 rdf:type owl:NamedIndividual ,
     mao:has_description "Jat zi ceoi: both sides suspend right leg. Black figure takes a right step forward and pulls a doube jat zi ceoi at White figure's abdomen, White figure also takes a right step forward and blocks with soeng bong sau. | Laap sau: White figure uses soeng laap sau to grab Blackfigure's upper arms. | Po pai sau: Black figure uses po pai sau to loosen White figure's grip and counters with palm strike. White figure also blocks and counters with po pai sau."@en ;
     rdfs:label "Rocket_hammer_fist_combination_B_26"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_27
+###  https://purl.org/maont/ontologygffk_dc_A_27
 mao:gffk_dc_A_27 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5675,7 +5675,7 @@ mao:gffk_dc_A_27 rdf:type owl:NamedIndividual ,
     mao:has_description "Zeon maa ping ceoi: Black figure takes a step forward and pulls a right punch at White figure, which the latter deflects with hyun sau."@en ;
     rdfs:label "Grab_and_force_elbow_A_27"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_27
+###  https://purl.org/maont/ontologygffk_dc_B_27
 mao:gffk_dc_B_27 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5686,7 +5686,7 @@ mao:gffk_dc_B_27 rdf:type owl:NamedIndividual ,
     mao:has_description "Zeon maa ping ceoi: Black figure takes a step forward and pulls a right punch at White figure, which the latter deflects with hyun sau."@en ;
     rdfs:label "Grab_and_force_elbow_B_27"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_28
+###  https://purl.org/maont/ontologygffk_dc_A_28
 mao:gffk_dc_A_28 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5698,7 +5698,7 @@ mao:gffk_dc_A_28 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: White figure throws ngau gok ceoi at Black figure's temple. Black figure blocks with you gung sau."@en ;
     rdfs:label "Advance_punch_and_cutting_hand_A_28"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_28
+###  https://purl.org/maont/ontologygffk_dc_B_28
 mao:gffk_dc_B_28 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5710,7 +5710,7 @@ mao:gffk_dc_B_28 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: White figure throws ngau gok ceoi at Black figure's temple. Black figure blocks with you gung sau."@en ;
     rdfs:label "Advance_punch_and_cutting_hand_B_28"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_29
+###  https://purl.org/maont/ontologygffk_dc_A_29
 mao:gffk_dc_A_29 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5721,7 +5721,7 @@ mao:gffk_dc_A_29 rdf:type owl:NamedIndividual ,
     mao:has_description "Ci sau: White figure separates and holds Black figure's arms with ci sau. | Siu goek liu jam: White figure kicks with Black figure's groin with liu jam teoi faat, Black figure raises his knee to block."@en ;
     rdfs:label "Advance_with_straight_punch_A_29"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_29
+###  https://purl.org/maont/ontologygffk_dc_B_29
 mao:gffk_dc_B_29 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5732,7 +5732,7 @@ mao:gffk_dc_B_29 rdf:type owl:NamedIndividual ,
     mao:has_description "Ci sau: White figure separates and holds Black figure's arms with ci sau. | Siu goek liu jam: White figure kicks with Black figure's groin with liu jam teoi faat, Black figure raises his knee to block."@en ;
     rdfs:label "Advance_with_straight_punch_B_29"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_30
+###  https://purl.org/maont/ontologygffk_dc_A_30
 mao:gffk_dc_A_30 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5741,7 +5741,7 @@ mao:gffk_dc_A_30 rdf:type owl:NamedIndividual ,
     mao:has_component mao:turning_palm ;
     rdfs:label "Cutting_hand_A_30"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_30
+###  https://purl.org/maont/ontologygffk_dc_B_30
 mao:gffk_dc_B_30 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5750,7 +5750,7 @@ mao:gffk_dc_B_30 rdf:type owl:NamedIndividual ,
     mao:has_component mao:straight_cut_palm ;
     rdfs:label "Cutting_hand_B_30"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_31
+###  https://purl.org/maont/ontologygffk_dc_A_31
 mao:gffk_dc_A_31 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5760,7 +5760,7 @@ mao:gffk_dc_A_31 rdf:type owl:NamedIndividual ,
     mao:has_component mao:bullhorn_punch ;
     rdfs:label "Drop_stance_bullhorn_fist_A_31"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_31
+###  https://purl.org/maont/ontologygffk_dc_B_31
 mao:gffk_dc_B_31 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5769,7 +5769,7 @@ mao:gffk_dc_B_31 rdf:type owl:NamedIndividual ,
     mao:has_component mao:up_forcing_palm ;
     rdfs:label "Drop_stance_bullhorn_fist_B_31"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_32
+###  https://purl.org/maont/ontologygffk_dc_A_32
 mao:gffk_dc_A_32 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5781,7 +5781,7 @@ mao:gffk_dc_A_32 rdf:type owl:NamedIndividual ,
     mao:has_component mao:grappling_claw ;
     rdfs:label "Advance_double_hanging_hammer_fists_A_32"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_32
+###  https://purl.org/maont/ontologygffk_dc_B_32
 mao:gffk_dc_B_32 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5791,7 +5791,7 @@ mao:gffk_dc_B_32 rdf:type owl:NamedIndividual ,
     mao:has_component mao:dbsquare_hammer ;
     rdfs:label "Advance_double_hanging_hammer_fists_B_32"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_33
+###  https://purl.org/maont/ontologygffk_dc_A_33
 mao:gffk_dc_A_33 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5800,7 +5800,7 @@ mao:gffk_dc_A_33 rdf:type owl:NamedIndividual ,
     mao:has_component mao:front_kick ;
     rdfs:label "Groin_lifting_kick_A_33"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_33
+###  https://purl.org/maont/ontologygffk_dc_B_33
 mao:gffk_dc_B_33 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5809,7 +5809,7 @@ mao:gffk_dc_B_33 rdf:type owl:NamedIndividual ,
     mao:has_component mao:twist_stance_blocking_palm ;
     rdfs:label "Groin_lifting_kick_B_33"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_34
+###  https://purl.org/maont/ontologygffk_dc_A_34
 mao:gffk_dc_A_34 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5820,7 +5820,7 @@ mao:gffk_dc_A_34 rdf:type owl:NamedIndividual ,
     mao:has_component mao:joint_lock ;
     rdfs:label "Turn_stance_and_uppercut_A_34"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_34
+###  https://purl.org/maont/ontologygffk_dc_B_34
 mao:gffk_dc_B_34 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5829,7 +5829,7 @@ mao:gffk_dc_B_34 rdf:type owl:NamedIndividual ,
     mao:has_component mao:blocking_palm ;
     rdfs:label "Turn_stance_and_uppercut_B_34"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_35
+###  https://purl.org/maont/ontologygffk_dc_A_35
 mao:gffk_dc_A_35 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5840,7 +5840,7 @@ mao:gffk_dc_A_35 rdf:type owl:NamedIndividual ,
     mao:has_description "Jat zi ceoi: White fiqure steps forward on the right and throws a right jat zi ceoi at Black figure's abdomen. Black figure blocks with a right cin zi sau, and guards his cheswith his left palm."@en ;
     rdfs:label "Vertical_fist_punch_A_35"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_35
+###  https://purl.org/maont/ontologygffk_dc_B_35
 mao:gffk_dc_B_35 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5851,7 +5851,7 @@ mao:gffk_dc_B_35 rdf:type owl:NamedIndividual ,
     mao:has_description "Jat zi ceoi: White fiqure steps forward on the right and throws a right jat zi ceoi at Black figure's abdomen. Black figure blocks with a right cin zi sau, and guards his cheswith his left palm."@en ;
     rdfs:label "Vertical_fist_punch_B_35"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_36
+###  https://purl.org/maont/ontologygffk_dc_A_36
 mao:gffk_dc_A_36 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5861,7 +5861,7 @@ mao:gffk_dc_A_36 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: White figure strikes with Black figure's temple with ngau gok ceoi. Black figure blocks with right gung sau."@en ;
     rdfs:label "Twist_stance_diagonal_kick_A_36"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_36
+###  https://purl.org/maont/ontologygffk_dc_B_36
 mao:gffk_dc_B_36 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5872,7 +5872,7 @@ mao:gffk_dc_B_36 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: White figure strikes with Black figure's temple with ngau gok ceoi. Black figure blocks with right gung sau."@en ;
     rdfs:label "Twist_stance_diagonal_kick_B_36"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_37
+###  https://purl.org/maont/ontologygffk_dc_A_37
 mao:gffk_dc_A_37 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5883,7 +5883,7 @@ mao:gffk_dc_A_37 rdf:type owl:NamedIndividual ,
     mao:has_description "Fu mei goek (Tiger tail kick): White figure kicks at Black fiqure with fu mei goek. Black figure blocks with soeng fok sau."@en ;
     rdfs:label "High_and_low_uppercut_A_37"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_37
+###  https://purl.org/maont/ontologygffk_dc_B_37
 mao:gffk_dc_B_37 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5894,7 +5894,7 @@ mao:gffk_dc_B_37 rdf:type owl:NamedIndividual ,
     mao:has_description "Fu mei goek (Tiger tail kick): White figure kicks at Black fiqure with fu mei goek. Black figure blocks with soeng fok sau."@en ;
     rdfs:label "High_and_low_uppercut_B_37"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_38
+###  https://purl.org/maont/ontologygffk_dc_A_38
 mao:gffk_dc_A_38 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5904,7 +5904,7 @@ mao:gffk_dc_A_38 rdf:type owl:NamedIndividual ,
     mao:has_component mao:straight_punch ;
     rdfs:label "Pull_and_straight_punch_A_38"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_38
+###  https://purl.org/maont/ontologygffk_dc_B_38
 mao:gffk_dc_B_38 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5914,7 +5914,7 @@ mao:gffk_dc_B_38 rdf:type owl:NamedIndividual ,
     mao:has_component mao:uw_forcing_palm ;
     rdfs:label "Pull_and_straight_punch_B_38"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_39
+###  https://purl.org/maont/ontologygffk_dc_A_39
 mao:gffk_dc_A_39 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5926,7 +5926,7 @@ mao:gffk_dc_A_39 rdf:type owl:NamedIndividual ,
     mao:has_description "Jat zi ceoi: Black figure steps forward on the right and throws a right jat zi ceoi at White figure's abdomen. White figure blocks with a right cin zi sau, and guards his chestwith his left palm."@en ;
     rdfs:label "Hook_sweep_and_block_A_39"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_39
+###  https://purl.org/maont/ontologygffk_dc_B_39
 mao:gffk_dc_B_39 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5937,7 +5937,7 @@ mao:gffk_dc_B_39 rdf:type owl:NamedIndividual ,
     mao:has_description "Jat zi ceoi: Black figure steps forward on the right and throws a right jat zi ceoi at White figure's abdomen. White figure blocks with a right cin zi sau, and guards his chestwith his left palm."@en ;
     rdfs:label "Hook_sweep_and_block_B_39"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_40
+###  https://purl.org/maont/ontologygffk_dc_A_40
 mao:gffk_dc_A_40 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5948,7 +5948,7 @@ mao:gffk_dc_A_40 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: Black figure strikes with White figure's temple with ngau gok ceoi. White figure blocks with nght gung sau."@en ;
     rdfs:label "Advance_with_thrust_punch_A_40"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_40
+###  https://purl.org/maont/ontologygffk_dc_B_40
 mao:gffk_dc_B_40 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5958,7 +5958,7 @@ mao:gffk_dc_B_40 rdf:type owl:NamedIndividual ,
     mao:has_description "Ngau gok ceoi: Black figure strikes with White figure's temple with ngau gok ceoi. White figure blocks with nght gung sau."@en ;
     rdfs:label "Advance_with_thrust_punch_B_40"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_41
+###  https://purl.org/maont/ontologygffk_dc_A_41
 mao:gffk_dc_A_41 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5970,7 +5970,7 @@ mao:gffk_dc_A_41 rdf:type owl:NamedIndividual ,
     mao:has_description "Fu mei goek (Tiger tail kick): Black fiqure kicks atWhite figurewith fu mei goek. White figure blocks with soeng fok sau."@en ;
     rdfs:label "Splitting_palm_A_41"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_41
+###  https://purl.org/maont/ontologygffk_dc_B_41
 mao:gffk_dc_B_41 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -5983,7 +5983,7 @@ mao:gffk_dc_B_41 rdf:type owl:NamedIndividual ,
     mao:has_description "Fu mei goek (Tiger tail kick): Black fiqure kicks atWhite figurewith fu mei goek. White figure blocks with soeng fok sau."@en ;
     rdfs:label "Splitting_palm_B_41"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_42
+###  https://purl.org/maont/ontologygffk_dc_A_42
 mao:gffk_dc_A_42 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -5992,7 +5992,7 @@ mao:gffk_dc_A_42 rdf:type owl:NamedIndividual ,
     mao:has_component mao:cross_arm_block ;
     rdfs:label "Double_hanging_hammer_fists_A_42"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_42
+###  https://purl.org/maont/ontologygffk_dc_B_42
 mao:gffk_dc_B_42 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -6002,7 +6002,7 @@ mao:gffk_dc_B_42 rdf:type owl:NamedIndividual ,
     mao:has_component mao:joint_lock ;
     rdfs:label "Double_hanging_hammer_fists_B_42"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_43
+###  https://purl.org/maont/ontologygffk_dc_A_43
 mao:gffk_dc_A_43 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -6011,7 +6011,7 @@ mao:gffk_dc_A_43 rdf:type owl:NamedIndividual ,
     mao:has_component mao:whipping_palm ;
     rdfs:label "Right_slapping_palm_A_43"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_43
+###  https://purl.org/maont/ontologygffk_dc_B_43
 mao:gffk_dc_B_43 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
@@ -6020,7 +6020,7 @@ mao:gffk_dc_B_43 rdf:type owl:NamedIndividual ,
     mao:has_component mao:dbsquare_hammer ;
     rdfs:label "Right_slapping_palm_B_43"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_A_44
+###  https://purl.org/maont/ontologygffk_dc_A_44
 mao:gffk_dc_A_44 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqA ;
@@ -6031,7 +6031,7 @@ mao:gffk_dc_A_44 rdf:type owl:NamedIndividual ,
     mao:has_description "Laai maa fo zin ceoi: White figure pulls a right punch at shoulder level in a left bow stance.Black figure blocks with soeng fok sau in left now stance. | Fo zin ceoi: White fiqure makes a consecutive fo zi ceoi at Black figure, who pulls back and blocks with cyun kiu sau."@en ;
     rdfs:label "Tiger_tail_kick_A_44"@en .
 
-###  https://purl.org/maont/ontology/gffk_dc_B_44
+###  https://purl.org/maont/ontologygffk_dc_B_44
 mao:gffk_dc_B_44 rdf:type owl:NamedIndividual ,
                    mao:Form_move ;
     mao:in_form mao:gffk_dc_seqB ;
