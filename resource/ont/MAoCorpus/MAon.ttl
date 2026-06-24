@@ -23,9 +23,8 @@
     vann:preferredNamespacePrefix "mao"^^xsd:string ;
 
     ## ── Versioning ────────────────────────────────────────────────
-    owl:versionIRI <https://purl.org/maont/ontology/1.2> ;
+    owl:versionIRI <https://purl.org/maont/ontology> ;
     owl:versionInfo "1.2"^^xsd:string ;
-    owl:priorVersion <https://purl.org/maont/ontology/1.1> ;
 
     ## ── Labels & description ──────────────────────────────────────
     dc:title "MAon — Martial Arts Ontology"@en ;

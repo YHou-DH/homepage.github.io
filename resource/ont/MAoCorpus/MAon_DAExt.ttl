@@ -26,7 +26,7 @@
     owl:imports <https://purl.org/maont/ontology> ;
 
     ## ── Versioning ────────────────────────────────────────────────
-    owl:versionIRI <https://purl.org/hkmala/ontology/maon-daext/1.0> ;
+    owl:versionIRI <https://purl.org/hkmala/ontology/maon-daext> ;
     owl:versionInfo "1.0"^^xsd:string ;
 
     ## ── Labels & description ──────────────────────────────────────
