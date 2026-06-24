@@ -1,16 +1,57 @@
 @prefix : <https://purl.org/maont/ontology/> .
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix mao: <https://purl.org/maont/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix schema: <https://schema.org/> .
+
 @base <https://purl.org/maont/ontology/> .
 
-<https://purl.org/maont/ontology/> rdf:type owl:Ontology ;
-                                    rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
-                                    rdfs:label "MAon — Martial Arts Ontology v1.2"@en .
+<https://purl.org/maont/ontology/>
+    rdf:type owl:Ontology ;
+
+    ## ── Identity ──────────────────────────────────────────────────
+    vann:preferredNamespaceUri "https://purl.org/maont/ontology/"^^xsd:anyURI ;
+    vann:preferredNamespacePrefix "mao"^^xsd:string ;
+
+    ## ── Versioning ────────────────────────────────────────────────
+    owl:versionIRI <https://purl.org/maont/ontology/1.2> ;
+    owl:versionInfo "1.2"^^xsd:string ;
+    owl:priorVersion <https://purl.org/maont/ontology/1.1> ;
+
+    ## ── Labels & description ──────────────────────────────────────
+    dc:title "MAon — Martial Arts Ontology"@en ;
+    rdfs:label "MAon — Martial Arts Ontology v1.2"@en ;
+    rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
+
+    ## ── License ───────────────────────────────────────────────────
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+
+    ## ── Provenance ────────────────────────────────────────────────
+    dcterms:creator "Yumeng Hou"^^xsd:string ;
+    dcterms:contributor "Luyi Chen"^^xsd:string ;
+    dcterms:created "2024-01-01"^^xsd:date ;
+    dcterms:issued "2024-01-01"^^xsd:date ;
+    dcterms:modified "2026-06-24"^^xsd:date ;
+    dcterms:publisher "YH"^^xsd:string ;
+
+    ## ── Citation ──────────────────────────────────────────────────
+    dcterms:bibliographicCitation "MAon: Martial Arts Ontology (v1.2). https://purl.org/maont/ontology/"^^xsd:string ;
+
+    ## ── Status & source ───────────────────────────────────────────
+    bibo:status "unstable"^^xsd:string ;
+    dcterms:source <https://purl.org/maont/ontology/> ;
+
+    ## ── Documentation ─────────────────────────────────────────────
+    rdfs:seeAlso <https://yumenghou.com/resource/ont/MAoCorpus/extract.html> .
 
 #################################################################
 #    Annotation properties
