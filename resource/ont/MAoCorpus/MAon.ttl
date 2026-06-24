@@ -2129,7 +2129,7 @@ mao:weapon_tech rdf:type owl:Class ;
                                   owl:onProperty mao:uses ;
                                   owl:someValuesFrom mao:armament
                                 ] ;
-                rdfs:comment "Weapon technique is the umbrella term that denotes the techniques that involve the use of a weapon -  an entity of armament, or a training tool."@en ;
+                rdfs:comment "Weapon technique encompasses all martial arts techniques that involve the wielding, manipulation, or deployment of a weapon (an instance of armament) or its training surrogate (an instance of training_tool). This includes both classical Chinese weapons — the four major categories of staff (棍), spear (槍), sword/sabre (劍/刀), and their derivatives — and any style-specific implement. Weapon techniques are governed by the same structural principles as empty-hand techniques but extend the practitioner's reach, leverage, and force delivery. A weapon technique may employ one or both hands and is typically trained through dedicated form sets (weapon_set) or integrated into combined empty-hand/weapon routines."@en ;
                 rdfs:label "Weapon_tech"@en ;
                 mao:name_en "Weapon technique"@en ;
                 mao:name_zh "兵器技術"@en .
