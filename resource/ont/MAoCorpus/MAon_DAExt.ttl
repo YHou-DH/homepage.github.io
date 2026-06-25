@@ -1,5 +1,5 @@
-@prefix : <https://purl.org/hkmala/ontology/maon-daext#> .
-@prefix hda: <https://purl.org/hkmala/ontology/maon-daext#> .
+@prefix : <https://purl.org/maont/daext/> .
+@prefix hda: <https://purl.org/maont/daext/> .
 @prefix mao: <https://purl.org/maont/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -13,13 +13,13 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-@base <https://purl.org/hkmala/ontology/maon-daext#> .
+@base <https://purl.org/maont/daext/> .
 
 <https://purl.org/hkmala/ontology/maon-daext>
     rdf:type owl:Ontology ;
 
     ## ── Identity ──────────────────────────────────────────────────
-    vann:preferredNamespaceUri "https://purl.org/hkmala/ontology/maon-daext#"^^xsd:anyURI ;
+    vann:preferredNamespaceUri "https://purl.org/maont/daext/"^^xsd:anyURI ;
     vann:preferredNamespacePrefix "hda"^^xsd:string ;
 
     ## ── Imports ───────────────────────────────────────────────────
@@ -106,14 +106,14 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://purl.org/hkmala/ontology/maon-daext#associatedWith
+###  https://purl.org/maont/daext/associatedWith
 hda:associatedWith rdf:type owl:ObjectProperty ;
                    rdfs:domain hda:Archive_component ;
                    rdfs:range hda:Archive_component ;
                    rdfs:comment "Connects an archive component to another related archive component, such as a MoCap-derived output associated with an interactive system or installation."@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#createdBy
+###  https://purl.org/maont/daext/createdBy
 hda:createdBy rdf:type owl:ObjectProperty ;
               rdfs:domain hda:Digital_document ;
               rdfs:range hda:Agent ;
@@ -123,7 +123,7 @@ hda:createdBy rdf:type owl:ObjectProperty ;
               mao:name_en "created by"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#derivedFrom
+###  https://purl.org/maont/daext/derivedFrom
 hda:derivedFrom rdf:type owl:ObjectProperty ;
                 rdfs:domain hda:Digital_document ;
                 rdfs:range hda:Digital_document ;
@@ -133,7 +133,7 @@ hda:derivedFrom rdf:type owl:ObjectProperty ;
                 mao:name_en "derived from"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#documents
+###  https://purl.org/maont/daext/documents
 hda:documents rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf mao:documents ;
               rdfs:domain hda:Digital_document ;
@@ -144,7 +144,7 @@ hda:documents rdf:type owl:ObjectProperty ;
               mao:name_en "documents"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#documentsStyle
+###  https://purl.org/maont/daext/documentsStyle
 hda:documentsStyle rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf hda:documents ;
                    rdfs:domain hda:Digital_document ;
@@ -155,7 +155,7 @@ hda:documentsStyle rdf:type owl:ObjectProperty ;
                    mao:name_en "documents style"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#documentsTechnique
+###  https://purl.org/maont/daext/documentsTechnique
 hda:documentsTechnique rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf hda:documents ;
                        rdfs:domain hda:Digital_document ;
@@ -166,7 +166,7 @@ hda:documentsTechnique rdf:type owl:ObjectProperty ;
                        mao:name_en "documents technique"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#featuresMaster
+###  https://purl.org/maont/daext/featuresMaster
 hda:featuresMaster rdf:type owl:ObjectProperty ;
                    rdfs:domain hda:Digital_document ;
                    rdfs:range mao:MA_master ;
@@ -176,7 +176,7 @@ hda:featuresMaster rdf:type owl:ObjectProperty ;
                    mao:name_en "features master"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#featuresObject
+###  https://purl.org/maont/daext/featuresObject
 hda:featuresObject rdf:type owl:ObjectProperty ;
                    rdfs:domain hda:Digital_document ;
                    rdfs:range owl:Thing ;
@@ -186,7 +186,7 @@ hda:featuresObject rdf:type owl:ObjectProperty ;
                    mao:name_en "features object"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasArchiveComponent
+###  https://purl.org/maont/daext/hasArchiveComponent
 hda:hasArchiveComponent rdf:type owl:ObjectProperty ;
                         owl:inverseOf hda:memberOfArchive ;
                         rdfs:domain hda:Digital_Archive ;
@@ -197,7 +197,7 @@ hda:hasArchiveComponent rdf:type owl:ObjectProperty ;
                         mao:name_en "has archive component"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasArtist
+###  https://purl.org/maont/daext/hasArtist
 hda:hasArtist rdf:type owl:ObjectProperty ;
               rdfs:domain hda:New_media_installation ;
               rdfs:range hda:Agent ;
@@ -206,7 +206,7 @@ hda:hasArtist rdf:type owl:ObjectProperty ;
               mao:name_en "has artist"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasCollaborator
+###  https://purl.org/maont/daext/hasCollaborator
 hda:hasCollaborator rdf:type owl:ObjectProperty ;
                     rdfs:domain hda:Archive_component ;
                     rdfs:range hda:Agent ;
@@ -216,7 +216,7 @@ hda:hasCollaborator rdf:type owl:ObjectProperty ;
                     mao:name_en "has collaborator"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasCurator
+###  https://purl.org/maont/daext/hasCurator
 hda:hasCurator rdf:type owl:ObjectProperty ;
                rdfs:domain hda:Exhibition ;
                rdfs:range hda:Agent ;
@@ -225,7 +225,7 @@ hda:hasCurator rdf:type owl:ObjectProperty ;
                mao:name_en "has curator"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasFormat
+###  https://purl.org/maont/daext/hasFormat
 hda:hasFormat rdf:type owl:ObjectProperty ;
               rdfs:domain hda:New_media_installation ;
               rdfs:range skos:Concept ;
@@ -234,7 +234,7 @@ hda:hasFormat rdf:type owl:ObjectProperty ;
               mao:name_en "has format"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasMemberDocument
+###  https://purl.org/maont/daext/hasMemberDocument
 hda:hasMemberDocument rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf hda:hasArchiveComponent ;
                       rdfs:domain hda:Digital_Archive ;
@@ -245,7 +245,7 @@ hda:hasMemberDocument rdf:type owl:ObjectProperty ;
                       mao:name_en "has member document"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasOrganizer
+###  https://purl.org/maont/daext/hasOrganizer
 hda:hasOrganizer rdf:type owl:ObjectProperty ;
                  rdfs:domain hda:Exhibition ;
                  rdfs:range hda:Agent ;
@@ -254,7 +254,7 @@ hda:hasOrganizer rdf:type owl:ObjectProperty ;
                  mao:name_en "has organizer"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasProcessingStage
+###  https://purl.org/maont/daext/hasProcessingStage
 hda:hasProcessingStage rdf:type owl:ObjectProperty ;
                        rdfs:domain hda:MoCap_item ;
                        rdfs:range skos:Concept ;
@@ -263,7 +263,7 @@ hda:hasProcessingStage rdf:type owl:ObjectProperty ;
                        mao:name_en "has processing stage"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasVenuePlace
+###  https://purl.org/maont/daext/hasVenuePlace
 hda:hasVenuePlace rdf:type owl:ObjectProperty ;
                   rdfs:domain hda:Exhibition ;
                   rdfs:range mao:E53_place ;
@@ -273,7 +273,7 @@ hda:hasVenuePlace rdf:type owl:ObjectProperty ;
                   mao:name_en "has venue place"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#memberOfArchive
+###  https://purl.org/maont/daext/memberOfArchive
 hda:memberOfArchive rdf:type owl:ObjectProperty ;
                     rdfs:domain hda:Archive_component ;
                     rdfs:range hda:Digital_Archive ;
@@ -283,7 +283,7 @@ hda:memberOfArchive rdf:type owl:ObjectProperty ;
                     mao:name_en "member of archive"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#present_at
+###  https://purl.org/maont/daext/present_at
 hda:present_at rdf:type owl:ObjectProperty ;
                rdfs:domain hda:New_media_installation ;
                rdfs:range hda:Exhibition ;
@@ -293,7 +293,7 @@ hda:present_at rdf:type owl:ObjectProperty ;
                mao:name_en "present at"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#references
+###  https://purl.org/maont/daext/references
 hda:references rdf:type owl:ObjectProperty ;
                rdfs:domain hda:Archive_component ;
                rdfs:range owl:Thing ;
@@ -303,7 +303,7 @@ hda:references rdf:type owl:ObjectProperty ;
                mao:name_en "references"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#scanOf
+###  https://purl.org/maont/daext/scanOf
 hda:scanOf rdf:type owl:ObjectProperty ;
            rdfs:domain hda:Digital_scan ;
            rdfs:range owl:Thing ;
@@ -312,7 +312,7 @@ hda:scanOf rdf:type owl:ObjectProperty ;
            mao:name_en "scan of"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#shownAt
+###  https://purl.org/maont/daext/shownAt
 hda:shownAt rdf:type owl:ObjectProperty ;
             rdfs:domain hda:Digital_document ;
             rdfs:range hda:Exhibition ;
@@ -322,7 +322,7 @@ hda:shownAt rdf:type owl:ObjectProperty ;
             mao:name_en "shown at"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#softwareForInstallation
+###  https://purl.org/maont/daext/softwareForInstallation
 hda:softwareForInstallation rdf:type owl:ObjectProperty ;
                             rdfs:domain hda:Application ;
                             rdfs:range hda:New_media_installation ;
@@ -331,7 +331,7 @@ hda:softwareForInstallation rdf:type owl:ObjectProperty ;
                             mao:name_en "software for installation"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#usesDigitalFile
+###  https://purl.org/maont/daext/usesDigitalFile
 hda:usesDigitalFile rdf:type owl:ObjectProperty ;
                     rdfs:domain hda:New_media_installation ;
                     rdfs:range hda:Digital_document ;
@@ -341,7 +341,7 @@ hda:usesDigitalFile rdf:type owl:ObjectProperty ;
                     mao:name_en "uses digital file"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#usesSystemOrTechnology
+###  https://purl.org/maont/daext/usesSystemOrTechnology
 hda:usesSystemOrTechnology rdf:type owl:ObjectProperty ;
                            rdfs:domain hda:New_media_installation ;
                            rdfs:range skos:Concept ;
@@ -355,7 +355,7 @@ hda:usesSystemOrTechnology rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://purl.org/hkmala/ontology/maon-daext#capturedOn
+###  https://purl.org/maont/daext/capturedOn
 hda:capturedOn rdf:type owl:DatatypeProperty ;
                rdfs:domain hda:Digital_document ;
                rdfs:range xsd:dateTime ;
@@ -364,7 +364,7 @@ hda:capturedOn rdf:type owl:DatatypeProperty ;
                mao:name_en "captured on"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasAccessURL
+###  https://purl.org/maont/daext/hasAccessURL
 hda:hasAccessURL rdf:type owl:DatatypeProperty ;
                  rdfs:domain owl:Thing ;
                  rdfs:range xsd:anyURI ;
@@ -373,7 +373,7 @@ hda:hasAccessURL rdf:type owl:DatatypeProperty ;
                  mao:name_en "has access URL"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasCreationDate
+###  https://purl.org/maont/daext/hasCreationDate
 hda:hasCreationDate rdf:type owl:DatatypeProperty ;
                     rdfs:domain hda:New_media_installation ;
                     rdfs:range xsd:date ;
@@ -382,7 +382,7 @@ hda:hasCreationDate rdf:type owl:DatatypeProperty ;
                     mao:name_en "has creation date"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasDescription
+###  https://purl.org/maont/daext/hasDescription
 hda:hasDescription rdf:type owl:DatatypeProperty ;
                    rdfs:domain owl:Thing ;
                    rdfs:range rdfs:Literal ;
@@ -391,7 +391,7 @@ hda:hasDescription rdf:type owl:DatatypeProperty ;
                    mao:name_en "has description"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasDuration
+###  https://purl.org/maont/daext/hasDuration
 hda:hasDuration rdf:type owl:DatatypeProperty ;
                 rdfs:domain hda:Digital_document ;
                 rdfs:range xsd:string ;
@@ -400,7 +400,7 @@ hda:hasDuration rdf:type owl:DatatypeProperty ;
                 mao:name_en "has duration"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasEndDate
+###  https://purl.org/maont/daext/hasEndDate
 hda:hasEndDate rdf:type owl:DatatypeProperty ;
                rdfs:domain hda:Exhibition ;
                rdfs:range xsd:date ;
@@ -409,7 +409,7 @@ hda:hasEndDate rdf:type owl:DatatypeProperty ;
                mao:name_en "has end date"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasFrameRate
+###  https://purl.org/maont/daext/hasFrameRate
 hda:hasFrameRate rdf:type owl:DatatypeProperty ;
                  rdfs:domain hda:Digital_document ;
                  rdfs:range xsd:string ;
@@ -418,7 +418,7 @@ hda:hasFrameRate rdf:type owl:DatatypeProperty ;
                  mao:name_en "has frame rate"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasIdentifier
+###  https://purl.org/maont/daext/hasIdentifier
 hda:hasIdentifier rdf:type owl:DatatypeProperty ;
                   rdfs:domain hda:Digital_document ;
                   rdfs:range xsd:string ;
@@ -427,7 +427,7 @@ hda:hasIdentifier rdf:type owl:DatatypeProperty ;
                   mao:name_en "has identifier"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasMeshOutputPath
+###  https://purl.org/maont/daext/hasMeshOutputPath
 hda:hasMeshOutputPath rdf:type owl:DatatypeProperty ;
                       rdfs:domain hda:MoCap_item ;
                       rdfs:range xsd:string ;
@@ -436,7 +436,7 @@ hda:hasMeshOutputPath rdf:type owl:DatatypeProperty ;
                       mao:name_en "has mesh output path"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasRawDataPath
+###  https://purl.org/maont/daext/hasRawDataPath
 hda:hasRawDataPath rdf:type owl:DatatypeProperty ;
                    rdfs:domain hda:MoCap_item ;
                    rdfs:range xsd:string ;
@@ -445,7 +445,7 @@ hda:hasRawDataPath rdf:type owl:DatatypeProperty ;
                    mao:name_en "has raw data path"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasResolution
+###  https://purl.org/maont/daext/hasResolution
 hda:hasResolution rdf:type owl:DatatypeProperty ;
                   rdfs:domain hda:Digital_document ;
                   rdfs:range xsd:string ;
@@ -454,7 +454,7 @@ hda:hasResolution rdf:type owl:DatatypeProperty ;
                   mao:name_en "has resolution"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasRiggedVersionPath
+###  https://purl.org/maont/daext/hasRiggedVersionPath
 hda:hasRiggedVersionPath rdf:type owl:DatatypeProperty ;
                          rdfs:domain hda:MoCap_item ;
                          rdfs:range xsd:string ;
@@ -463,7 +463,7 @@ hda:hasRiggedVersionPath rdf:type owl:DatatypeProperty ;
                          mao:name_en "has rigged version path"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasStartDate
+###  https://purl.org/maont/daext/hasStartDate
 hda:hasStartDate rdf:type owl:DatatypeProperty ;
                  rdfs:domain hda:Exhibition ;
                  rdfs:range xsd:date ;
@@ -472,7 +472,7 @@ hda:hasStartDate rdf:type owl:DatatypeProperty ;
                  mao:name_en "has start date"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasStoragePath
+###  https://purl.org/maont/daext/hasStoragePath
 hda:hasStoragePath rdf:type owl:DatatypeProperty ;
                    rdfs:domain hda:Digital_document ;
                    rdfs:range xsd:string ;
@@ -481,7 +481,7 @@ hda:hasStoragePath rdf:type owl:DatatypeProperty ;
                    mao:name_en "has storage path"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasTitle
+###  https://purl.org/maont/daext/hasTitle
 hda:hasTitle rdf:type owl:DatatypeProperty ;
              rdfs:domain owl:Thing ;
              rdfs:range rdfs:Literal ;
@@ -490,7 +490,7 @@ hda:hasTitle rdf:type owl:DatatypeProperty ;
              mao:name_en "has title"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#hasVenue
+###  https://purl.org/maont/daext/hasVenue
 hda:hasVenue rdf:type owl:DatatypeProperty ;
              rdfs:domain owl:Thing ;
              rdfs:range rdfs:Literal ;
@@ -511,7 +511,7 @@ skos:Concept rdf:type owl:Class .
 skos:ConceptScheme rdf:type owl:Class .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#AI_gen
+###  https://purl.org/maont/daext/AI_gen
 hda:AI_gen rdf:type owl:Class ;
            rdfs:subClassOf hda:Animation ;
            rdfs:comment "AI-generated moving-image or animation file."@en ;
@@ -520,7 +520,7 @@ hda:AI_gen rdf:type owl:Class ;
            mao:name_en "AI-generated animation"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Agent
+###  https://purl.org/maont/daext/Agent
 hda:Agent rdf:type owl:Class ;
           rdfs:subClassOf hda:Archive_component ;
           rdfs:comment "Person, group, studio, institution, master, artist, curator, or organizer associated with archive objects."@en ;
@@ -529,7 +529,7 @@ hda:Agent rdf:type owl:Class ;
           mao:name_en "Agent"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Analyzed_Rigged
+###  https://purl.org/maont/daext/Analyzed_Rigged
 hda:Analyzed_Rigged rdf:type owl:Class ;
                     rdfs:subClassOf hda:MoCap_item ;
                     rdfs:comment "MoCap data bound to skeletal rig through algorithmic processing."@en ;
@@ -538,7 +538,7 @@ hda:Analyzed_Rigged rdf:type owl:Class ;
                     mao:name_en "Rigged algorithmically"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Animation
+###  https://purl.org/maont/daext/Animation
 hda:Animation rdf:type owl:Class ;
               rdfs:subClassOf hda:Video_item ;
               rdfs:comment "Generated or edited moving-image file using animation or visualization methods."@en ;
@@ -547,7 +547,7 @@ hda:Animation rdf:type owl:Class ;
               mao:name_en "Animation"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Application
+###  https://purl.org/maont/daext/Application
 hda:Application rdf:type owl:Class ;
                 rdfs:subClassOf hda:Digital_document ;
                 rdfs:comment "Software or application file related to a digital installation or interface."@en ;
@@ -556,7 +556,7 @@ hda:Application rdf:type owl:Class ;
                 mao:name_en "Application"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Archive_component
+###  https://purl.org/maont/daext/Archive_component
 hda:Archive_component rdf:type owl:Class ;
                       rdfs:comment "A general class for entities that are managed as components of a digital archive, including digital documents, exhibitions, installations, and agents."@en ;
                       rdfs:label "Archive_component"@en ;
@@ -564,7 +564,7 @@ hda:Archive_component rdf:type owl:Class ;
                       mao:name_en "Archive component"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Audio
+###  https://purl.org/maont/daext/Audio
 hda:Audio rdf:type owl:Class ;
           rdfs:subClassOf hda:Digital_document ;
           rdfs:comment "Audio file or sound recording, including interviews, oral history, narration, ambient sound, and performance audio."@en ;
@@ -573,7 +573,7 @@ hda:Audio rdf:type owl:Class ;
           mao:name_en "Audio"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Book
+###  https://purl.org/maont/daext/Book
 hda:Book rdf:type owl:Class ;
          rdfs:subClassOf hda:Textual_item ;
          rdfs:comment "Published or digitized book related to martial arts knowledge, heritage context, artists, masters, exhibitions, or archive research."@en ;
@@ -582,7 +582,7 @@ hda:Book rdf:type owl:Class ;
          mao:name_en "Book"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Digital_Archive
+###  https://purl.org/maont/daext/Digital_Archive
 hda:Digital_Archive rdf:type owl:Class ;
                     rdfs:comment "A curated digital archive grouping digital documents, media records, exhibitions, agents, and domain entities related to martial arts heritage."@en ;
                     rdfs:label "Digital_Archive"@en ;
@@ -590,7 +590,7 @@ hda:Digital_Archive rdf:type owl:Class ;
                     mao:name_en "Digital Archive"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Digital_Learning_Platform
+###  https://purl.org/maont/daext/Digital_Learning_Platform
 hda:Digital_Learning_Platform rdf:type owl:Class ;
                               rdfs:subClassOf hda:Application ;
                               rdfs:comment "A digital learning platform or application that organizes and provides access to instructional videos and other learning resources."@en ;
@@ -599,7 +599,7 @@ hda:Digital_Learning_Platform rdf:type owl:Class ;
                               mao:name_en "Digital Learning Platform"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Digital_document
+###  https://purl.org/maont/daext/Digital_document
 hda:Digital_document rdf:type owl:Class ;
                      rdfs:subClassOf hda:Archive_component ;
                      rdfs:comment "Superclass for archived digital objects in HKMALA."@en ;
@@ -608,7 +608,7 @@ hda:Digital_document rdf:type owl:Class ;
                      mao:name_en "Digital document"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Digital_scan
+###  https://purl.org/maont/daext/Digital_scan
 hda:Digital_scan rdf:type owl:Class ;
                  rdfs:subClassOf hda:Visual_item ;
                  rdfs:comment "Digital scan of a physical document, catalogue, panel, object, or archival material."@en ;
@@ -617,7 +617,7 @@ hda:Digital_scan rdf:type owl:Class ;
                  mao:name_en "Digital scan"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Documentary
+###  https://purl.org/maont/daext/Documentary
 hda:Documentary rdf:type owl:Class ;
                 rdfs:subClassOf hda:Video_item ;
                 rdfs:comment "Documentary-style video recording contextual knowledge, people, events, places, institutions, or histories."@en ;
@@ -626,7 +626,7 @@ hda:Documentary rdf:type owl:Class ;
                 mao:name_en "Documentary"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Drone_video
+###  https://purl.org/maont/daext/Drone_video
 hda:Drone_video rdf:type owl:Class ;
                 rdfs:subClassOf hda:Video_item ;
                 rdfs:comment "Aerial video record."@en ;
@@ -635,7 +635,7 @@ hda:Drone_video rdf:type owl:Class ;
                 mao:name_en "Drone video"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Exhibition
+###  https://purl.org/maont/daext/Exhibition
 hda:Exhibition rdf:type owl:Class ;
                rdfs:subClassOf hda:Archive_component ;
                rdfs:comment "Record of an exhibition, display, programme, or public event associated with HKMALA digital resources, installations, media objects, and interpretive materials."@en ;
@@ -644,7 +644,7 @@ hda:Exhibition rdf:type owl:Class ;
                mao:name_en "Exhibition"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Exhibition_Caption
+###  https://purl.org/maont/daext/Exhibition_Caption
 hda:Exhibition_Caption rdf:type owl:Class ;
                        rdfs:subClassOf hda:Textual_item ;
                        rdfs:comment "Caption or label text for an exhibition item."@en ;
@@ -653,7 +653,7 @@ hda:Exhibition_Caption rdf:type owl:Class ;
                        mao:name_en "Exhibition Caption"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Exhibition_Catalogue
+###  https://purl.org/maont/daext/Exhibition_Catalogue
 hda:Exhibition_Catalogue rdf:type owl:Class ;
                          rdfs:subClassOf hda:Textual_item ;
                          rdfs:comment "Catalogue or publication associated with an exhibition."@en ;
@@ -662,7 +662,7 @@ hda:Exhibition_Catalogue rdf:type owl:Class ;
                          mao:name_en "Exhibition Catalogue"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Exhibition_Panel_Text
+###  https://purl.org/maont/daext/Exhibition_Panel_Text
 hda:Exhibition_Panel_Text rdf:type owl:Class ;
                           rdfs:subClassOf hda:Textual_item ;
                           rdfs:comment "Text prepared for exhibition panels."@en ;
@@ -671,7 +671,7 @@ hda:Exhibition_Panel_Text rdf:type owl:Class ;
                           mao:name_en "Exhibition Panel Text"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Instructional_video
+###  https://purl.org/maont/daext/Instructional_video
 hda:Instructional_video rdf:type owl:Class ;
                         rdfs:subClassOf hda:MA_demonstration ;
                         rdfs:comment "Teaching-oriented video explaining or demonstrating a technique, stance, form, or training method."@en ;
@@ -680,7 +680,7 @@ hda:Instructional_video rdf:type owl:Class ;
                         mao:name_en "Instructional video"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#MA_demonstration
+###  https://purl.org/maont/daext/MA_demonstration
 hda:MA_demonstration rdf:type owl:Class ;
                      rdfs:subClassOf hda:Video_item ;
                      rdfs:comment "Martial arts demonstration video showing forms, techniques, applications, or training sequences."@en ;
@@ -689,7 +689,7 @@ hda:MA_demonstration rdf:type owl:Class ;
                      mao:name_en "Martial arts demonstration"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Marker_Cloud
+###  https://purl.org/maont/daext/Marker_Cloud
 hda:Marker_Cloud rdf:type owl:Class ;
                  rdfs:subClassOf hda:MoCap_item ;
                  rdfs:comment "Raw marker-point capture representation."@en ;
@@ -698,7 +698,7 @@ hda:Marker_Cloud rdf:type owl:Class ;
                  mao:name_en "Marker Cloud"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Meshed_Animation
+###  https://purl.org/maont/daext/Meshed_Animation
 hda:Meshed_Animation rdf:type owl:Class ;
                      rdfs:subClassOf hda:MoCap_item ;
                      rdfs:comment "Mesh or animated render derived from motion-capture data."@en ;
@@ -707,7 +707,7 @@ hda:Meshed_Animation rdf:type owl:Class ;
                      mao:name_en "Meshed Animation"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#MoCap_animation
+###  https://purl.org/maont/daext/MoCap_animation
 hda:MoCap_animation rdf:type owl:Class ;
                     rdfs:subClassOf hda:Animation ;
                     rdfs:comment "Animation or visualization produced from motion-capture data."@en ;
@@ -716,7 +716,7 @@ hda:MoCap_animation rdf:type owl:Class ;
                     mao:name_en "Motion capture animation"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#MoCap_item
+###  https://purl.org/maont/daext/MoCap_item
 hda:MoCap_item rdf:type owl:Class ;
                rdfs:subClassOf hda:Digital_document ;
                rdfs:comment "Motion-capture data or motion-derived digital record documenting bodily movement, performance, or processed motion data."@en ;
@@ -725,7 +725,7 @@ hda:MoCap_item rdf:type owl:Class ;
                mao:name_en "Motion capture item"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#New_media_installation
+###  https://purl.org/maont/daext/New_media_installation
 hda:New_media_installation rdf:type owl:Class ;
                            rdfs:subClassOf hda:Archive_component ;
                            rdfs:comment "Installation artwork or digital media installation related to HKMALA materials."@en ;
@@ -734,7 +734,7 @@ hda:New_media_installation rdf:type owl:Class ;
                            mao:name_en "New media installation"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Portrait
+###  https://purl.org/maont/daext/Portrait
 hda:Portrait rdf:type owl:Class ;
              rdfs:subClassOf hda:Visual_item ;
              rdfs:comment "Portrait image of a master, practitioner, artist, or participant."@en ;
@@ -743,7 +743,7 @@ hda:Portrait rdf:type owl:Class ;
              mao:name_en "Portrait"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Programme
+###  https://purl.org/maont/daext/Programme
 hda:Programme rdf:type owl:Class ;
               rdfs:subClassOf hda:Archive_component ;
               rdfs:comment "A programme, training initiative, or educational project associated with HKMALA archival resources."@en ;
@@ -752,7 +752,7 @@ hda:Programme rdf:type owl:Class ;
               mao:name_en "Programme"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Reenactment
+###  https://purl.org/maont/daext/Reenactment
 hda:Reenactment rdf:type owl:Class ;
                 rdfs:subClassOf hda:MA_demonstration ;
                 rdfs:comment "Video that reconstructs, re-performs, or re-stages martial arts knowledge or historical material."@en ;
@@ -761,7 +761,7 @@ hda:Reenactment rdf:type owl:Class ;
                 mao:name_en "Reenactment"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Rigged_manual
+###  https://purl.org/maont/daext/Rigged_manual
 hda:Rigged_manual rdf:type owl:Class ;
                   rdfs:subClassOf hda:MoCap_item ;
                   rdfs:comment "MoCap data bound to skeletal rig through manual processing."@en ;
@@ -770,7 +770,7 @@ hda:Rigged_manual rdf:type owl:Class ;
                   mao:name_en "Rigged manually"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Script_Guide
+###  https://purl.org/maont/daext/Script_Guide
 hda:Script_Guide rdf:type owl:Class ;
                  rdfs:subClassOf hda:Textual_item ;
                  rdfs:comment "Text prepared as a script, guide, narration, or interpretive instruction for exhibitions, videos, installations, or educational use."@en ;
@@ -779,7 +779,7 @@ hda:Script_Guide rdf:type owl:Class ;
                  mao:name_en "Script/guide"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Stereo_pairs
+###  https://purl.org/maont/daext/Stereo_pairs
 hda:Stereo_pairs rdf:type owl:Class ;
                  rdfs:subClassOf hda:Visual_item ;
                  rdfs:comment "Paired images for stereoscopic or depth-related viewing."@en ;
@@ -788,7 +788,7 @@ hda:Stereo_pairs rdf:type owl:Class ;
                  mao:name_en "Stereo pairs"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Textual_item
+###  https://purl.org/maont/daext/Textual_item
 hda:Textual_item rdf:type owl:Class ;
                  rdfs:subClassOf hda:Digital_document ;
                  rdfs:comment "Born-digital or digitized textual archival record."@en ;
@@ -797,7 +797,7 @@ hda:Textual_item rdf:type owl:Class ;
                  mao:name_en "Textual item"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#ThreeSixty_image
+###  https://purl.org/maont/daext/ThreeSixty_image
 hda:ThreeSixty_image rdf:type owl:Class ;
                      rdfs:subClassOf hda:Visual_item ;
                      rdfs:comment "360-degree still image record."@en ;
@@ -806,7 +806,7 @@ hda:ThreeSixty_image rdf:type owl:Class ;
                      mao:name_en "360 image"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#ThreeSixty_video
+###  https://purl.org/maont/daext/ThreeSixty_video
 hda:ThreeSixty_video rdf:type owl:Class ;
                      rdfs:subClassOf hda:Video_item ;
                      rdfs:comment "360-degree video record."@en ;
@@ -815,7 +815,7 @@ hda:ThreeSixty_video rdf:type owl:Class ;
                      mao:name_en "360 video"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Video_item
+###  https://purl.org/maont/daext/Video_item
 hda:Video_item rdf:type owl:Class ;
                rdfs:subClassOf hda:Digital_document ;
                rdfs:comment "Time-based moving-image digital file."@en ;
@@ -824,7 +824,7 @@ hda:Video_item rdf:type owl:Class ;
                mao:name_en "Video item"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Visual_item
+###  https://purl.org/maont/daext/Visual_item
 hda:Visual_item rdf:type owl:Class ;
                 rdfs:subClassOf hda:Digital_document ;
                 rdfs:comment "Still image or photographic record."@en ;
@@ -833,7 +833,7 @@ hda:Visual_item rdf:type owl:Class ;
                 mao:name_en "Visual item"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Volumetric_video
+###  https://purl.org/maont/daext/Volumetric_video
 hda:Volumetric_video rdf:type owl:Class ;
                      rdfs:subClassOf hda:Video_item ;
                      rdfs:comment "Three-dimensional volumetric video capture."@en ;
@@ -842,7 +842,7 @@ hda:Volumetric_video rdf:type owl:Class ;
                      mao:name_en "Volumetric video"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#Website
+###  https://purl.org/maont/daext/Website
 hda:Website rdf:type owl:Class ;
             rdfs:subClassOf hda:Archive_component ;
             rdfs:label "Website"@en ;
@@ -855,19 +855,19 @@ hda:Website rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://purl.org/hkmala/ontology/maon-daext#InstallationFormatScheme
+###  https://purl.org/maont/daext/InstallationFormatScheme
 hda:InstallationFormatScheme rdf:type owl:NamedIndividual ,
                                       skos:ConceptScheme ;
                              skos:prefLabel "Installation format vocabulary"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#TechnologyTermScheme
+###  https://purl.org/maont/daext/TechnologyTermScheme
 hda:TechnologyTermScheme rdf:type owl:NamedIndividual ,
                                   skos:ConceptScheme ;
                          skos:prefLabel "Special system and technology vocabulary"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#ar
+###  https://purl.org/maont/daext/ar
 hda:ar rdf:type owl:NamedIndividual ,
                 skos:Concept ;
        skos:altLabel "Augmented Reality"@en ;
@@ -876,7 +876,7 @@ hda:ar rdf:type owl:NamedIndividual ,
        skos:prefLabel "AR"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#augmented_reality
+###  https://purl.org/maont/daext/augmented_reality
 hda:augmented_reality rdf:type owl:NamedIndividual ,
                                skos:Concept ;
                       skos:definition "Installation overlays digital content onto physical space or objects."@en ;
@@ -884,7 +884,7 @@ hda:augmented_reality rdf:type owl:NamedIndividual ,
                       skos:prefLabel "Augmented Reality"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#cinematic
+###  https://purl.org/maont/daext/cinematic
 hda:cinematic rdf:type owl:NamedIndividual ,
                        skos:Concept ;
               skos:definition "Installation uses filmic, screen-based, or time-based audiovisual presentation."@en ;
@@ -892,7 +892,7 @@ hda:cinematic rdf:type owl:NamedIndividual ,
               skos:prefLabel "Cinematic"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#five_perspective
+###  https://purl.org/maont/daext/five_perspective
 hda:five_perspective rdf:type owl:NamedIndividual ,
                               skos:Concept ;
                      skos:definition "Display or interpretive system based on multiple perspectives."@en ;
@@ -900,7 +900,7 @@ hda:five_perspective rdf:type owl:NamedIndividual ,
                      skos:prefLabel "Five Perspective"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#generative
+###  https://purl.org/maont/daext/generative
 hda:generative rdf:type owl:NamedIndividual ,
                         skos:Concept ;
                skos:definition "Installation generates visual, sonic, or interactive outputs algorithmically."@en ;
@@ -908,7 +908,7 @@ hda:generative rdf:type owl:NamedIndividual ,
                skos:prefLabel "Generative"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#half_cave
+###  https://purl.org/maont/daext/half_cave
 hda:half_cave rdf:type owl:NamedIndividual ,
                        skos:Concept ;
               skos:definition "Immersive display environment or system."@en ;
@@ -916,7 +916,7 @@ hda:half_cave rdf:type owl:NamedIndividual ,
               skos:prefLabel "0.5Cave"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#idome
+###  https://purl.org/maont/daext/idome
 hda:idome rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:definition "Dome-based immersive projection or display system."@en ;
@@ -924,7 +924,7 @@ hda:idome rdf:type owl:NamedIndividual ,
           skos:prefLabel "iDOME"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#immersive
+###  https://purl.org/maont/daext/immersive
 hda:immersive rdf:type owl:NamedIndividual ,
                        skos:Concept ;
               skos:definition "Installation creates a spatially immersive viewing or interaction environment."@en ;
@@ -932,7 +932,7 @@ hda:immersive rdf:type owl:NamedIndividual ,
               skos:prefLabel "Immersive"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#interactive
+###  https://purl.org/maont/daext/interactive
 hda:interactive rdf:type owl:NamedIndividual ,
                          skos:Concept ;
                 skos:definition "Installation allows user interaction or real-time response."@en ;
@@ -940,7 +940,7 @@ hda:interactive rdf:type owl:NamedIndividual ,
                 skos:prefLabel "Interactive"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#kinect
+###  https://purl.org/maont/daext/kinect
 hda:kinect rdf:type owl:NamedIndividual ,
                     skos:Concept ;
            skos:definition "Motion sensing device used for body tracking or interaction."@en ;
@@ -948,7 +948,7 @@ hda:kinect rdf:type owl:NamedIndividual ,
            skos:prefLabel "Kinect"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#kinematic
+###  https://purl.org/maont/daext/kinematic
 hda:kinematic rdf:type owl:NamedIndividual ,
                        skos:Concept ;
               skos:definition "Installation involves movement-based, motion-responsive, or kinetic visualisation."@en ;
@@ -956,7 +956,7 @@ hda:kinematic rdf:type owl:NamedIndividual ,
               skos:prefLabel "Kinematic"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#linear_navigator
+###  https://purl.org/maont/daext/linear_navigator
 hda:linear_navigator rdf:type owl:NamedIndividual ,
                               skos:Concept ;
                      skos:definition "Navigation system or interface mode for exploring digital content linearly."@en ;
@@ -964,7 +964,7 @@ hda:linear_navigator rdf:type owl:NamedIndividual ,
                      skos:prefLabel "Linear Navigator"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#mixed_reality
+###  https://purl.org/maont/daext/mixed_reality
 hda:mixed_reality rdf:type owl:NamedIndividual ,
                            skos:Concept ;
                   skos:definition "Installation combines physical and digital environments interactively."@en ;
@@ -972,7 +972,7 @@ hda:mixed_reality rdf:type owl:NamedIndividual ,
                   skos:prefLabel "Mixed Reality"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#object_navigator
+###  https://purl.org/maont/daext/object_navigator
 hda:object_navigator rdf:type owl:NamedIndividual ,
                               skos:Concept ;
                      skos:definition "Interface or system for exploring digital objects."@en ;
@@ -980,7 +980,7 @@ hda:object_navigator rdf:type owl:NamedIndividual ,
                      skos:prefLabel "Object Navigator"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#reactor
+###  https://purl.org/maont/daext/reactor
 hda:reactor rdf:type owl:NamedIndividual ,
                      skos:Concept ;
             skos:definition "Interactive installation or system used for martial arts visualisation."@en ;
@@ -988,7 +988,7 @@ hda:reactor rdf:type owl:NamedIndividual ,
             skos:prefLabel "ReActor"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#tangible
+###  https://purl.org/maont/daext/tangible
 hda:tangible rdf:type owl:NamedIndividual ,
                       skos:Concept ;
              skos:definition "Installation involves physical interaction, tangible interfaces, or material input devices."@en ;
@@ -996,7 +996,7 @@ hda:tangible rdf:type owl:NamedIndividual ,
              skos:prefLabel "Tangible"@en .
 
 
-###  https://purl.org/hkmala/ontology/maon-daext#virtual_reality
+###  https://purl.org/maont/daext/virtual_reality
 hda:virtual_reality rdf:type owl:NamedIndividual ,
                              skos:Concept ;
                     skos:definition "Installation uses immersive virtual environments."@en ;
