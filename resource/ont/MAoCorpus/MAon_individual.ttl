@@ -6881,12 +6881,6 @@ mao:Qing_Long_Di_Tong_Kyun rdf:type owl:NamedIndividual ,
              rdfs:label "Qing Long Di Tong Kyun"@en.
 
 
-### Resting position — auto-added by resolve_entities.py
-mao:Resting_Position rdf:type owl:NamedIndividual ,
-             mao:Form_set ;
-             rdfs:label "Resting position"@en.
-
-
 ### Saam Moon Kyun — auto-added by resolve_entities.py
 mao:Saam_Moon_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
@@ -7023,12 +7017,6 @@ mao:Taiji_28_Movements rdf:type owl:NamedIndividual ,
 mao:Taiji_Dou rdf:type owl:NamedIndividual ,
              mao:Form_set ;
              rdfs:label "Taiji Dou"@en.
-
-
-### Taking resting posture — auto-added by resolve_entities.py
-mao:Taking_Resting_Posture rdf:type owl:NamedIndividual ,
-             mao:Form_set ;
-             rdfs:label "Taking resting posture"@en.
 
 
 ### tin-dei-yen-chin — auto-added by resolve_entities.py
