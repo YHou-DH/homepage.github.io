@@ -893,7 +893,7 @@ mao:weapon_form rdf:type owl:AnnotationProperty ;
 mao:Digital_document rdf:type owl:Class ;
                      rdfs:subClassOf mao:E31_document ;
                      rdfs:label "Digital_document"@en ;
-                     rdfs:comment "A born-digital or digitised document resource associated with a martial arts entity, such as a video recording, digital image, or electronic text. Subclass of MA_Document (E31)."@en .
+                     rdfs:comment "A born-digital or digitised document resource associated with a martial arts entity, such as a video recording, digital image, or electronic text. "@en .
 
 
 ###  https://purl.org/maont/ontology/E21_Person
@@ -1112,7 +1112,8 @@ mao:MA_book rdf:type owl:Class ;
                               owl:onProperty mao:type_of ;
                               owl:someValuesFrom mao:MA_book
                             ] ;
-            rdfs:comment "The class MA_book (labelled MA_Document) encompasses information objects that record aspects of martial arts, whether physical or digital, including ancient manuscripts, manuals, and audiovisual content. Bridged to CIDOC-CRM E31 Document to facilitate interoperability with linked data sources."@en ;
+            rdfs:label "MA_book"@en ;
+            rdfs:comment "The class MA_book encompasses information objects that record aspects of martial arts, whether physical or digital, including ancient manuscripts, manuals, and audiovisual content. Bridged to CIDOC-CRM E31 Document to facilitate interoperability with linked data sources."@en ;
             mao:name_en "Martial Arts Document"@en ;
             mao:name_zh "武術文檔"@zh-hk .
 
