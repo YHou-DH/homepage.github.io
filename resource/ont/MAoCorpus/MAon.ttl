@@ -1112,8 +1112,8 @@ mao:MA_book rdf:type owl:Class ;
                               owl:onProperty mao:type_of ;
                               owl:someValuesFrom mao:MA_book
                             ] ;
-            rdfs:label "MA_book"@en ;
             rdfs:comment "The class MA_book encompasses information objects that record aspects of martial arts, whether physical or digital, including ancient manuscripts, manuals, and audiovisual content. Bridged to CIDOC-CRM E31 Document to facilitate interoperability with linked data sources."@en ;
+            rdfs:label "MA_book"@en ;
             mao:name_en "Martial Arts Document"@en ;
             mao:name_zh "武術文檔"@zh-hk .
 
