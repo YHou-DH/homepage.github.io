@@ -6045,1044 +6045,1207 @@ mao:gffk_dc_B_44 rdf:type owl:NamedIndividual ,
 
 ### ── Auto-added 2026-06-25 ──
 
-### Chan Chi Cheuk — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chan_Chi_Cheuk
 mao:Chan_Chi_Cheuk rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Chan Chi Cheuk"@en ;
+             mao:name_en "Chan Chi Cheuk"@en ;
              mao:name_zh "陳志灼"@zh-hk.
 
 
-### Chan Tin Ching — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chan_Tin_Ching
 mao:Chan_Tin_Ching rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Chan Tin Ching"@en ;
+             mao:name_en "Chan Tin Ching"@en ;
              mao:name_zh "陳天正"@zh-hk.
 
 
-### Chan Yui Choi — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chan_Yui_Choi
 mao:Chan_Yui_Choi rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Chan Yui Choi"@en ;
+             mao:name_en "Chan Yui Choi"@en ;
              mao:name_zh "陳銳才"@zh-hk.
 
 
-### Chao Sih Hing — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chao_Sih_Hing
 mao:Chao_Sih_Hing rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Chao Sih Hing"@en ;
+             mao:name_en "Chao Sih Hing"@en ;
              mao:name_zh "趙式慶"@zh-hk.
 
 
-### Cheung Sheung Hing — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Cheung_Sheung_Hing
 mao:Cheung_Sheung_Hing rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Cheung Sheung Hing"@en ;
+             mao:name_en "Cheung Sheung Hing"@en ;
              mao:name_zh "張常興"@zh-hk.
 
 
-### Cheung Wai Yu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Cheung_Wai_Yu
 mao:Cheung_Wai_Yu rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Cheung Wai Yu"@en ;
+             mao:name_en "Cheung Wai Yu"@en ;
              mao:name_zh "鄭偉儒"@zh-hk.
 
 
-### Chiu Chi Man — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chiu_Chi_Man
 mao:Chiu_Chi_Man rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Chiu Chi Man"@en ;
+             mao:name_en "Chiu Chi Man"@en ;
              mao:name_zh "趙智敏"@zh-hk.
 
 
-### Chiu Man On — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chiu_Man_On
 mao:Chiu_Man_On rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Chiu Man On"@en ;
+             mao:name_en "Chiu Man On"@en ;
              mao:name_zh "趙民安"@zh-hk.
 
 
-### Chung Chi Wah — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chung_Chi_Wah
 mao:Chung_Chi_Wah rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Chung Chi Wah"@en ;
+             mao:name_en "Chung Chi Wah"@en ;
              mao:name_zh "鍾智華"@zh-hk.
 
 
-### Chung Man Leung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chung_Man_Leung
 mao:Chung_Man_Leung rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Chung Man Leung"@en ;
+             mao:name_en "Chung Man Leung"@en ;
              mao:name_zh "鍾萬良"@zh-hk.
 
 
-### CS Tang — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Cs_Tang
 mao:Cs_Tang rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "CS Tang"@en ;
+             mao:name_en "CS Tang"@en ;
              mao:name_zh "鄧昌成"@zh-hk.
 
 
-### Daniel Jaquet — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Daniel_Jaquet
 mao:Daniel_Jaquet rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
-             rdfs:label "Daniel Jaquet"@en.
+             mao:MA_Master ;
+             rdfs:label "Daniel Jaquet"@en;
+             mao:name_en "Daniel Jaquet"@en.
 
 
-### Fu Qingquan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Fu_Qingquan
 mao:Fu_Qingquan rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Fu Qingquan"@en ;
+             mao:name_en "Fu Qingquan"@en ;
              mao:name_zh "傅清泉"@zh-hk.
 
 
-### Fung Chi Choi — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Fung_Chi_Choi
 mao:Fung_Chi_Choi rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Fung Chi Choi"@en ;
+             mao:name_en "Fung Chi Choi"@en ;
              mao:name_zh "馮子才"@zh-hk.
 
 
-### Fung Wing Bun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Fung_Wing_Bun
 mao:Fung_Wing_Bun rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Fung Wing Bun"@en ;
+             mao:name_en "Fung Wing Bun"@en ;
              mao:name_zh "馮永斌"@zh-hk.
 
 
-### Ip Ka Hung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ip_Ka_Hung
 mao:Ip_Ka_Hung rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Ip Ka Hung"@en ;
+             mao:name_en "Ip Ka Hung"@en ;
              mao:name_zh "葉家鴻"@zh-hk.
 
 
-### Jerry & Kevin — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jerry_Kevin
 mao:Jerry_Kevin rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Jerry & Kevin"@en ;
+             mao:name_en "Jerry & Kevin"@en ;
              mao:name_zh "楊永勣"@zh-hk.
 
 
-### Jerry Yeung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jerry_Yeung
 mao:Jerry_Yeung rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Jerry Yeung"@en ;
+             mao:name_en "Jerry Yeung"@en ;
              mao:name_zh "楊永勣"@zh-hk.
 
 
-### Jiang Hai Long — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jiang_Hai_Long
 mao:Jiang_Hai_Long rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Jiang Hai Long"@en ;
+             mao:name_en "Jiang Hai Long"@en ;
              mao:name_zh "蔣海龍"@zh-hk.
 
 
-### Kong Chi Keung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Kong_Chi_Keung
 mao:Kong_Chi_Keung rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Kong Chi Keung"@en ;
+             mao:name_en "Kong Chi Keung"@en ;
              mao:name_zh "江志強"@zh-hk.
 
 
-### Kwok Bing Choi — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Kwok_Bing_Choi
 mao:Kwok_Bing_Choi rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Kwok Bing Choi"@en ;
+             mao:name_en "Kwok Bing Choi"@en ;
              mao:name_zh "郭炳才"@zh-hk.
 
 
-### Kwok Wan Ping — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Kwok_Wan_Ping
 mao:Kwok_Wan_Ping rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Kwok Wan Ping"@en ;
+             mao:name_en "Kwok Wan Ping"@en ;
              mao:name_zh "郭運平"@zh-hk.
 
 
-### Lai Chung Ming — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lai_Chung_Ming
 mao:Lai_Chung_Ming rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Lai Chung Ming"@en ;
+             mao:name_en "Lai Chung Ming"@en ;
              mao:name_zh "賴仲明"@zh-hk.
 
 
-### Lau Biu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lau_Biu
 mao:Lau_Biu rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Lau Biu"@en ;
+             mao:name_en "Lau Biu"@en ;
              mao:name_zh "劉標"@zh-hk.
 
 
-### Law Chung Ho — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Law_Chung_Ho
 mao:Law_Chung_Ho rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Law Chung Ho"@en ;
+             mao:name_en "Law Chung Ho"@en ;
              mao:name_zh "羅俊豪"@zh-hk.
 
 
-### Law Ka Keung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Law_Ka_Keung
 mao:Law_Ka_Keung rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Law Ka Keung"@en ;
+             mao:name_en "Law Ka Keung"@en ;
              mao:name_zh "羅家強"@zh-hk.
 
 
-### Lee Kong — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lee_Kong
 mao:Lee_Kong rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Lee Kong"@en ;
+             mao:name_en "Lee Kong"@en ;
              mao:name_zh "李剛"@zh-hk.
 
 
-### Leung Chi Ho — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Leung_Chi_Ho
 mao:Leung_Chi_Ho rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Leung Chi Ho"@en ;
+             mao:name_en "Leung Chi Ho"@en ;
              mao:name_zh "梁志豪"@zh-hk.
 
 
-### Leung Yiu Man — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Leung_Yiu_Man
 mao:Leung_Yiu_Man rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Leung Yiu Man"@en ;
+             mao:name_en "Leung Yiu Man"@en ;
              mao:name_zh "梁耀文"@zh-hk.
 
 
-### Li Shek Lin — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Li_Shek_Lin
 mao:Li_Shek_Lin rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Li Shek Lin"@en ;
+             mao:name_en "Li Shek Lin"@en ;
              mao:name_zh "李石連"@zh-hk.
 
 
-### Li Tin Loi — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Li_Tin_Loi
 mao:Li_Tin_Loi rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Li Tin Loi"@en ;
+             mao:name_en "Li Tin Loi"@en ;
              mao:name_zh "李天來"@zh-hk.
 
 
-### Ma Wei Huan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ma_Wei_Huan
 mao:Ma_Wei_Huan rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Ma Wei Huan"@en ;
+             mao:name_en "Ma Wei Huan"@en ;
              mao:name_zh "馬偉煥"@zh-hk.
 
 
-### Michael Tang — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Michael_Tang
 mao:Michael_Tang rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Michael Tang"@en ;
+             mao:name_en "Michael Tang"@en ;
              mao:name_zh "鄧松柏"@zh-hk.
 
 
-### Oscar Lam — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Oscar_Lam
 mao:Oscar_Lam rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Oscar Lam"@en ;
+             mao:name_en "Oscar Lam"@en ;
              mao:name_zh "林存浩"@zh-hk.
 
 
-### Roberto Gotti — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Roberto_Gotti
 mao:Roberto_Gotti rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
-             rdfs:label "Roberto Gotti"@en.
+             mao:MA_Master ;
+             rdfs:label "Roberto Gotti"@en;
+             mao:name_en "Roberto Gotti"@en.
 
 
-### Jacopo Penso — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jacopo_Penso
 mao:Jacopo_Penso rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
-             rdfs:label "Jacopo Penso"@en.
+             mao:MA_Master ;
+             rdfs:label "Jacopo Penso"@en;
+             mao:name_en "Jacopo Penso"@en.
 
 
-### Shaw Chi Ling — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Shaw_Chi_Ling
 mao:Shaw_Chi_Ling rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Shaw Chi Ling"@en ;
+             mao:name_en "Shaw Chi Ling"@en ;
              mao:name_zh "邵志凌"@zh-hk.
 
 
-### Sunny So — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sunny_So
 mao:Sunny_So rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Sunny So"@en ;
+             mao:name_en "Sunny So"@en ;
              mao:name_zh "蘇志剛"@zh-hk.
 
 
-### Wang Xiao Bing — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Wang_Xiao_Bing
 mao:Wang_Xiao_Bing rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Wang Xiao Bing"@en ;
+             mao:name_en "Wang Xiao Bing"@en ;
              mao:name_zh "王小兵"@zh-hk.
 
 
-### Wong Chung Man — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Wong_Chung_Man
 mao:Wong_Chung_Man rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Wong Chung Man"@en ;
+             mao:name_en "Wong Chung Man"@en ;
              mao:name_zh "王仲文"@zh-hk.
 
 
-### Wong Tung Ming — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Wong_Tung_Ming
 mao:Wong_Tung_Ming rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
-             rdfs:label "Wong Tung Ming"@en.
+             mao:MA_Master ;
+             rdfs:label "Wong Tung Ming"@en;
+             mao:name_en "Wong Tung Ming"@en.
 
 
-### Wong Yiu Cho — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Wong_Yiu_Cho
 mao:Wong_Yiu_Cho rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Wong Yiu Cho"@en ;
+             mao:name_en "Wong Yiu Cho"@en ;
              mao:name_zh "黃耀祖"@zh-hk.
 
 
-### Wong Yiu Kau — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Wong_Yiu_Kau
 mao:Wong_Yiu_Kau rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Wong Yiu Kau"@en ;
+             mao:name_en "Wong Yiu Kau"@en ;
              mao:name_zh "黃耀球"@zh-hk.
 
 
-### Yang Zhao Meng — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Yang_Zhao_Meng
 mao:Yang_Zhao_Meng rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Yang Zhao Meng"@en ;
+             mao:name_en "Yang Zhao Meng"@en ;
              mao:name_zh "楊照萌"@zh-hk.
 
 
-### Yau Wan Wah — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Yau_Wan_Wah
 mao:Yau_Wan_Wah rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Yau Wan Wah"@en ;
+             mao:name_en "Yau Wan Wah"@en ;
              mao:name_zh "邱運華"@zh-hk.
 
 
-### Zhong Wei Qiang — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Zhong_Wei_Qiang
 mao:Zhong_Wei_Qiang rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Zhong Wei Qiang"@en ;
+             mao:name_en "Zhong Wei Qiang"@en ;
              mao:name_zh "鐘偉強"@zh-hk.
 
 
-### Ko Ching — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ko_Ching
 mao:Ko_Ching rdf:type owl:NamedIndividual ,
-             mao:MA_master ;
+             mao:MA_Master ;
              rdfs:label "Ko Ching"@en ;
+             mao:name_en "Ko Ching"@en ;
              mao:name_zh "高正"@zh-hk.
 
 
-### Bei Shao Lin Di Tong Bao Kar Moon — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Bei_Shao_Lin_Di_Tong_Bao_Kar_Moon
 mao:Bei_Shao_Lin_Di_Tong_Bao_Kar_Moon rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Bei Shao Lin Di Tong Bao Kar Moon"@en ;
+             mao:name_en "Bei Shao Lin Di Tong Bao Kar Moon"@en ;
              mao:name_zh "北少林地蹚八卦門"@zh-hk.
 
 
-### Choi Mok Pai — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Choi_Mok_Pai
 mao:Choi_Mok_Pai rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Choi Mok Pai"@en ;
+             mao:name_en "Choi Mok Pai"@en ;
              mao:name_zh "蔡莫派"@zh-hk.
 
 
-### Chu Gar Gao — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chu_Gar_Gao
 mao:Chu_Gar_Gao rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Chu Gar Gao"@en ;
+             mao:name_en "Chu Gar Gao"@en ;
              mao:name_zh "朱家教"@zh-hk.
 
 
-### Eagle Claw Fan Tsi Moon — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Eagle_Claw_Fan_Tsi_Moon
 mao:Eagle_Claw_Fan_Tsi_Moon rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Eagle Claw Fan Tsi Moon"@en ;
+             mao:name_en "Eagle Claw Fan Tsi Moon"@en ;
              mao:name_zh "鷹爪翻子門"@zh-hk.
 
 
-### Fu Shi Wu Xue — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Fu_Shi_Wu_Xue
 mao:Fu_Shi_Wu_Xue rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Fu Shi Wu Xue"@en ;
+             mao:name_en "Fu Shi Wu Xue"@en ;
              mao:name_zh "傅式武學"@zh-hk.
 
 
-### Gao style Bagua Zhang — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Gao_Style_Bagua_Zhang
 mao:Gao_Style_Bagua_Zhang rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Gao style Bagua Zhang"@en ;
+             mao:name_en "Gao style Bagua Zhang"@en ;
              mao:name_zh "高式八卦掌"@zh-hk.
 
 
-### GuangZhou Wing Chung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Guangzhou_Wing_Chung
 mao:Guangzhou_Wing_Chung rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "GuangZhou Wing Chung"@en ;
+             mao:name_en "GuangZhou Wing Chung"@en ;
              mao:name_zh "廣州詠春"@zh-hk.
 
 
-### HEMA — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Hema
 mao:Hema rdf:type owl:NamedIndividual ,
              mao:MA_style ;
-             rdfs:label "HEMA"@en.
+             rdfs:label "HEMA"@en;
+             mao:name_en "HEMA"@en.
 
 
-### Hung Sing Choy Lee Fat — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Hung_Sing_Choy_Lee_Fat
 mao:Hung_Sing_Choy_Lee_Fat rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Hung Sing Choy Lee Fat"@en ;
+             mao:name_en "Hung Sing Choy Lee Fat"@en ;
              mao:name_zh "鴻勝蔡李佛"@zh-hk.
 
 
-### Iron Ox Praying Mantis — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Iron_Ox_Praying_Mantis
 mao:Iron_Ox_Praying_Mantis rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Iron Ox Praying Mantis"@en ;
+             mao:name_en "Iron Ox Praying Mantis"@en ;
              mao:name_zh "鐵牛螳螂"@zh-hk.
 
 
-### Jin Wu Koon Shaolin Double Dragon — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jin_Wu_Koon_Shaolin_Double_Dragon
 mao:Jin_Wu_Koon_Shaolin_Double_Dragon rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Jin Wu Koon Shaolin Double Dragon"@en ;
+             mao:name_en "Jin Wu Koon Shaolin Double Dragon"@en ;
              mao:name_zh "少林雙龍派振武館"@zh-hk.
 
 
-### Lam Gar Kung Fu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lam_Gar_Kung_Fu
 mao:Lam_Gar_Kung_Fu rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Lam Gar Kung Fu"@en ;
+             mao:name_en "Lam Gar Kung Fu"@en ;
              mao:name_zh "林家教"@zh-hk.
 
 
-### Lingnan Style — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lingnan_Style
 mao:Lingnan_Style rdf:type owl:NamedIndividual ,
              mao:MA_style ;
-             rdfs:label "Lingnan Style"@en.
+             rdfs:label "Lingnan Style"@en;
+             mao:name_en "Lingnan Style"@en.
 
 
-### Ma's Tong Bei — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ma_s_Tong_Bei
 mao:Ma_s_Tong_Bei rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Ma's Tong Bei"@en ;
+             mao:name_en "Ma's Tong Bei"@en ;
              mao:name_zh "馬氏通備"@zh-hk.
 
 
-### Pakmei — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Pakmei
 mao:Pakmei rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Pakmei"@en ;
+             mao:name_en "Pakmei"@en ;
              mao:name_zh "白眉"@zh-hk.
 
 
-### Tai Sing Pap Kar Moon — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Tai_Sing_Pap_Kar_Moon
 mao:Tai_Sing_Pap_Kar_Moon rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Tai Sing Pap Kar Moon"@en ;
+             mao:name_en "Tai Sing Pap Kar Moon"@en ;
              mao:name_zh "大聖劈掛門"@zh-hk.
 
 
-### Tung Kong Chow Ka Preying Mantis — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Tung_Kong_Chow_Ka_Preying_Mantis
 mao:Tung_Kong_Chow_Ka_Preying_Mantis rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Tung Kong Chow Ka Preying Mantis"@en ;
+             mao:name_en "Tung Kong Chow Ka Preying Mantis"@en ;
              mao:name_zh "東江周家螳螂"@zh-hk.
 
 
-### Tung Kong Dragon Style — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Tung_Kong_Dragon_Style
 mao:Tung_Kong_Dragon_Style rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Tung Kong Dragon Style"@en ;
+             mao:name_en "Tung Kong Dragon Style"@en ;
              mao:name_zh "東江龍形"@zh-hk.
 
 
-### Ving Tsun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ving_Tsun
 mao:Ving_Tsun rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Ving Tsun"@en ;
+             mao:name_en "Ving Tsun"@en ;
              mao:name_zh "詠春葉問/黃純良系"@zh-hk.
 
 
-### Wing Chung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Wing_Chung
 mao:Wing_Chung rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Wing Chung"@en ;
+             mao:name_en "Wing Chung"@en ;
              mao:name_zh "永春"@zh-hk.
 
 
-### Yang's Taiji — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Yang_s_Taiji
 mao:Yang_s_Taiji rdf:type owl:NamedIndividual ,
              mao:MA_style ;
              rdfs:label "Yang's Taiji"@en ;
+             mao:name_en "Yang's Taiji"@en ;
              mao:name_zh "楊式太極"@zh-hk.
 
 
-### Aat Daa Gwan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Aat_Daa_Gwan
 mao:Aat_Daa_Gwan rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Aat Daa Gwan"@en.
+             rdfs:label "Aat Daa Gwan"@en;
+             mao:name_en "Aat Daa Gwan"@en.
 
 
-### Baak Bou Ceoi — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Baak_Bou_Ceoi
 mao:Baak_Bou_Ceoi rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Baak Bou Ceoi"@en.
+             rdfs:label "Baak Bou Ceoi"@en;
+             mao:name_en "Baak Bou Ceoi"@en.
 
 
-### Baak Bou Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Baak_Bou_Kyun
 mao:Baak_Bou_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Baak Bou Kyun"@en.
+             rdfs:label "Baak Bou Kyun"@en;
+             mao:name_en "Baak Bou Kyun"@en.
 
 
-### Baji Quan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Baji_Quan
 mao:Baji_Quan rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Baji Quan"@en.
+             rdfs:label "Baji Quan"@en;
+             mao:name_en "Baji Quan"@en.
 
 
-### Baji Xiao Jia — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Baji_Xiao_Jia
 mao:Baji_Xiao_Jia rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Baji Xiao Jia"@en.
+             rdfs:label "Baji Xiao Jia"@en;
+             mao:name_en "Baji Xiao Jia"@en.
 
 
-### Bei Shao Lin Di Tong Bao Kar Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Bei_Shao_Lin_Di_Tong_Bao_Kar_Kyun
 mao:Bei_Shao_Lin_Di_Tong_Bao_Kar_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Bei Shao Lin Di Tong Bao Kar Kyun"@en.
+             rdfs:label "Bei Shao Lin Di Tong Bao Kar Kyun"@en;
+             mao:name_en "Bei Shao Lin Di Tong Bao Kar Kyun"@en.
 
 
-### Bin Gwaai — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Bin_Gwaai
 mao:Bin_Gwaai rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Bin Gwaai"@en.
+             rdfs:label "Bin Gwaai"@en;
+             mao:name_en "Bin Gwaai"@en.
 
 
-### Bin Kiu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Bin_Kiu
 mao:Bin_Kiu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Bin Kiu"@en.
+             rdfs:label "Bin Kiu"@en;
+             mao:name_en "Bin Kiu"@en.
 
 
-### Biu Tze — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Biu_Tze
 mao:Biu_Tze rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Biu Tze"@en.
+             rdfs:label "Biu Tze"@en;
+             mao:name_en "Biu Tze"@en.
 
 
-### Ceot lam — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ceot_Lam
 mao:Ceot_Lam rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Ceot lam"@en.
+             rdfs:label "Ceot lam"@en;
+             mao:name_en "Ceot lam"@en.
 
 
-### Chi Sao — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chi_Sao
 mao:Chi_Sao rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Chi Sao"@en.
+             rdfs:label "Chi Sao"@en;
+             mao:name_en "Chi Sao"@en.
 
 
-### Chin Cheung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chin_Cheung
 mao:Chin_Cheung rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Chin Cheung"@en.
+             rdfs:label "Chin Cheung"@en;
+             mao:name_en "Chin Cheung"@en.
 
 
-### Chum Kiu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Chum_Kiu
 mao:Chum_Kiu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Chum Kiu"@en.
+             rdfs:label "Chum Kiu"@en;
+             mao:name_en "Chum Kiu"@en.
 
 
-### Daai Hung Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Daai_Hung_Kyun
 mao:Daai_Hung_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Daai Hung Kyun"@en.
+             rdfs:label "Daai Hung Kyun"@en;
+             mao:name_en "Daai Hung Kyun"@en.
 
 
-### Daai Jat Gwan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Daai_Jat_Gwan
 mao:Daai_Jat_Gwan rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Daai Jat Gwan"@en.
+             rdfs:label "Daai Jat Gwan"@en;
+             mao:name_en "Daai Jat Gwan"@en.
 
 
-### Daan Bin Gau Zyu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Daan_Bin_Gau_Zyu
 mao:Daan_Bin_Gau_Zyu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Daan Bin Gau Zyu"@en.
+             rdfs:label "Daan Bin Gau Zyu"@en;
+             mao:name_en "Daan Bin Gau Zyu"@en.
 
 
-### Dau Jik — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Dau_Jik
 mao:Dau_Jik rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Dau Jik"@en.
+             rdfs:label "Dau Jik"@en;
+             mao:name_en "Dau Jik"@en.
 
 
-### Deng Saat — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Deng_Saat
 mao:Deng_Saat rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Deng Saat"@en.
+             rdfs:label "Deng Saat"@en;
+             mao:name_en "Deng Saat"@en.
 
 
-### Dit Ngau Gao — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Dit_Ngau_Gao
 mao:Dit_Ngau_Gao rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Dit Ngau Gao"@en.
+             rdfs:label "Dit Ngau Gao"@en;
+             mao:name_en "Dit Ngau Gao"@en.
 
 
-### Dok Sieh Guan (Poison snake pole) — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Dok_Sieh_Guan_poison_Snake_Pole
 mao:Dok_Sieh_Guan_poison_Snake_Pole rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Dok Sieh Guan (Poison snake pole)"@en.
+             rdfs:label "Dok Sieh Guan (Poison snake pole)"@en;
+             mao:name_en "Dok Sieh Guan (Poison snake pole)"@en.
 
 
-### Double Dragon Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Double_Dragon_Kyun
 mao:Double_Dragon_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Double Dragon Kyun"@en.
+             rdfs:label "Double Dragon Kyun"@en;
+             mao:name_en "Double Dragon Kyun"@en.
 
 
-### Double Knives — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Double_Knives
 mao:Double_Knives rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Double Knives"@en.
+             rdfs:label "Double Knives"@en;
+             mao:name_en "Double Knives"@en.
 
 
-### Dragon Style Jing Zaau — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Dragon_Style_Jing_Zaau
 mao:Dragon_Style_Jing_Zaau rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Dragon Style Jing Zaau"@en.
+             rdfs:label "Dragon Style Jing Zaau"@en;
+             mao:name_en "Dragon Style Jing Zaau"@en.
 
 
-### Faa Mai Sau — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Faa_Mai_Sau
 mao:Faa_Mai_Sau rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Faa Mai Sau"@en.
+             rdfs:label "Faa Mai Sau"@en;
+             mao:name_en "Faa Mai Sau"@en.
 
 
-### Flood Sau — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Flood_Sau
 mao:Flood_Sau rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Flood Sau"@en.
+             rdfs:label "Flood Sau"@en;
+             mao:name_en "Flood Sau"@en.
 
 
-### Foold Gar Coeng Dyun Kiu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Foold_Gar_Coeng_Dyun_Kiu
 mao:Foold_Gar_Coeng_Dyun_Kiu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Foold Gar Coeng Dyun Kiu"@en.
+             rdfs:label "Foold Gar Coeng Dyun Kiu"@en;
+             mao:name_en "Foold Gar Coeng Dyun Kiu"@en.
 
 
-### Fu Bou — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Fu_Bou
 mao:Fu_Bou rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Fu Bou"@en.
+             rdfs:label "Fu Bou"@en;
+             mao:name_en "Fu Bou"@en.
 
 
-### Fu Hok Seung Ying Kuen — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Fu_Hok_Seung_Ying_Kuen
 mao:Fu_Hok_Seung_Ying_Kuen rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Fu Hok Seung Ying Kuen"@en.
+             rdfs:label "Fu Hok Seung Ying Kuen"@en;
+             mao:name_en "Fu Hok Seung Ying Kuen"@en.
 
 
-### Fu Mei Daan Dou — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Fu_Mei_Daan_Dou
 mao:Fu_Mei_Daan_Dou rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Fu Mei Daan Dou"@en.
+             rdfs:label "Fu Mei Daan Dou"@en;
+             mao:name_en "Fu Mei Daan Dou"@en.
 
 
-### Gao style Bagua Zhangng Kuen — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Gao_Style_Bagua_Zhangng_Kuen
 mao:Gao_Style_Bagua_Zhangng_Kuen rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Gao style Bagua Zhangng Kuen"@en.
+             rdfs:label "Gao style Bagua Zhangng Kuen"@en;
+             mao:name_en "Gao style Bagua Zhangng Kuen"@en.
 
 
-### Gau Bou Teoi — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Gau_Bou_Teoi
 mao:Gau_Bou_Teoi rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Gau Bou Teoi"@en.
+             rdfs:label "Gau Bou Teoi"@en;
+             mao:name_en "Gau Bou Teoi"@en.
 
 
-### Gung Gee Fok Fu Kuen — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Gung_Gee_Fok_Fu_Kuen
 mao:Gung_Gee_Fok_Fu_Kuen rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Gung Gee Fok Fu Kuen"@en.
+             rdfs:label "Gung Gee Fok Fu Kuen"@en;
+             mao:name_en "Gung Gee Fok Fu Kuen"@en.
 
 
-### Hang Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Hang_Kyun
 mao:Hang_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Hang Kyun"@en.
+             rdfs:label "Hang Kyun"@en;
+             mao:name_en "Hang Kyun"@en.
 
 
-### Hang Ze Pang — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Hang_Ze_Pang
 mao:Hang_Ze_Pang rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Hang Ze Pang"@en.
+             rdfs:label "Hang Ze Pang"@en;
+             mao:name_en "Hang Ze Pang"@en.
 
 
-### Iron Ruler — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Iron_Ruler
 mao:Iron_Ruler rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Iron Ruler"@en.
+             rdfs:label "Iron Ruler"@en;
+             mao:name_en "Iron Ruler"@en.
 
 
-### Jam Baat Gwaa — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jam_Baat_Gwaa
 mao:Jam_Baat_Gwaa rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Jam Baat Gwaa"@en.
+             rdfs:label "Jam Baat Gwaa"@en;
+             mao:name_en "Jam Baat Gwaa"@en.
 
 
-### je Fe — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Je_Fe
 mao:Je_Fe rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "je Fe"@en.
+             rdfs:label "je Fe"@en;
+             mao:name_en "je Fe"@en.
 
 
-### Jik Bo — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jik_Bo
 mao:Jik_Bo rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Jik Bo"@en.
+             rdfs:label "Jik Bo"@en;
+             mao:name_en "Jik Bo"@en.
 
 
-### Jing Zaau — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jing_Zaau
 mao:Jing_Zaau rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Jing Zaau"@en.
+             rdfs:label "Jing Zaau"@en;
+             mao:name_en "Jing Zaau"@en.
 
 
-### Jing Zaau Nim Kiu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jing_Zaau_Nim_Kiu
 mao:Jing_Zaau_Nim_Kiu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Jing Zaau Nim Kiu"@en.
+             rdfs:label "Jing Zaau Nim Kiu"@en;
+             mao:name_en "Jing Zaau Nim Kiu"@en.
 
 
-### Joeng Baat Gwaa — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Joeng_Baat_Gwaa
 mao:Joeng_Baat_Gwaa rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Joeng Baat Gwaa"@en.
+             rdfs:label "Joeng Baat Gwaa"@en;
+             mao:name_en "Joeng Baat Gwaa"@en.
 
 
-### Jyun Joeng Kyu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Jyun_Joeng_Kyu
 mao:Jyun_Joeng_Kyu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Jyun Joeng Kyu"@en.
+             rdfs:label "Jyun Joeng Kyu"@en;
+             mao:name_en "Jyun Joeng Kyu"@en.
 
 
-### Kong Zhuang — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Kong_Zhuang
 mao:Kong_Zhuang rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Kong Zhuang"@en.
+             rdfs:label "Kong Zhuang"@en;
+             mao:name_en "Kong Zhuang"@en.
 
 
-### Laam Bok Gwan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Laam_Bok_Gwan
 mao:Laam_Bok_Gwan rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Laam Bok Gwan"@en.
+             rdfs:label "Laam Bok Gwan"@en;
+             mao:name_en "Laam Bok Gwan"@en.
 
 
-### Lau Gar Kuen — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lau_Gar_Kuen
 mao:Lau_Gar_Kuen rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Lau Gar Kuen"@en.
+             rdfs:label "Lau Gar Kuen"@en;
+             mao:name_en "Lau Gar Kuen"@en.
 
 
-### Lin Kyun (1-10 sections) — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lin_Kyun_1_10_Sections
 mao:Lin_Kyun_1_10_Sections rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Lin Kyun (1-10 sections)"@en.
+             rdfs:label "Lin Kyun (1-10 sections)"@en;
+             mao:name_en "Lin Kyun (1-10 sections)"@en.
 
 
-### Lin Waan Gim — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lin_Waan_Gim
 mao:Lin_Waan_Gim rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Lin Waan Gim"@en.
+             rdfs:label "Lin Waan Gim"@en;
+             mao:name_en "Lin Waan Gim"@en.
 
 
-### Luk Hap Soeng Gaan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Luk_Hap_Soeng_Gaan
 mao:Luk_Hap_Soeng_Gaan rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Luk Hap Soeng Gaan"@en.
+             rdfs:label "Luk Hap Soeng Gaan"@en;
+             mao:name_en "Luk Hap Soeng Gaan"@en.
 
 
-### Lung Jing Baat Gwaa(Co Kap) — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lung_Jing_Baat_Gwaa_co_Kap
 mao:Lung_Jing_Baat_Gwaa_co_Kap rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Lung Jing Baat Gwaa(Co Kap)"@en.
+             rdfs:label "Lung Jing Baat Gwaa(Co Kap)"@en;
+             mao:name_en "Lung Jing Baat Gwaa(Co Kap)"@en.
 
 
-### Lung Jing Baat Gwaa(Gou Kap) — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Lung_Jing_Baat_Gwaa_gou_Kap
 mao:Lung_Jing_Baat_Gwaa_gou_Kap rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Lung Jing Baat Gwaa(Gou Kap)"@en.
+             rdfs:label "Lung Jing Baat Gwaa(Gou Kap)"@en;
+             mao:name_en "Lung Jing Baat Gwaa(Gou Kap)"@en.
 
 
-### Maan Zi Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Maan_Zi_Kyun
 mao:Maan_Zi_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Maan Zi Kyun"@en.
+             rdfs:label "Maan Zi Kyun"@en;
+             mao:name_en "Maan Zi Kyun"@en.
 
 
-### Maang Fu Ceot Lam — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Maang_Fu_Ceot_Lam
 mao:Maang_Fu_Ceot_Lam rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Maang Fu Ceot Lam"@en.
+             rdfs:label "Maang Fu Ceot Lam"@en;
+             mao:name_en "Maang Fu Ceot Lam"@en.
 
 
-### Mui Faa Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Mui_Faa_Kyun
 mao:Mui_Faa_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Mui Faa Kyun"@en.
+             rdfs:label "Mui Faa Kyun"@en;
+             mao:name_en "Mui Faa Kyun"@en.
 
 
-### Mui Faa Soeng Dou — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Mui_Faa_Soeng_Dou
 mao:Mui_Faa_Soeng_Dou rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Mui Faa Soeng Dou"@en.
+             rdfs:label "Mui Faa Soeng Dou"@en;
+             mao:name_en "Mui Faa Soeng Dou"@en.
 
 
-### Ng Long Baat Gwan Gwaa — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ng_Long_Baat_Gwan_Gwaa
 mao:Ng_Long_Baat_Gwan_Gwaa rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Ng Long Baat Gwan Gwaa"@en.
+             rdfs:label "Ng Long Baat Gwan Gwaa"@en;
+             mao:name_en "Ng Long Baat Gwan Gwaa"@en.
 
 
-### Ng Ying Kuen — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ng_Ying_Kuen
 mao:Ng_Ying_Kuen rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Ng Ying Kuen"@en.
+             rdfs:label "Ng Ying Kuen"@en;
+             mao:name_en "Ng Ying Kuen"@en.
 
 
-### Pek Gwaa Daan Dou — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Pek_Gwaa_Daan_Dou
 mao:Pek_Gwaa_Daan_Dou rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Pek Gwaa Daan Dou"@en.
+             rdfs:label "Pek Gwaa Daan Dou"@en;
+             mao:name_en "Pek Gwaa Daan Dou"@en.
 
 
-### Pek Gwaa Samm Lou — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Pek_Gwaa_Samm_Lou
 mao:Pek_Gwaa_Samm_Lou rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Pek Gwaa Samm Lou"@en.
+             rdfs:label "Pek Gwaa Samm Lou"@en;
+             mao:name_en "Pek Gwaa Samm Lou"@en.
 
 
-### Ping Kuen — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ping_Kuen
 mao:Ping_Kuen rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Ping Kuen"@en.
+             rdfs:label "Ping Kuen"@en;
+             mao:name_en "Ping Kuen"@en.
 
 
-### Pun Lung Coeng — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Pun_Lung_Coeng
 mao:Pun_Lung_Coeng rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Pun Lung Coeng"@en.
+             rdfs:label "Pun Lung Coeng"@en;
+             mao:name_en "Pun Lung Coeng"@en.
 
 
-### Qing Long Di Tong Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Qing_Long_Di_Tong_Kyun
 mao:Qing_Long_Di_Tong_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Qing Long Di Tong Kyun"@en.
+             rdfs:label "Qing Long Di Tong Kyun"@en;
+             mao:name_en "Qing Long Di Tong Kyun"@en.
 
 
-### Saam Moon Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Saam_Moon_Kyun
 mao:Saam_Moon_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Saam Moon Kyun"@en.
+             rdfs:label "Saam Moon Kyun"@en;
+             mao:name_en "Saam Moon Kyun"@en.
 
 
-### Saat Sau Gwan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Saat_Sau_Gwan
 mao:Saat_Sau_Gwan rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Saat Sau Gwan"@en.
+             rdfs:label "Saat Sau Gwan"@en;
+             mao:name_en "Saat Sau Gwan"@en.
 
 
-### San Shou 9(sets) — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/San_Shou_9_sets
 mao:San_Shou_9_sets rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "San Shou 9(sets)"@en.
+             rdfs:label "San Shou 9(sets)"@en;
+             mao:name_en "San Shou 9(sets)"@en.
 
 
-### Sap Ji Zit Lik — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sap_Ji_Zit_Lik
 mao:Sap_Ji_Zit_Lik rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sap Ji Zit Lik"@en.
+             rdfs:label "Sap Ji Zit Lik"@en;
+             mao:name_en "Sap Ji Zit Lik"@en.
 
 
-### Sap Zi Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sap_Zi_Kyun
 mao:Sap_Zi_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sap Zi Kyun"@en.
+             rdfs:label "Sap Zi Kyun"@en;
+             mao:name_en "Sap Zi Kyun"@en.
 
 
-### Sarm Bo Jin — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sarm_Bo_Jin
 mao:Sarm_Bo_Jin rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sarm Bo Jin"@en.
+             rdfs:label "Sarm Bo Jin"@en;
+             mao:name_en "Sarm Bo Jin"@en.
 
 
-### Sarm Gong Pin Kiu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sarm_Gong_Pin_Kiu
 mao:Sarm_Gong_Pin_Kiu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sarm Gong Pin Kiu"@en.
+             rdfs:label "Sarm Gong Pin Kiu"@en;
+             mao:name_en "Sarm Gong Pin Kiu"@en.
 
 
-### Sei Moon Baak Daa — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sei_Moon_Baak_Daa
 mao:Sei_Moon_Baak_Daa rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sei Moon Baak Daa"@en.
+             rdfs:label "Sei Moon Baak Daa"@en;
+             mao:name_en "Sei Moon Baak Daa"@en.
 
 
-### Sei Moon Gwan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sei_Moon_Gwan
 mao:Sei_Moon_Gwan rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sei Moon Gwan"@en.
+             rdfs:label "Sei Moon Gwan"@en;
+             mao:name_en "Sei Moon Gwan"@en.
 
 
-### Sei Moon Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sei_Moon_Kyun
 mao:Sei_Moon_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sei Moon Kyun"@en.
+             rdfs:label "Sei Moon Kyun"@en;
+             mao:name_en "Sei Moon Kyun"@en.
 
 
-### Sei Moon Zi Mou Dou — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sei_Moon_Zi_Mou_Dou
 mao:Sei_Moon_Zi_Mou_Dou rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sei Moon Zi Mou Dou"@en.
+             rdfs:label "Sei Moon Zi Mou Dou"@en;
+             mao:name_en "Sei Moon Zi Mou Dou"@en.
 
 
-### Seoi Kiu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Seoi_Kiu
 mao:Seoi_Kiu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Seoi Kiu"@en.
+             rdfs:label "Seoi Kiu"@en;
+             mao:name_en "Seoi Kiu"@en.
 
 
-### shield strike — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Shield_Strike
 mao:Shield_Strike rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "shield strike"@en.
+             rdfs:label "shield strike"@en;
+             mao:name_en "shield strike"@en.
 
 
-### Siu Mui Faa Kyun — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Siu_Mui_Faa_Kyun
 mao:Siu_Mui_Faa_Kyun rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Siu Mui Faa Kyun"@en.
+             rdfs:label "Siu Mui Faa Kyun"@en;
+             mao:name_en "Siu Mui Faa Kyun"@en.
 
 
-### Siu Nim Tao — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Siu_Nim_Tao
 mao:Siu_Nim_Tao rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Siu Nim Tao"@en.
+             rdfs:label "Siu Nim Tao"@en;
+             mao:name_en "Siu Nim Tao"@en.
 
 
-### Siu Nim Tau — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Siu_Nim_Tau
 mao:Siu_Nim_Tau rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Siu Nim Tau"@en.
+             rdfs:label "Siu Nim Tau"@en;
+             mao:name_en "Siu Nim Tau"@en.
 
 
-### Six and Half Point Pole — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Six_And_Half_Point_Pole
 mao:Six_And_Half_Point_Pole rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Six and Half Point Pole"@en.
+             rdfs:label "Six and Half Point Pole"@en;
+             mao:name_en "Six and Half Point Pole"@en.
 
 
-### Soeng Gaap Daan Gwan — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Soeng_Gaap_Daan_Gwan
 mao:Soeng_Gaap_Daan_Gwan rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Soeng Gaap Daan Gwan"@en.
+             rdfs:label "Soeng Gaap Daan Gwan"@en;
+             mao:name_en "Soeng Gaap Daan Gwan"@en.
 
 
-### Soeng Kung — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Soeng_Kung
 mao:Soeng_Kung rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Soeng Kung"@en.
+             rdfs:label "Soeng Kung"@en;
+             mao:name_en "Soeng Kung"@en.
 
 
-### Sup Bart Mor Kiu — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sup_Bart_Mor_Kiu
 mao:Sup_Bart_Mor_Kiu rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sup Bart Mor Kiu"@en.
+             rdfs:label "Sup Bart Mor Kiu"@en;
+             mao:name_en "Sup Bart Mor Kiu"@en.
 
 
-### Sup Jee Kuen — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Sup_Jee_Kuen
 mao:Sup_Jee_Kuen rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Sup Jee Kuen"@en.
+             rdfs:label "Sup Jee Kuen"@en;
+             mao:name_en "Sup Jee Kuen"@en.
 
 
-### Taiji 28 Movements — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Taiji_28_Movements
 mao:Taiji_28_Movements rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Taiji 28 Movements"@en.
+             rdfs:label "Taiji 28 Movements"@en;
+             mao:name_en "Taiji 28 Movements"@en.
 
 
-### Taiji Dou — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Taiji_Dou
 mao:Taiji_Dou rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Taiji Dou"@en.
+             rdfs:label "Taiji Dou"@en;
+             mao:name_en "Taiji Dou"@en.
 
 
-### tin-dei-yen-chin — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Tin_Dei_Yen_Chin
 mao:Tin_Dei_Yen_Chin rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "tin-dei-yen-chin"@en.
+             rdfs:label "tin-dei-yen-chin"@en;
+             mao:name_en "tin-dei-yen-chin"@en.
 
 
-### Tit Sin Kuen — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Tit_Sin_Kuen
 mao:Tit_Sin_Kuen rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Tit Sin Kuen"@en.
+             rdfs:label "Tit Sin Kuen"@en;
+             mao:name_en "Tit Sin Kuen"@en.
 
 
-### To Maa Zin — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/To_Maa_Zin
 mao:To_Maa_Zin rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "To Maa Zin"@en.
+             rdfs:label "To Maa Zin"@en;
+             mao:name_en "To Maa Zin"@en.
 
 
-### Tong Long Shan(umbrella) — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Tong_Long_Shan_umbrella
 mao:Tong_Long_Shan_umbrella rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Tong Long Shan(umbrella)"@en.
+             rdfs:label "Tong Long Shan(umbrella)"@en;
+             mao:name_en "Tong Long Shan(umbrella)"@en.
 
 
-### Tung Kong Fodei DaiPa — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Tung_Kong_Fodei_Daipa
 mao:Tung_Kong_Fodei_Daipa rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Tung Kong Fodei DaiPa"@en.
+             rdfs:label "Tung Kong Fodei DaiPa"@en;
+             mao:name_en "Tung Kong Fodei DaiPa"@en.
 
 
-### Two Hand Sword — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Two_Hand_Sword
 mao:Two_Hand_Sword rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Two Hand Sword"@en.
+             rdfs:label "Two Hand Sword"@en;
+             mao:name_en "Two Hand Sword"@en.
 
 
-### Wing Chung Kyun(Eleven Hand) — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Wing_Chung_Kyun_eleven_Hand
 mao:Wing_Chung_Kyun_eleven_Hand rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Wing Chung Kyun(Eleven Hand)"@en.
+             rdfs:label "Wing Chung Kyun(Eleven Hand)"@en;
+             mao:name_en "Wing Chung Kyun(Eleven Hand)"@en.
 
 
-### Wu Dip Jeong — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Wu_Dip_Jeong
 mao:Wu_Dip_Jeong rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Wu Dip Jeong"@en.
+             rdfs:label "Wu Dip Jeong"@en;
+             mao:name_en "Wu Dip Jeong"@en.
 
 
-### Ye Fu Ceot Lam — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Ye_Fu_Ceot_Lam
 mao:Ye_Fu_Ceot_Lam rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Ye Fu Ceot Lam"@en.
+             rdfs:label "Ye Fu Ceot Lam"@en;
+             mao:name_en "Ye Fu Ceot Lam"@en.
 
 
-### Yi Lu Pi Gua — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Yi_Lu_Pi_Gua
 mao:Yi_Lu_Pi_Gua rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Yi Lu Pi Gua"@en.
+             rdfs:label "Yi Lu Pi Gua"@en;
+             mao:name_en "Yi Lu Pi Gua"@en.
 
 
-### Zong Kyun(not completed) — auto-added by resolve_entities.py
+### https://purl.org/maont/ontology/Zong_Kyun_not_Completed
 mao:Zong_Kyun_not_Completed rdf:type owl:NamedIndividual ,
              mao:Form_set ;
-             rdfs:label "Zong Kyun(not completed)"@en.
+             rdfs:label "Zong Kyun(not completed)"@en;
+             mao:name_en "Zong Kyun(not completed)"@en.
 
 
 ### ── Instance relations 2026-06-25 ──
