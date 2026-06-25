@@ -32,8 +32,7 @@
                                    rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
                                    rdfs:label "MAon — Martial Arts Ontology v1.2"@en ;
                                    rdfs:seeAlso <https://yumenghou.com/resource/ont/MAoCorpus/extract.html> ;
-                                   owl:versionInfo "1.2" ;
-                                   owl:imports <https://purl.org/maont/vocabulary/> .
+                                   owl:versionInfo "1.2" .
 
 #################################################################
 #    Annotation properties
@@ -872,17 +871,7 @@ mao:weapon_type rdf:type owl:DatatypeProperty ;
                 rdfs:domain mao:armament ,
                             mao:training_tool ;
                 rdfs:range xsd:string ;
-                owl:deprecated "true"^^xsd:boolean ;
-                rdfs:comment "Deprecated. Use rdf:type with the appropriate weapon subclass of mao:armament instead. Retained for backward compatibility."@en ;
                 mao:name_zh "武器類型"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/weapon_form
-mao:weapon_form rdf:type owl:AnnotationProperty ;
-                rdfs:domain mao:armament ;
-                rdfs:comment "Records the form-factor of a weapon instance: single, paired, or set. Values should be drawn from mao-cv:WeaponFormScheme in MAon_cv.ttl."@en ;
-                rdfs:label "weapon_form"@en ;
-                mao:name_zh "兵器形式"@zh-hk .
 
 
 #################################################################
@@ -1585,55 +1574,8 @@ mao:armament rdf:type owl:Class ;
 ###  https://purl.org/maont/ontology/bladed_weapon
 mao:bladed_weapon rdf:type owl:Class ;
                   rdfs:subClassOf mao:armament ;
-                  rdfs:comment "An edged or pointed weapon whose primary function depends on a blade. In Chinese martial arts, bladed weapons include swords (劍/刀), daggers, hooks, axes, and forks. Subclasses: sword_weapon, dagger_weapon, hook_weapon, axe_weapon, fork_weapon."@en ;
-                  rdfs:label "Bladed_weapon"@en ;
-                  mao:name_en "Bladed weapon"@en ;
-                  mao:name_zh "刃器"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/sword_weapon
-mao:sword_weapon rdf:type owl:Class ;
-                 rdfs:subClassOf mao:bladed_weapon ;
-                 rdfs:comment "Sword and sabre-type weapons. In Chinese martial arts, includes the double-edged straight sword (劍 jiàn) and the single-edged curved sabre (刀 dāo). Among the four classical weapons alongside the staff and spear."@en ;
-                 rdfs:label "Sword_weapon"@en ;
-                 mao:name_en "Sword / Sabre"@en ;
-                 mao:name_zh "劍刀類"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/dagger_weapon
-mao:dagger_weapon rdf:type owl:Class ;
-                  rdfs:subClassOf mao:bladed_weapon ;
-                  rdfs:comment "Short bladed weapons including daggers and short knives (匕首, 短刀). Typically concealed or used in close-range combat."@en ;
-                  rdfs:label "Dagger_weapon"@en ;
-                  mao:name_en "Dagger"@en ;
-                  mao:name_zh "匕首類"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/hook_weapon
-mao:hook_weapon rdf:type owl:Class ;
-                rdfs:subClassOf mao:bladed_weapon ;
-                rdfs:comment "Hook-type weapons with curved bladed tips used for hooking, trapping, and slashing (鉤). Examples include tiger hooks (虎頭鉤) and war hooks (戰鉤)."@en ;
-                rdfs:label "Hook_weapon"@en ;
-                mao:name_en "Hook weapon"@en ;
-                mao:name_zh "鉤類"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/axe_weapon
-mao:axe_weapon rdf:type owl:Class ;
-               rdfs:subClassOf mao:bladed_weapon ;
-               rdfs:comment "Axe and halberd-axe type weapons (斧, 鉞). Used for powerful chopping attacks."@en ;
-               rdfs:label "Axe_weapon"@en ;
-               mao:name_en "Axe weapon"@en ;
-               mao:name_zh "斧鉞類"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/fork_weapon
-mao:fork_weapon rdf:type owl:Class ;
-                rdfs:subClassOf mao:bladed_weapon ;
-                rdfs:comment "Fork and trident-type weapons with multiple bladed tines (叉, 鈀). Includes the steel trident (鋼叉) and iron rake (鐵耙)."@en ;
-                rdfs:label "Fork_weapon"@en ;
-                mao:name_en "Fork weapon"@en ;
-                mao:name_zh "叉鈀類"@zh-hk .
+                  rdfs:comment "A bladed weapon such as a sword, knife, or sabre."@en ;
+                  rdfs:label "Bladed_weapon"@en .
 
 
 ###  https://purl.org/maont/ontology/body_shape
@@ -2062,58 +2004,18 @@ mao:sparring_set rdf:type owl:Class ;
                  mao:name_zh "對拆"@zh-hk .
 
 
-###  https://purl.org/maont/ontology/polearm_weapon
-mao:polearm_weapon rdf:type owl:Class ;
-                   rdfs:subClassOf mao:armament ;
-                   rdfs:comment "Long-shaft weapons whose primary function is reach and leverage. In Chinese martial arts, the long weapon category (長兵) includes the staff (棍) and spear (槍) as its principal subclasses."@en ;
-                   rdfs:label "Polearm_weapon"@en ;
-                   mao:name_en "Polearm"@en ;
-                   mao:name_zh "長兵類"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/flexible_weapon
-mao:flexible_weapon rdf:type owl:Class ;
-                    rdfs:subClassOf mao:armament ;
-                    rdfs:comment "Weapons with one or more flexible sections allowing whipping, entangling, or extended-range attacks (軟兵器). Examples: chain whip (九節鞭), three-section staff (三節棍), rope dart (流星錘)."@en ;
-                    rdfs:label "Flexible_weapon"@en ;
-                    mao:name_en "Flexible weapon"@en ;
-                    mao:name_zh "軟兵類"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/projectile_weapon
-mao:projectile_weapon rdf:type owl:Class ;
-                      rdfs:subClassOf mao:armament ;
-                      rdfs:comment "Weapons designed to be thrown or launched at a target (暗器). Includes throwing knives (飛刀), darts (鏢), and sleeve arrows (袖箭)."@en ;
-                      rdfs:label "Projectile_weapon"@en ;
-                      mao:name_en "Projectile weapon"@en ;
-                      mao:name_zh "暗器類"@zh-hk .
-
-
-###  https://purl.org/maont/ontology/firearm
-mao:firearm rdf:type owl:Class ;
-            rdfs:subClassOf mao:armament ;
-            rdfs:comment "Gunpowder-propelled ranged weapons (火器). Historically relevant for Ming and Qing military martial arts texts. Distinguished from projectile_weapon (暗器) by reliance on combustion rather than manual propulsion."@en ;
-            rdfs:label "Firearm"@en ;
-            mao:name_en "Firearm"@en ;
-            mao:name_zh "火器類"@zh-hk .
-
-
 ###  https://purl.org/maont/ontology/spear_weapon
 mao:spear_weapon rdf:type owl:Class ;
-                 rdfs:subClassOf mao:polearm_weapon ;
+                 rdfs:subClassOf mao:armament ;
                  rdfs:comment "A spear-type polearm weapon characterised by a long shaft with a pointed head. In Chinese martial arts, spear weapons include the qiang (槍) and its variants, and are among the four classical weapons alongside the staff, sword, and sabre."@en ;
-                 rdfs:label "Spear_weapon"@en ;
-                 mao:name_en "Spear"@en ;
-                 mao:name_zh "槍類"@zh-hk .
+                 rdfs:label "Spear_weapon"@en .
 
 
 ###  https://purl.org/maont/ontology/staff_weapon
 mao:staff_weapon rdf:type owl:Class ;
-                 rdfs:subClassOf mao:polearm_weapon ;
+                 rdfs:subClassOf mao:armament ;
                  rdfs:comment "A staff-type polearm weapon consisting of a long wooden or metal shaft without a blade. The staff (棍) is one of the four classical weapons of Chinese martial arts and appears in numerous styles as both an offensive and defensive tool."@en ;
-                 rdfs:label "Staff_weapon"@en ;
-                 mao:name_en "Staff"@en ;
-                 mao:name_zh "棍類"@zh-hk .
+                 rdfs:label "Staff_weapon"@en .
 
 
 ###  https://purl.org/maont/ontology/stance

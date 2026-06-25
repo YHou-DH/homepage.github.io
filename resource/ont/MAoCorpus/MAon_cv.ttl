@@ -1,0 +1,356 @@
+@prefix mao:    <https://purl.org/maont/ontology/> .
+@prefix mao-cv: <https://purl.org/maont/vocabulary/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+@base <https://purl.org/maont/vocabulary/> .
+
+#################################################################
+#    Vocabulary metadata
+#################################################################
+
+<https://purl.org/maont/vocabulary/>
+    rdf:type owl:Ontology ;
+    rdfs:label "MAon Controlled Vocabulary"@en ;
+    rdfs:comment "SKOS controlled vocabulary accompanying the Martial Arts Ontology (MAon). Provides concept schemes for annotation properties used in MAon instance data."@en ;
+    dcterms:isPartOf <https://purl.org/maont/ontology/> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    dcterms:creator "Yumeng Hou"^^xsd:string ;
+    dcterms:contributor "Luyi Chen"^^xsd:string ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    dcterms:modified "2026-06-25"^^xsd:date .
+
+
+#################################################################
+#    Scheme 1 — Body Part (mao:employsBodyPart)
+#################################################################
+
+mao-cv:BodyPartScheme rdf:type skos:ConceptScheme ;
+    skos:prefLabel "Body Part Vocabulary"@en ;
+    skos:prefLabel "身體部位詞彙"@zh-hk ;
+    rdfs:comment "Controlled values for mao:employsBodyPart. Indicates the primary anatomical region involved in executing a martial arts technique."@en ;
+    dcterms:isFormatOf mao:employsBodyPart ;
+    skos:hasTopConcept mao-cv:UpperLimb ,
+                       mao-cv:LowerLimb ,
+                       mao-cv:Trunk ,
+                       mao-cv:Composite .
+
+mao-cv:UpperLimb rdf:type skos:Concept ;
+    skos:inScheme mao-cv:BodyPartScheme ;
+    skos:topConceptOf mao-cv:BodyPartScheme ;
+    skos:prefLabel "Upper limb"@en ;
+    skos:prefLabel "上肢"@zh-hk ;
+    skos:altLabel "Arms"@en ;
+    skos:altLabel "手臂"@zh-hk ;
+    skos:notation "UPPER_LIMB" ;
+    skos:definition "Techniques primarily executed by the upper limbs, including the hands, forearms, elbows, and shoulders."@en .
+
+mao-cv:LowerLimb rdf:type skos:Concept ;
+    skos:inScheme mao-cv:BodyPartScheme ;
+    skos:topConceptOf mao-cv:BodyPartScheme ;
+    skos:prefLabel "Lower limb"@en ;
+    skos:prefLabel "下肢"@zh-hk ;
+    skos:altLabel "Legs"@en ;
+    skos:altLabel "腿部"@zh-hk ;
+    skos:notation "LOWER_LIMB" ;
+    skos:definition "Techniques primarily executed by the lower limbs, including the feet, shins, knees, and hips."@en .
+
+mao-cv:Trunk rdf:type skos:Concept ;
+    skos:inScheme mao-cv:BodyPartScheme ;
+    skos:topConceptOf mao-cv:BodyPartScheme ;
+    skos:prefLabel "Trunk"@en ;
+    skos:prefLabel "軀幹"@zh-hk ;
+    skos:altLabel "Torso"@en ;
+    skos:altLabel "腰身"@zh-hk ;
+    skos:notation "TRUNK" ;
+    skos:definition "Techniques primarily involving the torso and core, including waist rotation, body alignment, and trunk-driven power generation."@en .
+
+mao-cv:Composite rdf:type skos:Concept ;
+    skos:inScheme mao-cv:BodyPartScheme ;
+    skos:topConceptOf mao-cv:BodyPartScheme ;
+    skos:prefLabel "Composite / Undetermined"@en ;
+    skos:prefLabel "複合／未定"@zh-hk ;
+    skos:notation "COMPOSITE" ;
+    skos:definition "Techniques involving multiple anatomical regions simultaneously, or cases where the primary body part cannot be determined from available evidence."@en .
+
+
+#################################################################
+#    Scheme 2 — Hand Usage (mao:employsHands)
+#################################################################
+
+mao-cv:HandUsageScheme rdf:type skos:ConceptScheme ;
+    skos:prefLabel "Hand Usage Vocabulary"@en ;
+    skos:prefLabel "手部使用方式詞彙"@zh-hk ;
+    rdfs:comment "Controlled values for mao:employsHands. Indicates single or dual hand usage in a martial arts technique. Not applicable to lower-limb-only techniques."@en ;
+    dcterms:isFormatOf mao:employsHands ;
+    skos:hasTopConcept mao-cv:SingleHand ,
+                       mao-cv:DualHand ,
+                       mao-cv:AlternatingHands ,
+                       mao-cv:SingleOrDual .
+
+mao-cv:SingleHand rdf:type skos:Concept ;
+    skos:inScheme mao-cv:HandUsageScheme ;
+    skos:topConceptOf mao-cv:HandUsageScheme ;
+    skos:prefLabel "Single hand"@en ;
+    skos:prefLabel "單手"@zh-hk ;
+    skos:notation "SINGLE_HAND" ;
+    skos:definition "The technique is executed with one hand only."@en .
+
+mao-cv:DualHand rdf:type skos:Concept ;
+    skos:inScheme mao-cv:HandUsageScheme ;
+    skos:topConceptOf mao-cv:HandUsageScheme ;
+    skos:prefLabel "Dual hand"@en ;
+    skos:prefLabel "雙手"@zh-hk ;
+    skos:notation "DUAL_HAND" ;
+    skos:definition "The technique is executed with both hands simultaneously."@en .
+
+mao-cv:AlternatingHands rdf:type skos:Concept ;
+    skos:inScheme mao-cv:HandUsageScheme ;
+    skos:topConceptOf mao-cv:HandUsageScheme ;
+    skos:prefLabel "Alternating hands"@en ;
+    skos:prefLabel "雙手交替"@zh-hk ;
+    skos:notation "ALTERNATING_HANDS" ;
+    skos:definition "The technique involves both hands used in alternation rather than simultaneously."@en .
+
+mao-cv:SingleOrDual rdf:type skos:Concept ;
+    skos:inScheme mao-cv:HandUsageScheme ;
+    skos:topConceptOf mao-cv:HandUsageScheme ;
+    skos:prefLabel "Single or dual"@en ;
+    skos:prefLabel "單手或雙手"@zh-hk ;
+    skos:notation "SINGLE_OR_DUAL" ;
+    skos:definition "The technique may be performed with either one or both hands depending on context or practitioner."@en .
+
+
+#################################################################
+#    Scheme 3 — Weapon Form (mao:weapon_form)
+#################################################################
+
+mao-cv:WeaponFormScheme rdf:type skos:ConceptScheme ;
+    skos:prefLabel "Weapon Form Vocabulary"@en ;
+    skos:prefLabel "兵器形式詞彙"@zh-hk ;
+    rdfs:comment "Controlled values for mao:weapon_form. Indicates whether a weapon is used singly, in a paired configuration, or as part of a set. Complements the weapon class hierarchy in MAon."@en ;
+    skos:hasTopConcept mao-cv:SingleWeapon ,
+                       mao-cv:PairedWeapon ,
+                       mao-cv:WeaponSet .
+
+mao-cv:SingleWeapon rdf:type skos:Concept ;
+    skos:inScheme mao-cv:WeaponFormScheme ;
+    skos:topConceptOf mao-cv:WeaponFormScheme ;
+    skos:prefLabel "Single weapon"@en ;
+    skos:prefLabel "單器"@zh-hk ;
+    skos:notation "SINGLE_WEAPON" ;
+    skos:definition "A weapon used alone, one per practitioner."@en .
+
+mao-cv:PairedWeapon rdf:type skos:Concept ;
+    skos:inScheme mao-cv:WeaponFormScheme ;
+    skos:topConceptOf mao-cv:WeaponFormScheme ;
+    skos:prefLabel "Paired weapon"@en ;
+    skos:prefLabel "雙器"@zh-hk ;
+    skos:altLabel "Double weapon"@en ;
+    skos:notation "PAIRED_WEAPON" ;
+    skos:definition "Two identical or complementary weapons used simultaneously by one practitioner, such as butterfly swords (蝴蝶雙刀) or paired hooks (雙鉤)."@en .
+
+mao-cv:WeaponSetForm rdf:type skos:Concept ;
+    skos:inScheme mao-cv:WeaponFormScheme ;
+    skos:topConceptOf mao-cv:WeaponFormScheme ;
+    skos:prefLabel "Weapon set"@en ;
+    skos:prefLabel "套器"@zh-hk ;
+    skos:notation "WEAPON_SET_FORM" ;
+    skos:definition "A combination of different weapons used together as part of a single practice set or system."@en .
+
+
+#################################################################
+#    Scheme 4 — Annotation Evidence (provenance tier)
+#################################################################
+
+mao-cv:AnnotationEvidenceScheme rdf:type skos:ConceptScheme ;
+    skos:prefLabel "Annotation Evidence Vocabulary"@en ;
+    skos:prefLabel "標註依據詞彙"@zh-hk ;
+    rdfs:comment "Controlled values for recording the evidential basis of an annotation. Distinguishes metadata-derived, transcript-derived, expert-confirmed, and computationally inferred annotations."@en ;
+    skos:hasTopConcept mao-cv:MetadataBased ,
+                       mao-cv:TranscriptBased ,
+                       mao-cv:ExpertConfirmed ,
+                       mao-cv:Inferred .
+
+mao-cv:MetadataBased rdf:type skos:Concept ;
+    skos:inScheme mao-cv:AnnotationEvidenceScheme ;
+    skos:topConceptOf mao-cv:AnnotationEvidenceScheme ;
+    skos:prefLabel "Metadata-based"@en ;
+    skos:prefLabel "基於元數據"@zh-hk ;
+    skos:notation "METADATA" ;
+    skos:definition "The annotation is derived directly from file-level metadata such as titles, tags, or catalogue records, without further interpretation."@en .
+
+mao-cv:TranscriptBased rdf:type skos:Concept ;
+    skos:inScheme mao-cv:AnnotationEvidenceScheme ;
+    skos:topConceptOf mao-cv:AnnotationEvidenceScheme ;
+    skos:prefLabel "Transcript-based"@en ;
+    skos:prefLabel "基於轉錄文本"@zh-hk ;
+    skos:notation "TRANSCRIPT" ;
+    skos:definition "The annotation is derived from a transcript, commentary, or textual source associated with the archival item."@en .
+
+mao-cv:ExpertConfirmed rdf:type skos:Concept ;
+    skos:inScheme mao-cv:AnnotationEvidenceScheme ;
+    skos:topConceptOf mao-cv:AnnotationEvidenceScheme ;
+    skos:prefLabel "Expert-confirmed"@en ;
+    skos:prefLabel "專家確認"@zh-hk ;
+    skos:notation "EXPERT" ;
+    skos:definition "The annotation has been reviewed and confirmed by a domain expert (martial arts practitioner, historian, or archivist)."@en .
+
+mao-cv:Inferred rdf:type skos:Concept ;
+    skos:inScheme mao-cv:AnnotationEvidenceScheme ;
+    skos:topConceptOf mao-cv:AnnotationEvidenceScheme ;
+    skos:prefLabel "Inferred"@en ;
+    skos:prefLabel "推斷"@zh-hk ;
+    skos:notation "INFERRED" ;
+    skos:definition "The annotation is the result of computational inference, LLM-assisted extraction, or logical reasoning over existing assertions, and has not yet been human-verified."@en .
+
+
+#################################################################
+#    Scheme 5 — Transmission Type
+#################################################################
+
+mao-cv:TransmissionTypeScheme rdf:type skos:ConceptScheme ;
+    skos:prefLabel "Transmission Type Vocabulary"@en ;
+    skos:prefLabel "傳承方式詞彙"@zh-hk ;
+    rdfs:comment "Controlled values describing the mode through which martial arts knowledge was transmitted or recorded."@en ;
+    skos:hasTopConcept mao-cv:OralTransmission ,
+                       mao-cv:WrittenTransmission ,
+                       mao-cv:DemonstratedTransmission ,
+                       mao-cv:Reconstructed .
+
+mao-cv:OralTransmission rdf:type skos:Concept ;
+    skos:inScheme mao-cv:TransmissionTypeScheme ;
+    skos:topConceptOf mao-cv:TransmissionTypeScheme ;
+    skos:prefLabel "Oral transmission"@en ;
+    skos:prefLabel "口傳"@zh-hk ;
+    skos:notation "ORAL" ;
+    skos:definition "Knowledge passed down through spoken instruction, verse recitation, or oral commentary without primary reliance on written records."@en .
+
+mao-cv:WrittenTransmission rdf:type skos:Concept ;
+    skos:inScheme mao-cv:TransmissionTypeScheme ;
+    skos:topConceptOf mao-cv:TransmissionTypeScheme ;
+    skos:prefLabel "Written transmission"@en ;
+    skos:prefLabel "文字傳承"@zh-hk ;
+    skos:notation "WRITTEN" ;
+    skos:definition "Knowledge recorded and transmitted through written manuals, manuscripts, or printed texts."@en .
+
+mao-cv:DemonstratedTransmission rdf:type skos:Concept ;
+    skos:inScheme mao-cv:TransmissionTypeScheme ;
+    skos:topConceptOf mao-cv:TransmissionTypeScheme ;
+    skos:prefLabel "Demonstrated transmission"@en ;
+    skos:prefLabel "示範傳承"@zh-hk ;
+    skos:notation "DEMONSTRATED" ;
+    skos:definition "Knowledge transmitted through direct physical demonstration, including video recordings, live performance, or motion-capture documentation."@en .
+
+mao-cv:Reconstructed rdf:type skos:Concept ;
+    skos:inScheme mao-cv:TransmissionTypeScheme ;
+    skos:topConceptOf mao-cv:TransmissionTypeScheme ;
+    skos:prefLabel "Reconstructed"@en ;
+    skos:prefLabel "重建"@zh-hk ;
+    skos:notation "RECONSTRUCTED" ;
+    skos:definition "Knowledge that has been partially or fully reconstructed from historical sources, comparative analysis, or scholarly interpretation, where direct transmission has been interrupted."@en .
+
+
+#################################################################
+#    Scheme 6 — Media Type (MAon-DAExt)
+#################################################################
+
+mao-cv:MediaTypeScheme rdf:type skos:ConceptScheme ;
+    skos:prefLabel "Media Type Vocabulary"@en ;
+    skos:prefLabel "媒體類型詞彙"@zh-hk ;
+    rdfs:comment "Controlled values for classifying digital archival items in MAon-DAExt by their media format and archival function."@en ;
+    skos:hasTopConcept mao-cv:InstructionalVideo ,
+                       mao-cv:MoCapAnimation ,
+                       mao-cv:ExhibitionDocument ,
+                       mao-cv:Manuscript ,
+                       mao-cv:AudioRecording ,
+                       mao-cv:StillImage .
+
+mao-cv:InstructionalVideo rdf:type skos:Concept ;
+    skos:inScheme mao-cv:MediaTypeScheme ;
+    skos:topConceptOf mao-cv:MediaTypeScheme ;
+    skos:prefLabel "Instructional video"@en ;
+    skos:prefLabel "教學視頻"@zh-hk ;
+    skos:notation "VIDEO_INSTRUCTIONAL" ;
+    skos:definition "A video recording produced for the purpose of teaching martial arts techniques, forms, or principles."@en .
+
+mao-cv:MoCapAnimation rdf:type skos:Concept ;
+    skos:inScheme mao-cv:MediaTypeScheme ;
+    skos:topConceptOf mao-cv:MediaTypeScheme ;
+    skos:prefLabel "Motion-capture animation"@en ;
+    skos:prefLabel "動作捕捉動畫"@zh-hk ;
+    skos:notation "MOCAP_ANIMATION" ;
+    skos:definition "A digital animation derived from motion-capture data recording a martial arts performance."@en .
+
+mao-cv:ExhibitionDocument rdf:type skos:Concept ;
+    skos:inScheme mao-cv:MediaTypeScheme ;
+    skos:topConceptOf mao-cv:MediaTypeScheme ;
+    skos:prefLabel "Exhibition document"@en ;
+    skos:prefLabel "展覽文件"@zh-hk ;
+    skos:notation "EXHIBITION_DOC" ;
+    skos:definition "A document produced in the context of an exhibition, including catalogue texts, panel descriptions, and curatorial notes."@en .
+
+mao-cv:Manuscript rdf:type skos:Concept ;
+    skos:inScheme mao-cv:MediaTypeScheme ;
+    skos:topConceptOf mao-cv:MediaTypeScheme ;
+    skos:prefLabel "Manuscript"@en ;
+    skos:prefLabel "手稿"@zh-hk ;
+    skos:notation "MANUSCRIPT" ;
+    skos:definition "A handwritten or historically produced martial arts text, manual, or illustrated document."@en .
+
+mao-cv:AudioRecording rdf:type skos:Concept ;
+    skos:inScheme mao-cv:MediaTypeScheme ;
+    skos:topConceptOf mao-cv:MediaTypeScheme ;
+    skos:prefLabel "Audio recording"@en ;
+    skos:prefLabel "音頻錄音"@zh-hk ;
+    skos:notation "AUDIO" ;
+    skos:definition "An audio recording of martial arts instruction, commentary, oral history, or performance."@en .
+
+mao-cv:StillImage rdf:type skos:Concept ;
+    skos:inScheme mao-cv:MediaTypeScheme ;
+    skos:topConceptOf mao-cv:MediaTypeScheme ;
+    skos:prefLabel "Still image"@en ;
+    skos:prefLabel "靜態圖像"@zh-hk ;
+    skos:notation "IMAGE" ;
+    skos:definition "A photograph, woodblock print, diagram, or other static visual document related to martial arts."@en .
+
+
+#################################################################
+#    Scheme 7 — Access Status (MAon-DAExt)
+#################################################################
+
+mao-cv:AccessStatusScheme rdf:type skos:ConceptScheme ;
+    skos:prefLabel "Access Status Vocabulary"@en ;
+    skos:prefLabel "訪問狀態詞彙"@zh-hk ;
+    rdfs:comment "Controlled values for the access and availability status of digital archival items."@en ;
+    skos:hasTopConcept mao-cv:OpenAccess ,
+                       mao-cv:Restricted ,
+                       mao-cv:ByRequest .
+
+mao-cv:OpenAccess rdf:type skos:Concept ;
+    skos:inScheme mao-cv:AccessStatusScheme ;
+    skos:topConceptOf mao-cv:AccessStatusScheme ;
+    skos:prefLabel "Open access"@en ;
+    skos:prefLabel "開放獲取"@zh-hk ;
+    skos:notation "OPEN" ;
+    skos:definition "The item is freely accessible to the public without authentication or institutional affiliation."@en .
+
+mao-cv:Restricted rdf:type skos:Concept ;
+    skos:inScheme mao-cv:AccessStatusScheme ;
+    skos:topConceptOf mao-cv:AccessStatusScheme ;
+    skos:prefLabel "Restricted"@en ;
+    skos:prefLabel "受限"@zh-hk ;
+    skos:notation "RESTRICTED" ;
+    skos:definition "The item is restricted to authorised users, institutional members, or specific research contexts."@en .
+
+mao-cv:ByRequest rdf:type skos:Concept ;
+    skos:inScheme mao-cv:AccessStatusScheme ;
+    skos:topConceptOf mao-cv:AccessStatusScheme ;
+    skos:prefLabel "By request"@en ;
+    skos:prefLabel "按要求提供"@zh-hk ;
+    skos:notation "BY_REQUEST" ;
+    skos:definition "The item is available upon formal request to the archive or rights holder."@en .

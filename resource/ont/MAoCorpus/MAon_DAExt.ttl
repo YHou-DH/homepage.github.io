@@ -1,6 +1,6 @@
 @prefix : <https://purl.org/hkmala/ontology/maon-daext#> .
 @prefix hda: <https://purl.org/hkmala/ontology/maon-daext#> .
-@prefix mao: <https://purl.org/maont/ontology> .
+@prefix mao: <https://purl.org/maont/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -23,7 +23,7 @@
     vann:preferredNamespacePrefix "hda"^^xsd:string ;
 
     ## ── Imports ───────────────────────────────────────────────────
-    owl:imports <https://purl.org/maont/ontology> ;
+    owl:imports <https://purl.org/maont/ontology/> ;
 
     ## ── Versioning ────────────────────────────────────────────────
     owl:versionIRI <https://purl.org/hkmala/ontology/maon-daext> ;
