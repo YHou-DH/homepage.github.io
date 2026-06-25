@@ -19,7 +19,7 @@
                                     owl:imports <https://purl.org/maont/vocabulary/> ;
                                     dc:title "MAon — Martial Arts Ontology"@en ;
                                     dcterms:bibliographicCitation "MAon: Martial Arts Ontology (v1.2). https://purl.org/maont/ontology" ;
-                                    dcterms:contributor "Luyi Chen" ;
+                                    dcterms:contributor "YH, Luyi Chen" ;
                                     dcterms:created "2024-01-01"^^xsd:date ;
                                     dcterms:creator "Yumeng Hou" ;
                                     dcterms:issued "2024-01-01"^^xsd:date ;
@@ -27,7 +27,6 @@
                                     dcterms:modified "2026-06-24"^^xsd:date ;
                                     dcterms:publisher "YH" ;
                                     dcterms:source <https://purl.org/maont/ontology/> ;
-                                    bibo:status "unstable" ;
                                     vann:preferredNamespacePrefix "mao" ;
                                     vann:preferredNamespaceUri "https://purl.org/maont/ontology"^^xsd:anyURI ;
                                     rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
@@ -1636,6 +1635,15 @@ mao:bodywork_principle rdf:type owl:Class ;
                                        ] ;
                        rdfs:label "Bodywork_principle"@en ;
                        mao:name_zh "身法原則"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/bow_weapon
+mao:bow_weapon rdf:type owl:Class ;
+               rdfs:subClassOf mao:armament ;
+               rdfs:comment "Bow, arrow, and crossbow weapons (弓箭弩). Mechanical ranged weapons that propel projectiles via stored tension. In Chinese martial arts and military history, includes the short bow (弓), crossbow (弩), and their arrows (箭). Distinct from projectile_weapon (暗器) which covers manually thrown weapons."@en ;
+               rdfs:label "Bow_weapon"@en ;
+               mao:name_en "Bow / Crossbow"@en ;
+               mao:name_zh "弓箭弩類"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/breath_principle
