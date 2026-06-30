@@ -18,21 +18,21 @@
                                     owl:versionIRI <https://purl.org/maont/ontology/> ;
                                     owl:imports <https://purl.org/maont/vocabulary/> ;
                                     dc:title "MAon — Martial Arts Ontology"@en ;
-                                    dcterms:bibliographicCitation "MAon: Martial Arts Ontology (v1.2). https://purl.org/maont/ontology" ;
+                                    dcterms:bibliographicCitation "MAon: Martial Arts Ontology (v1.2.1). https://purl.org/maont/ontology" ;
                                     dcterms:contributor "YH, Luyi Chen" ;
                                     dcterms:created "2024-01-01"^^xsd:date ;
                                     dcterms:creator "Yumeng Hou" ;
                                     dcterms:issued "2024-01-01"^^xsd:date ;
                                     dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                                    dcterms:modified "2026-06-24"^^xsd:date ;
+                                    dcterms:modified "2026-06-30" ;
                                     dcterms:publisher "YH" ;
                                     dcterms:source <https://purl.org/maont/ontology/> ;
                                     vann:preferredNamespacePrefix "mao" ;
                                     vann:preferredNamespaceUri "https://purl.org/maont/ontology"^^xsd:anyURI ;
                                     rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
-                                    rdfs:label "MAon — Martial Arts Ontology v1.2"@en ;
+                                    rdfs:label "MAon — Martial Arts Ontology v1.2.1"@en ;
                                     rdfs:seeAlso <https://yumenghou.com/resource/ont/MAoCorpus/extract.html> ;
-                                    owl:versionInfo "1.2" .
+                                    owl:versionInfo 1.2 .
 
 #################################################################
 #    Annotation properties
@@ -892,7 +892,8 @@ mao:weapon_type rdf:type owl:DatatypeProperty ;
 mao:Digital_document rdf:type owl:Class ;
                      rdfs:subClassOf mao:E31_document ;
                      rdfs:comment "A born-digital or digitised document resource associated with a martial arts entity, such as a video recording, digital image, or electronic text. "@en ;
-                     rdfs:label "Digital_document"@en .
+                     rdfs:label "Digital_document"@en ;
+                     mao:name_en "Digital document"@en .
 
 
 ###  https://purl.org/maont/ontology/E21_Person
@@ -994,7 +995,9 @@ mao:E78_Collection rdf:type owl:Class ;
 mao:Exhibition rdf:type owl:Class ;
                rdfs:subClassOf mao:E5_Event ;
                rdfs:comment "A public event in which martial arts forms, techniques, or historical artefacts are displayed or performed for an audience. Subclass of E5.Event."@en ;
-               rdfs:label "Exhibition"@en .
+               rdfs:label "Exhibition"@en ;
+               mao:name_en "Exhibition"@en ;
+               mao:name_zh "展覽"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/Form_move
@@ -1082,7 +1085,7 @@ mao:Interactive_system rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_book
 mao:MA_book rdf:type owl:Class ;
-            rdfs:subClassOf mao:E31_document ,
+            rdfs:subClassOf mao:Physical_document ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty mao:documents ;
                               owl:someValuesFrom mao:E53_place
@@ -1111,7 +1114,7 @@ mao:MA_book rdf:type owl:Class ;
                               owl:onProperty mao:type_of ;
                               owl:someValuesFrom mao:MA_book
                             ] ;
-            rdfs:comment "The class MA_book encompasses information objects that record aspects of martial arts, whether physical or digital, including ancient manuscripts, manuals, and audiovisual content. Bridged to CIDOC-CRM E31 Document to facilitate interoperability with linked data sources."@en ;
+            rdfs:comment "The class MA_book encompasses various types of books documenting aspects of martial arts; these include martial arts manuals, military treatises, ancient manuscripts, etc."@en ;
             rdfs:label "MA_book"@en ;
             mao:name_en "Martial Arts Document"@en ;
             mao:name_zh "武術文檔"@zh-hk .
@@ -1125,6 +1128,13 @@ mao:MA_clan rdf:type owl:Class ;
             mao:name_en "Martial Arts Clan"@en ;
             mao:name_zh "家族譜系"@zh-hk ;
             mao:otherName_en "Martial Arts Family"@en .
+
+
+###  https://purl.org/maont/ontology/MA_edu_framework
+mao:MA_edu_framework rdf:type owl:Class ;
+                     rdfs:label "MA_edu_framework"@en ;
+                     mao:name_en "MA Educational framework"@en ;
+                     mao:name_zh "武術教學框架"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/MA_institute
@@ -1383,11 +1393,11 @@ mao:MA_style rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/MA_syllabus
 mao:MA_syllabus rdf:type owl:Class ;
-                rdfs:subClassOf mao:E73_Information_Object ;
+                rdfs:subClassOf mao:MA_edu_framework ;
                 rdfs:comment "A formalised curriculum specifying which forms, techniques, and grading requirements constitute a complete course of study within a martial arts system or institute. Not all traditional systems have a standardised syllabus."@en ;
                 rdfs:label "MA_Syllabus"@en ;
                 mao:name_en "Syllabus (martial arts)"@en ;
-                mao:name_zh "武術教學大綱"@zh-hk .
+                mao:name_zh "武術課程大綱"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/MA_system
@@ -1510,8 +1520,20 @@ mao:MA_verse rdf:type owl:Class ;
 ###  https://purl.org/maont/ontology/ManualBook
 mao:ManualBook rdf:type owl:Class ;
                rdfs:subClassOf mao:MA_book ;
-               rdfs:comment "A printed or manuscript martial arts manual or book."@en ;
-               rdfs:label "ManualBook"@en .
+               rdfs:comment "A martial art manual, often called \"fight book\" is a practical, step-by-step instructional guide used to teach physical combat techniques."@en ;
+               rdfs:label "ManualBook"@en ;
+               mao:name_en "Manual"@en ;
+               mao:name_zh "拳譜"@zh-hk ;
+               mao:otherName_en "Fight Book"@en .
+
+
+###  https://purl.org/maont/ontology/Military_treatise
+mao:Military_treatise rdf:type owl:Class ;
+                      rdfs:subClassOf mao:MA_book ;
+                      rdfs:comment "A military treatise is a high-level conceptual text focused on grand strategy, leadership, logistics, and organizational theory rather than individual fighting skills."@en ;
+                      rdfs:label "Military_treatise"@en ;
+                      mao:name_en "Military treatise"@en ;
+                      mao:name_zh "军事论著"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/MoCap_item
@@ -1533,11 +1555,28 @@ mao:Philosophical_concepts rdf:type owl:Class ;
                            rdfs:label "Philosophical_concepts"@en .
 
 
+###  https://purl.org/maont/ontology/Physical_document
+mao:Physical_document rdf:type owl:Class ;
+                      rdfs:subClassOf mao:E31_document ;
+                      rdfs:comment "A physical document resource associated with a martial arts entity."@en ;
+                      rdfs:label "Physical_document"@en ;
+                      mao:name_en "Physical document"@en .
+
+
 ###  https://purl.org/maont/ontology/Preparation_pose
 mao:Preparation_pose rdf:type owl:Class ;
                      rdfs:subClassOf mao:MA_technique ;
                      rdfs:label "Preparation_pose"@en ;
                      mao:name_zh "預備勢"@zh-hk .
+
+
+###  https://purl.org/maont/ontology/Rite
+mao:Rite rdf:type owl:Class ;
+         rdfs:subClassOf mao:E5_Event ;
+         rdfs:comment "A rite is a formal, prescribed ceremonial act or custom or event, often religious, traditional, or associated with milestones (e.g., weddings, graduations). A rite is different from a ritual, which denotes a sequence of actions or routine performed for symbolic value, hence an instance of E7.Activity."@en ;
+         rdfs:label "Rite"@en ;
+         mao:name_en "Rite"@en ;
+         mao:name_zh "儀式"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/Textual_item
@@ -1550,7 +1589,10 @@ mao:Textual_item rdf:type owl:Class ;
 ###  https://purl.org/maont/ontology/Traditional_event
 mao:Traditional_event rdf:type owl:Class ;
                       rdfs:subClassOf mao:E5_Event ;
-                      rdfs:label "Traditional_event"@en .
+                      rdfs:comment "A traditional event is a recurring social or cultural gathering (like a harvest festival or an annual parade) focused on celebration and community bonding."@en ;
+                      rdfs:label "Traditional_event"@en ;
+                      mao:name_en "Traditional event"@en ;
+                      mao:name_zh "傳統活動"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/Video_item
@@ -1869,9 +1911,11 @@ mao:gesture rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/grading_system
 mao:grading_system rdf:type owl:Class ;
-                   rdfs:subClassOf mao:MA_syllabus ;
-                   rdfs:comment "A structured grading or rank-assessment system within a martial arts syllabus."@en ;
-                   rdfs:label "Grading_system"@en .
+                   rdfs:subClassOf mao:MA_edu_framework ;
+                   rdfs:comment "In martial arts, a grading system is the curriculum-based testing process a student undergoes to demonstrate their technical proficiency."@en ;
+                   rdfs:label "Grading_system"@en ;
+                   mao:name_zh "Grading system"@en ,
+                               "考核評分系統"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/handshape
@@ -2048,9 +2092,11 @@ mao:projectile_weapon rdf:type owl:Class ;
 
 ###  https://purl.org/maont/ontology/ranking_system
 mao:ranking_system rdf:type owl:Class ;
-                   rdfs:subClassOf mao:MA_syllabus ;
-                   rdfs:comment "A system of ranks or levels used to denote martial arts proficiency."@en ;
-                   rdfs:label "Ranking_system"@en .
+                   rdfs:subClassOf mao:MA_edu_framework ;
+                   rdfs:comment "A ranking system is the resulting hierarchical structure (like belts or certificates) used to classify that practitioner's overall level of knowledge, rank, and teaching ability within the art."@en ;
+                   rdfs:label "Ranking_system"@en ;
+                   mao:name_en "Ranking system"@en ;
+                   mao:name_zh "段位系統"@zh-hk .
 
 
 ###  https://purl.org/maont/ontology/shoulder_arm_training
