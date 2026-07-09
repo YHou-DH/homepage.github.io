@@ -18,20 +18,15 @@
                                     owl:versionIRI <https://purl.org/maont/ontology/> ;
                                     owl:imports <https://purl.org/maont/vocabulary/> ;
                                     dc:title "MAon — Martial Arts Ontology"@en ;
-                                    dcterms:bibliographicCitation "MAon: Martial Arts Ontology (v1.2.1). https://purl.org/maont/ontology" ;
-                                    dcterms:contributor "YH, Luyi Chen" ;
+                                    dcterms:bibliographicCitation "MAon: Martial Arts Ontology (v1.2.1). https://purl.org/maont/ontology" ;\
                                     dcterms:created "2024-01-01"^^xsd:date ;
-                                    dcterms:creator "Yumeng Hou" ;
                                     dcterms:issued "2024-01-01"^^xsd:date ;
-                                    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                                    dcterms:modified "2026-06-30" ;
-                                    dcterms:publisher "YH" ;
+                                    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;\\
                                     dcterms:source <https://purl.org/maont/ontology/> ;
                                     vann:preferredNamespacePrefix "mao" ;
                                     vann:preferredNamespaceUri "https://purl.org/maont/ontology"^^xsd:anyURI ;
                                     rdfs:comment "An extension of the MAon ontology (v1.1), incorporating generalizable entities descriptive of Northern and Southern Chinese martial arts. This version integrates traditional folk discursive habits with the structured, modernized theories synthesized from the Dictionary of Chinese Martial Arts (Zhongguo Wushu Dacidian, 1990) and the Record of Chinese Martial Arts Fist and Weapon Forms (Zhongguo Wushu Quanxie Lu, 1983)."@en ;
                                     rdfs:label "MAon — Martial Arts Ontology v1.2.1"@en ;
-                                    rdfs:seeAlso <https://yumenghou.com/resource/ont/MAoCorpus/extract.html> ;
                                     owl:versionInfo 1.2 .
 
 #################################################################
