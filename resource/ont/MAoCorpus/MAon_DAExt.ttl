@@ -15,7 +15,7 @@
 
 @base <https://purl.org/maont/daext/> .
 
-<https://purl.org/hkmala/ontology/maon-daext>
+<https://purl.org/maont/daext>
     rdf:type owl:Ontology ;
 
     ## ── Identity ──────────────────────────────────────────────────
@@ -26,7 +26,7 @@
     owl:imports <https://purl.org/maont/ontology/> ;
 
     ## ── Versioning ────────────────────────────────────────────────
-    owl:versionIRI <https://purl.org/hkmala/ontology/maon-daext> ;
+    owl:versionIRI <https://purl.org/maont/daext/1.0> ;
     owl:versionInfo "1.0"^^xsd:string ;
 
     ## ── Labels & description ──────────────────────────────────────
@@ -59,11 +59,12 @@
     dcterms:publisher "National University of Singapore"^^xsd:string ;
 
     ## ── Citation ──────────────────────────────────────────────────
-    dcterms:bibliographicCitation "MAon Digital Archive Extension (v1.0). https://purl.org/hkmala/ontology/maon-daext"^^xsd:string ;
+    dcterms:bibliographicCitation "MAon Digital Archive Extension (v1.0). https://purl.org/maont/daext"^^xsd:string ;
 
     ## ── Status & source ───────────────────────────────────────────
     bibo:status "unstable"^^xsd:string ;
-    dcterms:source <https://purl.org/hkmala/ontology/maon-daext> .
+    dcterms:replaces <https://purl.org/hkmala/ontology/maon-daext> ;
+    dcterms:source <https://purl.org/maont/daext> .
 
 
 #################################################################
@@ -90,7 +91,7 @@ skos:inScheme rdf:type owl:AnnotationProperty .
 skos:prefLabel rdf:type owl:AnnotationProperty .
 
 
-###  https://purl.org/maont/ontologyname_en
+###  https://purl.org/maont/ontology/name_en
 mao:name_en rdf:type owl:AnnotationProperty .
 
 
